@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих ( Дополнение )</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c2 {margin-left: 2em}
+  p.c1 {font-weight: bold}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <p class="c1">Два символа Леви-Чивиты:</p>
+
+  <p>Для вычисления других сложных произведений нам потребуется произведение двух символов Леви-Чивиты </p>
+
+  <div class="c2">
+    <img src="k9/gif/f97148.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p>Доказательство данной формулы поможет поупражняться в матричном умножении:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97149.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97150.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97151.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97152.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97153.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97154.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p>Сначала мы заменили оба символа Леви-Чивиты на специально подобранные представления детерминантами, а затем использовали то, что детерминант произведения двух матриц равен произведению их 
+  <a href="#923b2r" >детерминантов</a>. Далее, мы перемножили между собой эти 
+  <a href="#923b1r" >матрицы</a>. Как это делается, мы уже показывали ранее. Отдельные элементы матрицы оказываются суммами трех произведений от двух символов Кронекера, которые мы записываем, используя соглашение Эйнштейна о суммировании. В конечном итоге, эти суммы легко вычисляются и от каждой остается только один символ Кронекера.</p>
+
+  <p>Глядя на полученный результат, мы понимаем, что исходя из свойств симметрии детерминантов у нас и не могло получиться ничего другого: наш результат, как и исходное произведение, должен быть как абсолютно антисимметричным по обоим тройкам индексов 
+  <img src="k9/gif/f97155b.gif" alt="math formula" hspace="5" align="bottom" /> и 
+  <img src="k9/gif/f97155c.gif" alt="math formula" hspace="5" align="middle" />, так и симметричным относительно перестановок пар индексов 
+  <img src="k9/gif/f97155d.gif" alt="math formula" hspace="5" align="middle" />, 
+  <img src="k9/gif/f97155e.gif" alt="math formula" hspace="5" align="middle" /> и 
+  <img src="k9/gif/f97155f.gif" alt="math formula" hspace="5" align="bottom" />.</p>
+
+  <p>К счастью данный общий результат будет Вам нужен крайне редко. В большинстве случаев произведение требуется только в частном случае, когда происходит <em>суммирование по паре индексов</em>, например по m:</p>
+
+  <div class="c2">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p>
+          <img src="k9/gif/f97156.gif" alt="math formula" hspace="5" align="middle" /></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+
+  <p>Нам бы также хотелось продемонстрировать как получается это важное соотношение:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97157.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p>Здесь мы сначала подставили 
+  <img src="k9/gif/f97158.gif" alt="math formula" hspace="5" align="bottom" /> в представление произведения символа Леви-Чивиты через детерминанты; затем разложили полученный 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" />-детерминант в ряд по последней строке, и в оставшихся 
+  <img src="k9/gif/f97159.gif" alt="math formula" hspace="5" align="middle" />-детерминантах провели суммирование по 
+  <img src="k9/gif/f97160.gif" alt="math formula" hspace="5" align="middle" />, в частности, для следа 
+  <img src="k9/gif/f97161.gif" alt="math formula" hspace="5" align="middle" />, получили 
+  <img src="k9/gif/f97161b.gif" alt="math formula" hspace="5" align="bottom" />. Далее, в первом 
+  <img src="k9/gif/f97159.gif" alt="math formula" hspace="5" align="middle" />-детерминанте мы поменяли местами столбца, и получили требуемый результат. </p>
+
+  <p>Общая структура, а именно, "антисимметричная по 
+  <img src="k9/gif/f97162b.gif" alt="math formula" hspace="5" align="bottom" /> и 
+  <img src="k9/gif/f97162c.gif" alt="math formula" hspace="5" align="middle" /> и симметричная по 
+  <img src="k9/gif/f97162d.gif" alt="math formula" hspace="5" align="middle" /> и 
+  <img src="k9/gif/f97162e.gif" alt="math formula" hspace="5" align="middle" />, а индекс суммирования 
+  <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" /> не может остаться" - мы могли бы и догадаться, что ответ выглядит именно так; но мы были не уверенны, что числовой множитель перед всем уравнением действительно 
+  <img src="eq/1.gif" alt="math formula" hspace="5" align="bottom" />.</p>
+
+  <p>Иногда требуется <em>просуммированное по двум индексам произведение</em> двух символов Леви-Чивиты, для которого мы легко получаем:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97163.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p>Оно симметрично по 
+  <img src="k9/gif/f97162d.gif" alt="math formula" hspace="5" align="middle" />, как это и должно быть. Для развлечения, давайте под конец просуммируем по <em>третьей индексной паре:</em></p>
+
+  <div class="c2">
+    <img src="k9/gif/f97164.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p>Аналогичные отношения имеются для полностью просуммированных произведений символов Леви-Чивиты и в пространствах других размерностей, например, в 
+  <img src="k9/gif/f97166.gif" alt="math formula" hspace="5" align="bottom" />, с результатом: "размерность!"</p>
+
+  <p><a href="javascript:history.back()">Назад</a></p>
+</body>
+</html>

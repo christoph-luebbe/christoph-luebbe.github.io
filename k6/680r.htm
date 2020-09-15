@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Ряд Тейлора                </h2>
+
+    <h3>6.8 Ряд Тейлора в произвольной точке</h3>
+  </div>
+
+  <div class="c4">
+    <p>Мы видели, для вычисления значения функции в заданной точке с использованием разложения Тейлора, большое значение имеет выбор точки разложения этой функции в ряд. Поэтому обратимся к вопросу выбора места разложения 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" />. Ранее, мы специально приравнивали его 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />. В математике это называется формой разложения Маклорена.</p>
+
+    <p>Мы легко получим <em>универсальное разложение Тейлора в окрестностях</em> 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> из нашей ранее полученной формы посредством замены всюду 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> на 
+    <img src="k6/gif/f68001.gif" alt="math formula" hspace="5" align="middle" width="77" height="17" /> и разложением полученной функции переменной 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> в ряд в окрестностях 
+    <img src="k6/gif/f68002.gif" alt="math formula" hspace="5" align="middle" width="38" height="23" />. Таким образом, для бесконечно дифференцируемых функций 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />, получаем следующий вид и однозначность универсального</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Разложения Тейлора в окрестностях точки</em> 
+            <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" />: 
+            <img src="k6/gif/f68003.gif" alt="math formula" hspace="5" align="middle" width="204" height="50" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>для <em>радиуса сходимости R</em>, и из этого также следует достаточный <em>критерий отношения</em>:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68004.gif" alt="math formula" hspace="5" align="middle" width="272" height="39" />
+    </div>
+    <br />
+
+    <p>а для погрешности, при обрывании после члена в степени m:  </p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Остаточный член в форме Легранжа</em> 
+            <img src="k6/gif/f68005.gif" alt="math formula" hspace="5" align="middle" width="289" height="46" /> 
+            снова с 
+            <img src="eq/0kthk1.gif" alt="math formula" hspace="5" align="middle" width="65" height="24" />.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>В качестве примера, давайте разложим <em>синус 
+    <img src="k6/gif/f68006.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" /> в данном случае, в окрестностях точки </em> 
+    <img src="k6/gif/f68007.gif" alt="math formula" hspace="5" align="middle" width="47" height="24" /> :</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68008.gif" alt="math formula" hspace="5" align="middle" width="546" height="41" />
+    </div>
+    <br />
+
+    <p>В доказательство: 
+    <img src="k6/gif/f68009.gif" alt="math formula" hspace="5" align="middle" width="90" height="26" /> , 
+    <img src="k6/gif/f68010.gif" alt="math formula" hspace="5" align="middle" width="107" height="26" /> , 
+    <img src="k6/gif/f68011.gif" alt="math formula" hspace="5" align="middle" width="112" height="26" /> , 
+    <img src="k6/gif/f68012.gif" alt="math formula" hspace="5" align="middle" width="100" height="29" /> , ...<br /> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;с 
+    <img src="k6/gif/f68013.gif" alt="math formula" hspace="5" align="middle" width="62" height="24" /> , 
+    <img src="k6/gif/f68014.gif" alt="math formula" hspace="5" align="middle" width="67" height="26" /> , 
+    <img src="k6/gif/f68015.gif" alt="math formula" hspace="5" align="middle" width="82" height="26" /> , 
+    <img src="k6/gif/f68016.gif" alt="math formula" hspace="5" align="middle" width="74" height="26" /> , 
+    <img src="k6/gif/f68017.gif" alt="math formula" hspace="5" align="middle" width="79" height="29" /> , ...<br /> 
+    итого: 
+    <img src="k6/gif/f68018.gif" alt="math formula" hspace="5" align="middle" width="494" height="41" /><br /> с 
+    радиусом сходимости 
+    <img src="k6/gif/f68019.gif" alt="math formula" hspace="5" align="middle" width="411" height="24" /> .</p>
+
+    <p>Давайте сразу же проверим, как выбор точки разложения 
+    <img src="k6/gif/f68020.gif" alt="math formula" hspace="5" align="bottom" width="29" height="13" /> лежащий ближе к значению аргумента 
+    <img src="k6/gif/f68021.gif" alt="math formula" hspace="5" align="middle" width="47" height="24" />, улучшит наш расчет 
+    <img src="k6/gif/f68022.gif" alt="math formula" hspace="5" align="middle" width="155" height="24" /> по стравнению с выбором центра разложения в точке 
+    <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" width="45" height="22" /> в 
+    <a href="#670r">разделе 6.7</a>  :</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68023.gif" alt="math formula" hspace="5" align="middle" width="353" height="28" />
+    </div>
+    <br />
+
+    <p>Мы получим: 
+    <img src="k6/gif/f68024.gif" alt="math formula" hspace="5" align="middle" width="415" height="24" />, причем 
+    определение остаточного члена с 
+    <img src="k6/gif/f68025.gif" alt="math formula" hspace="5" align="bottom" width="37" height="13" /> дает</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68026.gif" alt="math formula" hspace="5" align="middle" width="274" height="28" />
+    </div>
+    <br />
+
+    <p>Это можно сравнить с ранее полученным определением погрешности 
+    <img src="k6/gif/f68027.gif" alt="math formula" hspace="5" align="middle" width="74" height="28" />. Это значит, что при равных объемах вычисления, сделав удачный выбор центра разложения, величину погрешности можно уменьшить на более чем четыре порядка!</p>
+
+    <p>Для приближенных вычислений при других промежуточных значениях аргумента, полезным может оказаться разложение <em>синуса в окрестностях точки</em> 
+    <img src="k6/gif/f68028.gif" alt="math formula" hspace="5" align="middle" width="61" height="26" />:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68029.gif" alt="math formula" hspace="5" align="middle" width="567" height="30" />
+    </div>
+    <br />
+
+    <p>т.к. 
+    <img src="k6/gif/f68009.gif" alt="math formula" hspace="5" align="middle" width="90" height="26" /> , 
+    <img src="k6/gif/f68010.gif" alt="math formula" hspace="5" align="middle" width="107" height="26" /> , 
+    <img src="k6/gif/f68011.gif" alt="math formula" hspace="5" align="middle" width="112" height="26" /> , 
+    <img src="k6/gif/f68012.gif" alt="math formula" hspace="5" align="middle" width="100" height="29" /> , ...<br /> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;с 
+    <img src="k6/gif/f68030.gif" alt="math formula" hspace="5" align="middle" width="106" height="29" /> , 
+    <img src="k6/gif/f68031.gif" alt="math formula" hspace="5" align="middle" width="110" height="29" /> , 
+    <img src="k6/gif/f68032.gif" alt="math formula" hspace="5" align="middle" width="126" height="29" /> , 
+    <img src="k6/gif/f68033.gif" alt="math formula" hspace="5" align="middle" width="130" height="29" /> , 
+    <img src="k6/gif/f68034.gif" alt="math formula" hspace="5" align="middle" width="123" height="31" /> , ...<br /> 
+    итого: 
+    <img src="k6/gif/f68035.gif" alt="math formula" hspace="5" align="middle" width="512" height="29" /><br /> с 
+    радиусом сходимости 
+    <img src="k6/gif/f68036.gif" alt="math formula" hspace="5" align="middle" width="293" height="24" /></p>
+
+    <p>На данном этапе мы также можем привести разложение <em>натурального логарифма</em> в окрестностях 
+    <img src="eq/x_0g1.gif" alt="math formula" hspace="5" align="middle" width="44" height="23" /> :</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68037.gif" alt="math formula" hspace="5" align="middle" width="545" height="41" />
+    </div>
+    <br />
+
+    <p>Если мы заменим в нем 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> на 
+    <img src="eq/xp1.gif" alt="math formula" hspace="5" align="middle" width="35" height="23" />, мы снова 
+    получим наше 
+    <a href="#643r"> прежнее Разложение Тейлора</a> от 
+    <img src="k6/gif/f68038.gif" alt="math formula" hspace="5" align="middle" width="61" height="24" /> в 
+    окрестностях точки 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 6.12:</p>
+
+            <p>Определите Разложения Тейлора и области сходимости у:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="eq/sinx.gif" alt="math formula" hspace="5" align="bottom" width="31" height="12" /> 
+                 
+                в окрестностях точки 
+                <img src="k6/gif/f68039.gif" alt="math formula" hspace="5" align="middle" width="46" height="17" /> 
+                <a href="#680l1201r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /> 
+                 
+                в окрестностях точки 
+                <img src="eq/x_0g1.gif" alt="math formula" hspace="5" align="middle" width="44" height="23" /> 
+                <a href="#680l1202r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /> 
+                 
+                в окрестностях точки 
+                <img src="k6/gif/f68040.gif" alt="math formula" hspace="5" align="middle" width="45" height="23" /> 
+                <a href="#680l1203r" >Ответ</a> и</td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>докажите приведенные выше разложения 
+                <img src="eq/lnx.gif" alt="math formula" hspace="5" align="bottom" width="25" height="13" /> в окрестностях точки 
+                <img src="eq/x_0g1.gif" alt="math formula" hspace="5" align="middle" width="44" height="23" /> 
+                <a href="#680l1204r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 6.13:</p>
+
+            <p>Рассчитайте 
+            <img src="k6/gif/f68041.gif" alt="math formula" hspace="5" align="middle" width="27" height="29" /> до 
+            <img src="k6/gif/f68042.gif" alt="math formula" hspace="5" align="middle" width="13" height="17" />, но теперь при помощи Ряда Тейлора в окрестности 
+            <img src="eq/x_0g1.gif" alt="math formula" hspace="5" align="middle" width="44" height="23" /> и сравните с ранее сделанным вычислением в окрестности 
+            <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle"	width="45" height="22" /> из 
+            <a href="#670r">задания 6.11</a> 
+            <a href="#680l1301r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>На протяжении Вашей учебы в университете, Вы познакомитесь с другими разложениями, а также сами будете их проводить. Даже для погрешностей существуют разложения Тейлора, например, знаменитое мультипольное разложение. Часто встречающиеся в точных науках периодические функции Вы будете раскладывать в ряды Фурье по косинусам и синусам, а позже, при помощи показательной функции, преобразовывать по Фурье и непериодические функции. Функции комплексного переменного могут быть разложены в ряды Лорана вблизи определенных сингулярностей. И, наконец, в квантовой механике Вы будете проводить различные разложения по теории возмущений вблизи решений таких немногих точно решаемых систем как гармонический осциллятор. Теоретическая физика - это в значительной мере высокое искусство разложения.</p>
+  </div>
+</body>
+</html>

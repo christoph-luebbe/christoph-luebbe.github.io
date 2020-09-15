@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>3 Sucesiones y series</h2>
+
+    <h3>3.4 Convergencia</h3>
+  </div>
+
+  <div class="c4">
+    <p>Ahora viene el punto central de esta sección: como usted ya vio a partir 
+    de la proyección de los puntos de representación 
+    sobre los 2 ejes, hay sucesiones de números cuyos miembros 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" /> 
+    se acumulan en la recta numérica alrededor de un número 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />, 
+    tal que un número infinito de miembros de la sucesión se encuentran en cada 
+    <a href="#222b4s" >
+    vecindad</a> -
+    <img src="eq/eps.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+    ,<img src="k3/gif/f31301.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" />, 
+    de ese número 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />, 
+    el que por lo demás no necesita ser un miembro de la sucesión. En ese caso 
+    se denomina a 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+    un <b>punto de acumulación</b> de la sucesión. De nuestros ejemplos, vemos 
+    que la sucesión de los números naturales (F1) <em>no posee
+    <span style="font-weight: 400">punto de acumulación, y la sucesión armónica
+    </span></em>&nbsp;(F3) posee <em>un</em> punto de acumulación, el cero. La 
+    sucesión alternante (F2) posee <b>dos</b> puntos de acumulación: un en 
+    <img src="k3/gif/f31302.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" /> 
+    y otro en 
+    <img src="k3/gif/f31303.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" />.</p>
+
+    <p>El teorema de <em>Bolzano - Weierstraß</em> nos garantiza que toda 
+    sucesión acotada por arriba y por abajo debe tener al menos un <b>punto de 
+    acumulación</b>.</p>En el caso que una sucesión posea sólo un punto de 
+    acumulación, puede suceder que todos los miembros de la sucesión, a partir 
+    de cierto número, se encuentren en la vecindad de ese punto. Se denomina 
+    entonces a ese número el <b>valor límite</b> de la sucesión y este caso 
+    resulta ser un concepto central del Análisis: por eso los matemáticos 
+    tienen varios nombres para ello. Ellos también dicen que la sucesión tiene 
+    un <b>límite</b> o que la sucesión es <b>convergente</b> en 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+    y escriben: 
+    <img src="k3/gif/f31304.gif" alt="math formula" hspace="5" align="middle" width="82" height="23" />, 
+    y a veces algo indolente: 
+    <img src="k3/gif/f31305.gif" alt="math formula" hspace="5" align="middle" width="67" height="31" /><br />
+    <br />
+
+    <div class="c2">
+      <img src="k3/gif/f31307.gif" alt="math formula" hspace="5" align="middle" width="53" height="24" />
+      <em>convergente:</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k3/gif/f31308.gif" alt="math formula" hspace="5" align="middle" width="113" height="23" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k3/gif/f31309.gif" alt="math formula" hspace="5" align="middle" width="331" height="24" />
+    </div><br />
+    
+    <p>Con esta escritura abreviada se quiere decir que para todo 
+    <img src="eq/eps.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+    dado y positivo, se puede encontrar un número natural 
+    <img src="k3/gif/f31310.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" />, 
+    tal que la distancia del punto de acumulación 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />para 
+    todos los miembros de la sucesión con un número mayor que 
+    <img src="k3/gif/f31310.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" /> 
+    es menor que el 
+    <img src="eq/eps.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />dado.</p>
+
+    <p>Para muchas de las sucesiones se puede reconocer a simple vista la 
+    convergencia y aún el valor límite, después de alguna práctica, pero a veces 
+    no es tan fácil determinar si una sucesión es convergente. Por ello se desea 
+    el teorema de Bolzano y Weierstraß, que nos muestra en forma general cuando 
+    se debe esperar la convergencia de una sucesión:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p class="c3">Teorema de Bolzano y Weierstrass:</p>
+
+            <p><em>Toda sucesión monótona creciente, acotada por arriba es 
+            convergente</em>,<br />
+            o bien, <em>Toda sucesión monótona decreciente, acotada por abajo es 
+            convergente.</em></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>En todos los casos en que no se conoce el valor límite o no es fácil de 
+    encontrar, a menudo los matemáticos usan &quot;necesario&quot; 
+    <img src="k3/gif/f31311.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+    y &quot;suficiente&quot; 
+    <img src="k3/gif/f31312.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /></p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><b>Criterio de Cauchy:</b>&nbsp;&nbsp;&nbsp;&nbsp; 
+            <img src="k3/gif/f31313.gif" alt="math formula" hspace="5" align="middle" width="27" height="24" /> 
+            convergente 
+            <img src="k3/gif/f31314.gif" alt="math formula" hspace="5" align="middle" width="364" height="24" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    
+    <p>esto es, una sucesión converge si y sólo si las distancias entre los 
+    miembros de una sucesión resulta ser cada vez más pequeña, a partir de un 
+    cierto número, y por lo tanto los puntos correspondientes sobre la recta 
+    numérica se acercan cada vez más; cuando ese no es el caso, la sucesión 
+    diverge.</p>
+
+    <p>Además, uno puede mostrar que cada sucesión parcial de una sucesión 
+    convergente y la suma y la diferencia, así como el producto y, si el 
+    denominador es distinto de 0, también el cociente de dos sucesiones nuevamente 
+    son convergentes, es decir, el límite es intercambiable con las operaciones 
+    aritméticas racionales.</p>
+
+    <p>Muchas sucesiones tiene al cero como punto de acumulación y por ello se 
+    les llama <b>sucesiones nulas</b>.</p>
+
+    <p>La sucesión armónica (F3) con 
+    <img src="k3/gif/f31315.gif" alt="math formula" hspace="5" align="middle" width="48" height="29" /> 
+    es por ejemplo una sucesión nula.</p>
+
+    <div class="c2">
+      <a href="#340b1s" >Nota: Demostración de convergencia</a>
+    </div><br />
+    
+    <p>Las sucesiones (F1) y (F2) claramente no convergen.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Ejercicio 3.4: sucesiones convergentes</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)</td>
+
+                <td>Investigue la convergencia de las otras tres sucesiones 
+                muestra. 
+                <a href="#340l0401s" >Solución para (F4)</a> , 
+                <a href="#340l0402s" >(F5)</a>, 
+                <a href="#340l0403s" >(F6)</a>.</td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)</td>
+
+                <td>Para que sea cuidadoso, calcule los primeros diez miembros 
+                de la sucesión 
+                <img src="k3/gif/f31336.gif" alt="math formula" hspace="5" align="middle" width="90" height="23" />, 
+                el producto de (F1) con (F6) para 
+                <img src="k3/gif/f31337.gif" alt="math formula" hspace="5" align="middle" width="52" height="23" /> 
+                y compárelo con 
+                <img src="k3/gif/f31338.gif" alt="math formula" hspace="5" align="middle" width="21" height="17" />, 
+                así como de 
+                <img src="k3/gif/f31339.gif" alt="math formula" hspace="5" align="middle" width="61" height="30" />, 
+                el cociente de (F6) para 
+                <img src="k3/gif/f31340.gif" alt="math formula" hspace="5" align="middle" width="44" height="29" /> 
+                y (F4), y compárelo con 
+                <img src="k3/gif/f31338.gif" alt="math formula" hspace="5" align="middle" width="21" height="17" />. 
+                <a href="#340l0404s" >
+                Solución (1)</a> 
+                <a href="#340l0405s" >(2)</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)</td>
+
+                <td>La sucesión que alterna miembros de (F1) y (F3), esto es, 
+                <img src="k3/gif/f31341.gif" alt="math formula" hspace="5" align="middle" width="109" height="30" /> 
+                sólo tiene un punto de acumulación, esto es 
+                <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />. 
+                ¿Converge a 
+                <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />? 
+                <a href="#340l0406s" >
+                Solución</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

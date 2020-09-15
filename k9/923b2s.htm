@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física ( Einschub )</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c3 {font-weight: bold}
+  div.c2 {text-align: center}
+  div.c1 {margin-left: 2em}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <p><b>Determinantes</b>:</p>
+
+  <p>La característica más importante de las matrices es su determinante. Se 
+  utiliza la siguiente notación:</p>
+
+  <div class="c1">
+    <em>determinante:</em> 
+    <img src="k9/gif/f923107.gif" alt="math formula" hspace="5" align="middle" width="237" height="66" />
+  </div>
+  <br />
+
+  <p>Leibniz dio la siguiente </p>
+
+  <div class="c1">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p><em>definición del determinante:</em> 
+          <img src="k9/gif/f923108.gif" alt="math formula" hspace="5" align="middle" width="383" height="82" /></p>
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <p>Esto da un <b>número real</b>, esto es, la suma, respectivamente las 
+  diferencias, de los términos, cada uno de los cuales es un producto de tres 
+  elementos de matriz. Los índices de la fila (en el lado izquierdo) son siempre
+  <img src="k9/gif/f923109.gif" alt="math formula" hspace="5" align="bottom" width="53" height="12" />para 
+  todos los términos, mientras que los índices de la columna (en el lado 
+  derecho) van sobre todas las permutaciones 
+  <img src="k9/gif/f923110.gif" alt="math formula" hspace="5" align="bottom" width="21" height="12" /> 
+  de estos tres números: 
+  <img src="k9/gif/f923111.gif" alt="math formula" hspace="5" align="middle" width="132" height="24" />, 
+  <img src="k9/gif/f923112.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" />, 
+  <img src="k9/gif/f923113.gif" alt="math formula" hspace="5" align="bottom" width="24" height="12" />; 
+  <img src="k9/gif/f923114.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" />, 
+  <img src="k9/gif/f923115.gif" alt="math formula" hspace="5" align="bottom" width="24" height="12" />, 
+  <img src="k9/gif/f923116.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" />. 
+  El signo de cada término está fijo por el número de transposiciones (:intercambio 
+  de dos índices) que se necesitan para obtener la consiguiente configuración a 
+  partir de la configuración 
+  <img src="k9/gif/f923111.gif" alt="math formula" hspace="5" align="middle" width="132" height="24" />. 
+  Las primeras tres configuraciones de arriba pueden obtenerse por un número par 
+  de transposiciones. Ellas obtiene un signo mas, las siguientes tres, obtenidas 
+  por un número impar de intercambios, fueron sustraídas : por ejemplo, en 
+  <img src="k9/gif/f923114.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" /> (impar), 
+  pero 
+  <img src="k9/gif/f923112.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" /> 
+  en<img src="k9/gif/f923113.gif" alt="math formula" hspace="5" align="bottom" width="24" height="12" /> (par), ....
+  En el caso de matrices de
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />obtenemos 
+  seis sumandos para los cuales las permutaciones par se pueden obtener también 
+  por medio de&nbsp;<a href="#923b6s" >permutación cíclica</a> .</p>
+
+ 
+ 
+ 
+  <p>Además de estas definiciones válidas en general, existen varios métodos 
+  diferentes para el <b>cálculo</b> del determinante de una matriz. Aquí, 
+  veremos dos de ellos: primero consideramos la <b>regla de Sarrus</b> válida en 
+  particular para matrices de 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />: 
+  para obtenerla, escribimos la primera y segunda columnas una vez mas a la 
+  derecha del determinante de interés:</p>
+
+  <div class="c1">
+    <b>regla de </b> <em>Sarrus:</em> 
+    <img src="k9/gif/f923118.gif" alt="math formula" hspace="5" align="middle" width="209" height="66" />
+  </div>
+  <br />
+
+  <p>Con este esquema multiplicamos entre sí los elementos en la diagonal 
+  principal
+  <img src="k9/gif/f923119.gif" alt="math formula" hspace="5" align="middle" width="75" height="24" />. 
+  A este producto, añadimos el producto de los tres elementos que se encuentran 
+  próximos hacia el lado derecho, en la dirección de la diagonal principal 
+  <img src="k9/gif/f923120.gif" alt="math formula" hspace="5" align="middle" width="85" height="24" /> 
+  y 
+  <img src="k9/gif/f923121.gif" alt="math formula" hspace="5" align="middle" width="86" height="24" />. 
+  De este resultado sustraemos el producto de los elementos en la diagonal 
+  secundaria
+  <img src="k9/gif/f923122.gif" alt="math formula" hspace="5" align="middle" width="86" height="24" /> 
+  y una vez más dos veces los productos de los tres elementos de matriz hacia la 
+  derecha, en la dirección de la diagonal secundaria 
+  <img src="k9/gif/f923123.gif" alt="math formula" hspace="5" align="middle" width="86" height="24" /> 
+  y 
+  <img src="k9/gif/f923124.gif" alt="math formula" hspace="5" align="middle" width="85" height="24" />.Este 
+  procedimiento da el determinante.</p>
+
+  <p>Muy a menudo, un método adicional da la respuesta más rápidamente, el 
+  llamado <b>desarrollo con respecto a la primera línea</b><em>:</em> Debido a 
+  que este es un proceso iterativo, notamos primero que el determinante de una 
+  matriz de 
+  <img src="k9/gif/f923125.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />consiste 
+  del producto de dos elementos diagonales
+  <img src="k9/gif/f923126.gif" alt="math formula" hspace="5" align="middle" width="50" height="24" /> 
+  menos el producto de los dos elementos en la diagonal secundaria
+  <img src="k9/gif/f923127.gif" alt="math formula" hspace="5" align="middle" width="60" height="24" />. 
+  Exactamente este determinante 
+  <img src="k9/gif/f923125.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />&nbsp;se 
+  obtiene después de remover tanto la tercera fila como la tercera columna de 
+  nuestro determinante de 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />deseado. 
+  Se le llama <b>adjunto</b> y se caracteriza por medio de los índices de los 
+  elementos removidos:</p>
+
+  <div class="c1">
+    <em>adjunto:</em> 
+    <img src="k9/gif/f923128.gif" alt="math formula" hspace="5" align="middle" width="201" height="24" />
+  </div>
+  <br />
+
+  <p>Con la ayuda de estos adjuntos, el determinante de 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />buscado 
+  puede escribirse de la siguiente forma:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923129.gif" alt="math formula" hspace="5" align="middle" width="558" height="43" />.
+  </div>
+  <br />
+
+  <p>Podemos ver inmediatamente que la restricción al desarrollo con respecto a 
+  la <b>primera fila</b> no impone limitación, debido a que el determinante 
+  tiene muchas propiedades de simetría. Con la ayuda de ellas podemos obtener 
+  desarrollos con respecto a otras filas o columnas. Luego, aquí utilizamos el 
+  término</p>
+
+  <div class="c2">
+    &nbsp;<b>fila</b>, para referirnos a <b>filas o columnas</b><em>.</em>
+  </div>
+
+  <p>Para alcanzar esta notación concisa, a veces resumimos los elementos de 
+  matriz arreglados uno sobre el otro en la forma de los llamados <b>vectores 
+  columna</b><em>
+  <img src="k9/gif/f923130.gif" alt="math formula" hspace="5" align="middle" width="20" height="24" /></em>, 
+  por ejemplo,</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923131.gif" alt="math formula" hspace="5" align="middle" width="132" height="24" /> 
+    con vectores columna: 
+    <img src="k9/gif/f923131b.gif" alt="math formula" hspace="5" align="middle" width="113" height="66" />
+  </div>
+  <br />
+
+  <p>Los determinantes tienen una seria de características de simetría, que 
+  hacen su cálculo y manejo excepcionalmente fácil.</p>
+
+  <p class="c3"><u>Propiedades de simetría de los determinantes:</u></p>
+
+  <p>a) Un determinante es invariante con recto a <b>transposiciones</b><em>,</em> 
+  i.e. con respecto a reflexiones a través de la diagonal principal:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923132.gif" alt="math formula" hspace="5" align="middle" width="74" height="30" />
+  </div>
+  <br />
+
+  <p>b) Un determinante permanece invariable cuando a una de sus filas <b>se le 
+  agrega una combinación lineal de otras filas</b>, por ejemplo:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923133.gif" alt="math formula" hspace="5" align="middle" width="240" height="24" />
+  </div>
+  <br />
+
+  <p>c) Un determinante cambia de signo con cada <b>permutación de dos de sus 
+  filas</b><em>:</em> por ejemplo,</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923134.gif" alt="math formula" hspace="5" align="middle" width="203" height="24" />
+  </div>
+  <br />
+
+  <p>d) Los determinantes son <em>homogéneos con respecto a sus filas:</em> para 
+  todo número real
+  <img src="k9/gif/f923135.gif" alt="math formula" hspace="5" align="middle" width="41" height="24" /></p>
+
+  <div class="c1">
+    <img src="k9/gif/f923136.gif" alt="math formula" hspace="5" align="middle" width="211" height="29" />
+  </div>
+  <br />
+
+  <p>e) Un determinante se anula si los <b>vectores fila son coplanares</b> (: linealmente 
+  dependientes; véase sección 9.4.4) o una de las filas es el vector nulo:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923137.gif" alt="math formula" hspace="5" align="middle" width="102" height="24" />
+  </div>
+  <br />
+
+  <p>f) Un determinante con un <b>número impar de dimensiones<em><span style="font-weight: 400"> 
+  permanece invariable</span></em></b>&nbsp;al hacer <b>permutaciones cíclicas 
+  de sus filas</b>:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923138.gif" alt="math formula" hspace="5" align="middle" width="190" height="24" />.
+  </div>
+  <br />
+
+  <p>g) Un determinante con un <b>número impar de dimensiones</b> se anula si la 
+  matriz es <b>antisimétrica</b> 
+  <img src="k9/gif/f923139.gif" alt="math formula" hspace="5" align="middle" width="71" height="30" />:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923140.gif" alt="math formula" hspace="5" align="middle" width="107" height="34" />.
+  </div>
+  <br />
+
+  <p>h) Los determinantes son <b>aditivos</b> si los sumandos difieren sólo en 
+  una fila: por ejemplo,</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923141.gif" alt="math formula" hspace="5" align="middle" width="336" height="24" />.
+  </div>
+  <br />
+
+  <p>i) El <b>determinante de un producto</b> de dos matrices es igual al 
+  producto de los determinantes de ambas matrices factores:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923142.gif" alt="math formula" hspace="5" align="middle" width="102" height="24" />
+  </div><br />
+  <br />
+
+  <div class="c1">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p><b>Ejercicio 9.12:</b> Calcule los siguientes determinantes:</p>
+
+          <table border="0">
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923143.gif" alt="math formula" hspace="5" align="middle" width="98" height="66" /> 
+              <a href="#923b2l1201s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923144.gif" alt="math formula" hspace="5" align="middle" width="96" height="66" /> 
+              <a href="#923b2l1202s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923145.gif" alt="math formula" hspace="5" align="middle" width="96" height="66" /> 
+              <a href="#923b2l1203s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923146.gif" alt="math formula" hspace="5" align="middle" width="98" height="66" /> 
+              <a href="#923b2l1204s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923147.gif" alt="math formula" hspace="5" align="middle" width="97" height="66" /> 
+              <a href="#923b2l1205s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923148.gif" alt="math formula" hspace="5" align="middle" width="118" height="68" /> 
+              <a href="#923b2l1206s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923149.gif" alt="math formula" hspace="5" align="middle" width="150" height="66" /> 
+              <a href="#923b2l1207s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923150.gif" alt="math formula" hspace="5" align="middle" width="151" height="66" /> 
+              <a href="#923b2l1208s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923151.gif" alt="math formula" hspace="5" align="middle" width="147" height="66" /> 
+              <a href="#923b2l1209s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923152.gif" alt="math formula" hspace="5" align="middle" width="150" height="66" /> 
+              <a href="#923b2l1210s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923153.gif" alt="math formula" hspace="5" align="middle" width="151" height="66" /> 
+              <a href="#923b2l1211s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923154.gif" alt="math formula" hspace="5" align="middle" width="136" height="66" /> 
+              <a href="#923b2l1212s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923155.gif" alt="math formula" hspace="5" align="middle" width="164" height="66" /> 
+              <a href="#923b2l1213s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923156.gif" alt="math formula" hspace="5" align="middle" width="238" height="66" /> 
+              <a href="#923b2l1214s" >Solución</a></td>
+            </tr>
+          </table><br />
+          <br />
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <div class="c1">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p><b>Ejercicio 9.13:</b> Determinantes de matrices de rotación</p>
+
+          <p>Calcule los determinantes de&nbsp; 
+          <img src="k9/gif/f923157.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" /> , 
+          <img src="k9/gif/f923158.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" /> 
+          y 
+          <img src="k9/gif/f923159.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" />. 
+          <a href="#923b2l1301s" >Solución</a></p>
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <div class="c1">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p><b>Ejercicio 9.14:</b> Determinantes de reflexiones</p>
+
+          <p>Calcule el determinante de la matriz de paridad 
+          <img src="k9/gif/f923160.gif" alt="math formula" hspace="5" align="middle" width="13" height="23" /> 
+          <a href="#923b2l1401s" >Solución</a>, 
+          de la matriz 
+          <img src="k9/gif/f923161.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" /> 
+          <a href="#923b2l1402s" >Solución</a> 
+          y del producto 
+          <img src="k9/gif/f923162.gif" alt="math formula" hspace="5" align="middle" width="67" height="33" />. 
+          <a href="#923b2l1403s" >Solución</a></p>
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <p><a href="javascript:history.back()">Regresar al texto</a></p>
+</body>
+</html>

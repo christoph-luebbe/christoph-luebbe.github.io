@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.5 Die Kunst des Integrierens</h3>
+
+    <h4>7.5.3 Substitution</h4>
+  </div>
+
+  <div class="c3">
+    <p>Die Substitution ist immer dann anzuraten, wenn der Integrand <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> stetig von einer <em>anderen Variablen</em> <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" /> einfacher oder zweckmäßiger abhängt, die mit <img src="k7/gif/f75301.gif" alt="math formula" hspace="5" align="middle" /> umkehrbar eindeutig und stetig differenzierbar zusammenhängt, wobei <img src="k7/gif/f75302.gif" alt="math formula" hspace="5" align="middle" />.</p>
+
+    <p>Der Klarheit wegen nennen wir die Integrationsgrenzen des gesuchten Integrals <img src="k7/gif/f75303.gif" alt="math formula" hspace="5" align="middle" /> jetzt <img src="k7/gif/f75304.gif" alt="math formula" hspace="5" align="middle" /> bzw. <img src="k7/gif/f75305.gif" alt="math formula" hspace="5" align="middle" />: also <img src="k7/gif/f75306.gif" alt="math formula" hspace="5" align="middle" />. Wegen der umkehrbar eindeutigen Zuordnung von <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" /> und <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> gibt es eine Umkehrfunktion <img src="k7/gif/f75307.gif" alt="math formula" hspace="5" align="middle" />, insbesondere sind <img src="k7/gif/f75308.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k7/gif/f75309.gif" alt="math formula" hspace="5" align="middle" />, und außerdem existiert wegen der stetigen Differenzierbarkeit die Ableitung: <img src="k7/gif/f75310.gif" alt="math formula" hspace="5" align="middle" />. Dann gilt (in der suggestiven Schreibweise von Leibniz fast trivialerweise) die:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Substitutionsformel</em> <img src="k7/gif/f75311.gif" alt="math formula" hspace="5" align="middle" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#753b1d" >Einschub: Beweis der Substitutionsformel</a>
+    </div><br />
+    <br />
+
+    <p>Erfahrungsgemäß ist die Erklärung des Substitutionsverfahrens komplizierter als die Praxis. Deshalb geben wir einige typische Beispiele:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75320.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k7/gif/f75320a.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k7/gif/f75320b.gif" alt="math formula" hspace="5" align="middle" />. Als neue Variable drängt sich <img src="k7/gif/f75321.gif" alt="math formula" hspace="5" align="middle" /> auf<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mit <img src="k7/gif/f75322.gif" alt="math formula" hspace="5" align="middle" />, <img src="k7/gif/f75323.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k7/gif/f75324.gif" alt="math formula" hspace="5" align="middle" /> also <img src="k7/gif/f75325.gif" alt="math formula" hspace="5" align="middle" />. Daraus folgt:<br />
+      <img src="k7/gif/f75326.gif" alt="math formula" hspace="5" align="middle" />.
+    </div><br />
+    <br />
+
+    <p>Ein für die Physik wichtiges Beispiel ist:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75327.gif" alt="math formula" hspace="5" align="middle" />mit <img src="k7/gif/f75327a.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k7/gif/f75327b.gif" alt="math formula" hspace="5" align="middle" />. Wir wählen die Substitution <img src="k7/gif/f75328.gif" alt="math formula" hspace="5" align="middle" /><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mit <img src="k7/gif/f75329.gif" alt="math formula" hspace="5" align="middle" />, <img src="k7/gif/f75330.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k7/gif/f75331.gif" alt="math formula" hspace="5" align="middle" /> also <img src="k7/gif/f75332.gif" alt="math formula" hspace="5" align="middle" />. Damit ergibt sich:<br />
+      <img src="k7/gif/f75333.gif" alt="math formula" hspace="5" align="middle" />.
+    </div><br />
+    <br />
+
+    <p>Noch ein drittes Beispiel aus der Physik:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75334.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k7/gif/f75327a.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k7/gif/f75334b.gif" alt="math formula" hspace="5" align="middle" />. Wir substituieren <img src="k7/gif/f75335.gif" alt="math formula" hspace="5" align="middle" /><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mit <img src="k7/gif/f75329.gif" alt="math formula" hspace="5" align="middle" />, <img src="k7/gif/f75337.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k7/gif/f75338.gif" alt="math formula" hspace="5" align="middle" /> also <img src="k7/gif/f75339.gif" alt="math formula" hspace="5" align="middle" />. Daraus erhalten wir:<br />
+      <img src="k7/gif/f75340.gif" alt="math formula" hspace="5" align="middle" />.
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 7.5:</b> zur Substitution</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75341.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0501d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75342.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0502d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75343.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0503d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75344.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0504d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75345.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0505d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75346.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0506d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Ganze Klassen von Integralen erhält man auf folgende Weise durch Benützen der "<em>Substitutionsformel rückwärts</em>". Was damit gemeint ist, sieht man am besten an folgenden Beispielen:</p>
+
+    <p>Gesetzt den Fall wir haben ein Integral auszurechnen von folgendem Typ, wobei wir suggestiv für die willkürliche Intergrationsvariable <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" /> gewählt haben:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75347.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>so bildet dies offensichtlich die rechte Seite unserer Substitutionsformel speziell für die Funktion <img src="k7/gif/f75348.gif" alt="math formula" hspace="5" align="middle" /> und wir können die Substitutionsformel sofort mit <img src="k7/gif/f75349.gif" alt="math formula" hspace="5" align="middle" /> von rechts nach links, also "rückwärts" anwenden, um zu erhalten:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75350.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Das ist aber nach Zeile 14 unserer <a href="#743b1d" >TABELLE</a> gleich</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75351.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>und mit <img src="k7/gif/f75352.gif" alt="math formula" hspace="5" align="middle" />folgt insgesamt:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75353.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Als Beispiele erhalten wir etwa:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td>für <img src="k7/gif/f75354.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k7/gif/f75354a.gif" alt="math formula" hspace="5" align="middle" />:</td>
+
+          <td><img src="k7/gif/f75355.gif" alt="math formula" hspace="5" align="middle" />,</td>
+        </tr>
+
+        <tr>
+          <td>für <img src="k7/gif/f75356.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k7/gif/f75356a.gif" alt="math formula" hspace="5" align="middle" />:</td>
+
+          <td><img src="k7/gif/f75357.gif" alt="math formula" hspace="5" align="middle" />,</td>
+        </tr>
+
+        <tr>
+          <td>für <img src="k7/gif/f75358.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k7/gif/f75358a.gif" alt="math formula" hspace="5" align="middle" />:</td>
+
+          <td><img src="k7/gif/f75359.gif" alt="math formula" hspace="5" align="middle" />, usw.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Ganz analog zeigt man mit <img src="k7/gif/f75362.gif" alt="math formula" hspace="5" align="middle" /> für <img src="k7/gif/f75363.gif" alt="math formula" hspace="5" align="middle" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75364.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 7.6</b>:</p>
+
+            <p>Leiten Sie aus dieser Formel weitere ab, indem Sie <img src="k7/gif/f75371.gif" alt="math formula" hspace="5" align="middle" /> spezifizieren:</p>
+
+            <p>z.B. für <img src="k7/gif/f75365.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0601d" >Lösung</a>, <img src="k7/gif/f75366.gif" alt="math formula" hspace="5d" align="middle" /> <a href="#753l0602d" >Lösung</a>, <img src="k7/gif/f75367.gif" alt="math formula" hspace="5d" align="middle" /> <a href="#753l0603d" >Lösung</a> und <img src="k7/gif/f75368.gif" alt="math formula" hspace="5d" align="middle" />. <a href="#753l0604d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 7.7</b>:</p>
+
+            <p>Beweisen Sie analog wie oben die Formel:</p>
+
+            <p><img src="k7/gif/f75369.gif" alt="math formula" hspace="5" align="middle" /></p>
+
+            <p>für <img src="k7/gif/f75370.gif" alt="math formula" hspace="5" align="middle" /> und spezifizieren Sie darin <img src="k7/gif/f75371.gif" alt="math formula" hspace="5" align="middle" />. <a href="#753l0701d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 7.8</b>:</p>
+
+            <p>Was erhält man analog für <img src="k7/gif/f75372.gif" alt="math formula" hspace="5" align="middle" /> ? <a href="#753l0801d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 7.9</b>:</p>
+
+            <p>Weitere vermischte Beispiele zur Substitution:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75373.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0901d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75374.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0902d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75375.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0903d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75376.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0904d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75377.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0905d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75378.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0906d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">g)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75379.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0907d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75380.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0908d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75381.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0909d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">j)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75382.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0910d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">k)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75383.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0911d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">l)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75384.gif" alt="math formula" hspace="5" align="middle" /> <a href="#753l0912d" >Lösung</a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Sie ahnen aus diesen Beispielen die ungeheure Menge und Vielfalt von Integralen, die durch Anwendung der Substitutionsformel berechnet werden können. Dennoch reicht das auch für die Zwecke der Physik immer noch lange nicht aus. Bei so einfachen Integranden wie <img src="eq/lnx.gif" alt="math formula" hspace="5" align="bottom" />, <img src="k7/gif/f75385.gif" alt="math formula" hspace="5" align="bottom" /> oder <img src="k7/gif/f75386.gif" alt="math formula" hspace="5" align="bottom" /> sind wir immer noch ratlos.</p>
+
+    <p>Für solche und ähnliche Fälle gibt es eine Methode, die uns das Integral zwar nicht ganz liefert, aber in gewissem Sinne wenigstens eine teilweise Berechnung gestattet und manchmal in mehreren Schritten dann doch zum Ziel führt. Diese Methode heißt sinnigerweise "<a href="#754d">partielle Integration</a>".</p>
+  </div>
+</body>
+</html>

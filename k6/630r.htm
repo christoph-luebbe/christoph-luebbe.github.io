@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Ряд Тейлора</h2>
+
+    <h3>6.3 Форма и однозначность</h3>
+  </div>
+
+  <div class="c3">
+    <p>Прежде чем мы перейдем к проблеме существования, давайте обратимся к вопросам 2) и 3): Для того, чтобы получить информацию о возможных свойствах искомого ряда, <em>предположим</em>, что мы уже нашли степенной ряд:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f63001.gif" alt="math formula" hspace="5" align="middle" /> 
+       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; где 
+       
+      <img src="k6/gif/f63002b.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>который представляет рассматриваемую функцию 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> в интервале, например, 
+    <img src="k6/gif/f63003b.gif" alt="math formula" hspace="5" align="middle" />. Так как все функции из нашего арсенала основных функций дифференцируемы бесконечное число раз, мы можем последовательно продифференцировать наш степенной ряд произвольное число раз:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f63004.gif" alt="math formula" hspace="5" align="middle" /> 
+       
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; где 
+      <img src="k6/gif/f63005.gif" alt="math formula" hspace="5" align="middle" />  так что 
+      <img src="k6/gif/f63006.gif" alt="math formula" hspace="5" align="middle" /><br />  
+      <img src="k6/gif/f63007.gif" alt="math formula" hspace="5" align="middle" />  где 
+      <img src="k6/gif/f63008.gif" alt="math formula" hspace="5" align="middle" /> , так что 
+      <img src="k6/gif/f63009.gif" alt="math formula" hspace="5" align="middle" /><br />   
+      <img src="k6/gif/f63010.gif" alt="math formula" hspace="5" align="middle" /> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; где 
+      <img src="k6/gif/f63011.gif" alt="math formula" hspace="5" align="middle" /> , так что 
+      <img src="k6/gif/f63012.gif" alt="math formula" hspace="5" align="middle" /><br /> В общем случае:<br /> 
+      <img src="k6/gif/f63013.gif" alt="math formula" hspace="5" align="middle" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; где 
+      <img src="k6/gif/f63014.gif" alt="math formula" hspace="5" align="middle" /> , т.е. 
+      <img src="k6/gif/f63015.gif" alt="math formula" hspace="5" align="middle" /> .
+    
+    </div>
+    <br />
+
+    <p>Таким образом, мы получили искомые коэффициенты 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" /> через производные 
+    <img src="k6/gif/f63016b.gif" alt="math formula" hspace="5" align="middle" /> нашей функции в точке 
+    <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" />. В случае, если представление нашей функции в виде степенного ряда существует, то оно имеет следующую <em>форму</em> и мы называем его:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>РЯД ТЕЙЛОРА:</em> 
+            <img src="k6/gif/f63017.gif" alt="math formula" hspace="5" align="middle" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>В соответсвии с нашим построением, все коэффициенты пределены <em>однозначно</em>, так, что мы получаем ответ и на вопрос 3).</p>
+
+    <p>Наше построение показывет,  что необходимым условием для существования ряда Тейлора для функции является <em>дифференцируемость этой функции бесконечное количество раз</em>.</p>
+
+    <p>То, что данное необходимое условие не является <em>достаточным</em>, понятно из следующего примера: рассмотрим функцию 
+    <img src="k6/gif/f63018b.gif" alt="math formula" hspace="5" align="middle" /> для 
+    <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" /> и 
+    <img src="eq/fv0g0.gif" alt="math formula" hspace="5" align="middle" />. Хотя эта функция дифференцируема бесконечное число раз, все ее производные исчезают при 
+    <img src="k6/gif/f63019b.gif" alt="math formula" hspace="5" align="middle" />, 
+    <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" />, так что построить ряд Тейлора около нуля становится невозможно.</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="k6/gif/b6301.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Рисунок 6.1: График функции 
+    <img src="k6/gif/f63020b.gif" alt="math formula" hspace="5" align="middle" /> для 
+    <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" /> и 
+    <img src="eq/fv0g0.gif" alt="math formula" hspace="5" align="middle" /></span></p>
+  </div>
+
+  <div class="c3">
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Задание 6.1:</p>
+
+            <p>В качестве теста на самосогласованность, постройте ряд Тейлора для нашего образца, геометрического ряда для 
+            <img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" />. 
+            <a href="#630l0101r" > Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+
+  <div class="c1">
+    <p>
+    <img src="k6/gif/b6302.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Рисунок 6.2: Геометрический ряд как ряд Тейлора для рациональной функции 
+     
+    <img src="k6/gif/f63021.gif" alt="math formula" hspace="5" align="middle" />
+    </span></p>
+  </div>
+</body>
+</html>

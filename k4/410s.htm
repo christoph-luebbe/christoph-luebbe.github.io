@@ -1,0 +1,581 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {margin-left: 2em}
+  div.c2 {text-align: left}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>4 Funciones</h2>
+
+    <h3>4.1 Función como relación <i>input-output</i> o mapeo (o aplicación)</h3>
+  </div>
+
+  <div class="c2">
+    <p>Recordemos que en el Capítulo 1 se discutió el procedimiento empírico de 
+    la Física y vimos el caso más fácil, pero también el más usual: En un 
+    experimento se examina el modo como dependen dos cantidades físicas una de 
+    otra: "<img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> 
+    como función de 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />&quot; 
+    o<img src="eq/ygfvx.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" />: 
+    Así la cantidad 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />, <em>
+    <span style="font-weight: 400">llamada </span>variable independiente</em>, 
+    se modifica al medir, y la segunda cantidad 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" />, 
+    llamada <b>variable dependiente</b>, queda con esto medida. Uno se imagina 
+    el aparato de medición como en la figura, esto es como una caja negra en la 
+    cual 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+    se da como <i>input</i> y a partir de esto, la cantidad&nbsp; 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" />correspondiente 
+    aparece como <i>output</i>.</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k4/gif/b4101.gif" alt="math formula" width="259" height="100" /><br clear="all" />
+    <span class="bild">Figura 4.1: Función como caja negra con 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+    como input y 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> 
+    como output</span></p>
+  </div>
+
+  <div class="c2">
+    <p>Los físicos piensan por ejemplo en un circuito eléctrico, en el cual el 
+    voltaje se modifica paso a paso en un potenciómetro y la intensidad de 
+    corriente se mide con un galvanómetro. Pero también el comportamiento en el 
+    tiempo del movimiento de un péndulo o en el decaimiento radiactivo de una 
+    sustancia como función del tiempo de decaimiento son otros ejemplos del 
+    sinnúmero de ejemplos físicos.</p>
+
+    <p>El resultado de una serie de mediciones se escribe como una <b>
+    <span style="font-weight: 400">tabla de valores</span></b> 
+    <img src="k4/gif/f41002.gif" alt="math formula" hspace="5" align="middle" width="35" height="24" />. 
+    Los datos también se pueden hacer visibles en una <b>representación gráfica<span style="font-weight: 400">, 
+    como se muestra en el ejemplo de la figura siguiente</span></b>. 
+    La representación de una función en forma gráfica, denominada <b>gráfico<span style="font-weight: 400">, 
+    por medio de la ubicación de los valores de la tabla en un plano con 
+    coordenadas cartesianas, (esto es, perpendiculares), con la abcisa</span></b> 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+    en el primer eje (horizontal) y la ordenada 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> 
+    en el segundo eje (vertical) es para los físicos algo natural.</p>
+  </div>
+
+  <div class="c1">
+    <span class="bild">Figuras 4.2: En las siguientes figuras se encuentran 
+    ejemplos de tablas de datos, representaciones gráficas y funciones 
+    interpolantes para un resorte que se estira.</span></div><br />
+
+  <div class="c2">
+    1) Fuerza restauradora<img src="eq/gf.gif" alt="math formula" hspace="5" align="bottom" width="12" height="11" /> 
+    del resorte, medida en mN, como función del estiramiento 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />, 
+    en cm,<br />
+    <br />
+
+    <div class="c3">
+      <table border="0">
+        <tr>
+          <td>
+            <table border="2">
+              <tr>
+                <td><b>
+                <img src="k4/gif/f41004.gif" alt="math formula" hspace="5" align="middle" width="17" height="24" /></b></td>
+
+                <td><b>
+                <img src="k4/gif/f41005.gif" alt="math formula" hspace="5" align="middle" width="23" height="30" /></b></td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+
+                <td>-0.42</td>
+              </tr>
+
+              <tr>
+                <td>1.5</td>
+
+                <td>-0.55</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+
+                <td>-0.82</td>
+              </tr>
+
+              <tr>
+                <td>2.5</td>
+
+                <td>-1.03</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+
+                <td>-1.25</td>
+              </tr>
+
+              <tr>
+                <td>3.5</td>
+
+                <td>-1.45</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+
+                <td>-1.65</td>
+              </tr>
+
+              <tr>
+                <td>4.5</td>
+
+                <td>-1.80</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+
+                <td>-1.95</td>
+              </tr>
+
+              <tr>
+                <td>5.5</td>
+
+                <td>-2.20</td>
+              </tr>
+
+              <tr>
+                <td>6</td>
+
+                <td>-2.35</td>
+              </tr>
+
+              <tr>
+                <td>6.6</td>
+
+                <td>-2.60</td>
+              </tr>
+            </table>
+          </td>
+
+          <td width="100">&nbsp;</td>
+
+          <td>
+          <img src="k4/gif/b4102.gif" alt="math formula" width="340" height="250" /></td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>2) Energía potencial<img src="k4/gif/f41006.gif" alt="math formula" hspace="5" align="bottom" width="13" height="11" />almacenada 
+    en el resorte, medida en mJ, en función del estiramiento 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />, 
+    en cm,</p>
+
+    <div class="c3">
+      <table border="0">
+        <tr>
+          <td>
+            <table border="2">
+              <tr>
+                <td><b>
+                <img src="k4/gif/f41004.gif" alt="math formula" hspace="5" align="middle" width="17" height="24" /></b></td>
+
+                <td><b>
+                <img src="k4/gif/f41009.gif" alt="math formula" hspace="5" align="middle" width="20" height="30" /></b></td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+
+                <td>0.6</td>
+              </tr>
+
+              <tr>
+                <td>1.5</td>
+
+                <td>1.0</td>
+              </tr>
+
+              <tr>
+                <td>2.5</td>
+
+                <td>2.8</td>
+              </tr>
+
+              <tr>
+                <td>2.9</td>
+
+                <td>3.9</td>
+              </tr>
+
+              <tr>
+                <td>3.1</td>
+
+                <td>4.8</td>
+              </tr>
+
+              <tr>
+                <td>3.5</td>
+
+                <td>6.1</td>
+              </tr>
+            </table>
+          </td>
+
+          <td width="100">&nbsp;</td>
+
+          <td>
+          <img src="k4/gif/b4103.gif" alt="math formula" width="380" height="260" /></td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>3) Estiramiento del resorte 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />, 
+    medido en cm, en función del tiempo 
+    <img src="eq/t.gif" alt="math formula" hspace="5" align="bottom" width="6" height="11" />, 
+    en 
+    <img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />,</p>
+
+    <div class="c3">
+      <table border="0">
+        <tr>
+          <td>
+            <table border="2">
+              <tr>
+                <td><b>
+                <img src="k4/gif/f41010.gif" alt="math formula" hspace="5" align="middle" width="6" height="27" /></b></td>
+
+                <td><b>
+                <img src="k4/gif/f41004.gif" alt="math formula" hspace="5" align="middle" width="17" height="24" /></b></td>
+              </tr>
+
+              <tr>
+                <td>0.3</td>
+
+                <td>3.5</td>
+              </tr>
+
+              <tr>
+                <td>0.5</td>
+
+                <td>2.8</td>
+              </tr>
+
+              <tr>
+                <td>0.7</td>
+
+                <td>1.2</td>
+              </tr>
+
+              <tr>
+                <td>1.1</td>
+
+                <td>-1.8</td>
+              </tr>
+
+              <tr>
+                <td>1.4</td>
+
+                <td>-3.2</td>
+              </tr>
+
+              <tr>
+                <td>1.7</td>
+
+                <td>-3.1</td>
+              </tr>
+
+              <tr>
+                <td>2.4</td>
+
+                <td>-0.8</td>
+              </tr>
+
+              <tr>
+                <td>2.6</td>
+
+                <td>1.5</td>
+              </tr>
+
+              <tr>
+                <td>3.2</td>
+
+                <td>2.4</td>
+              </tr>
+
+              <tr>
+                <td>3.6</td>
+
+                <td>1.4</td>
+              </tr>
+
+              <tr>
+                <td>4.3</td>
+
+                <td>-1.1</td>
+              </tr>
+
+              <tr>
+                <td>4.8</td>
+
+                <td>-1.8</td>
+              </tr>
+            </table>
+          </td>
+
+          <td width="100">&nbsp;</td>
+
+          <td>
+          <img src="k4/gif/b4104.gif" alt="math formula" width="360" height="250" /></td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>4) Duración de la oscilación del resorte (el período) 
+    <img src="k4/gif/f41012.gif" alt="math formula" hspace="5" align="bottom" width="11" height="11" />, 
+    en 
+    <img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, 
+    como función de la masa 
+    <img src="k4/gif/f41013.gif" alt="math formula" hspace="5" align="bottom" width="17" height="11" />, 
+    en g, con constante del resorte 
+    <img src="k4/gif/f41018.gif" alt="math formula" hspace="5" align="bottom" />,</p>
+
+    <div class="c3">
+      <table border="0">
+        <tr>
+          <td>
+            <table border="2">
+              <tr>
+                <td><b>
+                <img src="k4/gif/f41016.gif" alt="math formula" hspace="5" align="middle" width="14" height="30" /></b></td>
+
+                <td><b>
+                <img src="k4/gif/f41017.gif" alt="math formula" hspace="5" align="middle" width="10" height="30" /></b></td>
+              </tr>
+
+              <tr>
+                <td>2.5</td>
+
+                <td>0.75</td>
+              </tr>
+
+              <tr>
+                <td>10</td>
+
+                <td>1.63</td>
+              </tr>
+
+              <tr>
+                <td>14</td>
+
+                <td>1.91</td>
+              </tr>
+
+              <tr>
+                <td>20</td>
+
+                <td>2.23</td>
+              </tr>
+
+              <tr>
+                <td>25</td>
+
+                <td>2.46</td>
+              </tr>
+            </table>
+          </td>
+
+          <td width="100">&nbsp;</td>
+
+          <td>
+          <img src="k4/gif/b4105.gif" alt="math formula" width="360" height="320" /></td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>5) Período 
+    <img src="k4/gif/f41012.gif" alt="math formula" hspace="5" align="bottom" width="11" height="11" /> 
+    del resorte (en 
+    <img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />) 
+    como función de 
+    <img src="k4/gif/f41018.gif" alt="math formula" hspace="5" align="bottom" width="13" height="11" />, 
+    medida en 
+    <img src="k4/gif/f41019.gif" alt="math formula" hspace="5" align="bottom" width="44" height="15" />, 
+    manteniendo la masa constante 
+    <img src="k4/gif/f41013.gif" alt="math formula" hspace="5" align="bottom" />.</p>
+
+    <div class="c3">
+      <table border="0">
+        <tr>
+          <td>
+            <table border="2">
+              <tr>
+                <td><b>
+                <img src="k4/gif/f41021.gif" alt="math formula" hspace="5" align="middle" width="38" height="30" /></b></td>
+
+                <td><b>
+                <img src="k4/gif/f41017.gif" alt="math formula" hspace="5" align="middle" width="10" height="30" /></b></td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+
+                <td>3.25</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+
+                <td>2.72</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+
+                <td>2.16</td>
+              </tr>
+
+              <tr>
+                <td>7</td>
+
+                <td>1.75</td>
+              </tr>
+
+              <tr>
+                <td>8</td>
+
+                <td>1.71</td>
+              </tr>
+
+              <tr>
+                <td>10</td>
+
+                <td>1.59</td>
+              </tr>
+            </table>
+          </td>
+
+          <td width="100">&nbsp;</td>
+
+          <td>
+          <img src="k4/gif/b4106.gif" alt="math formula" width="360" height="320" /></td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+
+  <div class="c2">
+    <p>Cuando se han tomado en cuenta los inevitables errores de medición, se 
+    pueden unir los puntos experimentales por medio de una curva, o bien buscar 
+    una <b>función</b> que&nbsp; describa la dependencia de ambas cantidades. Si 
+    se logra encontrar tal función, entonces eso tiene muchas ventajas: Una 
+    fórmula matemática es la mayoría de las veces corta y clara; se puede 
+    guardar, trabajar e informar a otros interesados mucho más fácilmente que una 
+    extensa tabla de valores. Con su ayuda se puede interpolar exactamente entre 
+    los valores experimentales y también extrapolar más allá de la región 
+    investigada, lo que estimularía nuevos experimentos. Finalmente, la función 
+    es el primer paso de una teoría y con ella, de una comprensión del 
+    experimento.</p>
+    
+    
+    <div class="c3">
+      <a href="#410b1s" >Nota: Historia</a>
+    </div><br />
+    <br />
+
+    <p>También debemos estudiar <b>funciones</b> por razones <b>físicas<span style="font-weight: 400">, 
+    y de hecho primero </span></b>&nbsp;veremos funciones <b>reales</b> de 
+    variables <b>reales</b>.</p>
+
+    <p>Matemáticamente, una función 
+    <img src="eq/ygfvx.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> 
+    se puede considerar como una <b>aplicación unívoca</b>&nbsp; 
+    <img src="k4/gif/f41024.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> 
+    de un punto de la región 
+    <img src="eq/d_f.gif" alt="math formula" hspace="5" align="middle" width="20" height="22" />, 
+    el "<em>dominio de definición</em>" de<img src="eq/f.gif" alt="math formula" hspace="5" align="middle" width="9" height="24" />, 
+    de las variables independientes 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> (también 
+    llamadas <b>abcisas</b> o argumento) a un punto<img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    de la región<img src="eq/w_f.gif" alt="math formula" hspace="5" align="middle" width="22" height="22" />, 
+    la "<em>imagen o recorrido</em>&quot; de<img src="eq/f.gif" alt="math formula" hspace="5" align="middle" width="9" height="24" />, 
+    de la variable dependiente 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> (también 
+    llamada <em>ordenada</em> o valor de la función).</p>
+
+    <p>Mientras el dar dominio, junto con la regla del mapeo, es 
+    totalmente necesario para una función y a menudo decide sobre las 
+    propiedades de la función, la definición precisa de la imagen 
+    <img src="k4/gif/f41027.gif" alt="math formula" hspace="5" align="middle" width="149" height="24" /> 
+    es la mayoría de las veces de importancia menor y a veces toma mucho esfuerzo.</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k4/gif/b4107.gif" alt="math formula" width="431" height="203" /><br clear="all" />
+    <span class="bild">Figura 4.3: Función <b>f</b> como aplicación del dominio de 
+    definición D<sub>f</sub> en la imagen W<sub>f</sub> , con dos flechas que 
+    van de dos puntos a <b>un</b> punto imagen.</span></p>
+  </div>
+
+  <div class="c2">
+    <p>Tanto el conjunto<img src="eq/d_f.gif" alt="math formula" hspace="5" align="middle" width="20" height="22" /> 
+    como el conjunto<img src="eq/w_f.gif" alt="math formula" hspace="5" align="middle" width="22" height="22" /> 
+    son la mayoría de las veces un subconjunto de los números reales<img src="k4/gif/f41028.gif" alt="math formula" hspace="5" align="bottom" width="15" height="14" />. 
+    La expresión <b>unívoca</b> en la definición de las funciones reales 
+    significa que a cada 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+    se le asocia un y solo un 
+    <img src="eq/ygfvx.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" />.&nbsp; (Por 
+    supuesto es posible que dos puntos sean mapeados en un único punto de la 
+    imagen). Resumido en lenguaje matemático:</p>
+
+    <div class="c3">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p>
+            <img src="eq/ygfvx.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" />
+            <em>función</em> 
+            <img src="k4/gif/f41031.gif" alt="math formula" hspace="5" align="middle" width="289" height="28" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>El cálculo con funciones reales de una variable real ocurre bajo las 
+    reglas del cuerpo&nbsp; 
+    <img src="eq/mr.gif" alt="math formula" hspace="5" align="bottom" width="12" height="11" /> 
+    con leyes conmutativa y asociativa, así como con la ley distributiva, que 
+    vimos en el&nbsp; <a href="#221s">
+    Capítulo 2</a>: Por ejemplo, la suma o la diferencia de dos funciones reales<img src="k4/gif/f41033.gif" alt="math formula" hspace="5" align="middle" width="251" height="24" /> 
+    es una nueva función real, la multiplicación por un real<img src="eq/rer.gif" alt="math formula" hspace="5" align="middle" width="39" height="22" />, 
+    <img src="k4/gif/f41034.gif" alt="math formula" hspace="5" align="middle" width="188" height="24" />, 
+    también lo es y, análogamente, el producto<img src="k4/gif/f41035.gif" alt="math formula" hspace="5" align="middle" width="235" height="24" />, 
+    o en caso que 
+    <img src="k4/gif/f41036.gif" alt="math formula" hspace="5" align="middle" width="66" height="24" /> 
+    en todo el doiminio de definición, también lo es el cociente 
+    <img src="k4/gif/f41037.gif" alt="math formula" hspace="5" align="middle" width="144" height="33" />.</p>
+  </div><br />
+</body>
+</html>

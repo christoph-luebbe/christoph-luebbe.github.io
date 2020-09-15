@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematical Preparation Course before Studying Physics</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>3 Sequences and Series</h2>
+
+    <h3>3.5 Series</h3>
+  </div>
+
+  <div class="c3">
+    <p>After having studied the limits of number sequences, we can apply our 
+    newly acquired knowledge&nbsp;to topics which occur more often in physics,&nbsp;for instance <em>infinite sums</em> 
+    <img src="k3/gif/f32001.gif" alt="math formula" hspace="5" align="middle" width="72" height="41" />, 
+    called <em>series</em>:</p>
+
+    <p>These are often encounterered sometimes in more interesting physical questions: For 
+    instance if we 
+    want  to sum up the electrostatic energy of infinitely many 
+    equidistant alternating positive and negative point charges for one chain 
+    link (which gives a simple but surprisingly good one-dimensional model of a 
+    ion crystal) we come across the infinite sum over the members of the 
+    alternating harmonic sequence&nbsp; (F7): the series<img src="k3/gif/f32002.gif" alt="math formula" hspace="5" align="middle" width="76" height="41" />. 
+    How do we calculate this?</p>
+
+    <p>Series are sequences whose members are finite sums of real numbers: The definition 
+    of a</p>
+
+    <div class="c2">
+      <em>series</em> 
+      <img src="k3/gif/f32003.gif" alt="math formula" hspace="5" align="middle" width="43" height="41" /> as <em>
+      sequence of partial sums</em> 
+      <img src="k3/gif/f32003b.gif" alt="math formula" hspace="5" align="middle" width="136" height="47" />
+    </div><br />
+    reduces the series to sequences which we have been dealing with just 
+    above.<p>Especially, a series is exactly then <em>convergent</em> and has the 
+    value<img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, 
+    if the sequence of its partial sums 
+    <img src="k3/gif/f32004.gif" alt="math formula" hspace="5" align="middle" width="19" height="17" /> (<em>not</em> 
+    that of its&nbsp; <em>summands</em><img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" />!!) 
+    converges: 
+    <img src="k3/gif/f32005.gif" alt="math formula" hspace="5" align="middle" width="87" height="23" />:</p>
+
+    <div class="c2">
+      <em>series</em> 
+      <img src="k3/gif/f32003.gif" alt="math formula" hspace="5" align="middle" width="43" height="41" />, 
+      i.e. the sequence of its partial sums 
+      <img src="k3/gif/f32006.gif" alt="math formula" hspace="5" align="middle" width="84" height="41" />
+      <em>convergent</em> 
+      <img src="k3/gif/f32007.gif" alt="math formula" hspace="5" align="middle" width="185" height="41" />
+    </div><br />
+    <br />
+
+    <p>Also the multiple of a convergent series and the sum and difference of 
+    two convergent series are again convergent.</p>
+
+    <p>The few <em>sample</em> series that we need, to see the most important 
+    concepts, we derive simply through piecewise summing up our sample 
+    sequences:</p>
+
+    <p>The <em>series (R1)</em> of the partial sums of the sequence (F1) of the 
+    natural numbers: 
+    <img src="k3/gif/f32008.gif" alt="math formula" hspace="5" align="middle" width="260" height="47" /> 
+    is clearly divergent.</p>
+
+    <p>The <em>series (R2)</em> made out of the members of the alternating 
+    sequence (F2) always jumps between 
+    <img src="eq/1.gif" alt="math formula" hspace="5" align="bottom" width="6" height="11" /> 
+    and 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />, 
+    and has therefore two cluster points and consequently no limit.</p>
+
+    <p>Also the "<em>harmonic series</em>" <em>(R3)</em>, summed up out of the 
+    members of the harmonic sequence (F3), i.e. the sequence 
+    <img src="k3/gif/f32009.gif" alt="math formula" hspace="5" align="middle" width="298" height="47" /> 
+    is divergent. Because the (also necessary) Cauchy Criterion is not fulfilled:<br />
+    If we for instance choose 
+    <img src="k3/gif/f32010.gif" alt="math formula" hspace="5" align="middle" width="68" height="29" /> 
+    and consider a piece of the sequence for 
+    <img src="k3/gif/f32011.gif" alt="math formula" hspace="5" align="bottom" width="53" height="12" />consisting 
+    of 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> 
+    terms:<br />
+    <img src="k3/gif/f32012.gif" alt="math formula" hspace="5" align="middle" width="601" height="70" /> 
+    while for convergence 
+    <img src="k3/gif/f32013.gif" alt="math formula" hspace="5" align="middle" width="23" height="19" /> 
+    would have been necessary.</p>
+
+    <p>Their <em>alternating variant (R7)</em> however, created out of the 
+    sequence (F7), our physical example from above, converges 
+    <img src="k3/gif/f32014.gif" alt="math formula" hspace="5" align="middle" width="76" height="41" /> 
+	(<img src="k3/gif/f32014b.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" />, 
+    as we will show later). Because of this difference between series with 
+    purely positive summands and alternating ones, it is appropriate to introduce a new 
+    term: A series is said to be&nbsp; <em>absolutely convergent</em>, if 
+    already the series of the absolute values converges.</p>
+
+    <div class="c2">
+      Series 
+      <img src="k3/gif/f32015.gif" alt="math formula" hspace="5" align="middle" width="84" height="41" /> <em>absolutely 
+      convergent</em> 
+      <img src="k3/gif/f32016.gif" alt="math formula" hspace="5" align="middle" width="165" height="41" />
+    </div><br />
+    <br />
+
+    We can easily understand that within an absolutely convergent series the 
+    summands can be rearranged without&nbsp;any effect on the limiting value. 
+    Two absolutely convergent series can be multiplied termwise to create a new 
+    absolutely convergent series.<p>For  absolute convergence the 
+    mathematicians have developed various&nbsp;<em>sufficient</em> criteria, the so-called
+    <em>majorant criteria</em>, which you will deal with more closely in the 
+    lecture about analysis.:</p>
+
+    <div class="c2">
+      <a href="#350b1e" >Insert: Majorants</a></div><br />
+
+    Very often&nbsp;the "<em>geometric series</em>" <em>(R6)</em>: 
+    <img src="k3/gif/f32022.gif" alt="math formula" hspace="5" align="middle" width="42" height="41" />, 
+    which follow from the geometric sequences (F6) 
+    <img src="k3/gif/f32023.gif" alt="math formula" hspace="5" align="middle" width="105" height="24" />, 
+    serve as majorants . To calculate them we benefit from the earlier for<img src="k3/gif/f32024.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" />derived 
+    geometric sum :<div class="c2">
+      <img src="k3/gif/f32025.gif" alt="math formula" hspace="5" align="middle" width="340" height="35" /> 
+      ,</div><br />
+    meaning convergent for 
+    <img src="k3/gif/f32026.gif" alt="math formula" hspace="5" align="middle" width="44" height="24" /> 
+    and divergent for 
+    <img src="k3/gif/f32027.gif" alt="math formula" hspace="5" align="middle" width="44" height="24" />.<div class="c2">
+      <a href="#350b2e" >Insert: Quotient criterion</a>
+    </div><br />
+    The <em>series of the inverse natural factorials (R4)</em> 
+    <img src="k3/gif/f32036.gif" alt="math formula" hspace="5" align="middle" width="41" height="41" />deserves 
+    to be examined in more detail:<p>First we realize that the sequence of the 
+    partial sums 
+    <img src="k3/gif/f32037.gif" alt="math formula" hspace="5" align="middle" width="131" height="47" />increases 
+    monotonically: 
+    <img src="k3/gif/f32038.gif" alt="math formula" hspace="5" align="middle" width="170" height="29" />.</p>
+
+    <p>To get an upper bound 
+    <img src="eq/gb.gif" alt="math formula" hspace="5" align="bottom" width="12" height="11" /> 
+    we estimate through the majorant geometric sum with 
+    <img src="k3/gif/f32040.gif" alt="math formula" hspace="5" align="middle" width="38" height="29" />:</p>
+
+    <div class="c2">
+      <img src="k3/gif/f32041.gif" alt="math formula" hspace="5" align="middle" width="211" height="155" />
+    </div><br />
+    Since the monotonically increasing sequence of the partial sums 
+    <img src="k3/gif/f32042.gif" alt="math formula" hspace="5" align="middle" width="19" height="17" /> is 
+    bounded from above by<img src="k3/gif/f32043.gif" alt="math formula" hspace="5" align="bottom" width="42" height="11" />, 
+    the Theorem of Bolzano and Weierstrass guarantees us convergence. We 
+    just do not know the limiting value yet. This limit is indeed something fully 
+    new - namely an irrational number. We call it&nbsp;<img src="k3/gif/f32044.gif" alt="math formula" hspace="5" align="middle" width="50" height="23" />, so 
+    that the number 
+    <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+    after the supplementary convention&nbsp;<img src="k3/gif/f32045.gif" alt="math formula" hspace="5" align="bottom" width="41" height="13" /> 
+    is defined by the following series starting with 
+    <img src="k3/gif/f32046.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" />:<p>&nbsp;</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Exponential series</em> defined by: 
+            <img src="k3/gif/f32047.gif" alt="math formula" hspace="5" align="middle" width="73" height="41" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#350b3e" >Insert: The number e is irrational</a>
+    </div><br />
+    <br />
+
+    <p>To get the numerical value of 
+    <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+    we first calculate the members of the zero sequence (F4) 
+    <img src="k3/gif/f32058.gif" alt="math formula" hspace="5" align="middle" width="52" height="29" />:</p>
+
+    <div class="c2">
+      <table width="100%" border="0">
+        <tr>
+          <td>
+          <img src="k3/gif/f32059.gif" alt="math formula" hspace="5" align="middle" width="79" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32060e.gif" alt="math formula" hspace="5" align="middle" width="134" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32061e.gif" alt="math formula" hspace="5" align="middle" width="150" height="29" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32062e.gif" alt="math formula" hspace="5" align="middle" width="178" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32063e.gif" alt="math formula" hspace="5" align="middle" width="176" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32064e.gif" alt="math formula" hspace="5" align="middle" width="184" height="29" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32065e.gif" alt="math formula" hspace="5" align="middle" width="196" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32066e.gif" alt="math formula" hspace="5" align="middle" width="202" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32067e.gif" alt="math formula" hspace="5" align="middle" width="208" height="29" /></td>
+        </tr>
+      </table>
+    </div><br />
+    then we sum up the partial sums: 
+    <img src="k3/gif/f32068.gif" alt="math formula" hspace="5" align="middle" width="286" height="41" /><div class="c2">
+      <table width="100%" border="0">
+        <tr>
+          <td>
+          <img src="k3/gif/f32069.gif" alt="math formula" hspace="5" align="middle" width="43" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32070.gif" alt="math formula" hspace="5" align="middle" width="67" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32071e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32072e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32073e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32074e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32075e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32076e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32077e.gif" alt="math formula" hspace="5" align="middle" width="103" height="23" /></td>
+        </tr>
+      </table>
+    </div><br />
+    If we look at the rapid convergence, we can easily imagine that after a 
+    short calculation we receive the following result for the limiting value:<br />
+    <br />
+    <img src="k3/gif/f32078e.gif" alt="math formula" hspace="5" align="middle" width="205" height="23" /> .<div class="c2">
+      <a href="#350b4e" >Insert: A sequence converging to&nbsp; e</a>
+    </div><br />
+
+    Through these considerations we now have got a first overview over the limiting procedures and 
+    some of the sequences and series important for natural sciences with their 
+    limits, which will be of great use for us in the future.<p>&nbsp;</p>
+  </div>
+</body>
+</html>

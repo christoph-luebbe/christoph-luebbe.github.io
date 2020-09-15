@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Vektoren</h2>
+
+    <h3>9.5 Skalarprodukt und Kronecker-Symbol</h3>
+
+    <h4>9.5.2 Definition</h4>
+  </div>
+
+  <div class="c3">
+    <p>Wir wählen also für ein "Produkt" zwischen zwei Vektoren <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" /> und <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" /> folgende Definition und nennen es "Skalarprodukt", weil es zu den beiden Faktorvektoren eine reelle Zahl liefert, von der wir später zeigen werden, dass es sich um einen Skalar handelt:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Skalarprodukt</em> <img src="k9/gif/f95201.gif" alt="math formula" hspace="5" align="middle" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Außer den beiden trivialen Faktoren der Längen der beiden Vektoren wählen wir den <em>Cosinus</em> des bei gleichem Anfangspunkt von den Repräsentanten eingeschlossenen Winkels <img src="k9/gif/f95202.gif" alt="math formula" hspace="5" align="middle" />, weil dieser verschwindet, wenn <img src="k9/gif/f95203.gif" alt="math formula" hspace="5" align="middle" /> wird, d.h. die beiden Vektoren senkrecht aufeinander stehen. Der Ausdruck <img src="k9/gif/f95204.gif" alt="math formula" hspace="5" align="middle" /> ist die <em>Projektion</em> des Vektors <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" /> auf die Richtung von <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" /> und umgekehrt <img src="k9/gif/f95205.gif" alt="math formula" hspace="5" align="middle" /> die Projektion des Vektors <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" /> auf die Richtung von <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" />. Diese Projektionen werden jeweils multipliziert mit der Länge des Vektors, auf dessen Richtung projiziert wird, und eventuell mit einem negativen Vorzeichen versehen, falls der Winkel stumpf ist. Der Zahlenwert des Produkts gibt geometrisch also je nach Lage der Vektoren den (mit Vorzeichen versehenen) <em>Flächeninhalt</em> jeweils <em>einer der beiden</em> in den folgenden Abbildungen farbig hervorgehobenen Flächen an. Wenn der Winkel zwischen den beiden Faktorvektoren zwischen <img src="k9/gif/f95206.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k9/gif/f95207.gif" alt="math formula" hspace="5" align="middle" /> liegt, so dass der Cosinus negativ wird, erhält die Fläche ein negatives Vorzeichen:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k9/gif/b9521.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Bild 9.16: Illustration des Skalarprodukts in Abhängigkeit vom Winkel zwischen den beiden Vektoren: In diesen "Kofferbildern" gibt sowohl die Querschnittsfläche des "Kofferkörpers" als auch die des mehr oder weniger passenden "Kofferdeckels" einzeln die Größe des Produkts wieder.</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Folgende <em>Grenzfälle</em> sind interessant:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td>falls <img src="k9/gif/f95211a.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k9/gif/f95211b.gif" alt="math formula" hspace="5" align="middle" /> parallel sind,</td>
+
+          <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>folgt<img src="k9/gif/f95211.gif" alt="math formula" hspace="5" align="middle" />,</td>
+        </tr>
+
+        <tr>
+          <td>falls <img src="k9/gif/f95211a.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k9/gif/f95211b.gif" alt="math formula" hspace="5" align="middle" /> antiparallel sind,</td>
+
+          <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>folgt <img src="k9/gif/f95212.gif" alt="math formula" hspace="5" align="middle" />, und besonders wichtig</td>
+        </tr>
+
+        <tr>
+          <td>falls <img src="k9/gif/f95211a.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k9/gif/f95211b.gif" alt="math formula" hspace="5" align="middle" /> senkrecht sind,</td>
+
+          <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>folgt <img src="k9/gif/f95213.gif" alt="math formula" hspace="5" align="middle" />.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Insbesondere ist <img src="k9/gif/f95214.gif" alt="math formula" hspace="5" align="middle" /> und eine verschwindende Länge</p>
+
+    <div class="c2">
+      <img src="k9/gif/f95215.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>hat nur der Nullvektor <img src="eq/0vekt.gif" alt="math formula" hspace="5" align="bottom" />, denn <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" />kann ja nicht auf sich selbst senkrecht stehen.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.20:</b> Winkel im Skalarprodukt</p>
+
+            <p>Was bedeutet: <img src="k9/gif/f95216.gif" alt="math formula" hspace="5" align="middle" /> für den Winkel zwischen den beiden Vektoren? <a href="#952l2001d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.21:</b> Cosinussatz</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Beweisen Sie mit Hilfe des Skalarprodukts den Cosinus-Satz der ebenen Geometrie, nach dem in einem Dreieck mit den Seitenlängen <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" />, <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" /> und <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" /> gilt: <img src="k9/gif/f95217.gif" alt="math formula" hspace="5" align="middle" />, wobei <img src="eq/gamma.gif" alt="math formula" hspace="5" align="middle" /> den Gegenwinkel der Seite <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" /> bezeichnet. <a href="#952l2101d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Was folgt daraus für <img src="k9/gif/f95219.gif" alt="math formula" hspace="5" align="middle" />? <a href="#952l2102d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.22:</b> Schwarzsche Ungleichung</p>
+
+            <p>Warum gilt für den Betrag des Skalarprodukts die Schwarzsche Ungleichung: <img src="k9/gif/f95220.gif" alt="math formula" hspace="5" align="middle" />. <a href="#952l2201d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la fisica</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Desarrollo de Taylor</h2>
+
+    <h3>6.7 Criterio de convergencia: el resto</h3>
+  </div>
+
+  <div class="c4">
+    <p>Después de los resultados de las últimas secciones, sólo la pregunta&nbsp; 
+    4) acerca de la calidad de la convergencia permanece sin responder: Aún si 
+    estamos seguros de la convergencia de la serie, es claramente esencial 
+    conocer cuán grande podría ser el error cuando, en vez de la serie infinita, 
+    usamos sólo una</p>
+
+    <div class="c2">
+      <em>aproximación polinomial de grado m-ésimo</em>: 
+      <img src="k6/gif/f67001.gif" alt="math formula" hspace="5" align="middle" width="153" height="41" />
+    </div><br />
+    
+
+    <p>En vez de un cálculo exacto del <b>resto</b> 
+    <img src="k6/gif/f67002.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" /> , 
+    daremos una fórmula que se obtiene de ese cálculo y que puede servir para 
+    estimar 
+    <img src="k6/gif/f67003.gif" alt="math formula" hspace="5" align="middle" width="39" height="24" />, 
+    esto es, la</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>forma de Lagrange</em><b> del resto </b> 
+            <img src="k6/gif/f67004.gif" alt="math formula" hspace="5" align="middle" width="193" height="42" /> , 
+            donde 
+            <img src="eq/0kthk1b.gif" alt="math formula" hspace="5" align="bottom" width="65" height="13" />.</p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    
+    <p>A primera vista, esta expresión resulta ser un poco sorprendente puesto 
+    que está expresada en términos del (m+1)-ésimo término de la serie, es 
+    decir, el primer término desechado. Sin embargo, este término debiera 
+    reemplazar a todo el resto de la serie. Esta contradicción aparente se 
+    resuelve por la observación de que la (m+1)-ésima derivada en el resto no se 
+    evalúa en el punto de desarrollo 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />, 
+    sino que en <b>un punto intermedio desconocido</b> 
+    <img src="k6/gif/f67005.gif" alt="math formula" hspace="5" align="bottom" width="17" height="13" />, 
+    entre el punto de desarrollo 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> 
+    y el punto de interés 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />, 
+    expresado por el número desconocido 
+    <img src="eq/th.gif" alt="math formula" hspace="5" align="bottom" width="8" height="13" />, 
+    con 
+    <img src="eq/0kthk1b.gif" alt="math formula" hspace="5" align="bottom" width="65" height="13" />. 
+    debido a que 
+    <img src="eq/th.gif" alt="math formula" hspace="5" align="bottom" width="8" height="13" />es 
+    desconocido, el resto en general no se puede calcular, sino que sólo se 
+    puede</p>
+
+    <div class="c2">
+      <em>estimar</em>: 
+      <img src="k6/gif/f67006.gif" alt="math formula" hspace="5" align="middle" width="224" height="37" /> .
+    </div><br />
+    
+
+    <p>De esta fórmula vemos que el error disminuye como la potencia&nbsp; 
+    (m+1)-ésima de la distancia desde el punto 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+    al punto de desarrollo 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />. 
+    Luego, es favorable acercarse lo más posible al punto de desarrollo.</p>
+
+    <p>Como ejemplo calculamos 
+    <img src="k6/gif/f67007.gif" alt="math formula" hspace="5" align="middle" width="139" height="24" /> 
+    hasta 
+    <img src="k6/gif/f67008.gif" alt="math formula" hspace="5" align="middle" width="35" height="24" /> 
+    con la ayuda de la serie de Taylor alrededor del punto 
+    <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" width="45" height="22" />, 
+    obtenida en la sección 6.4.2</p>
+
+    <div class="c2">
+      <img src="k6/gif/f67009.gif" alt="math formula" hspace="5" align="middle" width="227" height="28" /> :
+    </div><br />
+    
+
+    <p>Obtenemos: 
+    <img src="k6/gif/f67010e.gif" alt="math formula" hspace="5" align="middle" width="212" height="24" /> , 
+    donde la estimación para el resto, con 
+    <img src="k6/gif/f67011.gif" alt="math formula" hspace="5" align="bottom" width="37" height="13" /> 
+    , da:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f67012e.gif" alt="math formula" hspace="5" align="middle" width="231" height="28" />
+    </div><br />
+    
+
+    <p>El valor exacto es 
+    <img src="k6/gif/f67013e.gif" alt="math formula" hspace="5" align="middle" width="68" height="23" /> 
+    que difiere del valor aproximado por 
+    <img src="k6/gif/f67014e.gif" alt="math formula" hspace="5" align="middle" width="52" height="23" /> .</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Ejercicio 6.10:</p>
+
+            <p>Calcule el término cuadrático del desarrollo de Taylor y el 
+            resto 
+            <img src="k6/gif/f67015.gif" alt="math formula" hspace="5" align="middle" width="34" height="24" /> 
+            en nuestra pequeña tabla de la&nbsp; <a href="#643s">
+            sección 6.4.3</a>. Para ello elija, por ejemplo, 
+            <img src="k6/gif/f67016.gif" alt="math formula" hspace="5" align="middle" width="53" height="24" /> , 
+            <img src="eq/m1d2.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" /> 
+            y 
+            <img src="k6/gif/f67017.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" />, 
+            y estime el error: ¿en qué puntos 
+            <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+            los errores relativos 
+            <img src="k6/gif/f67018.gif" alt="math formula" hspace="5" align="middle" width="53" height="24" /> 
+            son 1% o bien 10%? <a href="#670l1001s" >Solución</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+   
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Ejercicio 6.11:</p>
+
+            <p>Calcule 
+            <img src="k6/gif/f67021.gif" alt="math formula" hspace="5" align="middle" width="27" height="29" /> 
+            con la serie de Taylor alrededor de 
+            <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" width="45" height="22" /> 
+            hasta 
+            <img src="k6/gif/f67022.gif" alt="math formula" hspace="5" align="middle" width="13" height="17" /> . <a href="#670l1101s" >
+            Solución</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

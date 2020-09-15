@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих ( Дополнение )</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c3 {font-weight: bold}
+  div.c2 {text-align: center}
+  div.c1 {margin-left: 2em}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <p><b>Детерминанты</b>:</p>
+
+  <p>Важнейшей характеристикой матрицы является ее детерминант. Для него приняты следующие обозначения:</p>
+
+  <div class="c1">
+    <em>Детерминант:</em> 
+    <img src="k9/gif/f923107.gif" alt="math formula" hspace="5" align="middle" width="237" height="66" />
+  </div>
+  <br />
+
+  <p>Лейбниц дал следующее</p>
+
+  <div class="c1">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p><em>определение детерминанта:</em> 
+          <img src="k9/gif/f923108.gif" alt="math formula" hspace="5" align="middle" width="383" height="82" /></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+
+  <p>Это дает <em>вещественное число,</em>, а именно, сумму или разность из произведений трех элементов матрицы. В данной сумме (левые) индексы строк принимают фиксированное значение 
+  <img src="k9/gif/f923109.gif" alt="math formula" hspace="5" align="bottom" width="53" height="12" />, а (правые) индексы столбцов пробегают все перестановки 
+  <img src="k9/gif/f923110.gif" alt="math formula" hspace="5" align="bottom" width="21" height="12" /> трех чисел: 
+  <img src="k9/gif/f923111.gif" alt="math formula" hspace="5" align="middle" width="132" height="24" />, 
+  <img src="k9/gif/f923112.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" />, 
+  <img src="k9/gif/f923113.gif" alt="math formula" hspace="5" align="bottom" width="24" height="12" />; 
+  <img src="k9/gif/f923114.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" />, 
+  <img src="k9/gif/f923115.gif" alt="math formula" hspace="5" align="bottom" width="24" height="12" />, 
+  <img src="k9/gif/f923116.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" />. При этом знак каждого члена будет определяться количеством перестановок двух членов (транспозиций), которые необходимы, чтобы из конфигурации 
+  <img src="k9/gif/f923111.gif" alt="math formula" hspace="5" align="middle" width="132" height="24" /> получить соответствующую конфигурацию. Первые три из приведенных выше конфигураций можно получить при помощи четного числа транспозиций. Им присваивается знак плюса, а оставшиеся три, полученные при помощи нечетного числа перестановок, входят со знаком минус: например, 
+  <img src="k9/gif/f923111.gif" alt="math formula" hspace="5" align="middle" width="132" height="24" /> из 
+  <img src="k9/gif/f923114.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" /> (нечетные), а <img src="k9/gif/f923112.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" /> из 
+  <img src="k9/gif/f923113.gif" alt="math formula" hspace="5" align="bottom" width="24" height="12" /> (четные), ....<br /> Для 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />-матрицы получаем шесть слагаемых; четные перестановки для них можно определить через 
+  <a href="#923b6r" > циклические перестановки</a>.</p>
+
+  <p>Наряду с этим общепринятым определением, для <em>вычисления</em> детерминантов матриц существуют еще множество различных методов. Мы хотели бы познакомить Вас с двумя такими методами, и, для начала, рассмотреть специально для детерминант 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />-матриц действующее <em>правило Саррюса:</em></p>
+
+  <p>Для этого мы еще раз записываем первый и второй столбец матрицы справа от детерминанта, который нам нужно определить:</p>
+
+  <div class="c1">
+    <em>Правило Саррюса:</em> 
+    <img src="k9/gif/f923118.gif" alt="math formula" hspace="5" align="middle" width="209" height="66" />
+  </div>
+  <br />
+
+  <p>В таком расположении умножаем между собой элементы главной диагонали 
+  <img src="k9/gif/f923119.gif" alt="math formula" hspace="5" align="middle" width="75" height="24" />, к этому прибавляем произведение элементов 
+  <img src="k9/gif/f923120.gif" alt="math formula" hspace="5" align="middle" width="85" height="24" /> и 
+  <img src="k9/gif/f923121.gif" alt="math formula" hspace="5" align="middle" width="86" height="24" />, которые находятся справа от главной диагонали и параллельны ей. Из полученного вычитаем произведение элементов побочной диагонали 
+  <img src="k9/gif/f923122.gif" alt="math formula" hspace="5" align="middle" width="86" height="24" />, а также вычитаем произведения диагонально расположенных справа от побочной диагонали матричных элементов 
+  <img src="k9/gif/f923123.gif" alt="math formula" hspace="5" align="middle" width="86" height="24" /> и 
+  <img src="k9/gif/f923124.gif" alt="math formula" hspace="5" align="middle" width="85" height="24" />. В результате мы получим искомый детерминант.</p>
+
+  <p>Существует и другой метод, который зачастую приводит нас к цели быстрее, так называемое <em>разложение по первой строке</em>. Т.к. речь здесь идет о последовательном методе, для начала давайте уясним, что детерминант 
+  <img src="k9/gif/f923125.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />-матрицы состоит из произведения элементов диагонали 
+  <img src="k9/gif/f923126.gif" alt="math formula" hspace="5" align="middle" width="50" height="24" />, из которого вычтено произведение элементов побочной диагонали 
+  <img src="k9/gif/f923127.gif" alt="math formula" hspace="5" align="middle" width="60" height="24" />. После вычеркивания третьей строки и третьего столбца нашего искомого 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />-детерминанта остается именно этот 
+  <img src="k9/gif/f923125.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> -детерминант. Его называют <em>алгебраическое дополнение</em> и присваивают ему индекс вычеркнутых строки и столбца матрицы:</p>
+
+  <div class="c1">
+    <em>Алгебраическое дополнение:</em> 
+    <img src="k9/gif/f923128.gif" alt="math formula" hspace="5" align="middle" width="201" height="24" />
+  </div>
+  <br />
+
+  <p>При помощи этих алгебраических дополнений искомый 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />-детерминант записывается следующим образом:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923129.gif" alt="math formula" hspace="5" align="middle" width="558" height="43" />.
+  </div>
+  <br />
+
+  <p>Мы видим, что разложение именно по <em>первой строке</em> не является ограничением, т.к. детерминант имеет множество свойств симметрии. С их помощью можно легко получить разложения и по другим строками, а также разложение по столбцам. При этом мы используем термин</p>
+
+  <div class="c2">
+    <em>ряд матрицы</em> как общее обозначение для <em>строки или столбца.</em>
+  </div>
+
+  <p>Для сокращения записи, мы также иногда записываем стоящие друг над другом элементы матрицы в так называемый <em>вектор-столбец 
+  <img src="k9/gif/f923130.gif" alt="math formula" hspace="5" align="middle" width="20" height="24" /></em>, например</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923131.gif" alt="math formula" hspace="5" align="middle" width="132" height="24" />  с вектором-столбцом: 
+     
+    <img src="k9/gif/f923131b.gif" alt="math formula" hspace="5" align="middle" width="113" height="66" />
+  </div>
+  <br />
+
+  <p>Детерминанты имеют разнообразные свойства симметрии, которые чрезвычайно облегчают обращение с ними и их расчет. </p>
+
+  <p class="c3"><u>Свойства определителя детерминант:</u></p>
+
+  <p>a) Детерминант является <em>инвариантным по отношению к транспозиции,</em> т.е. он инвариантен при отражении относительно главной диагонали:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923132.gif" alt="math formula" hspace="5" align="middle" width="74" height="30" />
+  </div>
+  <br />
+
+  <p>b) Детерминант остается неизменным, если к одному из его строк матрицы <em>прибавлена линейная комбинация других строк этой матрицы</em>, например:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923133.gif" alt="math formula" hspace="5" align="middle" width="240" height="24" />
+  </div>
+  <br />
+
+  <p>c) Детерминант меняет свой математический знак при каждой <em>подстановке двух строк матрицы:</em>, например:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923134.gif" alt="math formula" hspace="5" align="middle" width="203" height="24" />
+  </div>
+  <br />
+
+  <p>d) Детерминанты являются <em>однородными относительно умножения их рядов:</em> для вещественного числа 
+  <img src="k9/gif/f923135.gif" alt="math formula" hspace="5" align="middle" width="41" height="24" /></p>
+
+  <div class="c1">
+    <img src="k9/gif/f923136.gif" alt="math formula" hspace="5" align="middle" width="211" height="29" />
+  </div>
+  <br />
+
+  <p>e) Детерминант равен нулю, если <em>векторы-ряды являются копланарными</em> (:линейно зависимыми; смотри раздел 9.4.4), или же, если один из векторов-рядов является нуль-вектором:</p>
+  
+  <div class="c1">
+    <img src="k9/gif/f923137.gif" alt="math formula" hspace="5" align="middle" width="102" height="24" />
+  </div>
+  <br />
+
+  <p>f) Детерминант с <em>нечетным числом измерений</em> остается неизменным при <em>циклической подстановке строк матрицы</em>:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923138.gif" alt="math formula" hspace="5" align="middle" width="190" height="24" />.
+  </div>
+  <br />
+
+  <p>g) Детерминант с <em>нечетным числом измерений</em> равен нулю, если матрица является <em>антисимметричной</em> <img src="k9/gif/f923139.gif" alt="math formula" hspace="5" align="middle" width="71" height="30" />:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923140.gif" alt="math formula" hspace="5" align="middle" width="107" height="34" />.
+  </div>
+  <br />
+
+  <p>h) Детерминанты являются <em>аддитивными</em>, если слагаемые отличаются только в одной строке матрицы, например:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923141.gif" alt="math formula" hspace="5" align="middle" width="336" height="24" />.
+  </div>
+  <br />
+
+  <p>i) Детерминант <em>произведения двух матриц</em> равен произведению детерминант обоих сомножителей:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f923142.gif" alt="math formula" hspace="5" align="middle" width="102" height="24" />
+  </div>
+  <br />
+
+  <div class="c1">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p><b>Задание 9.12:</b> Рассчитайте следующие детерминанты:</p>
+
+          <table border="0">
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923143.gif" alt="math formula" hspace="5" align="middle" width="98" height="66" /> 
+              <a href="#923b2l1201r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923144.gif" alt="math formula" hspace="5" align="middle" width="96" height="66" /> 
+              <a href="#923b2l1202r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923145.gif" alt="math formula" hspace="5" align="middle" width="96" height="66" /> 
+              <a href="#923b2l1203r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923146.gif" alt="math formula" hspace="5" align="middle" width="98" height="66" /> 
+              <a href="#923b2l1204r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923147.gif" alt="math formula" hspace="5" align="middle" width="97" height="66" /> 
+              <a href="#923b2l1205r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923148.gif" alt="math formula" hspace="5" align="middle" width="118" height="68" /> 
+              <a href="#923b2l1206r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923149.gif" alt="math formula" hspace="5" align="middle" width="150" height="66" /> 
+              <a href="#923b2l1207r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923150.gif" alt="math formula" hspace="5" align="middle" width="151" height="66" /> 
+              <a href="#923b2l1208r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923151.gif" alt="math formula" hspace="5" align="middle" width="147" height="66" /> 
+              <a href="#923b2l1209r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923152.gif" alt="math formula" hspace="5" align="middle" width="150" height="66" /> 
+              <a href="#923b2l1210r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923153.gif" alt="math formula" hspace="5" align="middle" width="151" height="66" /> 
+              <a href="#923b2l1211r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923154.gif" alt="math formula" hspace="5" align="middle" width="136" height="66" /> 
+              <a href="#923b2l1212r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923155.gif" alt="math formula" hspace="5" align="middle" width="164" height="66" /> 
+              <a href="#923b2l1213r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top"></td>
+
+              <td>
+              <img src="k9/gif/f923156.gif" alt="math formula" hspace="5" align="middle" width="238" height="66" /> 
+              <a href="#923b2l1214r" >Ответ</a></td>
+            </tr>
+          </table>
+          <br />
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+
+  <div class="c1">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p><b>Задание 9.13:</b> Детерминанты матриц поворота</p>
+
+          <p>Рассчитайте детерминанты 
+          <img src="k9/gif/f923157.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" /> , 
+          <img src="k9/gif/f923158.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" /> и 
+          <img src="k9/gif/f923159.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" />. 
+          <a href="#923b2l1301r" >Ответ</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+
+  <div class="c1">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p><b>Задание 9.14:</b> Детерминанты отражений</p>
+
+          <p>Рассчитайте детерминанты матрицы отражения 
+          <img src="k9/gif/f923160.gif" alt="math formula" hspace="5" align="middle" width="13" height="23" /> 
+          <a href="#923b2l140d" >Ответ</a>, матрицы 
+          <img src="k9/gif/f923161.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" /> 
+          <a href="#923b2l1402r" >Ответ</a> и произведения 
+          <img src="k9/gif/f923162.gif" alt="math formula" hspace="5" align="middle" width="67" height="33" />. 
+          <a href="#923b2l1403r" >Ответ</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+
+  <p><a href="javascript:history.back()">Назад</a></p>
+</body>
+</html>

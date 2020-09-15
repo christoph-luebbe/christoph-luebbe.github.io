@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematical Preparation Course before Studying Physics</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Taylor Series</h2>
+
+    <h3>6.7 Quality of Convergence: the Remainder Term</h3>
+  </div>
+
+  <div class="c4">
+    <p>After the results of the last sections, only question 4) about the quality 
+    of convergence remains unanswered: Even if we are sure of the convergence of the 
+    series, it is clearly essential to know how large the error would be when we use 
+    only an </p>
+
+    <div class="c2">
+      <em>approximation polynomial of&nbsp; m-th degree</em>: 
+      <img src="k6/gif/f67001.gif" alt="math formula" hspace="5" align="middle" width="153" height="41" />
+    </div>
+    <br />
+
+    <p>instead of the entire infinite power series. Instead of the exact 
+    calculation of the <em>remainder&nbsp; term</em> 
+    <img src="k6/gif/f67002.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />, 
+    we shall only report here the formula which results from this calculation 
+    and can serve to estimate 
+    <img src="k6/gif/f67003.gif" alt="math formula" hspace="5" align="middle" width="39" height="24" />, 
+    the so-called</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Lagrange form of the remainder term</em> 
+            <img src="k6/gif/f67004.gif" alt="math formula" hspace="5" align="middle" width="193" height="42" /> , 
+            where 
+            <img src="eq/0kthk1b.gif" alt="math formula" hspace="5" align="bottom" width="65" height="13" />.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>At first sight this expression seems a bit astonishing, since it is 
+	expressed in terms of the (m+1)-th term of the series, i.e. the first 
+	neglected term. This remainder term should, however, replace the whole 
+	remainder of the series. The 
+	apparent contradiction is resolved by the observation that the (m+1)-th 
+	derivative in the remainder term is not to be evaluated at 
+    the point of development 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />, 
+    but rather <em>at a unknown intermediate point</em> 
+    <img src="k6/gif/f67005.gif" alt="math formula" hspace="5" align="bottom" width="17" height="13" /> 
+    in between the expansion point 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> 
+    and the point of interest<img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />, 
+    expressed by the unknown number<img src="eq/th.gif" alt="math formula" hspace="5" align="bottom" width="8" height="13" /> 
+    with 
+    <img src="eq/0kthk1b.gif" alt="math formula" hspace="5" align="bottom" width="65" height="13" /> . 
+    Because of the fact that 
+    <img src="eq/th.gif" alt="math formula" hspace="5" align="bottom" width="8" height="13" /> 
+    is unknown, the remainder term can generally not be calculated, but must be</p>
+
+    <div class="c2">
+      <em>estimated</em>: 
+      <img src="k6/gif/f67006.gif" alt="math formula" hspace="5" align="middle" width="224" height="37" /> .
+    </div>
+    <br />
+
+    From this estimate formula we can see that the error decreases as the 
+    (m+1)-th power of the distance from the point<img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+    to the expansion point 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />. 
+    Thus it is favorable to go as near to the expansion point as possible.<p>As an example we calculate 
+    <img src="k6/gif/f67007.gif" alt="math formula" hspace="5" align="middle" width="139" height="24" /> 
+    up to<img src="k6/gif/f67008.gif" alt="math formula" hspace="5" align="middle" width="35" height="24" /> 
+    with help of the Taylor series around the point<img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" width="45" height="22" />, 
+    obtained in Section 6.4.2</p>
+
+    <div class="c2">
+      <img src="k6/gif/f67009.gif" alt="math formula" hspace="5" align="middle" width="227" height="28" /> :
+    </div>
+    <br />
+
+    We get: 
+    <img src="k6/gif/f67010e.gif" alt="math formula" hspace="5" align="middle" width="212" height="24" />, 
+	where the estimate of the remainder term with 
+    <img src="k6/gif/f67011.gif" alt="math formula" hspace="5" align="bottom" width="37" height="13" /> 
+    yields:<div class="c2">
+      <img src="k6/gif/f67012e.gif" alt="math formula" hspace="5" align="middle" width="231" height="28" />
+    </div>
+    <br />
+
+    The correct value is 
+    <img src="k6/gif/f67013e.gif" alt="math formula" hspace="5" align="middle" width="68" height="25" /> 
+    differing from the approximation value by 
+    <img src="k6/gif/f67014e.gif" alt="math formula" hspace="5" align="middle" width="52" height="23" /> .<div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Exercise&nbsp; 6.10:</p>
+
+            <p>Calculate the quadratic terms of the Taylor series and the 
+			remainder 
+            terms<img src="k6/gif/f67015.gif" alt="math formula" hspace="5" align="middle" width="34" height="24" /> in 
+            our small table from&nbsp; <a href="#643e">
+            Section 6.4.3</a>. Choose e.g. 
+            <img src="k6/gif/f67016.gif" alt="math formula" hspace="5" align="middle" width="53" height="24" /> , 
+            <img src="eq/m1d2.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" /> 
+            and 
+            <img src="k6/gif/f67017.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" /> 
+            and estimate the errors: At what points<img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+            do 
+            the relative errors<img src="k6/gif/f67018.gif" alt="math formula" hspace="5" align="middle" width="53" height="24" /> 
+            amount to&nbsp; 1% or 10%, respectively? <a href="#670l1001e" >Solution</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Exercise&nbsp; 6.11:</p>
+
+            <p>Calculate 
+            <img src="k6/gif/f67021.gif" alt="math formula" hspace="5" align="middle" width="27" height="29" /> 
+            with the Taylor series around<img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" width="45" height="22" /> 
+            up to 
+            <img src="k6/gif/f67022.gif" alt="math formula" hspace="5" align="middle" width="13" height="17" /> . <a href="#670l1101e" >Solution</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

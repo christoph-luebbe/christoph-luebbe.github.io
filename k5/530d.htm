@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>5 Differentiation</h2>
+
+    <h3>5.3 Differenzierbarkeit</h3>
+  </div>
+
+  <div class="c3">
+    <p>Aus der obigen Konstruktion des Differentialquotienten als Limes des Differenzenquotienten und unseren 
+    Kenntnissen über die Grenzwertbildung ergibt sich sofort, dass sich nicht für jede Funktion an jeder Stelle 
+    eindeutig eine Steigung bestimmen läßt, also nicht jede Funktion an jeder Stelle ihres Definitionsbereichs 
+    differenzierbar ist:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    <em>differenzierbar</em> bei 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" />: 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <img src="k5/gif/f53001.gif" alt="math formula" hspace="5" align="bottom" width="27" height="10" /> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; der Grenzwert des Differenzenquotienten existiert.</p>
+  </div>
+
+  <div class="c3">
+    <p>Dazu ist erforderlich: dass der "Grenzwert von rechts" 
+    <img src="k5/gif/f53002.gif" alt="math formula" hspace="5" align="middle" width="107" height="37" />, 
+    bei dem wir wie oben in <a href="#530b2d" >Bild 5.2</a> gezeichnet den zweiten Punkt 
+    für die Sekante rechts von 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> gewählt haben, 
+    und der "Grenzwert von links" 
+    <img src="k5/gif/f53003.gif" alt="math formula" hspace="5" align="middle" width="107" height="37" /> mit einem 
+    links von <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> 
+    gewählten Sekantenpunkt 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+    beide existieren, d.h. insbesondere endlich sind, und dazu noch übereinstimmen:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    <em>differenzierbar</em> bei 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" />: 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <img src="k5/gif/f53004.gif" alt="math formula" hspace="5" align="middle" width="407" height="42" /></p>
+  </div>
+
+  <div class="c3">
+    <p>Für den Graph bedeutet das offensichtlich, dass er keine "Ecken" oder "Knicke" haben darf. Z.B. 
+    ist die überall stetige Betragsfunktion 
+    <img src="k5/gif/f53005.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> bei 
+    <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" /> nicht 
+    differenzierbar, weil 
+    <img src="k5/gif/f53006.gif" alt="math formula" hspace="5" align="middle" width="121" height="33" /> ist, während 
+    <img src="k5/gif/f53007.gif" alt="math formula" hspace="5" align="middle" width="98" height="33" />; d.h. 
+    die beiden Limites existieren zwar, stimmen aber nicht überein. Die nur über der nichtnegativen Halbgeraden 
+    definierte Wurzelfunktion 
+    <img src="k5/gif/f53008.gif" alt="math formula" hspace="5" align="middle" width="116" height="24" /> 
+    andererseits ist am linken Rand ihres Definitionsbereichs bei 
+    <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" /> 
+    nicht differenzierbar, weil der dort allein mögliche "Grenzwert von rechts" 
+    <img src="k5/gif/f53009.gif" alt="math formula" hspace="5" align="middle" width="165" height="36" /> nicht 
+    existiert, da die Steigung unendlich wird.</p>
+
+    <p>Aus der Definition sieht man sofort, dass aus der Differenzierbarkeit einer Funktion an einer 
+    Stelle ihre Stetigkeit dort folgt. Denn für eine gegen 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> strebende Folge 
+    <img src="eq/x_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="17" /> aus dem 
+    Definitionsbereich gilt: 
+    <img src="k5/gif/f53010.gif" alt="math formula" hspace="5" align="middle" width="405" height="39" />. Das 
+    Umgekehrte gilt jedoch <em>nicht</em> : Nicht jede stetige Funktion ist differenzierbar, wie wir oben am 
+    Beispiel der Betragsfunktion 
+    <img src="k5/gif/f53011.gif" alt="math formula" hspace="5" align="middle" width="69" height="24" /> 
+    gesehen haben.</p>
+  </div>
+
+  <div class="c2">
+    <a href="#530b1d" >Einschub: unstetige Funktion differenzierbar?</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p class="c4">Aufgabe 5.1: Differenzierbarkeit:</p>
+
+          <p>Untersuchen Sie folgende Funktionen 
+          <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+          auf Differenzierbarkeit bei 
+          <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" />:</p>
+
+          <p>a)<img src="k5/gif/f53016.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" /> 
+          <a href="#530l0101d" >Lösung</a></p>
+
+          <p>b)<img src="k5/gif/f53017.gif" alt="math formula" hspace="5" align="middle" width="8" height="29" /> 
+          <a href="#530l0102d" >Lösung</a></p>
+
+          <p>c)<img src="k5/gif/f53018.gif" alt="math formula" hspace="5" align="middle" width="25" height="30" /> 
+          <a href="#530l0103d" >Lösung</a></p>
+
+          <p>d)<img src="k5/gif/f53019.gif" alt="math formula" hspace="5" align="bottom" width="32" height="16" /> 
+          <a href="#530l0104d" >Lösung</a> und</p>
+
+          <p>e)<img src="k5/gif/f53020.gif" alt="math formula" hspace="5" align="middle" width="56" height="24" /> 
+          <a href="#530l0105d" >Lösung</a></p>
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <div class="c3">
+    <p>Nur einen einzigen Satz über differenzierbare Funktionen werden wir gelegentlich benützen, den</p>
+  </div>
+
+  <div class="c2">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p><b>Mittelwertsatz der Differentialrechnung</b>:</p>
+
+          <p>Falls eine Funktion 
+          <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+          stetig im abgeschlossenen Intervall 
+          <img src="eq/giab.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> und 
+          differenzierbar im offenen Intervall 
+          <img src="k5/gif/f53021.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> ist,<br />
+          dann gibt es mindestens einen Punkt 
+          <img src="k5/gif/f53022.gif" alt="math formula" hspace="5" align="middle" width="62" height="24" />, 
+          "Mittelwert" genannt, so dass die Steigung 
+          <img src="k5/gif/f53023.gif" alt="math formula" hspace="5" align="middle" width="41" height="26" /> der 
+          Tangenten<br />
+          an den Graph der Funktion in diesem Punkt gleich der Steigung der Sekanten über dem Intervall ist:</p>
+
+          <div class="c2">
+            <img src="k5/gif/f53024.gif" alt="math formula" hspace="5" align="middle" width="121" height="33" />.
+          </div>
+          
+        </td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c3">
+    <p>Anschaulich ergibt sich der Beweis aus dem folgenden Bild:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k5/gif/b5301.gif" alt="math formula" width="429" height="253" /><br clear="all" />
+    <span class="bild">Bild 5.3: Zum Mittelwertsatz der Differentialrechnung</span></p>
+  </div>
+</body>
+</html>

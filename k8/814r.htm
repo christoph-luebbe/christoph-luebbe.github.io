@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {margin-left: 2em}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>8 Комплексные числа</h2>
+
+    <h3>8.1 Мнимая единица и представления комплексных чисел</h3>
+
+    <h4>8.1.4 Гауссова плоскость комплексных чисел</h4>
+  </div>
+
+  <div class="c2">
+    <p>Для представления упорядоченной пары вещественных чисел наиболе подходит такая плоскость, которую мы уже использовали для представления переменной и значения вещественной функции. Теперь же мы называем эту плоскость <em>гауссовой плоскостью комплексных чисел</em>: каждой точке (или, как говорят электротехники, "стрелке") гауссовой плоскости соответствует в точности одно комплексное число.</p>
+
+    <p>Для лучшего ориентирования, давайте нарисуем в плоскости две перпендикулярные вещественные числовые прямые, вещественную ось 
+    <img src="k8/gif/f81401.gif" alt="math formula" hspace="5" align="middle" width="18" height="22" /> и мнимую ось 
+    <img src="k8/gif/f81402.gif" alt="math formula" hspace="5" align="middle" width="17" height="22" />, т.е., выберем <em>прямоугольную (декартову) систему координат</em>: действительная часть 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> комплексного числа 
+    <img src="eq/z.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> (которму отвечает точка на нашей плоскости)точка (или координата) является тогда проекцией расстояния от начала координат (или длины стрелки) на вещественную ось 1, а мнимая часть 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" />, соответственно, проекцией на мнимую ось 2, как показано на рисунке ниже:</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="k8/gif/b8141.gif" alt="math formula" width="422" height="259" /><br clear="all" />
+    <span class="bild">Рисунок 8.1: Гауссова плоскость чисел в прямоугольной системе координат</span></p>
+  </div>
+
+  <div class="c2">
+    <p>В качестве альтернативы прямоугольной системе координат в плоскости можно, разумеется, использовать и <em>плоские полярные координаты</em>, в которых</p>
+
+    <div class="c3">
+      <img src="k8/gif/f81403.gif" alt="math formula" hspace="5" align="middle" width="151" height="24" />
+    </div>
+    
+
+    <p>где</p>
+
+    <div class="c3">
+      <em>Действительная часть</em> 
+      <img src="k8/gif/f81404.gif" alt="math formula" hspace="5" align="middle" width="137" height="24" /> и
+    
+    
+    
+    </div>
+    <br />
+
+    <div class="c3">
+      <em>Мнимая часть</em> 
+      <img src="k8/gif/f81405.gif" alt="math formula" hspace="5" align="middle" width="135" height="24" />.
+    
+    
+    
+    </div>
+    <br />
+
+    <p>Из этого по 
+    <a href="#gif/f22340.gif" >теореме Пифагора</a> следует для</p>
+      <div class="c3">
+      <em>Модуль комплексного числа</em>: 
+      <img src="k8/gif/f81409.gif" alt="math formula" hspace="5" align="middle" width="200" height="30" />.
+    
+    
+    
+    </div>
+    <br />
+    
+    Полярный угол, который мы получаем из 
+    <img src="k8/gif/f81406.gif" alt="math formula" hspace="5" align="middle" width="66" height="32" />, определен только с точность до 
+    <img src="eq/2pi.gif" alt="math formula" hspace="5" align="bottom" width="17" height="11" /> и называется</p>
+
+    <div class="c3">
+      <em>Аргументом (или фазой) комплексного числа</em>, например, 
+      <img src="k8/gif/f81408.gif" alt="math formula" hspace="5" align="middle" width="178" height="35" />.
+    
+    </div>
+    
+
+    <p>При определении аргумента мы наталкиваемся на небольшую сложность, на <em>двузначность</em>, которая возникает в следствии того, что 
+    <img src="k8/gif/f81410.gif" alt="math formula" hspace="5" align="middle" width="49" height="24" />:<br /> Если мы рассматриваем, например, комплексное число 
+    <img src="k8/gif/f81411.gif" alt="math formula" hspace="5" align="middle" width="62" height="23" /> с действительной частью 
+    <img src="k8/gif/f81412.gif" alt="math formula" hspace="5" align="bottom" width="61" height="12" /> и мнимой частью 
+    <img src="k8/gif/f81413.gif" alt="math formula" hspace="5" align="bottom" width="61" height="12" />, то для модуля мы однозначно получим 
+    <img src="k8/gif/f81414.gif" alt="math formula" hspace="5" align="middle" width="59" height="29" />, для аргумента же <em>два</em> значения 
+    <img src="k8/gif/f81415.gif" alt="math formula" hspace="5" align="middle" width="172" height="24" /> <em>или</em> 
+    <img src="k8/gif/f81416.gif" alt="math formula" hspace="5" align="middle" width="17" height="29" />, которые оба лежат в интервале 
+    <img src="k8/gif/f81417.gif" alt="math formula" hspace="5" align="middle" width="43" height="24" />. При использовании этих значений для вычисления 
+    <img src="k8/gif/f81418.gif" alt="math formula" hspace="5" align="bottom" width="32" height="12" />, мы можем легко найти правильный аргумент: для 
+    <img src="k8/gif/f81419.gif" alt="math formula" hspace="5" align="middle" width="41" height="24" /> мы получаем верный ответ: 
+    <img src="k8/gif/f81420.gif" alt="math formula" hspace="5" align="middle" width="268" height="32" />, тогда как 
+    <img src="k8/gif/f81421.gif" alt="math formula" hspace="5" align="middle" width="48" height="29" /> дает нам неверный результат 
+    <img src="k8/gif/f81422.gif" alt="math formula" hspace="5" align="middle" width="224" height="32" />.</p>
+
+    <div class="c2">
+      <a href="#814b2r" >Дополнение: Точный расчет аргумента</a>
+    </div>
+    <br /> 
+    <div class="c2">
+      <a href="#814b1r" >Дополнение: Альтернативный выбор пределов аргумента</a>
+    </div>
+    <br />
+    
+    <div class="c3">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 8.2:</b> Аргумент комплексного числа:</p>
+
+            <p>Определите аргумент комплексного числа 
+            <img src="k8/gif/f81423.gif" alt="math formula" hspace="5" align="bottom" width="59" height="13" />. 
+            <a href="#814l0201r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

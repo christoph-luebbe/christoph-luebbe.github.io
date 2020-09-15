@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Vektoren</h2>
+
+    <h3>9.7 Mehrfachprodukte</h3>
+
+    <h4>9.7.1 Spatprodukt</h4>
+  </div>
+
+  <div class="c3">
+    <p>Die einfachste und wichtigste Art, drei Vektoren 
+    <img src="k9/gif/f97101.gif" alt="math formula" hspace="5" align="middle" width="59" height="25" />, 
+    <img src="k9/gif/f97102.gif" alt="math formula" hspace="5" align="middle" width="51" height="33" /> und 
+    <img src="k9/gif/f97103.gif" alt="math formula" hspace="5" align="middle" width="66" height="25" /> 
+    (jeweils mit Summenkonvention!) miteinander zu multiplizieren ist das Skalarprodukt eines Vektorprodukts 
+    mit einem dritten Vektor, das sogenannte</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Spatprodukt:</em> 
+            <img src="k9/gif/f97104.gif" alt="math formula" hspace="5" align="middle" width="375" height="101" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Dabei haben wir zunächst die Definitionen der beiden Produkte hingeschrieben, dann die 
+    Determinantendarstellung für das Levi-Civita-Symbol eingesetzt und vor der Ausführung der drei 
+    Summationen verwendet, dass die <a href="#923b2d" >Determinante</a>, wie wir 
+    früher gelernt haben, reihenweise homogen ist. Entsprechend den Umformungsmöglichkeiten der 
+    Determinanten sind weitere Formulierungen möglich, insbesondere durch zyklische Permutation und 
+    Spiegelung an der Hauptdiagonalen, d.h. die Komponenten der drei Vektoren können statt in die 
+    Zeilen auch in die Spalten der Determinante eingetragen werden.</p>
+
+    <p>Dieser Vielfalt der Möglichkeiten bei der Formulierung der Determinanten entsprechen viele 
+    Identitäten in den Darstellungen ein und desselben Spatprodukts in der konventionellen Form:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97105.gif" alt="math formula" hspace="5" align="middle" width="456" height="39" />
+    </div><br />
+    <br />
+
+    <p>Wegen des Kommutativgesetzes des Skalarprodukts können darüber hinaus die beiden <em>Malzeichen</em> 
+    vertauscht und deshalb überhaupt <em>weggelassen</em> werden:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97106.gif" alt="math formula" hspace="5" align="middle" width="240" height="39" />
+    </div><br />
+    <br />
+
+    <p>Die Antikommutativität des Vektorprodukts führt zu folgenden Relationen:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97107.gif" alt="math formula" hspace="5" align="middle" width="416" height="65" />
+    </div><br />
+    <br />
+
+    <p>Die Auswertung der Determinante ergibt eine reelle Zahl:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97108.gif" alt="math formula" hspace="5" align="middle" width="537" height="39" />
+    </div><br />
+    <br />
+
+    <p>Zur geometrischen Deutung, betrachten wir die nächste Abbildung:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k9/gif/b9711.gif" alt="math formula" width="619" height="262" /><br clear="all" />
+    <span class="bild">Bild 9.27: Zum Spatprodukt</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Das Vektorprodukt 
+    <img src="k9/gif/f97109.gif" alt="math formula" hspace="5" align="middle" width="43" height="39" /> 
+    ergibt einen Vektor mit einer Länge von der Größe der Parallelogrammfläche 
+    <img src="k9/gif/f97110.gif" alt="math formula" hspace="5" align="middle" width="119" height="33" /> 
+    und der Richtung von 
+    <img src="k9/gif/f97111.gif" alt="math formula" hspace="5" align="middle" width="48" height="25" />, 
+    also senkrecht auf dem von 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> 
+    und 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" /> 
+    aufgespannten Parallelogramm. Auf die Richtung dieses Einheitsvektors 
+    <img src="k9/gif/f97111.gif" alt="math formula" hspace="5" align="middle" width="48" height="25" /> 
+    wird nun der dritte Vektor 
+    <img src="eq/cvekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> 
+    projiziert. Die Länge dieser Projektion 
+    <img src="k9/gif/f97113.gif" alt="math formula" hspace="5" align="middle" width="118" height="24" /> 
+    ergibt die Höhe eines <em>Spats</em> (: Parallelepipeds) über der Grundfläche 
+    <img src="eq/gf.gif" alt="math formula" hspace="5" align="bottom" width="12" height="11" />, 
+    dessen Volumeninhalt (allerdings mit Vorzeichen!) den Zahlenwert des Spatprodukts bedeutet. 
+    Je nach der Numerierung der drei Vektoren ist der Volumeninhalt mit einem Vorzeichen zu versehen.</p>
+
+    <p>Falls beide Winkel kleiner als 
+    <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> 
+    sind und die Vektoren in der angegebenen Reihenfolge eine Rechtsschraube bilden, ist der Volumeninhalt 
+    positiv zu nehmen. Betrachten Sie zum Beispiel den ersten Einheitsvektor 
+    <img src="k9/gif/f97116.gif" alt="math formula" hspace="5" align="middle" width="120" height="66" />, 
+    den Einheitsvektor 
+    <img src="k9/gif/f97117.gif" alt="math formula" hspace="5" align="middle" width="111" height="66" /> 
+    in der 1-2-Ebene, der mit 
+    <img src="k9/gif/f97118.gif" alt="math formula" hspace="5" align="middle" width="13" height="25" /> 
+    den Winkel 
+    <img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" /> 
+    bildet, und den Vektor 
+    <img src="k9/gif/f97119.gif" alt="math formula" hspace="5" align="middle" width="111" height="66" />, 
+    der in der 1-3-Ebene mit 
+    <img src="k9/gif/f97118.gif" alt="math formula" hspace="5" align="middle" width="13" height="25" /> 
+    den Winkel 
+    <img src="k9/gif/f97120.gif" alt="math formula" hspace="5" align="middle" width="10" height="24" /> 
+    einschließt, so wird das Spatprodukt 
+    <img src="k9/gif/f97121.gif" alt="math formula" hspace="5" align="middle" width="147" height="24" /> etwa gleich 
+    <img src="eq/1d2.gif" alt="math formula" hspace="5" align="middle" width="23" height="24" /> für 
+    <img src="k9/gif/f97123.gif" alt="math formula" hspace="5" align="middle" width="86" height="24" /> und 
+    <img src="k9/gif/f97124.gif" alt="math formula" hspace="5" align="bottom" width="29" height="13" />, während 
+    <img src="k9/gif/f97125.gif" alt="math formula" hspace="5" align="middle" width="162" height="24" />.</p>
+
+    <p>Der Volumeninhalt ist gleich 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />, wenn die drei 
+    Faktorvektoren komplanar, also linear abhängig sind, insbesondere wenn zwei der drei Faktoren gleich sind. 
+    Umgekehrt kann man vom Verschwinden der Determinante mit drei Vektoren als Zeilen- oder Spaltenvektoren auf 
+    deren lineare Abhängigkeit schließen.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.39:</b> Lineare Abhängigkeit</p>
+
+            <p>Sind die Vektoren 
+            <img src="k9/gif/f97126.gif" alt="math formula" hspace="5" align="middle" width="44" height="66" />, 
+            <img src="k9/gif/f97127.gif" alt="math formula" hspace="5" align="middle" width="44" height="66" /> 
+            und 
+            <img src="k9/gif/f97128.gif" alt="math formula" hspace="5" align="middle" width="44" height="66" /> 
+            linear unabhängig? <a href="#971l3901d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Speziell für die Basisvektoren erhalten wir eine äußerst prägnante Formulierung für die Orthonormalität 
+    und Kennzeichnung eines Rechtssystems in einer einzigen Gleichung, die andererseits auch das Levi-Civita-Symbol 
+    durch die Basisvektoren darstellt:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97129.gif" alt="math formula" hspace="5" align="middle" width="109" height="24" />
+    </div><br />
+    <br />
+
+    <p>Speziell gilt 
+    <img src="k9/gif/f97130.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" />, der 
+    Volumeninhalt des Einheitswürfels.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.40:</b> Spatprodukt</p>
+
+            <p>Berechnen Sie folgende Spatprodukte:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97131.gif" alt="math formula" hspace="5" align="middle" width="150" height="33" /> 
+                <a href="#971l4001d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97132.gif" alt="math formula" hspace="5" align="middle" width="252" height="29" /> 
+                <a href="#971l4002d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97133.gif" alt="math formula" hspace="5" align="middle" width="252" height="29" /> 
+                <a href="#971l4003d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97134.gif" alt="math formula" hspace="5" align="middle" width="162" height="24" /> 
+                <a href="#971l4004d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97135.gif" alt="math formula" hspace="5" align="middle" width="162" height="24" /> 
+                <a href="#971l4005d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.41:</b> Anwendungen des Spatprodukts</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Berechnen Sie das Volumen des von folgenden drei Vektoren 
+                aufgespannten Parallelepipeds: 
+                <img src="k9/gif/f97139.gif" alt="math formula" hspace="5" align="middle" width="89" height="25" /> 
+                <img src="k9/gif/f97140.gif" alt="math formula" hspace="5" align="middle" width="84" height="25" /> 
+                und 
+                <img src="k9/gif/f97141.gif" alt="math formula" hspace="5" align="middle" width="118" height="25" />. 
+                <a href="#971l4101d" >Lösung</a> </td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Berechnen Sie das Volumen der von den folgenden drei Vektoren gebildeten Dreiecks-Pyramide: 
+                <img src="k9/gif/f97136.gif" alt="math formula" hspace="5" align="middle" width="118" height="25" />,
+		<img src="k9/gif/f97136b.gif" alt="math formula" hspace="5" align="middle" width="89" height="25" /> und 
+                <img src="k9/gif/f97137.gif" alt="math formula" hspace="5" align="middle" width="126" height="25" />. 
+                <a href="#971l4102d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Berechnen Sie mit Hilfe des Spatprodukts das Volumen eines Tetraeders der Kantenlänge 
+                <img src="eq/gl.gif" alt="math formula" hspace="5" align="bottom" width="11" height="11" />, 
+                nachdem Sie ihn in einen Würfel eingebettet haben. <a href="#971l4103d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Wie hängt das von folgenden drei Vektoren aufgespannte Spatvolumen von der reellen Zahl 
+                <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> ab: 
+                <img src="k9/gif/f97142.gif" alt="math formula" hspace="5" align="middle" width="114" height="24" />, 
+                <img src="k9/gif/f97143.gif" alt="math formula" hspace="5" align="middle" width="131" height="25" /> und 
+                <img src="k9/gif/f97144.gif" alt="math formula" hspace="5" align="middle" width="101" height="25" />? 
+                Warum? <a href="#971l4104d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Wie lautet die Gleichung der Ebene durch die drei Punkte mit folgenden Ortsvektoren: 
+                <img src="k9/gif/f97145.gif" alt="math formula" hspace="5" align="middle" width="49" height="25" />, 
+                <img src="k9/gif/f97146.gif" alt="math formula" hspace="5" align="middle" width="118" height="25" /> und 
+                <img src="k9/gif/f97147.gif" alt="math formula" hspace="5" align="middle" width="118" height="25" />. 
+                <a href="#971l4105d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#971b1d" >Einschub: Zwei Levi-Civita-Symbole</a>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 9.42:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Drücken Sie das Levi-Civita-Symbol durch Kronecker-Symbole aus. 
+                <a href="#971l4201d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Drücken Sie das Kronecker-Symbol durch Levi-Civita-Symbole aus. 
+                <a href="#971l4202d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Drücken Sie das Levi-Civita-Symbol durch die Einheitsvektoren aus. 
+                <a href="#971l4203d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Drücken Sie das Kronecker-Symbol durch die Einheitsvektoren aus. 
+                <a href="#971l4204d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

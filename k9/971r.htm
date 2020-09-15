@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Векторы</h2>
+
+    <h3>9.7 Сложное произведение: Два символа Леви-Чивиты</h3>
+
+    <h4>9.7.1 Смешанное произведение векторов: Два символа Леви-Чивиты</h4>
+  </div>
+
+  <div class="c3">
+    <p>Самым простым и главным способом перемножить между собой три вектора 
+    <img src="k9/gif/f97101.gif" alt="math formula" hspace="5" align="middle" width="59" height="25" />, 
+    <img src="k9/gif/f97102.gif" alt="math formula" hspace="5" align="middle" width="51" height="33" /> и 
+    <img src="k9/gif/f97103.gif" alt="math formula" hspace="5" align="middle" width="66" height="25" /> (по соглашению Эйнштейна о суммировании, соответственно) является скалярное произведение векторного произведения с третьим вектором, так называемое</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Смешанное произведение векторов:</em> 
+            <img src="k9/gif/f97104.gif" alt="math formula" hspace="5" align="middle" width="375" height="101" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Мы сначала записали здесь определение обоих произведений, а затем подставили представление через детерминант для символа Леви-Чивиты и применили его перед операцией сложения, поскольку 
+    <a href="#923b2d" >детерминант</a>, как мы уже видели ранее, является однородной функцией по рядам. Благодаря симметриям детерминанта, возможно получит другие представления данной формулы, например, посредством циклической перестановки и отображения относительно главной диагонали, т.е., например, составляющие трех векторов могут быть занесены не в строки, а в столбцы детерминанта.</p>
+
+    <p>Данному разнообразию возможностей представления детерминанта соответствуют тождественные представления одного и того же смешанного произведения векторов в общепринятой форме:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97105.gif" alt="math formula" hspace="5" align="middle" width="456" height="39" />
+    </div>
+    <br />
+
+    <p>Благодаря коммутативности скалярного произведения, оба <em>знака умножения</em> могут быть заменены и поэтому, они могут быть вообще <em>опущены</em>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97106.gif" alt="math formula" hspace="5" align="middle" width="240" height="39" />
+    </div>
+    <br />
+
+    <p>Антикоммутативность векторного произведения приводит к следующим соотношениям:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97107.gif" alt="math formula" hspace="5" align="middle" width="416" height="65" />
+    </div>
+    <br />
+
+    <p>Вычисление детерминанта дает в итоге вещественное число:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97108.gif" alt="math formula" hspace="5" align="middle" width="537" height="39" />
+    </div>
+    <br />
+
+    <p>Для геометрическй интерпретации, рассмотрим следующее изображение:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k9/gif/b9711.gif" alt="math formula" width="619" height="262" /><br clear="all" />
+    <span class="bild">Рисунок 9.27: Смешанное произведение векторов</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Векторное произведение 
+    <img src="k9/gif/f97109.gif" alt="math formula" hspace="5" align="middle" width="43" height="39" /> дает вектор с длиной равной площади параллелограмма 
+    <img src="k9/gif/f97110.gif" alt="math formula" hspace="5" align="middle" width="119" height="33" /> и направления 
+    <img src="k9/gif/f97111.gif" alt="math formula" hspace="5" align="middle" width="48" height="25" />, т.е., расположенный перпендикулярно параллелограмму, построенному на 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> и 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" />. На направление этого единичного вектора 
+    <img src="k9/gif/f97111.gif" alt="math formula" hspace="5" align="middle" width="48" height="25" /> спроецирован третий вектор 
+    <img src="eq/cvekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" />. Длина данной проекции 
+    <img src="k9/gif/f97113.gif" alt="math formula" hspace="5" align="middle" width="118" height="24" /> дает высоту <em>параллелепипеда</em> над плоскостью основания 
+    <img src="eq/gf.gif" alt="math formula" hspace="5" align="bottom" width="12" height="11" />, объем которого (разумеется со знаком!) равен численному значению смешанного произведения векторов. В зависимости от порядка, в котором перемножаются три вектора, объем равен смешанному произведению, взятому с определенным знаком.</p>
+
+    <p>В случае, если оба угла меньше 
+    <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> и векторы в заданном порядке образуют правый винт, то смешанное произведение имеет положительный знак. Рассмотрите, например, первый единичный вектор 
+    <img src="k9/gif/f97116.gif" alt="math formula" hspace="5" align="middle" width="120" height="66" />, второй единичный вектор 
+    <img src="k9/gif/f97117.gif" alt="math formula" hspace="5" align="middle" width="111" height="66" /> в плоскости 1-2, который образует с 
+    <img src="k9/gif/f97118.gif" alt="math formula" hspace="5" align="middle" width="13" height="25" /> угол 
+    <img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" />, и вектор 
+    <img src="k9/gif/f97119.gif" alt="math formula" hspace="5" align="middle" width="111" height="66" />, который в плоскости 1-3 составляет угол 
+    <img src="k9/gif/f97120.gif" alt="math formula" hspace="5" align="middle" width="10" height="24" /> с 
+    <img src="k9/gif/f97118.gif" alt="math formula" hspace="5" align="middle" width="13" height="25" />, таким образом смешанное произведение векторов будет 
+    <img src="k9/gif/f97121.gif" alt="math formula" hspace="5" align="middle" width="147" height="24" />, т.е., например, 
+    <img src="eq/1d2.gif" alt="math formula" hspace="5" align="middle" width="23" height="24" /> для 
+    <img src="k9/gif/f97123.gif" alt="math formula" hspace="5" align="middle" width="86" height="24" /> и 
+    <img src="k9/gif/f97124.gif" alt="math formula" hspace="5" align="bottom" width="29" height="13" />, в то время как <img src="k9/gif/f97125.gif" alt="math formula" hspace="5" align="middle" width="162" height="24" />.</p>
+
+    <p>Объем равен 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />, если три вектора-сомножителя являются компланарными, т.е. линейно зависимыми, например, когда два из трех векторов равны. Наоборот, из условия равенства нулю детерминанта с тремя векторами в виде векторов-строк или векторов-столбцов, можно прийти к их линейной зависимости.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.39:</b> Линейная зависимость</p>
+
+            <p>Являются ли векторы 
+            <img src="k9/gif/f97126.gif" alt="math formula" hspace="5" align="middle" width="44" height="66" />, 
+            <img src="k9/gif/f97127.gif" alt="math formula" hspace="5" align="middle" width="44" height="66" /> и 
+            <img src="k9/gif/f97128.gif" alt="math formula" hspace="5" align="middle" width="44" height="66" /> линейно зависимыми? 
+            <a href="#971l3901r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>В частности, для базисных векторов мы получаем особенно четкую формулировку для ортонормальности и обозначения правой системы координат в одном единственном уравнении, которое посредством базисных векторов представляет также символ Леви-Чивиты:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97129.gif" alt="math formula" hspace="5" align="middle" width="109" height="24" />
+    </div>
+    <br />
+
+    <p>В частности, имеет 
+    <img src="k9/gif/f97130.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" /> - объем единичного куба.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.40:</b> смешанное произведение векторов</p>
+
+            <p>Рассчитайте следующие смешанные произведения векторов:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97131.gif" alt="math formula" hspace="5" align="middle" width="150" height="33" /> 
+                <a href="#971l4001r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97132.gif" alt="math formula" hspace="5" align="middle" width="252" height="29" /> 
+                <a href="#971l4002r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97133.gif" alt="math formula" hspace="5" align="middle" width="252" height="29" /> 
+                <a href="#971l4003r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97134.gif" alt="math formula" hspace="5" align="middle" width="162" height="24" /> 
+                <a href="#971l4004r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k9/gif/f97135.gif" alt="math formula" hspace="5" align="middle" width="162" height="24" /> 
+                <a href="#971l4005r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.41:</b> Применение смешанного произведения векторов</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Рассчитайте объем параллелепипеда, построенного на следующих трех векторах: 
+                <img src="k9/gif/f97139.gif" alt="math formula" hspace="5" align="middle" width="89" height="25" /> 
+                <img src="k9/gif/f97140.gif" alt="math formula" hspace="5" align="middle" width="84" height="25" /> и 
+                <img src="k9/gif/f97141.gif" alt="math formula" hspace="5" align="middle" width="118" height="25" />. 
+                <a href="#971l4101r" >Ответ</a> </td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Рассчитайте объем треугольной пирамиды, построенной на следующих трех векторах: 
+                <img src="k9/gif/f97136.gif" alt="math formula" hspace="5" align="middle" width="118" height="25" />, 
+                <img src="k9/gif/f97136b.gif" alt="math formula" hspace="5" align="middle" width="89" height="25" /> и 
+                <img src="k9/gif/f97137.gif" alt="math formula" hspace="5" align="middle" width="126" height="25" />. 
+                <a href="#971l4102r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Рассчитайте при помощи смешанного произведения векторов объем тетраэдра с длиной ребра 
+                <img src="eq/gl.gif" alt="math formula" hspace="5" align="bottom" width="11" height="11" />, но сначала вложите тетраэдр в куб. <a href="#971l4103r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Как объем параллелепипеда, построенного на следующих трех векторах, зависит от вещественного числа 
+                <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />: 
+                <img src="k9/gif/f97142.gif" alt="math formula" hspace="5" align="middle" width="114" height="24" />, 
+                <img src="k9/gif/f97143.gif" alt="math formula" hspace="5" align="middle" width="131" height="25" /> и 
+                <img src="k9/gif/f97144.gif" alt="math formula" hspace="5" align="middle" width="101" height="25" />? Почему? 
+                <a href="#971l4104r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Как выглядит уравнение плоскости, проходящей через три точки, имеющее следующие радиус-векторы: 
+                <img src="k9/gif/f97145.gif" alt="math formula" hspace="5" align="middle" width="49" height="25" />, 
+                <img src="k9/gif/f97146.gif" alt="math formula" hspace="5" align="middle" width="118" height="25" /> и 
+                <img src="k9/gif/f97147.gif" alt="math formula" hspace="5" align="middle" width="118" height="25" />. 
+                <a href="#971l4105r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <a href="#971b1r" >Дополнение: Два символа Леви-Чивиты</a>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Задание 9.42:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Выразите символ Леви-Чивиты посредством символов Кронекера. 
+                <a href="#971l4201r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Выразите символ Кронекера при помощи символов Леви-Чивиты. 
+                <a href="#971l4202r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Выразите символ Леви-Чивиты при помощи единичных векторов. 
+                <a href="#971l4203r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Выразите символ Кронекера посредством единичных векторов. 
+                <a href="#971l4204r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

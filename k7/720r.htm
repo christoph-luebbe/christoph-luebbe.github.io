@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Интегральное исчисление    </h2>
+
+    <h3>7.2 Площадь под графиком функции</h3>
+  </div>
+
+  <div class="c3">
+    <p>Искомую <em>площадь</em> 
+    <img src="k7/gif/f72001.gif" alt="math formula" hspace="5" align="middle" /> "под" произвольной непрерывной ограниченной и положительной функцией 
+    <img src="k7/gif/f72002.gif" alt="math formula" hspace="5" align="middle" /> "на" конечном отрезке пути "между" исходной точкой 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> и конечной точкой 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" />, часто называемой просто 
+    <img src="k7/gif/f72003.gif" alt="math formula" hspace="5" align="middle" />, мы получим по уже упомянутой ранее схеме для прямой: Делим рассчитываемую площадь на множество узких вертикальных полос, чьи верхние стороны можно считать приблизительно прямыми; рассчитываем, как показано выше, площадь каждой полосы; суммируем отдельные части и делаем число полос произвольно большим, в надежде, что нам удастся найти искомую площадь в виде предела.  </p>
+
+    <p>Распишем данный <em>предельный процесс</em> в деталях, чтобы в дальнейшем стандартизировать его применение: Интервал 
+    <img src="k7/gif/f72004.gif" alt="math formula" hspace="5" align="middle" /> между исходной точкой, называемой 
+    <img src="k7/gif/f72005.gif" alt="math formula" hspace="5" align="middle" />, и конечной точкой, называемой 
+    <img src="k7/gif/f72006.gif" alt="math formula" hspace="5" align="middle" />, делится при помощи выбора 
+    <img src="k7/gif/f72007.gif" alt="math formula" hspace="5" align="bottom" /> <em>промежуточных точек</em> 
+    <img src="eq/x_n.gif" alt="math formula" hspace="5" align="middle" /> где 
+<img src="k7/gif/f72008.gif" alt="math formula" hspace="5" align="middle" /> на 
+<img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" /> подинтервалов 
+<img src="k7/gif/f72009.gif" alt="math formula" hspace="5" align="middle" /> длины 
+<img src="k7/gif/f72010.gif" alt="math formula" hspace="5" align="middle" />. Подитервалы не обязаны, но могут быть выбраны одинаковой длины: 
+<img src="k7/gif/f72011.gif" alt="math formula" hspace="5" align="middle" /> . Внутри каждого маленького подинтервала выбираем <em>узел</em> 
+<img src="k7/gif/f72012.gif" alt="math formula" hspace="5" align="middle" />, который не обязан, но может быть арифметическим центром 
+<img src="k7/gif/f72013.gif" alt="math formula" hspace="5" align="middle" />. Затем, вычислем значения функции в данных узлах 
+<img src="k7/gif/f72014.gif" alt="math formula" hspace="5" align="middle" /> и аппроксимируем точную площадь отдельных полос приближенным значением 
+<img src="k7/gif/f72015.gif" alt="math formula" hspace="5" align="middle" /> . Суммируем площади этих 
+<img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" /> прямоугольных полос, и результат называем </p>
+
+    <div class="c2">
+      <em>суммой Римана</em>: 
+       
+      <img src="k7/gif/f72016.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+  </div><br />
+
+  <div class="c1">
+    <p><img src="k7/gif/b7201e.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Рисунок 7.3: Разбиение интервала и полосы</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Переход к пределу состоит в том, чтобы уточнить вычисление площади путем бесконечного увеличения числа точек разбиения 
+    <img src="k7/gif/f72007.gif" alt="math formula" hspace="5" align="bottom" />. При делении на неравные промежутки, нужно обратить особое внимание на то, что ширина самой широкой полосы 
+    <img src="k7/gif/f72017.gif" alt="math formula" hspace="5" align="middle" /> стремится к нулю. В случае, если последовательность сумм Римана 
+    <img src="k7/gif/f72018.gif" alt="math formula" hspace="5" align="middle" /> имеет предел, который не зависит от разбиения интервала на полосы и от выбора узла 
+    <img src="k7/gif/f72019.gif" alt="math formula" hspace="5" align="middle" /> в отдельных полосах, то такой предел мы называем "определенным" интегралом (или интегралом Римана) функции 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> от 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> до 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" />, т.е. площадью "под" (неотрицательной) функцией 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> "над" интервалом 
+    <img src="k7/gif/f72004.gif" alt="math formula" hspace="5" align="middle" />. Данный интеграл мы записываем по Лейбницу в виде стилизованной суммы буквы 
+    <img src="k7/gif/f72020.gif" alt="math formula" hspace="5" align="bottom" />:</p>
+
+    <div class="c2">
+      <em>Интеграл Римана</em>: 
+       
+       
+       
+      <img src="k7/gif/f72021.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Подынтегральное выражение 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" />  можно также поместить между знаком интегрирования и дифференциалом.</p>
+
+    <p>Математики дают гарантию того, что рассматриваемый предел существует, в случае, если интегрируемая функция <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> непрерывна и ограниченна, как и интервал - конечен и замкнут:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Ограниченная непрерывная функция интегрируема по Риману на замкнутом конечном интервале. 
+             
+            </em></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>В отличии от интегрируемости, дифференцируемость функции вовсе не следует из ее непрерывности.</p>
+
+    <div class="c2">
+      <a href="#720b1r" >Дополнение: Расчет интеграла по определению</a>
+    </div>
+  </div><br />
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Taylor - Entwicklung</h2>
+
+    <h3>6.3 Form und Eindeutigkeit</h3>
+  </div>
+
+  <div class="c3">
+    <p>Ehe wir uns mit der Existenzfrage beschäftigen, wollen wir uns den Fragen 2) und 3) zuwenden: 
+    Um Information über die möglichen Eigenschaften der gesuchten Entwicklung zu erhalten, wollen wir 
+    zunächst einmal <em>annehmen</em>, wir hätten schon eine Potenzreihe:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f63001.gif" alt="math formula" hspace="5" align="middle" /> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mit 
+      <img src="k6/gif/f63002b.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>gefunden, die die betrachtete Funktion 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> in einem Intervall z.B. für <img src="k6/gif/f63003b.gif" alt="math formula" hspace="5" align="middle" /> um den Nullpunkt herum darstellt. Da alle Funktionen unserer Grundausstattung unendlich oft differenzierbar sind, können wir die Ableitungen der Potenzreihe gliedweise der Reihe nach berechnen:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f63004.gif" alt="math formula" hspace="5" align="middle" /> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mit 
+      <img src="k6/gif/f63005.gif" alt="math formula" hspace="5" align="middle" /> , 
+      also 
+      <img src="k6/gif/f63006.gif" alt="math formula" hspace="5" align="middle" /><br />
+      <img src="k6/gif/f63007.gif" alt="math formula" hspace="5" align="middle" />
+      &nbsp; &nbsp;&nbsp; mit 
+      <img src="k6/gif/f63008.gif" alt="math formula" hspace="5" align="middle" /> , 
+      also 
+      <img src="k6/gif/f63009.gif" alt="math formula" hspace="5" align="middle" /><br />
+      <img src="k6/gif/f63010.gif" alt="math formula" hspace="5" align="middle" />
+      &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mit 
+      <img src="k6/gif/f63011.gif" alt="math formula" hspace="5" align="middle" /> , 
+      also <img src="k6/gif/f63012.gif" alt="math formula" hspace="5" align="middle" /><br />
+      Allgemein:<br />
+      <img src="k6/gif/f63013.gif" alt="math formula" hspace="5" align="middle" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mit 
+      <img src="k6/gif/f63014.gif" alt="math formula" hspace="5" align="middle" /> , also 
+      <img src="k6/gif/f63015.gif" alt="math formula" hspace="5" align="middle" /> .
+    </div>
+    <br />
+
+    <p>Wir erhalten so die gesuchten Koeffizieneten 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" /> aus den Ableitungen 
+    <img src="k6/gif/f63016b.gif" alt="math formula" hspace="5" align="middle" /> der darzustellenden 
+    Funktion an der Entwicklungsstelle 
+    <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" />. Falls also eine Potenzreihen-Darstellung unserer Funktion existiert, hat sie folgende <em>Form</em> und wir nennen sie:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>TAYLOR-REIHE:</em> 
+            <img src="k6/gif/f63017.gif" alt="math formula" hspace="5" align="middle" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Nach der angegebenen Konstruktion sind die Koeffizienten überdies <em>eindeutig</em>, 
+    so dass wir auch die Frage 3) beantwortet haben.</p>
+
+    <p>Unsere Überlegungen zeigen uns auch, dass die darzustellende Funktion <em>notwendigerweise 
+    beliebig oft differenzierbar</em> sein muß, wenn eine Taylor-Reihe existieren soll.</p>
+
+    <p>Dass diese notwendige Voraussetzung <em>nicht hinreichend</em> für die Existenz der 
+    Taylor-Reihe ist, sieht man aus folgendem Gegenbeispiel: Die unten abgebildete Funktion, 
+    <img src="k6/gif/f63018b.gif" alt="math formula" hspace="5" align="middle" /> für 
+    <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" /> und 
+    <img src="eq/fv0g0.gif" alt="math formula" hspace="5" align="middle" /> , ist zwar überall 
+    unendlich oft differenzierbar, alle ihre Ableitungen 
+    <img src="k6/gif/f63019b.gif" alt="math formula" hspace="5" align="middle" /> verschwinden jedoch 
+    an der Stelle <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" />, 
+    so dass keine Taylor-Reihe um 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" /> gebildet werden kann.</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k6/gif/b6301.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Bild 6.1: Graph der Funktion 
+    <img src="k6/gif/f63020b.gif" alt="math formula" hspace="5" align="middle" /> für 
+    <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" /> und 
+    <img src="eq/fv0g0.gif" alt="math formula" hspace="5" align="middle" /></span></p>
+  </div>
+
+  <div class="c3">
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 6.1:</p>
+
+            <p>Berechnen Sie als Konsistenztest die Taylor-Reihe unseres Vorbilds, der 
+            geometrischen Reihe für 
+            <img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" />. 
+            <a href="#630l0101d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+
+  <div class="c1">
+    <p><img src="k6/gif/b6302.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Bild 6.2: Aufbau der geometrischen Reihe als Taylor-Entwicklung der 
+    rationalen Funktion <img src="k6/gif/f63021.gif" alt="math formula" hspace="5" align="middle" />
+    </span></p>
+  </div>
+</body>
+</html>

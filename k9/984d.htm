@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Vektoren</h2>
+
+    <h3>9.8 Transformationsverhalten der Produkte</h3>
+
+    <h4>9.8.4 Transformation der Produkte</h4>
+  </div>
+
+  <div class="c3">
+    <p>Zum Schluß dieses Kurses wollen wir nun noch überprüfen, wie sich unsere Produkte aus Vektoren unter Drehungen und Spiegelungen des Koordinatensystems verhalten:</p>
+
+    <p>Wir wissen schon, dass die <em>Komponenten <img src="k9/gif/f98401.gif" alt="math formula" hspace="5" align="middle" /> eines Vektors</em> <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" />, der aus einer Verschiebung entstanden ist, als Projektionen auf die Koordinatenachsen <img src="k9/gif/f98402.gif" alt="math formula" hspace="5" align="middle" /> sich transformieren wie die Basisvektoren selbst:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98403.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>also</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98404.gif" alt="math formula" hspace="5" align="middle" />.
+    </div><br />
+    <br />
+
+    <p>Insbesondere werden bei der Spiegelung am Nullpunkt, der Parität, die Vorzeichen umgedreht. Man nennt diese Vektoren deshalb <em>polare Vektoren</em>.</p>
+
+    <p>Als erstes Produkt untersuchen wir das <em>Skalarprodukt <img src="k9/gif/f98405.gif" alt="math formula" hspace="5" align="middle" /> aus zwei polaren Vektoren <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" /> und <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" /></em>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98406.gif" alt="math formula" hspace="5" align="middle" />,<br />
+      also <img src="k9/gif/f98407.gif" alt="math formula" hspace="5" align="middle" />.
+    </div><br />
+    <br />
+
+    <p>Wir haben dabei zuerst die Komponentendarstellung des Skalarprodukts im neuen System eingesetzt mit der Summe über <img src="k9/gif/f98408.gif" alt="math formula" hspace="5" align="middle" />, dann das Transformationsgesetz für die Komponenten polarer Vektoren verwendet, die Orthogonalitätsrelation der Transformationsmatrizen ausgenützt und schließlich nach der Summation über <img src="k9/gif/f98409.gif" alt="math formula" hspace="5" align="middle" /> ohne irgend welche Vorfaktoren die Komponentendarstellung des Skalarprodukts im ursprünglichen Koordinatensystem erhalten.</p>
+
+    <p>Damit haben wir gezeigt, dass unser Skalarprodukt dreh- und spiegelinvariant ist, also den Namen <em>Skalar</em> zurecht trägt.</p>
+
+    <p><br />
+    <br />
+    Als nächstes studieren wir die Transformationseigenschaften der <em>Komponenten <img src="k9/gif/f98410.gif" alt="math formula" hspace="5" align="middle" /> des Vektorprodukts <img src="k9/gif/f98411.gif" alt="math formula" hspace="5" align="middle" /> zweier polarer Vektoren <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" /> und <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" /></em>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98412.gif" alt="math formula" hspace="5" align="middle" />,<br />
+      also <img src="k9/gif/f98413.gif" alt="math formula" hspace="5" align="middle" />.
+    </div><br />
+    <br />
+
+    <p>Dabei haben wir zunächst die Komponentendarstellung der k-ten Komponente des Vektorprodukts im transformierten Koordinatensystem mit Summationen über <img src="k9/gif/f98414.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k9/gif/f98415.gif" alt="math formula" hspace="5" align="middle" /> eingesetzt, dann die Transformation der Vektorkomponenten der beiden Faktoren durchgeführt und für den letzten Index des Levi-Civita-Symbols ein überflüssiges Kronecker-Symbol mit Summation über <img src="k9/gif/f98416.gif" alt="math formula" hspace="5" align="middle" /> eingeführt. Dieses <img src="k9/gif/f98417.gif" alt="math formula" hspace="5" align="bottom" /> haben wir durch zwei orthogonale Transformationsmatrizen ersetzt und die drei Matrizen <img src="k9/gif/f98418.gif" alt="math formula" hspace="5" align="middle" /> mit Hilfe unserer <a href="#974b1d" >Determinanten-Formel</a> <img src="k9/gif/f98419.gif" alt="math formula" hspace="5d" align="middle" /> zur Determinante zusammengefaßt sowie das Vektorprodukt wieder im alten System geschrieben.</p>
+
+    <p>Daraus ergibt sich, dass das <em>Vektorprodukt</em> sich bei Drehungen zwar wie ein Verschiebungsvektor als <em>Vektor</em> transformiert, jedoch bei Spiegelungen wegen der Determinsnate <img src="k9/gif/f98420.gif" alt="math formula" hspace="5" align="middle" /> eine Vorzeichenänderung erfährt, also <em>spiegelinvariant</em> ist. Derartige Vektoren werden <em>axiale Vektoren</em> genannt und tatsächlich sind alle in der Physik auftretenden durch Vektorprodukte aus polaren Vektoren aufgebauten Vektoren spiegelungsinvariant. Sie hängen, wie wir gesehen haben alle mit Drehvorgängen zusammen und bedeuten im Gegensatz zum Richtungspfeil der Verschiebungsvektoren einen <em>Drehsinn</em> und der ändert sich, wie das folgende Bild zeigt, im Spiegel betrachtet nicht.</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k9/gif/b9841.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Bild 9.29: Spiegelung von Drehsinnkreis und Verschiebungspfeil am Ursprung</span></p>
+  </div>
+
+  <div class="c3">
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.48:</b> Polare und axiale Vektoren</p>
+
+            <p>Sortieren Sie folgende Beispiele physikalischer Vektoren nach ihrem Spiegelungsverhalten in zwei Körbe, einerseits die polaren, andererseits die axialen Vektoren:<br />
+            Ortsvektor, Impuls, Drehimpuls, Geschwindigkeit, Winkelgeschwindigkeit, Kraft, Drehmoment, magnetisches Moment, elektrisches Dipolmoment, Magnetfeld, elektrische Stromdichte, elektrisches Feld, elektrische Verschiebung, elektromagnetische Strahlungsflußdichte, usw. <a href="#984l4801d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p><br />
+    <br />
+    Als letztes wollen wir uns das <em>Spatprodukt <img src="k9/gif/f98421.gif" alt="math formula" hspace="5" align="middle" /> dreier polarer Vektoren <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" />, <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" /> und <img src="eq/cvekt.gif" alt="math formula" hspace="5" align="bottom" /></em> im transformierten Koordinatensystem <img src="eq/gsd.gif" alt="math formula" hspace="5" align="bottom" /> anschauen:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98423.gif" alt="math formula" hspace="5" align="middle" />,<br />
+      also <img src="k9/gif/f98424.gif" alt="math formula" hspace="5" align="middle" />.
+    </div><br />
+    <br />
+
+    <p>Wir haben wieder die polaren Vektorkomponenten transformiert und die <a href="#974b1d" >Determinanten-Formel</a> <img src="k9/gif/f98425.gif" alt="math formula" hspace="5d" align="middle" /> benützt.</p>
+
+    <p>Das Spatprodukt ergibt sich dabei zwar gegenüber Drehungen als <em>Skalar</em>, aber gegenüber Spiegelungen keineswegs als invariant, sondern mit einer Vorzeichenumkehr. Eine solche Größe heißt <em>Pseudoskalar</em>.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.49:</b> Paritätsverletzung</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Warum kann man zur Überprüfung der Paritätssymmetrie beim <img src="k9/gif/f98426.gif" alt="math formula" hspace="5" align="middle" />-Zerfall, z.B. in der Reaktion <img src="k9/gif/f98427.gif" alt="math formula" hspace="5" align="middle" />, das Spatprodukt der drei Impulse <img src="k9/gif/f98428.gif" alt="math formula" hspace="5" align="middle" /> nicht verwenden? <a href="#984l4901d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Welche Größe hat man statt dessen gemessen? <a href="#984l4902d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p><br />
+    Wir haben hier nur die einfachsten Regeln der Vektoralgebra behandelt. Sie werden im Verlauf Ihres Studiums noch sehr viel mehr mit Vektoren zu tun bekommen. Sie werden Vektoren als Funktionen eines Skalars, vor allem der Zeit studieren, aber auch Skalare und Vektoren als Funktion von Vektoren, vor allem des Ortes oder des Impulses, sogenannte Felder. Sie werden lernen Vektoren zu differenzieren, nach Taylor zu entwickeln und auf mehrere verschiedene Arten zu integrieren. Alle diese Vektoren werden das charakteristische Verhalten gegenüber Drehungen des Koordinatensystems zeigen und bezüglich der Spiegelungen in polare oder axiale unterschieden. Bei der Behandlung der Relativitätstheorie werden Sie mit Vektoren rechnen, die vier Komponenten besitzen. Und in der Feldtheorie mit unendlichdimensionalen Vektoren umgehen lernen. Die Grundstrukturen werden aber immer dieselben sein, die wir hier zusammen kennengelernt haben.</p>
+
+    <p>An einigen Stellen der Physik werden Sie über Skalare und Vektoren hinausgehend auf Tensoren <em>zweiter</em> Stufe stoßen, z.B. beim Trägheitsmoment, beim Spannungstensor und dem elektrischen Quadrupolmoment. In der vierdimensionalen Raum-Zeit bilden die elektromagnetischen Felder zusammen einen Feldtensor zweiter Stufe. Auch auf dessen Transformationsverhalten sind Sie durch unsere gemeinsamen Überlegungen vorbereitet. Freuen Sie sich darauf!</p>
+
+    <div class="c2">
+      <a href="#984b1d" >Weiterführende Literatur</a>
+    </div>
+  </div><br />
+</body>
+</html>

@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la fisica</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Desarrollo de Taylor</h2>
+
+    <h3>6.6 Reglas precisas para cálculos imprecisos</h3>
+  </div>
+
+  <div class="c4">
+    <p>Aún cuando la física es el modelo de una ciencia exacta, las aproximaciones 
+    aparecen en todas partes. Lo crucial para las ciencias exactas es que
+    <span lang="es">podemos</span> justificar la aproximación, llevarla a cabo en forma consistente y 
+    controlar la precisión.<br />
+    A menudo no tiene sentido, por ejemplo, calcular en forma más precisa que los 
+    errores de medición experimentales. También, en matemáticas basta a veces 
+    evaluar el valor de una función 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    usando su <b>serie de Taylor sólo hasta orden</b><em> 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" />
+    <span style="font-weight: 400">, 
+    es decir, considerando sólo los primeros </span></em> 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> 
+    términos. Luego, escribimos:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66001.gif" alt="math formula" hspace="5" align="middle" width="234" height="50" />
+    </div><br />
+    
+
+    <p>Aquí, 
+    <img src="k6/gif/f66002.gif" alt="math formula" hspace="5" align="middle" width="61" height="28" /> 
+    significa que los términos despreciados son, al menos, de orden 
+    <img src="k6/gif/f66003.gif" alt="math formula" hspace="5" align="bottom" width="35" height="15" />, 
+    es decir, que contiene 
+    <img src="k6/gif/f66004.gif" alt="math formula" hspace="5" align="middle" width="40" height="23" /> 
+    o más factores 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />.</p>
+
+    <p>Deseamos resumir aquí las reglas para cálculos aproximados. En este caso, 
+    la aproximación consiste tomar en cuenta consistentemente todos los términos 
+    hasta orden 
+    <img src="eq/xhm.gif" alt="math formula" hspace="5" align="bottom" width="20" height="11" />. 
+    Para mostrar las reglas que aparecen de esta receta, usamos el caso más 
+    simple, pero muy frecuente en que 
+    <img src="k6/gif/f66005.gif" alt="math formula" hspace="5" align="bottom" width="42" height="12" /> , 
+    es decir, cuando la serie se corta después del segundo término:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66006.gif" alt="math formula" hspace="5" align="middle" width="367" height="28" />
+    </div><br />
+    
+
+    <p>Para esto usamos las siguientes abreviaciones
+    <img src="k6/gif/f66007.gif" alt="math formula" hspace="5" align="middle" width="65" height="24" /> 
+    y <img src="k6/gif/f66008.gif" alt="math formula" hspace="5" align="middle" width="69" height="26" /> .</p>
+
+    <p>Consideramos una <b>segunda función</b> con notación similar:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66009.gif" alt="math formula" hspace="5" align="middle" width="180" height="28" />
+    </div><br />
+    
+    <p>Note que en las expansiones para 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    y 
+    <img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> 
+    hemos utilizado la misma expresión 
+    <img src="eq/oxh2.gif" alt="math formula" hspace="5" align="middle" width="40" height="28" />: 
+    <img src="eq/oxh2.gif" alt="math formula" hspace="5" align="middle" width="40" height="28" /> 
+    no corresponde a un valor numérico dado, sino que sólo a una <b>notación
+    <span style="font-weight: 400">para aquello que ha sido omitido</span>.</span></b></p>
+
+    <p>Para el producto de ambas funciones
+    
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />y<img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> 
+    se obtiene entonces:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66010.gif" alt="math formula" hspace="5" align="middle" width="539" height="28" />
+    </div><br />
+    
+
+    <p>Aquí, los primeros tres términos están claramente definidos, sin embargo 
+    en el último término hay una expresión concreta multiplicada por el símbolo 
+    <img src="eq/oxh2.gif" alt="math formula" hspace="5" align="middle" width="40" height="28" />. 
+    ¿Qué significa eso?</p>
+
+    <p>Podemos escribir 
+    <img src="k6/gif/f66011.gif" alt="math formula" hspace="5" align="middle" width="123" height="41" /> 
+    con coeficientes cualesquiera 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" />. 
+    Luego, el primer término de la expresión que nos interesa se escribe como</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66012.gif" alt="math formula" hspace="5" align="middle" width="306" height="41" />
+    </div><br />
+    
+    <p>puesto que la serie comienza con 
+    <img src="eq/xh2.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" />, 
+    aun cuando con otros coeficientes 
+    <img src="k6/gif/f66013.gif" alt="math formula" hspace="5" align="middle" width="68" height="24" /> . 
+    Así también, resulta que:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66014.gif" alt="math formula" hspace="5" align="middle" width="331" height="41" />
+    </div><br />
+    
+
+    <p>porque esta serie comienza con un término 
+    <img src="k6/gif/f66015.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" />. 
+    Para la suma obtenemos</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66016.gif" alt="math formula" hspace="5" align="middle" width="295" height="28" />
+    </div><br />
+    
+
+    <p>porque la potencia menor, y que por tanto que domina en la vecindad del 
+    origen, es 
+    <img src="eq/xh2.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" /> . 
+    Si en la expresión para el producto 
+    <img src="k6/gif/f66017.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" />identificamos 
+    también al tercer término como de orden 
+    <img src="eq/xh2.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" /> 
+    y lo añadimos al resto obtenemos:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66018.gif" alt="math formula" hspace="5" align="middle" width="302" height="28" />
+    </div><br />
+    
+
+    <p>Esta expresión la hubiésemos obtenido también si hubiésemos calculado la 
+    serie de Taylor de la función producto 
+    <img src="k6/gif/f66019.gif" alt="math formula" hspace="5" align="middle" width="119" height="24" /> </p>
+
+    <div class="c2">
+      <img src="k6/gif/f66020.gif" alt="math formula" hspace="5" align="middle" width="213" height="28" />
+    </div><br />
+    
+
+    <p>donde 
+    <img src="k6/gif/f66021.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" /> 
+    y 
+    <img src="k6/gif/f66022.gif" alt="math formula" hspace="5" align="middle" width="136" height="26" /> 
+    (al usar la regla de la diferenciación de un producto). <b>Advertencia</b>: 
+    Aquellos alumnos más aplicados podrían pensar que en la expresión aproximada 
+    para 
+    <img src="k6/gif/f66023.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> 
+    deberíamos también incluir al menos el término 
+    <img src="k6/gif/f66024.gif" alt="math formula" hspace="5" align="middle" width="45" height="28" />,que 
+    es fácil de calcular. Sin embargo, eso sería <b>inconsistente</b> debido a 
+    que se han desechado otros términos del mismo orden.</p>
+
+    <p>Para la <b>r-ésima potencia de una función arbitraria</b> 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    se obtiene que:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66025.gif" alt="math formula" hspace="5" align="middle" width="318" height="37" />
+    </div><br />
+    
+    <p>donde hemos tomado de nuestra pequeña 
+    <a href="#643s">
+    tabla</a>&nbsp; la serie binomial general 
+    <img src="k6/gif/f66026.gif" alt="math formula" hspace="5" align="middle" width="191" height="28" /> . 
+    Para el caso especial 
+    <img src="k6/gif/f66027.gif" alt="math formula" hspace="5" align="middle" width="48" height="23" /> , 
+    esto es, para el recíproco de una función 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66028.gif" alt="math formula" hspace="5" align="middle" width="220" height="37" />
+    </div><br />
+    
+
+    <p>Claramente, se obtiene también la misma expresión si cortamos la serie de 
+    Taylor para el recíproco de la función después del segundo término.</p>
+
+    <p>Para el caso de <b>funciones implícitas</b> 
+    <img src="k6/gif/f66029.gif" alt="math formula" hspace="5" align="middle" width="103" height="24" /> 
+    es más simple escribir directamente la expansión de Taylor</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66030.gif" alt="math formula" hspace="5" align="middle" width="295" height="28" />
+    </div><br />
+   
+
+    <p>Como ejemplo numérico consideramos la el cálculo de 
+    <img src="k6/gif/f66031e.gif" alt="math formula" hspace="5" align="middle" width="480" height="29" /> , 
+    mientras que el valor exacto es 
+    <img src="k6/gif/f66032e.gif" alt="math formula" hspace="5" align="middle" width="54" height="23" /> 
+    y luego el error es cercano a 
+    <img src="k6/gif/f66033e.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Ejercicio 6.8:</p>
+
+            <p>Expanda&nbsp; hasta primer orden alrededor del origen 
+            <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" />:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034.gif" alt="math formula" hspace="5" align="middle" width="62" height="24" /> 
+                <a href="#660l0801s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034a.gif" alt="math formula" hspace="5" align="bottom" width="60" height="12" />
+                <a href="#660l0802s" >Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034b.gif" alt="math formula" hspace="5" align="middle" width="57" height="28" />
+                <a href="#660l0803s" >Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034c.gif" alt="math formula" hspace="5" align="bottom" width="71" height="12" />
+                <a href="#660l0804s" >Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034d.gif" alt="math formula" hspace="5" align="middle" width="58" height="24" />
+                <a href="#660l0805s" >Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034e.gif" alt="math formula" hspace="5" align="middle" width="70" height="24" />
+                <a href="#660l0806s" >Solución</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Ejercicio 6.9:</p>
+
+            <p>Calcule hasta primer orden y compare con el valor exacto:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66035e.gif" alt="math formula" hspace="5" align="middle" width="44" height="22" /> 
+                <a href="#660l0901s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66036e.gif" alt="math formula" hspace="5" align="bottom" width="34" height="15" /> 
+                <a href="#660l0902s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66037e.gif" alt="math formula" hspace="5" align="middle" width="135" height="24" /> 
+                <a href="#660l0903s" >
+                Solución</a> y</td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66038.gif" alt="math formula" hspace="5" align="middle" width="131" height="29" /> 
+                <a href="#660l0904s" >
+                Solución</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

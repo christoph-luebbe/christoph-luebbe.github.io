@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>3 Ряды и последовательности</h2>
+
+    <h3>3.5 Ряды</h3>
+  </div>
+
+  <div class="c3">
+    <p>В прошлой главе мы познакомились с понятием предела последовательности. Теперь мы можем применить эти 
+    знания к часто используемым в  физике понятиям, таким, как <em>бесконечные суммы</em> 
+    <img src="k3/gif/f32001.gif" alt="math formula" hspace="5" align="middle" width="72" height="41" />, которые 
+    называются <em>рядами</em>:</p>
+
+    <p>Ряды часто применяются в физических задачах: Например, мы хотим подсчитать
+    электростатическую энергию бесконечной последовательности равноудаленных
+    знакопеременных точечных зарядов (что представляет собой одномерную модель
+    ионного кристалла). Тогда нам придется подсчитать бесконечную сумму членов
+    чередующейся гармонической последовательности (F7) - ряд 
+    <img src="k3/gif/f32002.gif" alt="math formula" hspace="5" align="middle" width="76" height="41" />. 
+    Но как ее вычислить ?</p>
+
+    <p>Рядами называются последовательности, членами которых являются конечные суммы вещественных чисел. Определение
+    </p>
+
+    <div class="c2">
+      <em>ряда</em> 
+      <img src="k3/gif/f32003.gif" alt="math formula" hspace="5" align="middle" width="43" height="41" /> как <em> 
+      последовательности частичных сумм</em> 
+      <img src="k3/gif/f32003b.gif" alt="math formula" hspace="5" align="middle" width="136" height="47" />
+    </div>
+    <br />
+
+    <p>указывает на связь между рядами и последовательностями, о которых шла речь в прошлых главах.</p>
+
+    <p>Ряд является <em>сходящимся</em> и имеет величину 
+    <img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, если 
+    последовательность частичных сумм 
+    <img src="k3/gif/f32004.gif" alt="math formula" hspace="5" align="middle" width="19" height="17" /> 
+    (<em>а не</em> их <em>слагаемых</em> 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" />!!) сходится: 
+    <img src="k3/gif/f32005.gif" alt="math formula" hspace="5" align="middle" width="87" height="23" />:</p>
+
+    <div class="c2">
+      <em>ряд</em> 
+      <img src="k3/gif/f32003.gif" alt="math formula" hspace="5" align="middle" width="43" height="41" /> 
+      как и последовательность 
+      <img src="k3/gif/f32006.gif" alt="math formula" hspace="5" align="middle" width="84" height="41" /> <em>сходится.
+      </em> <img src="k3/gif/f32007.gif" alt="math formula" hspace="5" align="middle" width="185" height="41" />
+    </div>
+    <br />
+
+    <p>Прозведение сходяшегося ряда на число, сумма и разность сходящихся рядов являются сходящимися.</p>
+
+    <p>Ниже мы приведем примеры рядов полученных путём почленного сложения последовательностей.</p>
+
+    <p><em>Ряд (R1)</em> частичных сумм последовательности (F1) натуральных чисел: 
+    <img src="k3/gif/f32008.gif" alt="math formula" hspace="5" align="middle" width="260" height="47" /> является 
+    расходящимся.</p>
+
+    <p><em>Ряд (R2)</em> из членов чередующейся последовательности (F2) состоит из чисел 
+    <img src="eq/1.gif" alt="math formula" hspace="5" align="bottom" width="6" height="11" /> и 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />, имеет две 
+    предельных точки, т.е. не имеет предела.</p>
+
+    <p><em>Гармонический ряд</em> <em>(R3)</em>, состоящий из членов гармонической последовательности  (F3), 
+    <img src="k3/gif/f32009.gif" alt="math formula" hspace="5" align="middle" width="298" height="47" /> является 
+    расходящимся. Критерий Коши не выполнен:<br /> Зададим 
+    <img src="k3/gif/f32010.gif" alt="math formula" hspace="5" align="middle" width="68" height="29" /> для 
+    <img src="k3/gif/f32011.gif" alt="math formula" hspace="5" align="bottom" width="53" height="12" /> и 
+    рассмотрим часть ряда, которая содержит 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> членов:<br /> 
+    <img src="k3/gif/f32012.gif" alt="math formula" hspace="5" align="middle" width="601" height="70" />, для 
+    сходимости необходимо выполнение условия: 
+    <img src="k3/gif/f32013.gif" alt="math formula" hspace="5" align="middle" width="23" height="19" />.</p>
+
+    <p><em>Чередующийся ряд (R7)</em>, построенный из последовательности (F7), (пример, приведенный в начале главы) 
+    является сходящимся 
+    <img src="k3/gif/f32014.gif" alt="math formula" hspace="5" align="middle" width="76" height="41" /> ( 
+    <img src="k3/gif/f32014b.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" />, это мы 
+    докажем позже). Так как существует разница между рядами с положительными членами и рядами с чередующимися 
+    членами, необходимо ввести новое понятие - <em>абсолютно сходящийся ряд</em>. Абсолютно сходящимся называется ряд, 
+    состоящих из абсолютных величин его членов.</p>
+
+    <div class="c2">
+       <img src="k3/gif/f32015.gif" alt="math formula" hspace="5" align="middle" width="84" height="41" /> <em> 
+       абсолютно сходящийся ряд</em> 
+       <img src="k3/gif/f32016.gif" alt="math formula" hspace="5" align="middle" width="165" height="41" />
+    </div>
+    <br />
+
+    <p>Перестановка членов абсолютно сходящегося ряда не нарушит его сходимости. Почленным произведением двух 
+    абсолютно сходящихся рядов будет абсолютно сходящийся ряд.</p>
+
+    <p>Для определения абсолютной сходимости математики установили <em>достаточные</em>  условия, так называемые 
+    <em>признаки сравнения  (мажорантные признаки)</em> которые вы будете детально разбирать на лекциях по 
+    математическому анализу:</p>
+
+    <div class="c2">
+      <a href="#350b1r" >Дополнение: Мажоранта</a>
+    </div>
+    <br />
+
+    <p>В роли мажоранты часто выступает <em>сумма членов геометрического ряда</em> <em>(R6)</em>: 
+    <img src="k3/gif/f32022.gif" alt="math formula" hspace="5" align="middle" width="42" height="41" />, 
+    который в свою очередь следует из геометрической последовательности  (F6) 
+    <img src="k3/gif/f32023.gif" alt="math formula" hspace="5" align="middle" width="105" height="24" />. 
+    При вычислении границы  для 
+    <img src="k3/gif/f32024.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" /> мы можем 
+    воспользоваться формулой суммы геометрического ряда:</p>
+
+    <div class="c2">
+      <img src="k3/gif/f32025.gif" alt="math formula" hspace="5" align="middle" width="340" height="35" />
+    </div>
+    <br />
+
+    <p>Это значит, что ряд сходится для 
+    <img src="k3/gif/f32026.gif" alt="math formula" hspace="5" align="middle" width="44" height="24" /> и расходится 
+    для <img src="k3/gif/f32027.gif" alt="math formula" hspace="5" align="middle" width="44" height="24" />.</p>
+
+    <div class="c2">
+      <a href="#350b2r" >Дополнение: Критерий частного</a>
+    </div>
+    <br />
+
+    <p><em> Рассмотрим ряд обратных факториалов натуральных чисел (R4)</em> 
+    <img src="k3/gif/f32036.gif" alt="math formula" hspace="5" align="middle" width="41" height="41" />:</p>
+
+    <p>Мы видим, что последовательность частичных сумм 
+    <img src="k3/gif/f32037.gif" alt="math formula" hspace="5" align="middle" width="131" height="47" /> 
+    монотонно возрастает: 
+    <img src="k3/gif/f32038.gif" alt="math formula" hspace="5" align="middle" width="170" height="29" />.</p>
+
+    <p>Для определения верхней границы 
+    <img src="eq/gb.gif" alt="math formula" hspace="5" align="bottom" width="12" height="11" /> вычислим с 
+    помощью мажоранты сумму членов геометрической последовательности для 
+    <img src="k3/gif/f32040.gif" alt="math formula" hspace="5" align="middle" width="38" height="29" />:</p>
+
+    <div class="c2">
+      <img src="k3/gif/f32041.gif" alt="math formula" hspace="5" align="middle" width="211" height="155" />
+    </div>
+    <br />
+
+    <p>Так как монотонно возрастающая последовательность частичных сумм 
+    <img src="k3/gif/f32042.gif" alt="math formula" hspace="5" align="middle" width="19" height="17" /> 
+    ограничена сверху 
+    <img src="k3/gif/f32043.gif" alt="math formula" hspace="5" align="bottom" width="42" height="11" />, то согласно 
+    теореме Больцано-Вейерштрасса, ряд является сходящимся.  Однако предел ряда нам не известен. Пределом ряда 
+    является иррациональное число. Назовем это число 
+    <img src="k3/gif/f32044.gif" alt="math formula" hspace="5" align="middle" width="50" height="23" />, так, 
+    что число 
+    <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> задается 
+    с помощью ряда, начинающегося с 
+    <img src="k3/gif/f32046.gif" alt="math formula" hspace="5" align="bottom" width="39" height="12" /> 
+    (где используется определение 
+    <img src="k3/gif/f32045.gif" alt="math formula" hspace="5" align="bottom" width="41" height="13" />):</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Экспоненциальный ряд</em> определяется: 
+            <img src="k3/gif/f32047.gif" alt="math formula" hspace="5" align="middle" width="73" height="41" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <a href="#350b3r" >Дополнение: иррациональное число e</a>
+    </div>
+    <br />
+
+    <p>Для определения числового значения 
+    <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+    вычислим члены нулевой последовательности (F4) 
+    <img src="k3/gif/f32058.gif" alt="math formula" hspace="5" align="middle" width="52" height="29" />:</p>
+
+    <div class="c2">
+      <table width="100%" border="0">
+        <tr>
+          <td>
+          <img src="k3/gif/f32059.gif" alt="math formula" hspace="5" align="middle" width="79" height="29" /> </td>
+
+          <td>
+          <img src="k3/gif/f32060.gif" alt="math formula" hspace="5" align="middle" width="134" height="29" /> </td>
+
+          <td>
+          <img src="k3/gif/f32061.gif" alt="math formula" hspace="5" align="middle" width="150" height="29" /> </td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32062.gif" alt="math formula" hspace="5" align="middle" width="178" height="29" /> </td>
+
+          <td>
+          <img src="k3/gif/f32063.gif" alt="math formula" hspace="5" align="middle" width="176" height="29" /> </td>
+
+          <td>
+          <img src="k3/gif/f32064.gif" alt="math formula" hspace="5" align="middle" width="184" height="29" /> </td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32065.gif" alt="math formula" hspace="5" align="middle" width="196" height="29" /> </td>
+
+          <td>
+          <img src="k3/gif/f32066.gif" alt="math formula" hspace="5" align="middle" width="202" height="29" /> </td>
+
+          <td>
+          <img src="k3/gif/f32067.gif" alt="math formula" hspace="5" align="middle" width="208" height="29" /></td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>и частичные суммы: 
+    <img src="k3/gif/f32068.gif" alt="math formula" hspace="5" align="middle" width="286" height="41" /></p>
+
+    <div class="c2">
+      <table width="100%" border="0">
+        <tr>
+          <td>
+          <img src="k3/gif/f32069.gif" alt="math formula" hspace="5" align="middle" width="43" height="23" /> </td>
+
+          <td>
+          <img src="k3/gif/f32070.gif" alt="math formula" hspace="5" align="middle" width="67" height="23" /> </td>
+
+          <td>
+          <img src="k3/gif/f32071.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" /> </td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32072.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" /> </td>
+
+          <td>
+          <img src="k3/gif/f32073.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" /> </td>
+
+          <td>
+          <img src="k3/gif/f32074.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" /> </td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32075.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" /> </td>
+
+          <td>
+          <img src="k3/gif/f32076.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" /> </td>
+
+          <td>
+          <img src="k3/gif/f32077.gif" alt="math formula" hspace="5" align="middle" width="103" height="23" /></td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Учитывая быструю сходимость, мы получаем число <br /> <br /> 
+    <img src="k3/gif/f32078.gif" alt="math formula" hspace="5" align="middle" width="205" height="23" />.</p>
+
+    <div class="c2">
+      <a href="#350b4r" >Дополнение: Последовательность, сходящаяся к e</a>
+    </div>
+    <br />
+
+    <p>В этой главе мы получили представление о предельных процессах и познакомились с
+    неотъемлемыми для естественных наук понятиями последовательностей и рядов, а
+    также их пределов. </p>
+  </div>
+</body>
+</html>

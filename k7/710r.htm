@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {margin-left: 2em}
+  div.c2 {text-align: left}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Интегральное исчисление    </h2>
+
+    <h3>7.1 Работа</h3>
+  </div>
+
+  <div class="c2">
+    <p>Для начала, давайте рассмотрим <em>равномерное движение</em> материальной точки на прямой, например, движение центра тяжести автомобиля по шоссе. После того, как на первый вопрос о скорости мы ответим при помощи дифференцирования, давайте вместе с физиками рассмотрим данный пример глубже и зададимся вопросом о причине: Почему автомобиль на прямом участке шоссе движется с наблюдаемой равномерной скоростью? Очевидно, что причиной равномерного прямолинейного движения по Ньютону является сила, точнее сила 
+    <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" />, с которой мотор ускоряет машину против инерции, ветра и потерь при трении. Не позднее чем на заправке возникнет <em>вопрос о работе</em> 
+    <img src="k7/gif/f71000b.gif" alt="math formula" hspace="5" align="bottom" />, которую на пройденном расстоянии 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> проделал мотор. Проделанная работа пропорциональна требуемой силе К и пройденному отрезку пути 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" />, точнее говоря, она равна произведению этих двух величин: 
+    <img src="k7/gif/f71001.gif" alt="math formula" hspace="5" align="bottom" />, геометрически она равна площади <em>прямоугольника</em> высотой 
+    <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" /> и длиной 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" />, если мы в прямоугольной (декартовой) системе координат зададим пройденное расстояние 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> в направлении оси 1 и соответственно действующую силу 
+    <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" /> в направлении оси 2.</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="k7/gif/b7101.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Рисунок 7.1: Постоянная сила 
+    <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" /> как функция пройденного отрезка пути от 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> до 
+    <img src="k7/gif/f71002.gif" alt="math formula" hspace="5" align="middle" />. Прямоугольная поверхность выделенная желтым цветом пропорциональна работе 
+    <img src="k7/gif/f71003.gif" alt="math formula" hspace="5" align="bottom" />.</span></p>
+  </div>
+
+  <div class="c2">
+    <p>Это был идеализированный случай постоянной силы; давайте теперь перейдем к более реалистичному случаю, когда на протяжении пути сила изменяется, например, когда после нажатия на газ начальная величина 
+    <img src="k7/gif/f71004.gif" alt="math formula" hspace="5" align="middle" /> <em> линейно возрастает</em>: 
+    <img src="k7/gif/f71005.gif" alt="math formula" hspace="5" align="middle" /> :</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="k7/gif/b7102.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Рисунок 7.2: Сила, линейно возрастающая от исходной величины 
+    <img src="k7/gif/f71004.gif" alt="math formula" hspace="5" align="middle" /> до 
+    <img src="k7/gif/f71005.gif" alt="math formula" hspace="5" align="middle" /> на пройденном пути 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> между точками 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> и 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" /> .</span></p>
+  </div>
+
+  <div class="c2">
+    <p>На графике видно, как следует поступить, если при заправке снова встанет вопрос о работе, проделанной на всем отрезке пути. Мы берем среднее значение 
+    <img src="k7/gif/f71006.gif" alt="math formula" hspace="5" align="middle" /> между исходной точкой 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> и конечной точкой 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" />, считываем соответствующее значение силы 
+    <img src="k7/gif/f71007.gif" alt="math formula" hspace="5" align="middle" /> и умножаем его на пройденный отрезок пути 
+    <img src="k7/gif/f71008.gif" alt="math formula" hspace="5" align="bottom" /> :</p>
+
+    <div class="c3">
+      
+    <img src="k7/gif/f71009.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Таким образом мы перевели физический вопрос о работе в геометрический вопрос о "<em>плоскости под прямой силы и на интервале</em> 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> ", точнее, в вопрос о площади области, которая сверху ограниченна значением функции, слева - прямой 
+    <img src="k7/gif/f71010.gif" alt="math formula" hspace="5" align="bottom" />, справа - прямой 
+    <img src="k7/gif/f71011.gif" alt="math formula" hspace="5" align="bottom" />, а снизу осью 1 
+    <img src="k7/gif/f71012.gif" alt="math formula" hspace="5" align="middle" />. Рассматривая вопрос о работе при переменной силе <em>произвольной</em> формы, мы возвращаемся к математической проблеме определения площади прямоугольника, при которой одна сторона (в данном случае - верхняя) изображается кривой линией. Мы сейчас рассмотрим этот общий математический вопрос и получим решение, которое пригодится физикам не только для решения задач о работе, но и во многих других случаях.</p>
+  </div>
+</body>
+</html>

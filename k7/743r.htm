@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Интегральное исчисление    </h2>
+
+    <h3>7.4 Основная теорема дифференциального и интегрального исчисления</h3>
+
+    <h4>7.4.3 Интегрирование производной</h4>
+  </div>
+
+  <div class="c4">
+    <p>После того, как мы научились дифференцировать интеграл, рассмотрим обратный процесс - интегрирование производной. Мы исходим из непрерывной функции 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" />, т.е. из дифференциального уравнения первого порядка для 
+    <img src="k7/gif/f74407.gif" alt="math formula" hspace="5" align="middle" />. Мы хотим проинтегрировать это дифференциальное уравнение на интервале 
+    <img src="eq/giab.gif" alt="math formula" hspace="5" align="middle" />. Применяя определение интеграла, получим</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74302.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>где узлы 
+    <img src="k7/gif/f72012.gif" alt="math formula" hspace="5" align="middle" /> лежат внутри интервалов длины 
+    <img src="k7/gif/f74304.gif" alt="math formula" hspace="5" align="middle" />. По 
+    <a href="#530r">теореме о среднем значении дифференциального исчисления</a>, наклон в узле 
+    <img src="k7/gif/f74305.gif" alt="math formula" hspace="5" align="middle" /> может быть заменен на наклон секущей, т.е. дифференциальное отношение может быть заменено на разностное отношение для граничных точек интервала:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74306.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>В полной записи это выглядит следующим образом:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74307.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Мы видим, что все промежуточные члены попарно убираются, кроме второго и предпоследнего членов, которые уже больше не зависят от 
+    <img src="k7/gif/f74307b.gif" alt="math formula" hspace="5" align="bottom" />, т.е. предельный переход их не затрагивает:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74308.gif" alt="math formula" hspace="5" align="middle" />.
+    </div>
+    <br />
+
+    <p>Таким образом получается</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>вторая часть ОСНОВНОЙ ТЕОРЕМЫ</em>: 
+            <img src="k7/gif/f74309.gif" alt="math formula" hspace="5" align="middle" />, т.е.<br /> <em>определенный интеграл от производной непрерывной дифференцируемой функции по некоторому интервалу<br /> равен разности значений функции на верхней и нижней границе интервала.</em></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>И в этом смысле, интегрирование является операцией обратной дифференцированию. </p>
+
+    <p>Например, наш результат, с таким трудом полученный из определения интеграла: 
+    <img src="k7/gif/f74310.gif" alt="math formula" hspace="5" align="middle" />, теперь легко следует из вычисления производной 
+    <img src="k7/gif/f74311.gif" alt="math formula" hspace="5" align="middle" /> .</p>
+
+    <p>Вторая часть основной теоремы является для нас решающим шагом на пути к решению проблемы интегрирования: Теперь мы можем сразу рассчитать все определенные интегралы от всех функций, которые находятся во второй колонке в 
+    <a href="#553r">таблице производных из 5-й главы</a>. Теперь мы читаем ТАБЛИЦУ в обратном направлении - справа налево, и дополняем заголовки следующим образом:</p>
+
+    <div class="c1">
+      <table border="2" cellpadding="6">
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td colspan="4" align="center"><em>ТАБЛИЦА ПРОИЗВОДНЫХ И ИНТЕГРАЛОВ</em></td>
+        </tr>
+
+        <tr>
+          <td>Строка</td>
+
+          <td><img src="k7/gif/f74312.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74313.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>Примечания:</td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+
+          <td><img src="k7/gif/f74314.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+
+          <td><img src="k7/gif/f74315.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74316.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/rer.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+
+          <td><img src="k7/gif/f74317.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74315.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74319.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+
+          <td><img src="eq/sinx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+
+          <td><img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74320.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+
+          <td><img src="eq/tanx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74321.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74322.gif" alt="math formula" hspace="5" align="middle" />.
+          <img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+
+          <td><img src="k7/gif/f74324.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74325.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74326.gif" alt="math formula" hspace="5" align="middle" />.
+          <img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>8</td>
+
+          <td><img src="k7/gif/f74328.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74329.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>9</td>
+
+          <td><img src="k7/gif/f74330.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74331.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>10</td>
+
+          <td><img src="k7/gif/f74332.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74333.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>11</td>
+
+          <td><img src="k7/gif/f74334.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74335.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>12</td>
+
+          <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>13</td>
+
+          <td><img src="k7/gif/f74336.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74337.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74338.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>14</td>
+
+          <td><img src="k7/gif/f74339.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74340.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>15</td>
+
+          <td><img src="k7/gif/f74341.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74342.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" />,
+          <img src="k7/gif/f74343.gif" alt="math formula" hspace="5" align="middle" />,
+          <img src="k7/gif/f74344.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>16</td>
+
+          <td><img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>17</td>
+
+          <td><img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>18</td>
+
+          <td><img src="k7/gif/f74347.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74348.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>19</td>
+
+          <td><img src="k7/gif/f74349.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74350.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>20</td>
+
+          <td><img src="k7/gif/f74351.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74352.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>21</td>
+
+          <td><img src="k7/gif/f74353.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74354.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74355.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>22</td>
+
+          <td><img src="k7/gif/f74356.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74357.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>23</td>
+
+          <td><img src="k7/gif/f74358.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74359.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74360.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+      </table>
+    </div><br />
+
+    <p>Для нашего примера из дополнения мы используем вторую строку для 
+    <img src="k7/gif/f74361.gif" alt="math formula" hspace="5" align="bottom" /> .,</p>
+
+    <p>Другой пример из этой строки с пределами 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> и 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" /> дает 
+    <img src="k7/gif/f74362.gif" alt="math formula" hspace="5" align="middle" />. Вообще говоря, для произвольного вещественного числа 
+    <img src="eq/rer.gif" alt="math formula" hspace="5" align="middle" /> следует:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74363.gif" alt="math formula" hspace="5" align="middle" />.</div>Этот результат мы записали третью строку ТАБЛИЦЫ.
+    
+    <br />
+
+    <p>Из четвертой строки находим:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74364.gif" alt="math formula" hspace="5" align="middle" />.</div>
+    <br />
+
+    <p>из двенадцатой строки:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74365.gif" alt="math formula" hspace="5" align="middle" />.</div>
+    <br />
+
+    <p>и также, аналогично и многие другие интегралы.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 7.1:</p>
+
+            <p>Рассчитайте следующие примеры интегралов:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74366.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#743l0101r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74367.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#743l0102r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74368.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#743l0103r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74369.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#743l0104r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74370.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#743l0105r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74371.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#743l0106r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">g)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74372.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#743l0107r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74373.gif" alt="math formula" hspace="5" align="middle" />  для натурального n. 
+                <a href="#743l0108r" >Ответ</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

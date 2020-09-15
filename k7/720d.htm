@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.2 Fläche unter einer Funktion über einem Intervall</h3>
+  </div>
+
+  <div class="c3">
+    <p>Den gesuchten <em>Flächeninhalt</em> <img src="k7/gif/f72001.gif" alt="math formula" hspace="5" align="middle" /> "unter" einer beliebigen beschränkten stetigen, aber zunächst positiven Funktion <img src="k7/gif/f72002.gif" alt="math formula" hspace="5" align="middle" /> "über" der endlichen Wegstrecke "zwischen" Anfangspunkt <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> und Endpunkt <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" />, oft auch einfach <img src="k7/gif/f72003.gif" alt="math formula" hspace="5" align="middle" /> genannt, erhalten wir nach dem oben für eine Gerade angedeuteten Rezept: Wir teilen die zu berechnende Fläche in viele schmale senkrechte Streifen, deren obere Seiten annähernd gerade sind, berechnen die Flächeninhalte der Streifen wie oben, summieren die einzelnen Anteile auf und lassen schließlich die Zahl der Streifen über alle Grenzen wachsen in der Hoffnung, so den gesuchten Flächeninhalt als Grenzwert zu finden.</p>
+
+    <p>Wir wollen diesen <em>Grenzprozeß</em> ein einziges Mal im einzelnen schildern und dann standardisiert ablaufen lassen: Das Intervall <img src="k7/gif/f72004.gif" alt="math formula" hspace="5" align="middle" /> zwischen dem Anfangspunkt, <img src="k7/gif/f72005.gif" alt="math formula" hspace="5" align="middle" /> genannt, und dem Endpunkt, <img src="k7/gif/f72006.gif" alt="math formula" hspace="5" align="middle" /> genannt, wird durch die Wahl von z.B. <img src="k7/gif/f72007.gif" alt="math formula" hspace="5" align="bottom" /> <em>Zwischenstellen</em> <img src="eq/x_n.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k7/gif/f72008.gif" alt="math formula" hspace="5" align="middle" /> in <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" /> Teilintervalle <img src="k7/gif/f72009.gif" alt="math formula" hspace="5" align="middle" /> der jeweiligen Länge <img src="k7/gif/f72010.gif" alt="math formula" hspace="5" align="middle" /> geteilt. Die Teilintervalle brauchen keineswegs, können aber sehr wohl alle gleich lang sein: <img src="k7/gif/f72011.gif" alt="math formula" hspace="5" align="middle" /> . Im Inneren jedes der kleinen Teilintervalle wählen wir eine <em>Stützstelle</em> <img src="k7/gif/f72012.gif" alt="math formula" hspace="5" align="middle" /> , die nicht unbedingt auch der arithmetische Mittelpunkt <img src="k7/gif/f72013.gif" alt="math formula" hspace="5" align="middle" /> zu sein braucht, aber ohne weiteres sein kann. Dann bestimmen wir die Funktionswerte über diesen Stützstellen und nähern den wirklichen Flächeninhalt der einzelnen Streifen durch <img src="k7/gif/f72014.gif" alt="math formula" hspace="5" align="middle" /> , den der entsprechenden Rechtecke unter den Horizontalen durch die <img src="k7/gif/f72015.gif" alt="math formula" hspace="5" align="middle" /> . Diese <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" /> Rechteckflächen summieren wir auf und nennen sie</p>
+
+    <div class="c2">
+      <em>Riemann-Summe</em>: <img src="k7/gif/f72016.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+  </div><br />
+
+  <div class="c1">
+    <p><img src="k7/gif/b7201.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Bild 7.3: Intervallteilung und Streifen</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Der angekündigte Grenzübergang besteht nun aus der Verfeinerung der Intervallzerlegung, indem wir die Anzahl <img src="k7/gif/f72007.gif" alt="math formula" hspace="5" align="bottom" /> der Zwischenstellen über alle Grenzen anwachsen lassen, wobei wir bei nichtäquidistanter Teilung darauf achten müssen, dass die Breite des dicksten Streifens <img src="k7/gif/f72017.gif" alt="math formula" hspace="5" align="middle" /> gegen Null strebt. Falls die Folge der Riemann-Summen <img src="k7/gif/f72018.gif" alt="math formula" hspace="5" align="middle" /> dann einen Grenzwert besitzt, der unabhängig ist von der Zerlegung des Intervalls und von der Auswahl der Stützstellen <img src="k7/gif/f72019.gif" alt="math formula" hspace="5" align="middle" /> in den einzelnen Streifen, dann nennen wir diesen Grenzwert das "bestimmte" (oder Riemann-) Integral der Funktion <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> von <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> nach <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" />, bzw. den Flächeninhalt "unter" der Funktion <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> "über" dem Intervall <img src="k7/gif/f72004.gif" alt="math formula" hspace="5" align="middle" /> und schreiben nach den Vorschlägen von Leibniz mit einem stilisierten <img src="k7/gif/f72020.gif" alt="math formula" hspace="5" align="bottom" /> für Summe:</p>
+
+    <div class="c2">
+      <em>(Riemann-)Integral</em>: <img src="k7/gif/f72021.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Der Integrand <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> kann auch zwischen das Integralzeichen und das Differential gepackt werden.</p>
+
+    <p>Die Mathematiker garantieren uns, dass der betrachtete Grenzwert existiert, falls die zu integrierende Funktion <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> stetig und beschränkt sowie das Intervall endlich und abgeschlossen ist:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Eine beschränkte stetige Funktion ist über ein abgeschlossenes Intervall (Riemann)-integrierbar.</em></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Die Differenzierbarkeit folgte ja im Gegensatz dazu keineswegs aus der Stetigkeit.</p>
+
+    <div class="c2">
+      <a href="#720b1d" >Einschub: Berechnung eines Integrals nach der Definition</a>
+    </div>
+  </div><br />
+</body>
+</html>

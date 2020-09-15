@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Интегральное исчисление    </h2>
+
+    <h3>7.4 Основная теорема дифференциального и интегрального исчисления</h3>
+
+    <h4>7.4.4 Первообразная функция</h4>
+  </div>
+
+  <div class="c4">
+    <p>Хотя мы научились вычислять значительное количество определенных интегралов на большом числе интервалов, вопрос о вычислении <em>неопределенного интеграла от производной</em> 
+    <img src="k7/gif/f74401.gif" alt="math formula" hspace="5" align="middle" /> остается открытым . Давайте снова заменим постоянный верхний предел
+    img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" /> определенного интеграла на <em>переменную</em> 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" /> и получим</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74402.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Данную формулу переписываем следующим образом</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74403.gif" alt="math formula" hspace="5" align="middle" />.</div>
+    <br />
+
+    <p>Поскольку величина 
+    <img src="k7/gif/f74404.gif" alt="math formula" hspace="5" align="middle" /> является константной относительно переменной 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" />, хотя она и зависит от исходной точки интервала 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" />. Мы хотим в функции 
+    <img src="k7/gif/f74405.gif" alt="math formula" hspace="5" align="middle" /> иметь привычное нам обозначение 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> в качестве независимой переменной, поэтому широко распространилась несколько вольная запись</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74406.gif" alt="math formula" hspace="5" align="middle" />  , где 
+      <img src="k7/gif/f74407.gif" alt="math formula" hspace="5" align="middle" /> называется <em>первообразной функцией</em> от 
+      <img src="k7/gif/f74408.gif" alt="math formula" hspace="5" align="middle" /> .
+    
+    </div>
+    <br />
+
+    <p>Записанный в левой части 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> служит лишь в качестве указания на то, что здесь речь идет о функции независимой переменной, и, разумеется, не имеет ничего общего с переменной интегрирования 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> в правой части. Если иметь в виду эту небрежность, то данная запись весьма удобна. Кроме того, такое написание встречается в большинстве учебников и является всемирно принятым.</p>
+
+    <p>Записанная таким образом, первообразная функция представляет собой целое семейством функций, с параметром семейства 
+    <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" />. Первообразная функция 
+    <img src="k7/gif/f74407.gif" alt="math formula" hspace="5" align="middle" /> от 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> является именно тем семейством функций, которое решает наше исходное дифференциальное уравнение 
+    <img src="k7/gif/f74410.gif" alt="math formula" hspace="5" align="middle" />, и поэтому для физиков она имеет такое большое значение. Из данного семейства функций с заданным наклоном 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> физику нужно лишь подобрать нужное решение, зафиксироав значение константы 
+    <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" /> так, чтобы функция удовлетворяла граничному условию 
+    <img src="k7/gif/f74411.gif" alt="math formula" hspace="5" align="middle" />. Таким образом проблема будет решена.</p>
+
+    <p>Например, найдем первообразную 
+    <img src="k7/gif/f74407.gif" alt="math formula" hspace="5" align="middle" /> для 
+    <img src="k7/gif/f74412.gif" alt="math formula" hspace="5" align="middle" />, которая удовлетворяет граничному условию 
+    <img src="k7/gif/f74413.gif" alt="math formula" hspace="5" align="middle" />. Из семейства функций 
+    <img src="k7/gif/f74414.gif" alt="math formula" hspace="5" align="middle" /> следует выбрать такую функцию, для которой 
+    <img src="k7/gif/f74415.gif" alt="math formula" hspace="5" align="middle" />, т.е. нужно выбрать 
+    <img src="k7/gif/f74416.gif" alt="math formula" hspace="5" align="middle" />: следовательно, 
+    <img src="k7/gif/f74417.gif" alt="math formula" hspace="5" align="middle" /> является искомым решением.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 7.2:</p>
+
+            <p>Определите первообразные следующих функций:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74418.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#744l0201r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74419.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#744l0202r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74420.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#744l0203r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74421.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#744l0204r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 7.3:</p>
+
+            <p>Определите первообразные следующих функций при данных граничных условиях:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f74422.gif" alt="math formula" hspace="5" align="middle" />    с 
+                <img src="k7/gif/f74422b.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#744l0301r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f74423.gif" alt="math formula" hspace="5" align="middle" />    с 
+                <img src="k7/gif/f74423b.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#744l0302r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f74424.gif" alt="math formula" hspace="5" align="middle" />    с 
+                <img src="k7/gif/f74424b.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#744l0303r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

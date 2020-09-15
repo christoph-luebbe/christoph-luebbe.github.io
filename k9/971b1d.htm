@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik ( Einschub )</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c2 {margin-left: 2em}
+  p.c1 {font-weight: bold}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <p class="c1">Zwei Levi-Civita-Symbole:</p>
+
+  <p>Für die Berechnung der weiteren Mehrfachprodukte benötigen wir das folgende Produkt von zwei Levi- Civita-Symbolen</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97148.gif" alt="math formula" hspace="5" align="middle" />
+  </div><br />
+  <br />
+
+  <p>Der Beweis ist eine gute Übung in der Matrizenmultiplikation:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97149.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97150.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97151.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97152.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97153.gif" alt="math formula" hspace="5" align="middle" /><br />
+    <img src="k9/gif/f97154.gif" alt="math formula" hspace="5" align="middle" />
+  </div><br />
+  <br />
+
+  <p>Zunächst haben wir die beiden Levi-Civita-Symbole durch zwei geschickt gewählte Determinantendarstellungen ersetzt, dann ausgenutzt, dass die Determinante des Produkts zweier Matrizen gleich dem Produkt der beiden <a href="#923b2d" >Determinanten</a> ist. Darauf haben wir die beiden <a href="#923b1d" >Matrizen</a> miteinander multipliziert, wie wir das früher gelernt haben. Die einzelnen Matrixelemente erweisen sich als Summen über jeweils drei Produkte von zwei Kronecker-Symbolen, die wir zusammenfassen und mit der Summenkonvention als Summen über <img src="k9/gif/f97155.gif" alt="math formula" hspace="5d" align="middle" /> schreiben können. Schließlich führen wir diese Summen aus, wobei jeweils nur ein einziges Kronecker- Symbol übrigbleibt.</p>
+
+  <p>Nachdem wir das Ergebnis vor uns haben, erkennen wir natürlich angesichts der Symmetrieeigenschaften der Determinanten, dass es nicht anders hätte ausfallen können, wenn wir bedenken, dass es notwendgerweise wie unser Ausgangsprodukt total antisymmetrisch in beiden Indextripeln <img src="k9/gif/f97155b.gif" alt="math formula" hspace="5" align="bottom" /> und <img src="k9/gif/f97155c.gif" alt="math formula" hspace="5" align="middle" /> sowie symmetrisch gegen Vertauschen der Indexpaare <img src="k9/gif/f97155d.gif" alt="math formula" hspace="5" align="middle" />, <img src="k9/gif/f97155e.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k9/gif/f97155f.gif" alt="math formula" hspace="5" align="bottom" /> sein muß.</p>
+
+  <p>Günstigerweise braucht man dieses allgemeine Ergebnis nur ganz selten. Meist wird das Produkt nur in dem Spezialfall benötigt, bei dem <em>über ein Indexpaar</em>, z.B. m, <em>summiert</em> ist:</p>
+
+  <div class="c2">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p><img src="k9/gif/f97156.gif" alt="math formula" hspace="5" align="middle" /></p>
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <p>Auch für diese wichtige Relation wollen wir zeigen, wie sie zustandekommt:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97157.gif" alt="math formula" hspace="5" align="middle" />
+  </div><br />
+  <br />
+
+  <p>Wir haben dazu zunächst in der Determinantendarstellung des Produkts der Levi-Civita-Symbole <img src="k9/gif/f97158.gif" alt="math formula" hspace="5" align="bottom" /> gesetzt, die erhaltene <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" />-Determinante nach der letzten Zeile entwickelt und dann in den verbliebenen <img src="k9/gif/f97159.gif" alt="math formula" hspace="5" align="middle" />-Determinanten die Summen über <img src="k9/gif/f97160.gif" alt="math formula" hspace="5" align="middle" /> ausgeführt, also insbesondere aus der Spur <img src="k9/gif/f97161.gif" alt="math formula" hspace="5" align="middle" /> eine <img src="k9/gif/f97161b.gif" alt="math formula" hspace="5" align="bottom" /> erhalten. Nachdem wir in der ersten <img src="k9/gif/f97159.gif" alt="math formula" hspace="5" align="middle" />-Determinante die beiden Spalten vertauscht hatten, stand das Ergebnis fest.</p>
+
+  <p>Die allgemeine Struktur, nämlich "antisymmetrisch in <img src="k9/gif/f97162b.gif" alt="math formula" hspace="5" align="bottom" /> und <img src="k9/gif/f97162c.gif" alt="math formula" hspace="5" align="middle" /> sowie symmetrisch in <img src="k9/gif/f97162d.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k9/gif/f97162e.gif" alt="math formula" hspace="5" align="middle" /> und der Summationsindex <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" /> darf nicht mehr vorkommen", hätte man erraten können, aber wir wären nicht sicher gewesen, dass der Zahlenfaktor vor dem Ganzen wirklich eine <img src="eq/1.gif" alt="math formula" hspace="5" align="bottom" /> ist.</p>
+
+  <p>Manchmal braucht man sogar nur das <em>doppelt summierte Produkt</em> der zwei Levi-Civita-Symbole, das wir nun ganz einfach erhalten können:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97163.gif" alt="math formula" hspace="5" align="middle" />
+  </div><br />
+  <br />
+
+  <p>symmetrisch im Indexpaar <img src="k9/gif/f97162d.gif" alt="math formula" hspace="5" align="middle" />, wie es sein muß. Zum Spaß summieren wir zum Schluß auch noch über <em>das dritte Indexpaar:</em></p>
+
+  <div class="c2">
+    <img src="k9/gif/f97164.gif" alt="math formula" hspace="5" align="middle" />
+  </div><br />
+  <br />
+
+  <p>Analoge Relationen gibt es auch für die völlig summierten Levi-Civita-Symbole in Räumen anderer Dimensionen, z.B. im <img src="k9/gif/f97166.gif" alt="math formula" hspace="5" align="bottom" />, mit dem Ergebnis: "Dimension!"</p>
+
+  <p><a href="javascript:history.back()">Zurück zum Text</a></p>
+</body>
+</html>

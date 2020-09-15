@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la fisica</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integración</h2>
+
+    <h3>7.5&nbsp; El arte de la integración</h3>
+
+    <h4>7.5.7 Integración numérica</h4>
+  </div>
+
+  <div class="c3">
+    <p>La forma más antigua y primitiva de calcular una integral definida, es 
+    decir, el área &quot;bajo&quot; una función &quot;sobre&quot; un intervalo, es naturalmente&nbsp;
+    dibujar el integrando sobre un papel milimetrado y contar los cuadrados.</p>
+
+    <p>Con las calculadoras electrónicas actuales podemos hacer esto en forma 
+    más elegante y mucho más rápido, al considerar el límite que define el área 
+    y sumar las áreas de las franjas hasta la disección del intervalo. Para ello 
+    se necesitan menos franjas, o bien, menos pasos iteración mientras más cerca 
+    de la función a ser integrada se encuentre la parte superior de la franja.</p>
+
+    <p>Las más simples son líneas horizontales, tal como lo hemos hecho para la 
+    definición, de tal modo que las franjas son rectángulos cuyas áreas se 
+    pueden calcular fácilmente. En vez de tomar los nodos 
+    <img src="k7/gif/f75700.gif" alt="math formula" hspace="5" align="middle" width="15" height="24" />en 
+    el interior de los intervalos parciales, tal como en la suma de Riemann, 
+    también podemos tomar los mínimos y máximos de la función en los intervalos 
+    parciales. Luego tenemos una suma inferior y otro superior que engloban el 
+    límite de la integral.</p>
+
+    <p>El siguiente método elegante es la <b>regla del trapecio<span style="font-weight: 400">, 
+    por la cual cada intervalo parcial se aproxima por medio de la secante y las 
+    áreas verdaderas de las franjas por medio de las áreas de los trapecios. 
+    Para cada intervalo parcial tomamos en vez de</span></b> 
+    <img src="k7/gif/f75701.gif" alt="math formula" hspace="5" align="middle" width="67" height="24" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75702.gif" alt="math formula" hspace="5" align="middle" width="186" height="24" />
+    </div><br />
+    <br />
+
+    Una mejor aproximación aun la da la <b>regla de Simpson<span style="font-weight: 400">, 
+    por la cual la función integrando</span></b> se aproxima en los intervalos 
+    parciales por medio de una parábola, de acuerdo a la <b>regla del barril de 
+    Kepler<span style="font-weight: 400">.</span></b> En cada franja se toma la 
+    función en tres puntos:<p>&nbsp;</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75703.gif" alt="math formula" hspace="5" align="middle" width="293" height="28" />
+    </div><br />
+    
+    <p>Una de las tareas de la matemática numérica es encontrar reglas más 
+    sofisticadas, con las cuales se pueda calcular la integral deseada en pocos 
+    pasos y con la precisión prestablecida.</p>
+  </div>
+</body>
+</html>

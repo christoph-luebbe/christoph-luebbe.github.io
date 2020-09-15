@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Taylor-Entwicklung</h2>
+
+    <h3>6.8 Taylor-Entwicklung um beliebigen Punkt</h3>
+  </div>
+
+  <div class="c4">
+    <p>Nachdem wir gesehen haben, wie sehr es bei der Anwendung der Taylor-Entwicklungen zur 
+    Berechnung von Funktionswerten in der Nähe von Entwicklungspunkten, an denen die Funktion 
+    bekannt ist, auf die Nähe zur Entwicklungsstelle ankommt, wenden wir uns schließlich dem 
+    Problem der geschickten Wahl der Entwicklungsstelle 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> 
+    zu, die wir zunächst immer speziell gleich 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> 
+    gesetzt haben, was die Mathematiker Maclaurin-Form der Entwicklung nennen.</p>
+
+    <p>Wir erhalten die <em>allgemeine Taylor-Entwicklung um eine Stelle</em> 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> 
+    aus unserer bisherigen Form ganz einfach, indem wir 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+    überall durch 
+    <img src="k6/gif/f68001.gif" alt="math formula" hspace="5" align="middle" width="77" height="17" /> 
+    setzen und die erhaltene Funktion von 
+    <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> 
+    in der Umgebung von 
+    <img src="k6/gif/f68002.gif" alt="math formula" hspace="5" align="middle" width="38" height="23" /> 
+    entwickeln. So ergibt sich für unendlich oft differenzierbare Funktionen 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    die Form und Eindeutigkeit der allgemeinen</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Taylor-Entwicklung um den Punkt</em> 
+            <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" />: 
+            <img src="k6/gif/f68003.gif" alt="math formula" hspace="5" align="middle" width="204" height="50" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>für den <em>Konvergenzradius R</em> das hinreichende <em>Quotienten-Kriterium</em>:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68004.gif" alt="math formula" hspace="5" align="middle" width="272" height="39" />
+    </div><br />
+    <br />
+
+    <p>und für den Fehler beim Abbrechen nach dem m-ten Glied: die</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Lagrange-Form des Restglieds</em> 
+            <img src="k6/gif/f68005.gif" alt="math formula" hspace="5" align="middle" width="289" height="46" /> 
+            wieder mit 
+            <img src="eq/0kthk1.gif" alt="math formula" hspace="5" align="middle" width="65" height="24" />.</p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Als Beispiel entwickeln wir die <em>Sinus-Funktion 
+    <img src="k6/gif/f68006.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" /> 
+    jetzt um den Punkt</em> 
+    <img src="k6/gif/f68007.gif" alt="math formula" hspace="5" align="middle" width="47" height="24" /> :</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68008.gif" alt="math formula" hspace="5" align="middle" width="546" height="41" />
+    </div><br />
+    <br />
+
+    <p>Zum Beweis: 
+    <img src="k6/gif/f68009.gif" alt="math formula" hspace="5" align="middle" width="90" height="26" /> , 
+    <img src="k6/gif/f68010.gif" alt="math formula" hspace="5" align="middle" width="107" height="26" /> , 
+    <img src="k6/gif/f68011.gif" alt="math formula" hspace="5" align="middle" width="112" height="26" /> , 
+    <img src="k6/gif/f68012.gif" alt="math formula" hspace="5" align="middle" width="100" height="29" /> , ...<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mit 
+    <img src="k6/gif/f68013.gif" alt="math formula" hspace="5" align="middle" width="62" height="24" /> , 
+    <img src="k6/gif/f68014.gif" alt="math formula" hspace="5" align="middle" width="67" height="26" /> , 
+    <img src="k6/gif/f68015.gif" alt="math formula" hspace="5" align="middle" width="82" height="26" /> , 
+    <img src="k6/gif/f68016.gif" alt="math formula" hspace="5" align="middle" width="74" height="26" /> , 
+    <img src="k6/gif/f68017.gif" alt="math formula" hspace="5" align="middle" width="79" height="29" /> , ...<br />
+    insgesamt: 
+    <img src="k6/gif/f68018.gif" alt="math formula" hspace="5" align="middle" width="494" height="41" /><br />
+    mit dem Konvergenzradius 
+    <img src="k6/gif/f68019.gif" alt="math formula" hspace="5" align="middle" width="411" height="24" /> .</p>
+
+    <p>Wir wollen sogleich überprüfen, wie das näher bei 
+    <img src="k6/gif/f68020.gif" alt="math formula" hspace="5" align="bottom" width="29" height="13" /> 
+    liegende Entwicklungszentrum 
+    <img src="k6/gif/f68021.gif" alt="math formula" hspace="5" align="middle" width="47" height="24" /> 
+    unsere in 
+    <a href="#670d">Abschnitt 6.7</a> mit dem Entwicklungszentrum 
+    <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" width="45" height="22" /> 
+    durchgeführte Berechnung von 
+    <img src="k6/gif/f68022.gif" alt="math formula" hspace="5" align="middle" width="155" height="24" /> 
+    verbessert:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68023.gif" alt="math formula" hspace="5" align="middle" width="353" height="28" />
+    </div><br />
+    <br />
+
+    <p>Wir erhalten: 
+    <img src="k6/gif/f68024.gif" alt="math formula" hspace="5" align="middle" width="415" height="24" /> , 
+    wobei die Restgliedabschätzung mit 
+    <img src="k6/gif/f68025.gif" alt="math formula" hspace="5" align="bottom" width="37" height="13" /> 
+    ergibt</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68026.gif" alt="math formula" hspace="5" align="middle" width="274" height="28" />
+    </div><br />
+    <br />
+
+    <p>Das ist zu vergleichen mit der früher erhaltenen Fehlerabschätzung von 
+    <img src="k6/gif/f68027.gif" alt="math formula" hspace="5" align="middle" width="74" height="28" />, 
+    d.h. durch die günstigere Wahl des Entwicklungszentrums konnte der Fehler bei vergleichbarem 
+    Rechenaufwand um mehr als vier Größenordnungen herabgesetzt werden.</p>
+
+    <p>Für andere gesuchte Zwischenwerte können wir den <em>Sinus auch um</em> 
+    <img src="k6/gif/f68028.gif" alt="math formula" hspace="5" align="middle" width="61" height="26" /> 
+    entwickeln:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68029.gif" alt="math formula" hspace="5" align="middle" width="567" height="30" />
+    </div><br />
+    <br />
+
+    <p>denn 
+    <img src="k6/gif/f68009.gif" alt="math formula" hspace="5" align="middle" width="90" height="26" /> , 
+    <img src="k6/gif/f68010.gif" alt="math formula" hspace="5" align="middle" width="107" height="26" /> , 
+    <img src="k6/gif/f68011.gif" alt="math formula" hspace="5" align="middle" width="112" height="26" /> , 
+    <img src="k6/gif/f68012.gif" alt="math formula" hspace="5" align="middle" width="100" height="29" /> , ...<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mit 
+    <img src="k6/gif/f68030.gif" alt="math formula" hspace="5" align="middle" width="106" height="29" /> , 
+    <img src="k6/gif/f68031.gif" alt="math formula" hspace="5" align="middle" width="110" height="29" /> , 
+    <img src="k6/gif/f68032.gif" alt="math formula" hspace="5" align="middle" width="126" height="29" /> , 
+    <img src="k6/gif/f68033.gif" alt="math formula" hspace="5" align="middle" width="130" height="29" /> , 
+    <img src="k6/gif/f68034.gif" alt="math formula" hspace="5" align="middle" width="123" height="31" /> , ...<br />
+    insgesamt: 
+    <img src="k6/gif/f68035.gif" alt="math formula" hspace="5" align="middle" width="512" height="29" /><br />
+    mit dem Konvergenzradius 
+    <img src="k6/gif/f68036.gif" alt="math formula" hspace="5" align="middle" width="293" height="24" /></p>
+
+    <p>Jetzt können wir auch eine Entwicklung des <em>natürlichen Logarithmus</em> angeben etwa um 
+    <img src="eq/x_0g1.gif" alt="math formula" hspace="5" align="middle" width="44" height="23" /> :</p>
+
+    <div class="c2">
+      <img src="k6/gif/f68037.gif" alt="math formula" hspace="5" align="middle" width="545" height="41" />
+    </div><br />
+    <br />
+
+    <p>Wenn wir darin 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> durch 
+    <img src="eq/xp1.gif" alt="math formula" hspace="5" align="middle" width="35" height="23" /> 
+    ersetzen gelangen wir wieder zu unserer <a href="#643d">
+    früheren Taylor-Entwicklung</a> von 
+    <img src="k6/gif/f68038.gif" alt="math formula" hspace="5" align="middle" width="61" height="24" /> 
+    um den Punkt 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> .</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 6.12:</p>
+
+            <p>Bestimmen Sie die Taylor-Entwicklungen und Konvergenzbereiche von:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="eq/sinx.gif" alt="math formula" hspace="5" align="bottom" width="31" height="12" /> 
+                um den Punkt 
+                <img src="k6/gif/f68039.gif" alt="math formula" hspace="5" align="middle" width="46" height="17" /> 
+                <a href="#680l1201d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /> 
+                um den Punkt 
+                <img src="eq/x_0g1.gif" alt="math formula" hspace="5" align="middle" width="44" height="23" /> 
+                <a href="#680l1202d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /> 
+                um den Punkt 
+                <img src="k6/gif/f68040.gif" alt="math formula" hspace="5" align="middle" width="45" height="23" /> 
+                <a href="#680l1203d" >Lösung</a> und</td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>beweisen Sie die oben angegebene Entwicklung von 
+		<img src="eq/lnx.gif" alt="math formula" hspace="5" align="bottom" width="25" height="13" /> 
+		um den Punkt 
+		<img src="eq/x_0g1.gif" alt="math formula" hspace="5" align="middle" width="44" 
+		height="23" />
+		<a href="#680l1204d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 6.13:</p>
+
+            <p>Berechnen Sie 
+            <img src="k6/gif/f68041.gif" alt="math formula" hspace="5" align="middle" width="27" height="29" /> 
+            bis auf 
+	<img src="k6/gif/f68042.gif" alt="math formula" hspace="5" align="middle" width="13" height="17" />, 
+	jetzt aber mit der Taylor-Reihe um 
+	<img src="eq/x_0g1.gif" alt="math formula" hspace="5" align="middle" width="44" height="23" />, 
+	und vergleichen Sie mit 
+	der früheren Rechnung aus 
+	<a href="#670d">Aufgabe 6.11</a> 
+	Rechnung bei 
+	<img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle"	width="45" height="22" /> 
+	<a href="#680l1301d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Sie werden im Verlauf Ihres Studiums noch viele andere Entwicklungen kennen lernen und 
+    selbst durchführen. Auch für Felder gibt es Taylor-Entwicklungen, z.B. die berühmte 
+    Multipol-Entwicklung. Sie werden die in den Naturwissenschaften häufigen periodischen 
+    Funktionen nach Fourier "im quadratischen Mittel" mit Cosinus und Sinus als Basisfunktionen 
+    entwickeln und später auch nichtperiodische Funktionen mit Hilfe der Exponentialfunktion 
+    "nach Fourier transfomieren". Komplexe Funktionen können sogar in einer gewissen Umgebung 
+    von bestimmten Singularitäten nach Laurent entwickelt werden. Schließlich werden Sie in der 
+    Quantenmechanik verschiedene störungstheoretische Entwicklungen um die wenigen exakt lösbaren 
+    Systeme durchführen, wie den harmonischen Oszillator. Die theoretische Physik ist zu einem 
+    beträchtlichen Teil die hohe Kunst des Entwickelns.</p>
+  </div>
+</body>
+</html>

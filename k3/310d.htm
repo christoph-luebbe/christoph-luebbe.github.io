@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>3 Folgen und Reihen</h2>
+
+    <h3>3.1 Folgen</h3>
+  </div>
+
+  <div class="c3">
+    <p>Der erste wichtige mathematische Begriff, mit dem wir uns beschäftigen müssen, ist der einer <em>Folge</em>.</p>
+
+    <p>Der Physiker denkt dabei etwa an die Folge der Sprunghöhen einer Stahlkugel auf einer Platte, die infolge der unvermeidlichen Energiedissipation mit der Zeit monoton abnehmen und schließlich mehr oder weniger schnell gegen Null streben. Nach einiger Zeit bleibt die Kugel ruhig liegen. Die physikalische Folge der Sprunghöhen hat also nur endlich viele nicht verschwindende Glieder im Gegensatz zu den Folgen, die in der Mathematik interessieren:<br />
+    Mathematisch ist eine Folge eine unendliche Menge von Zahlen, die durchnumeriert, d.h. auf die Menge der natürlichen Zahlen abgebildet werden kann: <img src="k3/gif/f31001.gif" alt="math formula" hspace="5" align="middle" />. Da man nicht alle unendlich vielen Glieder angeben kann <img src="k3/gif/f31002.gif" alt="math formula" hspace="5" align="middle" />, definiert man eine Folge meist durch das "allgemeine Glied" <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" />, d.h. das Bildungsgesetz, das angibt, wie man die Glieder berechnet. Wir wählen zunächst einige charakteristische Musterbeispiele aus, an denen wir aber bereits alles Wichtige erklären können:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></td>
+
+          <td><img src="k3/gif/f31003.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>die natürlichen Zahlen selbst,</td>
+        </tr>
+
+        <tr>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><em>(F2)</em></td>
+
+          <td><img src="k3/gif/f31004.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>eine einfache "alternierende" Folge,</td>
+        </tr>
+
+        <tr>
+          <td><em>(F3)</em></td>
+
+          <td><img src="k3/gif/f31005.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>die inversen natürlichen Zahlen, die sogenannte "harmonische" Folge,</td>
+        </tr>
+
+        <tr>
+          <td><em>(F4)</em></td>
+
+          <td><img src="k3/gif/f31006.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>die inversen Fakultäten,</td>
+        </tr>
+
+        <tr>
+          <td><em>(F5)</em></td>
+
+          <td><img src="k3/gif/f31007.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>eine Folge von echten Brüchen und</td>
+        </tr>
+
+        <tr>
+          <td><em>(F6)</em></td>
+
+          <td><img src="k3/gif/f31008.gif" alt="math formula" hspace="5" align="middle" />, <img src="k3/gif/f31009.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>die "geometrische" Folge.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#310b1d" >Einschub: Zinseszins</a>
+    </div><br />
+    <br />
+
+    <p>Um uns eine erste anschauliche Vorstellung von diesen Musterfolgen zu geben, sind im ebenen kartesischen Koordinatensystem der folgenden graphischen Darstellungen die Folgenglieder <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" /> (in 2-Richtung) über den äquidistanten natürlichen Zahlen <img src="eq/n.gif" alt="math formula" hspace="5" align="bottom" /> (in 1-Richtung) durch Punkte eingetragen:</p>
+  </div>
+
+  <div class="c1">
+    <p>&nbsp;&nbsp;<img src="k3/gif/b3101.gif" alt="math formula" /> <img src="k3/gif/b3102.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Bilder 3.1: Veranschaulichung der Musterfolgen über den natürlichen Zahlen,<br />
+    bei der geometrischen Folge (F6) für q=2 und q=1/2</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Auch die Summe, Differenz oder das Produkt zweier Folgen sind wieder eine Folge. Z.B. ist die Musterfolge (F5) mit <img src="k3/gif/f31016.gif" alt="math formula" hspace="5" align="middle" /> die Differenz aus der trivialen Folge <img src="k3/gif/f31017.gif" alt="math formula" hspace="5" align="middle" />, die aus lauter Einsen besteht, und der harmonischen Folge (F3) bis auf das erste Glied.</p>
+
+    <p>Das gliedweise Produkt der Musterfolgen (F2) und (F3) ergibt eine neue Folge</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F7)</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td><img src="k3/gif/f31018.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;die "alternierende" harmonische Folge.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Auch das gliedweise Produkt der harmonische Folge (F3) mit sich selbst ist wieder eine Folge:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F8)</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td><img src="k3/gif/f31019.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;die Folge der inversen natürlichen Quadrate.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Das gliedweise Produkt der Musterfolgen (F1) und (F6) ergibt eine neue Folge</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F9)</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td><img src="k3/gif/f31020.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eine abgeänderte geometrische Folge.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Eine noch kompliziertere zusammengesetzte Folge wird uns später noch beschäftigen:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F10)</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td><img src="k3/gif/f31021.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;die sogenannte Exponentialfolge.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 3.1:</p>
+
+            <p>Veranschaulichen Sie sich auch diese weiteren Beispiele durch <a href="#310l0101d" >graphische Darstellungen</a>.<br />
+            Projizieren Sie die Punkte auf die 2-Achse.</p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Es sind <em>drei Eigenschaften</em>, die uns an den Folgen besonders interessieren: Beschränkheit, Monotonie und Konvergenz:</p>
+  </div>
+</body>
+</html>

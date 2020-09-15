@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Векторы</h2>
+
+    <h3>9.7 Сложное произведение: Два символа Леви-Чивиты</h3>
+
+    <h4>9.7.2 Двойное векторное произведение трех векторов</h4>
+  </div>
+
+  <div class="c3">
+    <p>Наряду со смешанным произведением векторов существует еще и другое произведение из трех векторов 
+    <img src="k9/gif/f97201.gif" alt="math formula" hspace="5" align="middle" width="59" height="25" />, 
+    <img src="k9/gif/f97202.gif" alt="math formula" hspace="5" align="middle" width="51" height="33" /> 
+    img src="k9/gif/f97203.gif" alt="math formula" hspace="5" align="middle" width="66" height="25" /> (в соответствии с соглашением Эйнштейна о суммировании!), а именно: <em>двойное векторное произведение векторов</em>, которое в физике встречается, например, при описании центробежной силы. Уже рассматривая вопрос о действии
+ 
+    <a href="#9611r">ассоциативного закона</a> для векторного произведения, мы в качестве контрпримера рассмотрели два таких двойных произведения векторов.</p>
+
+    <p>Для общего случая, представим двойное произведение трех векторов как векторное произведение двух векторов, причем в качестве <em>второго</em> сомножителя возьмем результат векторного произведения второго и третьего векторов. Мы будем подробно комментировать каждый шаг нашего доказательства (не забывайте соглашение о суммировании!):</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97204a.gif" alt="math formula" hspace="5" align="middle" width="298" height="39" /> подставляем внутреннее векторное произведение,<br /> 
+      <img src="k9/gif/f97204b.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> в силу однородности векторного произведения<br /> 
+      <img src="k9/gif/f97204c.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> подставляется также внешнее векторное произведение,<br /> 
+      <img src="k9/gif/f97204d.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> 
+      <img src="k9/gif/f97205.gif" alt="math formula" hspace="5" align="middle" width="81" height="17" />-циклически замена,<br /> 
+      <img src="k9/gif/f97204e.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> разложение на составляющие 
+      <img src="k9/gif/f97206.gif" alt="math formula" hspace="5" align="middle" width="85" height="25" />,<br /> 
+      <img src="k9/gif/f97204f.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> сумма по 
+      <img src="k9/gif/f97207.gif" alt="math formula" hspace="5" align="middle" width="73" height="23" /> дает вклад только для 
+      <img src="k9/gif/f97208.gif" alt="math formula" hspace="5" align="middle" width="44" height="9" />,<br /> 
+      <img src="k9/gif/f97204g.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> 
+      <a href="#971b1d" >произведение символов Леви-Чивиты</a> подставлено,<br /> 
+      <img src="k9/gif/f97204h.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> проведено суммирование по 
+      <img src="k9/gif/f97210.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" />,<br /> 
+      <img src="k9/gif/f97204i.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> проведено суммрование по 
+      <img src="eq/l.gif" alt="math formula" hspace="5" align="bottom" width="4" height="13" />,<br /> 
+      <img src="k9/gif/f97204j.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> проведено суммирование по 
+      <img src="k9/gif/f97212.gif" alt="math formula" hspace="5" align="middle" width="9" height="17" />,<br /> 
+      <img src="k9/gif/f97204k.gif" alt="math formula" hspace="5" align="middle" width="298" height="24" /> проведено суммирование по 
+      <img src="k9/gif/f97213.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" />.
+    </div>
+    <br />
+
+    <p>В итоге мы получили так называемую</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Формула Грассмана для векторного произведения</em> 
+            <img src="k9/gif/f97214.gif" alt="math formula" hspace="5" align="middle" width="223" height="39" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>, т.е. вектором, компланарным сомножителям внутреннего векторного произведения 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" /> и 
+    <img src="eq/cvekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" />.</p>
+
+    <p>Если бы действовал ассоциативный закон, то это было бы равно 
+    <img src="k9/gif/f97215.gif" alt="math formula" hspace="5" align="middle" width="84" height="39" />. Но, как мы видим, это не так, поскольку:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f97216.gif" alt="math formula" hspace="5" align="middle" width="220" height="39" />
+    </div>
+    <br />
+
+    <p>Это значит, что вектор-произведение снова компланарен с сомножителями внутреннего векторного произведения, которыми на этот раз являются 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> и 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.43:</b> Доказательство для 
+             
+            <img src="k9/gif/f97217.gif" alt="math formula" hspace="5" align="middle" width="220" height="39" /></p>
+
+            <p>Докажите данное соотношение аналогично тому, как было показано выше. 
+            <a href="#972l4301r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.44:</b> Центробежная сила</p>
+
+            <p>Как при вращении связаны между собой центробежная сила 
+            <img src="k9/gif/f97218.gif" alt="math formula" hspace="5" align="top" width="16" height="22" /> с угловой скоростью 
+            <img src="k9/gif/f97219.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" />? 
+            <a href="#972l4401r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.45:</b> Тождество Якоби</p>
+
+            <p>Рассчитайте тождество Якоби: 
+            <img src="k9/gif/f97220.gif" alt="math formula" hspace="5" align="middle" width="299" height="39" />. 
+            <a href="#972l4501r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

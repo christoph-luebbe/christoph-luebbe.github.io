@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematical Preparation Course before Studying Physics</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Vectors</h2>
+
+    <h3>9.2 Vectors as Displacements</h3>
+
+    <h4>9.2.3 Transformations of the Coordinate Systems</h4>
+  </div>
+
+  <div class="c3">
+    <p>
+    We want to 
+    investigate how the components <img src="k9/gif/f92301.gif" alt="math formula" hspace="5" align="middle" 
+	width="15" height="17"> of the fixed physically-given vector <img src="k9/gif/f92215.gif" alt="math formula" 
+	hspace="5" align="middle" width="79" height="47" />, 
+    possibly represented by <img src="k9/gif/f92302.gif" alt="math formula" hspace="5" align="middle" width="24" 
+	height="40" />, 
+    are changed if the coordinate system is subjected to the four selected 
+	special transformations of 
+    <a href="#914')" 
+	>Section 9.1.4</a> 
+    .</p>
+
+    <p>We start with the:</p>
+
+    <p><em>1) TRANSLATIONS (SHIFTS)</em>: e.g. by 1 in the 3-direction:</p>
+
+    <p>At first we are 
+    once again concerned with the arbitrariness of the choice of the origin: How 
+    would the components of our vector look if we had instead of the 
+    point <img src="eq/go.gif" alt="math formula" hspace="5" align="bottom" width="12" height="13" />, selected as zero another 
+    point, e.g. <img src="k9/gif/f92304.gif" alt="math formula" hspace="5" align="middle" width="51" height="33" /> 
+    which is shifted by the distance <img src="k9/gif/f92305.gif" alt="math formula" hspace="5" align="middle" 
+	width="68" height="24" />
+    in the positive 3-direction? With the help of our results from 9.1.4.1 we 
+    get:</p>
+    <div class="c2">
+      <img src="k9/gif/f92306.gif" alt="math formula" hspace="5" align="middle" width="359" height="66" />
+    </div><br /><br />
+    <p>Since the translation terms of the starting 
+    and end points of the representative cancel in the difference, we obtain 
+    (as expected because of the free mobility in the vector definition) 
+    the <em> translational invariance of vectors </em>, 
+    i.e. the arbitrary choice of the origin of our coordinate system has <em> no</em> 
+    consequences for the vector components.</p>
+
+	
+    From this also the <em>length</em> of the vectors is a
+    <em>translation invariant quantity</em>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92307.gif" alt="math formula" hspace="5" align="middle" width="283" height="30" />
+    </div><br /><br />
+    However, not all vector-like quantities in physics are translation invariant 
+    and not in every physical problem, e.g., the forces acting on a rigid body 
+	away from the centre of mass, or 
+	also the field strength of an inhomogeneous electric field. 
+    Physicists speak then of <em>bound vectors</em>. In such cases, 
+    before the application of the vector algebra which we will develop in the 
+    next sections, we have to consider in each case separately to what extent 
+    the achieved results can be applied.</p>
+
+    <p>As the second example we examine</p>
+
+    <p><em>2) ROTATIONS (TURNINGS)</em>, e.g. by an angle <img src="eq/phi.gif" alt="math formula" hspace="5" 
+	align="middle" width="10" height="17"/> around the 3-direction:</p>
+
+    <p>Keeping the origin <img src="k9/gif/f92308.gif" alt="math formula" hspace="5" align="bottom" width="46" 
+	height="17" /> fixed we consider once more in addition to our old coordinate system <img src="eq/gs.gif" 
+	alt="math formula" hspace="5" align="bottom" width="11" height="12" /> as in <a href="#923b3d" 
+	>Figure 9.5</a> a new one: <img src="eq/gsd.gif" alt="math formula" hspace="5" 
+	align="bottom" width="11" height="16" /> 
+    which was rotated e.g. by an angle <img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" 
+	width="10" height="17" /> around the 3-axis seen clockwise in the positive 3-direction and we get 
+    (for instance with the representative <img src="k9/gif/f92311.gif" alt="math formula" hspace="5" align="bottom" 
+	width="54" height="21" />):</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92312.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />, 
+	<img src="k9/gif/f92312b.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />, 
+	<img src="k9/gif/f92313.gif" alt="math formula" hspace="5" align="middle" width="51" height="24" />
+    </div><br /><br />
+
+    <p>For the rule according to which the new coordinates can be calculated from the old ones, 
+    mathematics offers a formulation which is known to most of you from 
+    school: the <a href="#923b1d" >matrix formulation:
+	</a></p>
+
+    <p>In order to get it, we write the three transformation equations one 
+    below the other and complete the display with zeros in the following manner:</p>
+
+    <div class="c2">
+     <img src="k9/gif/f92314.gif" alt="math formula" hspace="5" align="middle" width="228" height="59" />
+    </div><br />
+    <br />
+
+    <p>The factors necessary to get the new components <img src="k9/gif/f92315.gif" alt="math formula" hspace="5" 
+	align="middle" width="15" height="24" /> from the old ones <img src="k9/gif/f92317.gif" alt="math formula" 
+	hspace="5" align="middle" width="13" height="17" /> 
+    are summarized by the following
+	<img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24">-matrix
+	<img src="k9/gif/f92318.gif" alt="math formula" hspace="5" align="middle" width="53" height="33">:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92319.gif" alt="math formula" hspace="5" align="middle" width="241" height="66" />
+    </div><br /><br />
+    <p>with the matrix elements <img src="k9/gif/f92320.gif" alt="math formula" hspace="5" align="middle" width="52" 
+	height="34" /> for <img src="k9/gif/f92321.gif" alt="math formula" hspace="5" align="middle" width="82" height="23" />
+    where the index <img src="k9/gif/f92322.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />
+    marks the (horizontal) lines (German: <em>Z</em>eilen) 
+    and <img src="k9/gif/f92323.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+    the (vertical) columns (German: <em>S</em>palten). For 
+    example, </p>
+
+	<div class="c2">
+      
+      <img src="k9/gif/f92324.gif" alt="math formula" hspace="5" align="middle" width="183" height="34" /> 
+      and<br />
+      <img src="k9/gif/f92325.gif" alt="math formula" hspace="5" align="middle" width="194" height="34" /> 
+      since the 1-2-plane is rotated,<br />
+      <img src="k9/gif/f92326.gif" alt="math formula" hspace="5" align="middle" width="82" height="34" />
+      to signalize that the 3-axis remains unchanged, and</span><br />
+      <img src="k9/gif/f92327.gif" alt="math formula" hspace="5" align="middle" width="307" height="34" />.
+    </div><br /><br />
+
+      <p>
+      If instead 
+      of the single matrix elements <img src="k9/gif/f92320.gif" alt="math formula" hspace="5" align="middle" 
+	width="52" height="34" />
+      we
+      mean the entire matrix with its nine elements, we use a
+      bold capital letter <img src="k9/gif/f92318.gif" alt="math formula" hspace="5" align="middle" 
+	width="53" height="33" />. 
+      The three equations for the calculation of the new coordinates from the 
+      old ones is obtained in this new formulation through the following prescription 
+	of a <em>generalized multiplication rule</em> for <img src="k9/gif/f92328.gif" alt="math formula" hspace="5" 
+	align="middle" width="67" height="23" /></p>
+
+    <div class="c2">
+      <img src="k9/gif/f92329.gif" alt="math formula" hspace="5" align="middle" width="509" height="34" />
+    </div><br />
+    <br />
+
+    <p>In the last term the convenient <em> Einstein summation convention</em> was used. This allows us to omit the 
+	sum symbol whenever <em>two identical indices</em> (here the two indices <em><img src="k9/gif/f92323.gif" 
+	alt="math formula" hspace="5" align="bottom" width="7" height="9" /></em> ) appear and 
+	in this way to signal 
+	the summation even without 
+    using the explicit sum symbol.</p>
+
+    <p>According to this prescription we get the column vector of the components in the rotated coordinate 
+    system by "multiplying" the column vector of the components in the old system from the left 
+	by the rotation matrix:</p>
+
+
+    <div class="c2">
+      <img src="k9/gif/f92332.gif" alt="math formula" hspace="5" align="middle" width="437" height="66" />
+    </div><br />
+    <br />
+
+    <p>To do this we imagine most simply the column vector transposed and pushed line by line 
+	over the rotation matrix, multiply the terms lying on top of each other and 
+    	add up the three products.</p>
+
+	<div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Exercise 9.6</b>: Special vectors in the rotated coordinate 
+            system</p>
+
+            <p>What are the components of the vectors <img src="k9/gif/f92333a.gif" alt="math formula" hspace="5" 
+		align="middle" width="72" height="47" />, 
+		<img src="k9/gif/f92333b.gif" alt="math formula" hspace="5" align="middle" width="81" height="47" /> and
+            <img src="k9/gif/f92333c.gif" alt="math formula" hspace="5" align="middle" width="71" height="47" /> in a 
+            coordinate system <img src="eq/gsd.gif" alt="math formula" hspace="5" align="bottom" width="11" height="16">
+		which was rotated with respect to the original system 
+		<img src="eq/gs.gif" alt="math formula" hspace="5" align="bottom" width="11" height="12">
+		by <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" />
+		<a href="#923l0601e" >Solution</a>
+           <img src="k9/gif/f92334.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" />
+		<a href="#923l0602e" >Solution</a> 
+            or <img src="k9/gif/f92335.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" />
+ 		<a href="#923l0603e" >Solution</a> 
+            around the 3-direction?</p>
+	</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Exercise 9.7</b>: 
+            Change of the vector components by special rotations of the 
+            coordinate system</span></p>
+
+            <p>How are the components <img src="k9/gif/f92301.gif" alt="math formula" hspace="5" align="middle" 
+		width="15" height="17" /> of a vector <img src="eq/avekt.gif" alt="math formula" hspace="5" 
+		align="bottom" width="9" height="13" /> changed, if we rotate the coordinate system by the angle
+		<img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" />
+		<a href="#923l0701e" >Solution</a> or
+            	<img src="k9/gif/f92334.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" />
+		<a href="#923l0702e" >Solution</a> 
+            	around the 3-axis?</p>
+		</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>In the matrix formulation the transformation equations can be most easily memorized: 
+	The number 1 occupies the position 
+	<img src="k9/gif/f92336.gif" alt="math formula" hspace="5" align="middle" width="52" height="34" /> 
+    because the 3-axis as the rotation axis remains unchanged during the rotation and the 1-2 plane is rotated by  
+	<img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" />. 
+    Also the extension to rotations around the two other axes can be imagined easily: e.g. for a rotation 
+	<img src="k9/gif/f92337.gif" alt="math formula" hspace="5" align="middle" width="52" height="29" /> by 
+	<img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" />
+    around the 1-axis the matrix element must certainly be 
+	<img src="k9/gif/f92337b.gif" alt="math formula" hspace="5" align="middle" width="82" height="34" />
+   and the 2-3-plane is rotated:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92338.gif" alt="math formula" hspace="5" align="middle" width="241" height="66" />
+    </div><br /><br />
+
+    <p>meaning that <img src="k9/gif/f92339.gif" alt="math formula" hspace="5" align="middle" width="218" height="24" /> 
+    and <img src="k9/gif/f92340.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Exercise 9.8</b>: Rotations around the 2-axis:&nbsp; </p>
+
+            <p>Realize through a sketch like our
+            <a href="#923b3d" >Figure 9.5</a>
+            above
+            that the coordinates of a point 
+		<img src="eq/ga.gif" alt="math formula" hspace="5" align="bottom" width="12" height="12" />
+      		and consequently also the components of a vector 
+		<img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" />
+            transform according to the following rotation matrix in case of a 
+			rotation around the 2-axis.</p>
+
+            <div class="c2">
+              <img src="k9/gif/f92342.gif" alt="math formula" hspace="5" align="middle" width="241" height="66" />
+            </div><br /><br />
+
+            <p>meaning that 
+		<img src="k9/gif/f92342b.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" /> 
+            and <img src="k9/gif/f92343.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />. 
+		<a href="#923l0801e" >Solution</a></p>
+	</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>From this 
+	exercise you can find the transformation formulae for the three 
+	rotations from each other without much calculation simply by replacing the indices<em> 
+    cyclically</em> (i.e. in a circle), meaning 1 by 2,&nbsp; 2 by 3 and 3 by 1:</p></div>
+
+  <div class="c1">
+    <p><img src="k9/gif/b9231.gif" alt="math formula" width="284" height="275" /><br clear="all" />
+    <span class="bild">Figure 9.9: cyclic replacement</span></p>
+  </div>
+
+  <div class="c3">
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Exercise 9.9</b>: Special rotation matrices:</p>
+
+            <p>Determine the following rotation matrices:
+            <img src="k9/gif/f92344.gif" alt="math formula" hspace="5" align="middle" width="68" height="33" />
+		<a href="#923l0901e" >Solution</a> , 
+		<img src="k9/gif/f92345.gif" alt="math formula" hspace="5" align="middle" width="68" height="33" /> 
+		<a href="#923l0902e" >Solution</a>, and 
+		<img src="k9/gif/f92346.gif" alt="math formula" hspace="5" align="middle" width="68" height="33" />
+		<a href="#923l0903e" >Solution</a>.</p>
+	</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>The transformation formula for the components of a vector with rotations of the 
+    coordinate system is an important characteristic feature of vectors, and sometimes vectors are simply defined as quantities whose three 
+    components transform with rotations of the coordinate system in the given manner. 
+	Indeed, when a physicist wants to find out whether a quantity having three components 
+    is a vector, he measures its components in two coordinate systems rotated 
+    with respect to each other and investigates whether the measured results can be 
+    connected by the corresponding rotation matrix.</p>
+
+    <p>We also examine 
+    the rotation behaviour of the <em>length of a vector</em>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92347.gif" alt="math formula" hspace="5" align="middle" width="526" height="41" />
+    </div><br /><br />
+
+	<p>and we find that it is <em>rotation invariant</em> as expected.</p>
+
+	<div class="c2">
+      <a href="#923b1e" >Insert: Matrices</a></div><br />
+    <br />
+
+    <p>As our next transformation of the coordinate system we treat the:</p>
+
+    <p><em>3) REFLECTIONS (MIRRORINGS)</em>, e.g. through the origin (the parity transformation)</p>
+
+    <p>We consider 
+    once more only  the parity transformation, i.e. the reflection through the origin 
+    which transfers all coordinates and consequently all components into their 
+    negatives: Also this transformation which trivially leaves the origin invariant
+     <img src="k9/gif/f92399.gif" alt="math formula" hspace="5" align="bottom" width="46" height="17" />
+	may be described by a matrix
+	<img src="k9/gif/f923100.gif" alt="math formula" hspace="5" align="middle" width="13" height="22" />, 
+    namely by the negative of the unit matrix which we denote by 
+	<img src="k9/gif/f923101.gif" alt="math formula" hspace="5" align="middle" width="9" height="23" />:
+    	<img src="k9/gif/f923102.gif" alt="math formula" hspace="5" align="middle" width="55" height="22" /></p>
+
+    <div class="c2">
+      <em>parity</em>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="k9/gif/f923103.gif" 
+	alt="math formula" hspace="5" align="middle" width="171" height="66" />
+    </div><br />
+    <br />
+
+    <p>Thus we obtain for the components of a vector in the reflected system:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923104.gif" alt="math formula" hspace="5" align="middle" width="460" height="66" />
+    </div><br />
+    <br />
+
+    <p>All vectors whose components 
+	<img src="k9/gif/f923105.gif" alt="math formula" hspace="5" align="middle" width="64" height="24" />
+    	change sign through a reflection in the origin are called <em> polar vectors</em>. 
+    Again not all vectors important in physics have this property. We will soon 
+    come to physical vectors, e.g. the angular momentum, which are parity invariant. 
+    We will call these vectors <em>axial vectors</em>.</p>
+
+    <p>Nevertheless, for all kinds of vectors the <em>length</em> is <em>parity invariant</em>, 
+    because in every case holds</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923106.gif" alt="math formula" hspace="5" align="middle" width="282" height="42" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#923b2e" >Insert: Determinants</a>
+    </div><br />
+    <br />
+
+    <p>Finally we turn to the:</p>
+
+    <p><em>4) DILATATIONS (STRETCHINGS)</em>: 
+    especially of all axes by a common factor, say the factor 10:</p>
+
+    <p>We examine again 
+    e.g. as an example the scale change from centimeter cm to decimeter dm, 
+	while the coordinate axes remain unchanged and only the unit points 
+	<img src="k9/gif/f923163.gif" alt="math formula" hspace="5" align="middle" width="18" height="22" />
+	on the axes are shifted, so that the distances from the origin
+	<img src="k9/gif/f923164.gif" alt="math formula" hspace="5" align="middle" width="77" height="33" />
+	are increased. In this case the values of the vector components decrease. The 
+    	corresponding transformation matrix of the dilatation is:
+	<img src="k9/gif/f923165.gif" alt="math formula" hspace="5" align="middle" width="60" height="29" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923166.gif" alt="math formula" hspace="5" align="middle" width="465" height="68" />
+    </div><br />
+    <br />
+
+    <p>Under a scale change, of course, no vector stays invariant and 
+    also the length is reduced by the factor
+	<img src="k9/gif/f923167.gif" alt="math formula" hspace="5" align="middle" width="13" height="29" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923168.gif" alt="math formula" hspace="5" align="middle" width="315" height="42" />
+    </div><br />
+    <br />
+
+    <p>With these investigations the most difficult part of our program to 
+	understand vectors has been accomplished. Now we can proceed to study how we can calculate 
+    with vectors, always having in mind that we deal with displacements having freely eligible starting points.</p>
+
+    <p >It still remains to stress, that of course there exist also physical quantities for which 
+	only one single measurement, value and unit, is involved, as for example mass, charge, temperature, 
+	current strength, etc.. These quantities are called 
+	<em>scalars</em> (or sometimes also <em>tensors of order zero</em>) in contrast to the vectors 
+	(which occasionally are called also tensors of first order) and still more complicated physical 
+    	quantities, as for example the momentum of inertia.
+</div>
+</body>
+</html>

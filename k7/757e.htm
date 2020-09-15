@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematical Preparation Course before Studying Physics</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.5 The Art of Integration</h3>
+
+    <h4>7.5.7 Numerical Integration</h4>
+  </div>
+
+  <div class="c3">
+    <p>The oldest and most primitive way to determine a definite integral, 
+    i.e. to calculate the area "under" a function "over" 
+    an interval, is of course to draw the integrand onto graph paper and then 
+    count the squares.</p>
+
+    <p>With today's electronic calculators we can do this more elegantly 
+	and much faster,&nbsp;by considering the defining limit and summing up the 
+    areas of the strips after the dissection of the interval. In 
+    doing so, the fewer strips and steps of iteration are needed, the closer we fit 
+    the upper edge of the strip to the actual function to be integrated.</p>
+
+    <p>The simplest choice are the horizontal straight lines as we have done in the definition, so 
+    that the&nbsp;strips become rectangles, whose areas are easy to calculate. 
+	Instead of the nodes 
+    <img src="k7/gif/f75700.gif" alt="math formula" hspace="5" align="middle" width="15" height="24" /> 
+    in the interior of the partial intervals just as with the Riemann sum,&nbsp;we 
+	can also take the minima and maxima of the 
+    function in the partial intervals. Then we obtain an under and over sum, which enclose the integral in 
+	the limit.</p>
+
+    <p>The next elegant method is the&nbsp;<b>chord-trapezium rule</b>, by 
+    which the function in each partial interval is approximated through the secant, 
+    and the real areas of the stripes through the areas of trapezia.&nbsp; For 
+    each partial interval we take instead of<img src="k7/gif/f75701.gif" alt="math formula" hspace="5" align="middle" width="67" height="24" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75702.gif" alt="math formula" hspace="5" align="middle" width="186" height="24" />
+    </div><br />
+    An even better approximation gives the <b>Simpson rule</b>, in which 
+    the integrand function in the partial intervals is approximated through a 
+	parabola according to <b>Kepler's barrel rule</b>. Here the 
+    function is taken at three points in each strip:<p>&nbsp;</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75703.gif" alt="math formula" hspace="5" align="middle" width="293" height="28" />
+    </div><br />
+    <br />
+
+    To find even more sophisticated rules through which the desired integral with 
+	a pre-given demand for accuracy can be calculated in the fewest number of steps 
+	is one of the 
+    tasks of numerical mathematics.</div>
+</body>
+</html>

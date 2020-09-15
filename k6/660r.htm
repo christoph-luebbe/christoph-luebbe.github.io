@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Ряд Тейлора</h2>
+
+    <h3>6.6 Точные правила приближенных вычислений</h3>
+  </div>
+
+  <div class="c4">
+    <p>Хотя физика является христоматиным примером точной науки, в ней широко используются приближения. Решающим для точной науки является наша способность обосновать и последовательно провести приближение, а также проконтролировать его точность.<br /> Часто, например, нецелесообразно делать расчет точнее, чем погрешность в измерении эксперимента. Даже в математике иногда достаточно определить значение функции 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> из <em> ряда Тейлора до порядка 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /></em>, это значит, захватить только первые 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> членов. Это записывается следующим образом:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66001.gif" alt="math formula" hspace="5" align="middle" width="234" height="50" />
+    </div>
+    <br />
+
+    <p>При этом, 
+    <img src="k6/gif/f66002.gif" alt="math formula" hspace="5" align="middle" width="61" height="28" /> означает, что опущенный член является членом по меньшей мере порядка 
+    <img src="k6/gif/f66003.gif" alt="math formula" hspace="5" align="bottom" width="35" height="15" />,т.е. содержит 
+    <img src="k6/gif/f66004.gif" alt="math formula" hspace="5" align="middle" width="40" height="23" /> или больше множителей 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />.</p>
+
+    <p>Здесь мы хотели бы собрать и показать правила приближенного счета. При этом, наше приближение заключается в том, что мы последовательно удерживаем все члены до порядка 
+    <img src="eq/xhm.gif" alt="math formula" hspace="5" align="bottom" width="20" height="11" />. Какие правила следуют из этого, мы покажем на примере самого простого, но и самого часто встречающегося случая 
+    <img src="k6/gif/f66005.gif" alt="math formula" hspace="5" align="bottom" width="42" height="12" /> , это значит, что ряд обрывается уже на втором члене:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66006.gif" alt="math formula" hspace="5" align="middle" width="367" height="28" />
+    </div>
+    <br />
+
+    <p>При этом, мы используем такие сокращения 
+    <img src="k6/gif/f66007.gif" alt="math formula" hspace="5" align="middle" width="65" height="24" /> и 
+    <img src="k6/gif/f66008.gif" alt="math formula" hspace="5" align="middle" width="69" height="26" /> .</p>
+
+    <p>Мы рассматриваем <em>вторую функцию</em> с аналогичными обозначениями:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66009.gif" alt="math formula" hspace="5" align="middle" width="180" height="28" />
+    </div>
+    <br />
+
+    <p>Обратите внимание, что в разложениях мы используем для 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> и 
+    <img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> одно и то же выражение 
+    <img src="eq/oxh2.gif" alt="math formula" hspace="5" align="middle" width="40" height="28" />: 
+    <img src="eq/oxh2.gif" alt="math formula" hspace="5" align="middle" width="40" height="28" /> означает не какую-то конкретную цифровую величину, а является лишь <em>символической формой написания</em> того, что было опущено.</p>
+
+    <p>Из произведения функций 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> и 
+    <img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> имеем:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66010.gif" alt="math formula" hspace="5" align="middle" width="539" height="28" />
+    </div>
+    <br />
+
+    <p>Здесь первые три члена однозначно определены, в последнем стоит произведение определенных выражений и символа 
+    <img src="eq/oxh2.gif" alt="math formula" hspace="5" align="middle" width="40" height="28" />. Что это значит?</p>
+
+    <p>Мы можем записать 
+    <img src="k6/gif/f66011.gif" alt="math formula" hspace="5" align="middle" width="123" height="41" /> с некоторыми коэффициентами 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" />. Тогда первая часть интересующего нас выражения записывается как</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66012.gif" alt="math formula" hspace="5" align="middle" width="306" height="41" />
+    </div>
+    <br />
+
+    <p>так как этот ряд снова начинается с 
+    <img src="eq/xh2.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" />, хотя и с другим коэффициентом 
+    <img src="k6/gif/f66013.gif" alt="math formula" hspace="5" align="middle" width="68" height="24" />. Так будет и в дальнейшем:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66014.gif" alt="math formula" hspace="5" align="middle" width="331" height="41" />
+    </div>
+    <br />
+
+    <p>так как этот ряд начинается с 
+    <img src="k6/gif/f66015.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" />-члена. Для 
+    суммы мы получим        </p>
+
+    <div class="c2">
+      <img src="k6/gif/f66016.gif" alt="math formula" hspace="5" align="middle" width="295" height="28" />
+    </div>
+    <br />
+
+    <p>так как самой низкой (и поэтому доминирующей вблизи начала координат) степенью является 
+    <img src="eq/xh2.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" /> . Если третий член в выражении для произведения 
+    <img src="k6/gif/f66017.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> мы также запишем как член порядка 
+    <img src="eq/xh2.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" /> то в итоге получим:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66018.gif" alt="math formula" hspace="5" align="middle" width="302" height="28" />
+    </div>
+    <br />
+
+    <p>Такое же выражение мы бы получили, если бы построили ряд Тейлора для произведения функции  
+      
+    <img src="k6/gif/f66019.gif" alt="math formula" hspace="5" align="middle" width="119" height="24" /></p>
+
+    <div class="c2">
+      <img src="k6/gif/f66020.gif" alt="math formula" hspace="5" align="middle" width="213" height="28" />
+    </div>
+    <br />
+
+    <p>причем 
+    <img src="k6/gif/f66021.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" /> и мы получили бы правило произведения при дифференцировании 
+    <img src="k6/gif/f66022.gif" alt="math formula" hspace="5" align="middle" width="136" height="26" />. Еще одно <em>предупреждение</em>: могло бы показаться, что в приближенном выражении для 
+    <img src="k6/gif/f66023.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> нужно захватить еще и легко рассчитываемый член 
+    <img src="k6/gif/f66024.gif" alt="math formula" hspace="5" align="middle" width="45" height="28" />. Однако, это было бы <em>непоследовательно</em>, так как другие члены этого же порядка не были бы учтены.</p>
+
+    <p>Для <em>r-ной степени произвольной функции</em> 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> получается:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66025.gif" alt="math formula" hspace="5" align="middle" width="318" height="37" />
+    </div>
+    <br />
+
+    <p>причем, мы взяли биномиальный ряд 
+    <img src="k6/gif/f66026.gif" alt="math formula" hspace="5" align="middle" width="191" height="28" /> из нашей маленькой 
+    <a href="#643r">таблицы</a>. В частности, для 
+    <img src="k6/gif/f66027.gif" alt="math formula" hspace="5" align="middle" width="48" height="23" />, имеем 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66028.gif" alt="math formula" hspace="5" align="middle" width="220" height="37" />
+    </div>
+    <br />
+
+    <p>Разумеется, мы также получили бы это разложение, если бы оборвали ряд Тейлора для инверсионной функции на члене второго порядка.</p>
+
+    <p>Для <em>сложных функциях</em> 
+    <img src="k6/gif/f66029.gif" alt="math formula" hspace="5" align="middle" width="103" height="24" /> проще всего сразу записать разложение Тейлора    </p>
+
+    <div class="c2">
+      <img src="k6/gif/f66030.gif" alt="math formula" hspace="5" align="middle" width="295" height="28" />
+    </div>
+    <br />
+
+    <p>В качестве численного примера, рассмотрим задание 
+    <img src="k6/gif/f66031.gif" alt="math formula" hspace="5" align="middle" width="480" height="29" /> , где точное значение равно 
+    <img src="k6/gif/f66032.gif" alt="math formula" hspace="5" align="middle" width="54" height="23" />, ошибка же находится в 
+    <img src="k6/gif/f66033.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 6.8:</p>
+
+            <p>Разложите в области 
+            <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" /> до 
+            первого порядка:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034.gif" alt="math formula" hspace="5" align="middle" width="62" height="24" /> 
+                <a href="#660l0801r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034a.gif" alt="math formula" hspace="5" align="bottom" width="60" height="12" />
+                <a href="#660l0802r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034b.gif" alt="math formula" hspace="5" align="middle" width="57" height="28" />
+                <a href="#660l0803r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034c.gif" alt="math formula" hspace="5" align="bottom" width="71" height="12" />
+                <a href="#660l0804r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034d.gif" alt="math formula" hspace="5" align="middle" width="58" height="24" />
+                <a href="#660l0805r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66034e.gif" alt="math formula" hspace="5" align="middle" width="70" height="24" />
+                <a href="#660l0806r" >Ответ</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 6.9:</p>
+
+            <p>Рассчитайте до первого порядка и сравните соответственно с точными значениями:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66035.gif" alt="math formula" hspace="5" align="middle" width="44" height="22" /> 
+                <a href="#660l0901r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66036.gif" alt="math formula" hspace="5" align="bottom" width="34" height="15" /> 
+                <a href="#660l0902r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66037.gif" alt="math formula" hspace="5" align="middle" width="135" height="24" /> 
+                <a href="#660l0903r" >Ответ</a> и</td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k6/gif/f66038.gif" alt="math formula" hspace="5" align="middle" width="131" height="29" /> 
+                <a href="#660l0904r" >Ответ</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

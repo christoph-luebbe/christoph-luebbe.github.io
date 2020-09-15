@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {margin-left: 2em}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>8 Komplexe Zahlen</h2>
+
+    <h3>8.1 Imaginäre Einheit und Darstellungen</h3>
+
+    <h4>8.1.4 Gaußsche Zahlenebene</h4>
+  </div>
+
+  <div class="c2">
+    <p>Zur Darstellung eines geordneten Paars reeller Zahlen bietet sich natürlich die Ebene an, die wir schon bei der Darstellung von Variable und Funktionswert einer reellen Funktion verwendet haben und jetzt <em>Gaußsche Zahlenebene</em> nennen: jedem Punkt (oder "Zeiger", wie die Elektrotechniker sagen) der Gaußschen Zahlenebene entspricht also genau eine komplexe Zahl.</p>
+
+    <p>Als Orientierungshilfe zeichnen wir in der Ebene zwei reelle Zahlengeraden aus, die aufeinander senkrecht stehen, die reelle Achse <img src="k8/gif/f81401.gif" alt="math formula" hspace="5" align="middle" width="18" height="22" /> und die imaginäre Achse <img src="k8/gif/f81402.gif" alt="math formula" hspace="5" align="middle" width="17" height="22" />, d.h. wir wählen ein <em>kartesisches Koordinatensystem</em>: der Realteil <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> einer komplexen Zahl <img src="eq/z.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />, d.h. eines Punktes (oder Zeigers) <img src="eq/z.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />, ist dann die Projektion seines Abstands vom Nullpunkt (oder seiner Länge) auf die reelle 1-Achse, und der Imaginärteil <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> entsprechend auf die imaginäre 2-Achse, wie im folgenden Bild zu sehen:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k8/gif/b8141.gif" alt="math formula" width="422" height="259" /><br clear="all" />
+    <span class="bild">Bild 8.1: Gaußsche Zahlenebene mit kartesischem Koordinatensystem</span></p>
+  </div>
+
+  <div class="c2">
+    <p>Als Alternative zu kartesischen Koordinaten in den Ebene kann man selbstverständich auch 
+    <em>ebene Polarkoordinaten</em> verwenden, indem man</p>
+
+    <div class="c3">
+      <img src="k8/gif/f81403.gif" alt="math formula" hspace="5" align="middle" width="151" height="24" />
+    </div>
+    
+
+    <p>schreibt mit dem</p>
+
+    <div class="c3">
+      <em>Realteil</em> 
+      <img src="k8/gif/f81404.gif" alt="math formula" hspace="5" align="middle" width="137" height="24" /> und dem
+    </div>
+    <br />
+
+    <div class="c3">
+      <em>Imaginärteil</em> 
+      <img src="k8/gif/f81405.gif" alt="math formula" hspace="5" align="middle" width="135" height="24" />.
+    </div>
+    <br />
+
+    <p>Daraus folgt nach dem <a href="#gif/f22340.gif" >Pythagoras</a> für den</p>
+      <div class="c3">
+      <em>Betrag der komplexen Zahl</em>: 
+      <img src="k8/gif/f81409.gif" alt="math formula" hspace="5" align="middle" width="200" height="30" />.
+    </div>
+    <br />
+    Der Polarwinkel, den man man aus  
+      <img src="k8/gif/f81406.gif" alt="math formula" hspace="5" align="middle" width="66" height="32" /> erhält,
+    ist nur bis auf additive Terme  
+    <img src="eq/2pi.gif" alt="math formula" hspace="5" align="bottom" width="17" height="11" /> bestimmt 
+    und heißt</p>
+
+    <div class="c3">
+      <em>Argument der komplexen Zahl</em>: &nbsp;z.B.  
+      <img src="k8/gif/f81408.gif" alt="math formula" hspace="5" align="middle" width="178" height="35" />.
+    </div>
+    
+
+    <p>Bei der Bestimmung des Arguments stößt man auf eine kleine Schwierigkeit, eine <em>Zweideutigkeit</em>, 
+    die daher kommt, dass 
+    <img src="k8/gif/f81410.gif" alt="math formula" hspace="5" align="middle" width="49" height="24" />:<br />
+    Wenn wir z.B. die komplexe Zahl 
+    <img src="k8/gif/f81411.gif" alt="math formula" hspace="5" align="middle" width="62" height="23" /> 
+    betrachten mit dem Realteil 
+    <img src="k8/gif/f81412.gif" alt="math formula" hspace="5" align="bottom" width="61" height="12" /> 
+    und dem Imaginärteil 
+    <img src="k8/gif/f81413.gif" alt="math formula" hspace="5" align="bottom" width="61" height="12" />, 
+    erhalten wir für den Betrag zwar eindeutig 
+    <img src="k8/gif/f81414.gif" alt="math formula" hspace="5" align="middle" width="59" height="29" />, 
+    für das Argument jedoch zunächst <em>zwei</em> Werte 
+    <img src="k8/gif/f81415.gif" alt="math formula" hspace="5" align="middle" width="172" height="24" /> 
+    <em>oder</em> 
+    <img src="k8/gif/f81416.gif" alt="math formula" hspace="5" align="middle" width="17" height="29" />, 
+    die beide im Intervall 
+    <img src="k8/gif/f81417.gif" alt="math formula" hspace="5" align="middle" width="43" height="24" /> 
+    liegen. Durch Einsetzen der beiden in Frage kommenden Werte in 
+    <img src="k8/gif/f81418.gif" alt="math formula" hspace="5" align="bottom" width="32" height="12" /> 
+    können wir jedoch in jedem Fall leicht das richtige Argument finden: für 
+    <img src="k8/gif/f81419.gif" alt="math formula" hspace="5" align="middle" width="41" height="24" /> 
+    erhalten wir richtig: 
+    <img src="k8/gif/f81420.gif" alt="math formula" hspace="5" align="middle" width="268" height="32" />, 
+    während uns 
+    <img src="k8/gif/f81421.gif" alt="math formula" hspace="5" align="middle" width="48" height="29" /> 
+    das falsche Resultat 
+    <img src="k8/gif/f81422.gif" alt="math formula" hspace="5" align="middle" width="224" height="32" /> liefert.</p>
+
+    <div class="c2">
+      <a href="#814b2d" >Einschub: Genaue Berechnung der Argumente</a>
+    </div>
+    <br /> 
+    <div class="c2">
+      <a href="#814b1d" >Einschub: Alternative Wahl der Grenzen des Arguments</a>
+    </div>
+    <br />
+    
+    <div class="c3">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 8.2:</b> Argument einer komplexen Zahl:</p>
+
+            <p>Bestimmen Sie das Argument der komplexen Zahl 
+            <img src="k8/gif/f81423.gif" alt="math formula" hspace="5" align="bottom" width="59" height="13" />. <a href="#814l0201d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

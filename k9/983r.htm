@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Векторы</h2>
+
+    <h3>9.8 Преобразование произведений векторов  </h3>
+
+    <h4>9.8.3 Подгруппа вращений  </h4>
+  </div>
+
+  <div class="c3">
+    <p>Матрицы вращений, определяемые значением детерминанта 
+    <img src="k9/gif/f98227.gif" alt="math formula" hspace="5" align="middle" width="19" height="22" />, образуют подгруппу внутри группы 
+    <img src="k9/gif/f98301.gif" alt="math formula" hspace="5" align="middle" width="32" height="24" />, так называемую <em>С</em>пециальную <em>О</em>ртогональную группу 
+    <img src="k9/gif/f98302.gif" alt="math formula" hspace="5" align="middle" width="42" height="24" />, т.к. 
+    <img src="k9/gif/f98303.gif" alt="math formula" hspace="5" align="middle" width="105" height="24" />.</p>
+
+    <p>После данного выжного вывода, давайте более глубоко исследуем, какие ограничения на вид допустимых для преобразования системы координат прямоугольных матриц дает требование того, чтобы новые базисные векторы образовывали <em>правую систему</em>. Это произойдет, если будет выполнено соотношение:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98304.gif" alt="math formula" hspace="5" align="middle" width="133" height="33" />
+    </div>
+    <br />
+
+    <p>Для доказательства давайте рассмотрим 
+     
+    <img src="k9/gif/f98305.gif" alt="math formula" hspace="5" align="middle" width="413" height="39" /></p>
+
+    <p>После уже встречавшихся нам вычислений с использованием однородности векторного произведения следует необычный, но важный шаг: к трем уже имеющимся суммированиям по 
+    <img src="k9/gif/f98306.gif" alt="math formula" hspace="5" align="middle" width="68" height="24" />, 
+    <img src="k9/gif/f98306b.gif" alt="math formula" hspace="5" align="middle" width="64" height="24" /> и 
+    <img src="k9/gif/f98307.gif" alt="math formula" hspace="5" align="middle" width="74" height="23" />, мы искусственно вводим еще один символ Кронекера и одно суммирование по 
+    <img src="k9/gif/f98308.gif" alt="math formula" hspace="5" align="middle" width="67" height="23" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98309.gif" alt="math formula" hspace="5" align="middle" width="184" height="25" />
+    </div>
+    <br />
+
+    <p>символом Кронекера 
+    <img src="k9/gif/f98217.gif" alt="math formula" hspace="5" align="middle" width="9" height="23" /> мы теперь заменяем на 
+    <img src="k9/gif/f98310.gif" alt="math formula" hspace="5" align="middle" width="70" height="30" />, т.е.
+    <img src="k9/gif/f98311.gif" alt="math formula" hspace="5" align="middle" width="106" height="24" /> с нашей прямоугольной матрицей преобразования 
+    <img src="k9/gif/f98312.gif" alt="math formula" hspace="5" align="middle" width="14" height="24" />.</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98313.gif" alt="math formula" hspace="5" align="middle" width="384" height="25" />
+    </div>
+    <br />
+
+    <p>После перестановки чисел 
+    <img src="k9/gif/f98314.gif" alt="math formula" hspace="5" align="middle" width="30" height="17" /> и 
+    <img src="k9/gif/f98315.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> мы получаем выражение, которое допускает применение нашей ранее выведенной 
+    <a href="#974b1r" >формулы вычисления детерминанта</a> 
+    <img src="k9/gif/f98316.gif" alt="math formula" hspace="5" align="middle" width="184" height="24" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98317.gif" alt="math formula" hspace="5" align="middle" width="218" height="33" />
+    </div>
+    <br />
+
+    <p>Если новый базис должен быть тоже правым, то мы можем допустить только такие прямоугольные матрицы преобразования, которые имеют детерминант 
+    <img src="k9/gif/f98318.gif" alt="math formula" hspace="5" align="middle" width="67" height="17" />, т.е. лишь элементы <em>подгруппы 
+    <img src="k9/gif/f98302.gif" alt="math formula" hspace="5" align="middle" width="42" height="24" /> вращений</em>. Это именно то, что мы уже видели на одном примере в начале данной главы: преобразование четности сделало из правой системы координат  левую. То же действие оказывают любые преобразования, содержащие отражения. Присутствие отражения мы всегда можем распознать по отрицательному детерминанту матрицы преобразования.</p>
+  </div>
+</body>
+</html>

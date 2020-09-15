@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.6 Uneigentliche Integrale</h3>
+
+    <h4>7.6.1 Unendliches Integrationsintervall</h4>
+  </div>
+
+  <div class="c3">
+    <p>Wenn z.B. das Integral über eine im Intervall <img src="k7/gif/f76101.gif" alt="math formula" hspace="5" align="middle" width="40" height="24" /> stetige Funktion an der oberen Grenze bis ins Unendliche reichen soll, berechnet man dieses zunächst nur bis zu einem großen endlichen Wert <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> und läßt dann nachträglich im Ergebnis der Integration diesen großen Wert <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> in einem weiteren Grenzübergang über alle Grenzen wachsen. Falls auch dieser Grenzwert existiert, nennen wir ihn ein <em>uneigentliches Integral der ersten Art</em> und schreiben:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f76102.gif" alt="math formula" hspace="5" align="middle" width="376" height="47" />
+    </div><br />
+    <br />
+
+    <p>Als Beispiel berechnen wir für <img src="k7/gif/f76103.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" /> und ein kleines positives <img src="k7/gif/f76104.gif" alt="math formula" hspace="5" align="bottom" width="37" height="12" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f76105.gif" alt="math formula" hspace="5" align="middle" width="366" height="48" /> <img src="k7/gif/f76126.gif" alt="math formula" hspace="5" align="middle" width="218" height="38" />
+    </div><br />
+    <br />
+
+    <p>Wir sehen daraus, dass das uneigentliche Integral existiert, wenn die Funktion für wachsendes <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> auch nur ein klein wenig stärker abfällt als <img src="k7/gif/f76106.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" />, also z.B. für <img src="k7/gif/f76107.gif" alt="math formula" hspace="5" align="middle" width="30" height="28" />, dass aber für <img src="k7/gif/f76108.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" /> die im folgenden Bild</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k7/gif/b7611.gif" alt="math formula" width="470" height="410" /><br clear="all" />
+    <span class="bild">Bild 7.12</span></p>
+  </div>
+
+  <div class="c3">
+    <p>farbige Fläche unter der Funktion <img src="k7/gif/f76106.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> gerade <em>keinen</em> endlichen Flächeninhalt mehr besitzt und ebenso alle weniger stark abfallenden Funktionen wie etwa <img src="k7/gif/f76109.gif" alt="math formula" hspace="5" align="middle" width="38" height="27" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 7.15:</p>
+
+            <p>Versuchen Sie folgende uneigentlichen Integrale der ersten Art zu berechnen:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f76110.gif" alt="math formula" hspace="5" align="middle" width="71" height="47" /> <a href="#761l1501d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f76111.gif" alt="math formula" hspace="5" align="middle" width="111" height="47" /> <a href="#761l1502d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f76112.gif" alt="math formula" hspace="5" align="middle" width="104" height="47" /> <a href="#761l1503d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f76113.gif" alt="math formula" hspace="5" align="middle" width="87" height="47" /> <a href="#761l1504d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f76114.gif" alt="math formula" hspace="5" align="middle" width="117" height="47" /> <a href="#761l1505d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Analog verfahren wir bei einer in <img src="k7/gif/f76115.gif" alt="math formula" hspace="5" align="middle" width="51" height="24" /> stetigen und beschränkten Funktion für die untere Grenze:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f76116.gif" alt="math formula" hspace="5" align="middle" width="396" height="53" />
+    </div><br />
+    <br />
+
+    <p>oder bei einer auf der ganzen Zahlengeraden stetigen und beschränkten Funktion für beide Grenzen:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f76117.gif" alt="math formula" hspace="5" align="middle" width="359" height="47" />
+    </div><br />
+    <br />
+
+    <p>mit einer beliebigen Teilungsstelle <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 7.16:</p>
+
+            <p>Berechnen Sie:</p>
+
+            <p><img src="k7/gif/f76118.gif" alt="math formula" hspace="5" align="middle" width="153" height="53" /> <a href="#761l1601d" >Lösung</a> und <img src="k7/gif/f76119.gif" alt="math formula" hspace="5d" align="middle" width="127d" height="52d" /> <a href="#761l1602d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#761b1d" >Einschub: Cauchy-Hauptwert</a>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 7.17:</p>
+
+            <p>Berechnen Sie:</p>
+
+            <p><img src="k7/gif/f76124.gif" alt="math formula" hspace="5" align="middle" width="114" height="47" /> <a href="#761l1701d" >Lösung</a> und <img src="k7/gif/f76125.gif" alt="math formula" hspace="5d" align="middle" width="127d" height="47d" /> <a href="#761l1702d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

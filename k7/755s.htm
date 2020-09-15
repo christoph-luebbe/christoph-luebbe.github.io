@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la fisica</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integración</h2>
+
+    <h3>7.5 El arte de la integración</h3>
+
+    <h4>7.5.5 Otros trucos de integración</h4>
+  </div>
+
+  <div class="c4">
+    <p>Junto con la sustitución y la integración parcial, existe aún un gran 
+    número de otros trucos de integración, la mayoría restringido a un grupo 
+    pequeño de integrales.Como un representante de todos aquellos trucos miremos 
+    en forma más detallada el <b>ansatz de Hermite<span style="font-weight: 400">, 
+    que reduce integrales del tipo </span></b> 
+    <img src="k7/gif/f75501.gif" alt="math formula" hspace="5" align="middle" width="112" height="26" />, 
+    con un polinomio 
+    <img src="k7/gif/f75502.gif" alt="math formula" hspace="5" align="middle" width="42" height="24" /> 
+    de m-ésimo grado sobre la raíz cuadrada de una cuadrática, 
+    <img src="k7/gif/f75503.gif" alt="math formula" hspace="5" align="middle" width="172" height="30" />, 
+    a integrales con el polinomio 1, debido a que integrandos de este tipo 
+    aparecen comúnmente en Física. Hermite propuso el siguiente ansatz:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Ansatz de Hermite</em>: 
+            <img src="k7/gif/f75504.gif" alt="math formula" hspace="5" align="middle" width="350" height="42" /> 
+            con 
+            <img src="k7/gif/f75504b.gif" alt="math formula" hspace="5" align="middle" width="152" height="48" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>&nbsp;con un polinomio de 
+    <img src="k7/gif/f75505.gif" alt="math formula" hspace="5" align="middle" width="52" height="24" />-ésimo 
+    grado 
+    <img src="k7/gif/f75506.gif" alt="math formula" hspace="5" align="middle" width="61" height="24" /> 
+    y un número real 
+    <img src="k7/gif/f75507.gif" alt="math formula" hspace="5" align="middle" width="19" height="17" />. 
+    Los 
+    <img src="eq/mp1.gif" alt="math formula" hspace="5" align="middle" width="52" height="24" /> 
+    números 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" /> 
+    requeridos, con 
+    <img src="k7/gif/f75508.gif" alt="math formula" hspace="5" align="middle" width="118" height="23" /> 
+    se obtienen al comparar los coeficientes de los siguientes polinomios de 
+    grado m-ésimo:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75509.gif" alt="math formula" hspace="5" align="middle" width="356" height="28" />
+    </div><br />
+    <br />
+
+    <p>Luego la diferenciación del ansatz da</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75510.gif" alt="math formula" hspace="5" align="middle" width="468" height="42" />
+    </div><br />
+    
+    <p>y la multiplicación con 
+    <img src="k7/gif/f75511.gif" alt="math formula" hspace="5" align="middle" width="30" height="24" /> 
+    da la ecuación que determina los 
+    <img src="eq/mp1.gif" alt="math formula" hspace="5" align="middle" width="52" height="24" /> 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" /></p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Ejercicio 7.12:</p>
+
+            <p>Muestre que la comparación de coeficientes</p>
+
+            <p>1. para 
+            <img src="k7/gif/f75512.gif" alt="math formula" hspace="5" align="middle" width="164" height="28" /> 
+            y 
+            <img src="k7/gif/f75513.gif" alt="math formula" hspace="5" align="middle" width="162" height="30" /> 
+            conduce a<br />
+            <img src="k7/gif/f75514.gif" alt="math formula" hspace="5" align="middle" width="80" height="23" />, 
+            <img src="k7/gif/f75515.gif" alt="math formula" hspace="5" align="middle" width="45" height="23" /> 
+            y 
+            <img src="k7/gif/f75516.gif" alt="math formula" hspace="5" align="middle" width="56" height="23" /> , 
+            luego se obtiene 
+            <img src="k7/gif/f75517.gif" alt="math formula" hspace="5" align="middle" width="105" height="28" /> 
+            y<br />
+            2. para 
+            <img src="k7/gif/f75518.gif" alt="math formula" hspace="5" align="middle" width="75" height="28" /> 
+            y 
+            <img src="k7/gif/f75519.gif" alt="math formula" hspace="5" align="middle" width="110" height="29" /> 
+            conduce a<br />
+            <img src="k7/gif/f75520.gif" alt="math formula" hspace="5" align="middle" width="61" height="24" />, 
+            <img src="k7/gif/f75521.gif" alt="math formula" hspace="5" align="middle" width="73" height="24" /> 
+            y 
+            <img src="k7/gif/f75522.gif" alt="math formula" hspace="5" align="middle" width="45" height="23" /> 
+            con 
+            <img src="k7/gif/f75523.gif" alt="math formula" hspace="5" align="middle" width="100" height="24" /> 
+            como solución.</p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>La integral restante del tipo 
+    <img src="k7/gif/f75524.gif" alt="math formula" hspace="5" align="middle" width="69" height="27" /> 
+    la solucionamos a través del truco de completar cuadrados, para alguno de 
+    ustedes conocido desde el colegio. Es decir, adición y sustracción en los 
+    mismos términos (aquí escritos en negritas): en caso que 
+    <img src="k7/gif/f75525.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" /></p>
+
+    <div class="c2">
+      <img src="k7/gif/f75526.gif" alt="math formula" hspace="5" align="middle" width="458" height="71" />
+    </div><br />
+    <br />
+
+    <p>Con el discriminante 
+    <img src="k7/gif/f75527.gif" alt="math formula" hspace="5" align="middle" width="94" height="28" />.</p>
+
+    <p>Finalmente la sustitución 
+    <img src="k7/gif/f75528.gif" alt="math formula" hspace="5" align="middle" width="93" height="24" />nos 
+    lleva a</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75529.gif" alt="math formula" hspace="5" align="middle" width="202" height="30" />
+    </div><br />
+    <br />
+
+    <p>y luego en caso que 
+    <img src="k7/gif/f75530.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" />, 
+    una nueva sustitución 
+    <img src="k7/gif/f75531.gif" alt="math formula" hspace="5" align="middle" width="94" height="28" /> 
+    con 
+    <img src="k7/gif/f75532.gif" alt="math formula" hspace="5" align="middle" width="88" height="28" /> 
+    hace que</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75533.gif" alt="math formula" hspace="5" align="middle" width="162" height="29" />
+    </div><br />
+    <br />
+
+    <p>lo que encontramos en la fila 20 de nuestra <a href="#743b1s" >TABLA</a> </p>
+
+    <div class="c2">
+      <img src="k7/gif/f75534.gif" alt="math formula" hspace="5" align="middle" width="374" height="30" />
+    </div><br />
+    <br />
+
+    <p>tal como hemos mostrado anteriormente en el
+    <a href="#482')">E</a><a href="#482s">jercicio 4.13</a> . 
+    Por lo tanto, en resumen con otra constante 
+    <img src="eq/d.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75535.gif" alt="math formula" hspace="5" align="middle" width="325" height="71" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Ejercicio 7.13:</p>
+
+            <p>Resuelva la integral 
+            <img src="k7/gif/f75536.gif" alt="math formula" hspace="5" align="middle" width="69" height="26" /> 
+            para el caso 
+            <img src="k7/gif/f75537.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" /> 
+            y<img src="k7/gif/f75538.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" />. <a href="#755l1301s" >
+            Solución</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Todas las integrales que han sido resueltas durante el siglo con 
+    distintas fórmulas y trucos están reunidas en tablas de integrales, para 
+    algunas de las cuales damos su referencia: comenzamos nuestra elección con 
+    los pequeños libros que serán usados por los estudiantes de física a menudo 
+    y terminamos con las grandes tablas de integrales que usted encontrará en la 
+    biblioteca:</p>
+
+    <div class="c2">
+      <br />
+      1) M.ABRAMOWITZ + I.A.STEGUN: Handbook of Mathematical Functions, Wiley,<br />
+      2) I.S.GRADSHTEYN + I.M.RYZHIK: Tables of Integrals, Series and Products, Academic,<br />
+      3) A.P.PRUDNIKOV + Yu.A.BRYCHKOV + O.I.MARICHEV: Integrals and Series I + II, Gordon + Breach.
+    </div><br />
+    <br />
+
+    <p>Las informaciones de estas tablas están incluidas hoy en día en programas 
+    como MATHEMATICA y MAPLE. Estos encuentran las funciones primitivas, en caso 
+    de que existan, también en casos difíciles. Uno no debería temer de usar 
+    estas tablas o programas en el trabajo diario. Sin embargo, su uso en 
+    general requiere del conocimiento de técnicas y trucos de integración, 
+    porque de otra forma los comentarios y restricciones sobre las regiones de 
+    validez no se pueden tomar en cuenta apropiadamente y correctamente. Por eso 
+    no hemos ocupado de sus problemas aquí</p>
+  </div>
+</body>
+</html>

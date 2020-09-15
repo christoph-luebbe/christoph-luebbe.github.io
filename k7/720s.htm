@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la fisica</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integración</h2>
+
+    <h3>7.2 Área bajo una función en un intervalo</h3>
+  </div>
+
+  <div class="c3" style="width: 1148; height: 710">
+    Calculamos el <b>á</b><em>rea </em> 
+    <img src="k7/gif/f72001.gif" alt="math formula" hspace="5" align="middle" width="84" height="24" />&quot;bajo&quot; 
+    una función arbitraria acotada y continua, que por ahora suponemos positiva 
+    <img src="k7/gif/f72002.gif" alt="math formula" hspace="5" align="middle" width="60" height="24" />, 
+    sobre la distancia finita &quot;entre&quot; los puntos inicial 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+    y final 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" />, 
+    a menudo llamada 
+    <img src="k7/gif/f72003.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" />, 
+    usando la receta indicada <span lang="es-cl">anteriormente</span> para la línea recta: Dividimos el área 
+    deseada en muchas franjas verticales&nbsp; angostas, cuyos lados superiores 
+    son casi líneas rectas, calcule las áreas de las franjas tal como se indica 
+    arriba y finalmente permita que el número de franjas crezca sin límite, con 
+    la esperanza que de este modo encontraremos el área buscada como el valor 
+    límite.<p>
+    Deseamos documentar este <b>procedimiento de límite</b> una vez mas y luego 
+    estandarizarlo: el intervalo 
+    <img src="k7/gif/f72004.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> 
+    entre el punto inicial 
+    <img src="k7/gif/f72005.gif" alt="math formula" hspace="5" align="middle" width="79" height="17" />y 
+    el punto final 
+    <img src="k7/gif/f72006.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" />lo 
+    dividiremos usando, por ejemplo, 
+    <img src="k7/gif/f72007.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" /><b>puntos 
+    intermedios<span style="font-weight: 400">,&nbsp; con</span> </b> 
+    <img src="k7/gif/f72008.gif" alt="math formula" hspace="5" align="middle" width="290" height="24" /><b>
+    <span style="font-weight: 400">, 
+    en </span></b> 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /><b>
+    <span style="font-weight: 400">intervalos 
+    parciales </span></b> 
+    <img src="k7/gif/f72009.gif" alt="math formula" hspace="5" align="middle" width="65" height="24" /><b>
+    <span style="font-weight: 400"> 
+    de longitud </span></b> 
+    <img src="k7/gif/f72010.gif" alt="math formula" hspace="5" align="middle" width="121" height="24" /><b>
+    <span style="font-weight: 400">. 
+    Los intervalos parciales no necesitan, pero pueden<span lang="es-cl">,</span> tener la misma longitud:
+    </span></b> 
+    <img src="k7/gif/f72011.gif" alt="math formula" hspace="5" align="middle" width="121" height="24" /><b>
+    <span style="font-weight: 400">. 
+    En el interior de cada pequeño intervalo elegimos un </span>nodo<span style="font-weight: 400">
+    </span></b> 
+    <img src="k7/gif/f72012.gif" alt="math formula" hspace="5" align="middle" width="101" height="24" /><b>
+    <span style="font-weight: 400">, 
+    que no necesariamente es el punto medio aritmético </span></b> 
+    <img src="k7/gif/f72013.gif" alt="math formula" hspace="5" align="middle" width="136" height="24" /><b>
+    <span style="font-weight: 400"> 
+    , pero puede ser. Luego determinamos los valores funcionales 
+    <span lang="es-cl">en</span> esos 
+    nodos y aproximamos el área verdadera de cada franja por </span></b> 
+    <img src="k7/gif/f72014.gif" alt="math formula" hspace="5" align="middle" width="67" height="24" /><b>
+    <span style="font-weight: 400">, 
+    y el área de los rectángulos bajo las líneas horizontales por </span></b> 
+    <img src="k7/gif/f72015.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" />. 
+    Sumamos estas 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> 
+    áreas rectangulares y la llamamos </p>
+
+    <div class="c2">
+      <em>Suma de Riemann</em>: 
+      <img src="k7/gif/f72016.gif" alt="math formula" hspace="5" align="middle" width="141" height="41" />
+    </div>
+  </div><br />
+
+  <div class="c1">
+    <p><img src="k7/gif/b7201e.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Figura 7.3: Disección del intervalo y franjas</span></p>
+  </div>
+
+  <div class="c3">
+    &nbsp;<p>El anunciado procedimiento de límite consiste en el refinamiento de 
+    la disección del intervalo mediante el aumento sin límite del número 
+    <img src="k7/gif/f72007.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" /> 
+    de puntos intermedios, en donde debemos poner atención en que en el caso de una 
+    disección no equidistante, el ancho de las franjas 
+    <img src="k7/gif/f72017.gif" alt="math formula" hspace="5" align="middle" width="62" height="24" />se 
+    aproxima a cero. Si la sucesión de sumas de Riemann 
+    <img src="k7/gif/f72018.gif" alt="math formula" hspace="5" align="middle" width="21" height="24" /> 
+    converge a un valor límite que es independiente de la disección del 
+    intervalo y de la selección de los nodos 
+    <img src="k7/gif/f72019.gif" alt="math formula" hspace="5" align="middle" width="15" height="24" /> 
+    en cada franja, entonces denominamos a ese límite la integral &quot;definida&quot; (o 
+    de Riemann) de la función 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />, 
+    desde 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+    hasta 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" /> 
+    , o bien, el área &quot;bajo&quot; la función 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />&quot;sobre&quot; 
+    el intervalo 
+    <img src="k7/gif/f72004.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> 
+    y escribimos como fue propuesto por Leibniz, con una 
+    <img src="k7/gif/f72020.gif" alt="math formula" hspace="5" align="bottom" width="11" height="13" /> 
+    (por suma) estilizada:</p>
+
+    <div class="c2">
+      <em>Integral (de Riemann)</em>: 
+      <img src="k7/gif/f72021.gif" alt="math formula" hspace="5" align="middle" width="317" height="53" />
+    </div>
+    <p>El integrando 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    también se puede ubicar entre el signo de integral y la diferencial.</p>
+    <p>Los matemáticos garantizan que el límite considerado existe si la función 
+    integrando 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    es continua y acotada y el intervalo es finito y cerrado:</p>
+    <div class="c2">
+      <table class="satzrand" border="2" cellpadding="10">
+        <tr>
+          <td class="satz"><em>Una función acotada y cont<span lang="es-cl">i</span>nua es integrable 
+          (Riemann) sobre in intervalo cerrado.</em></td>
+        </tr>
+      </table>
+    </div>
+    <p><br>
+    <br>
+    Contrario a esto, la diferenciabilidad no se sigue de la continuidad.</p>
+    <p>&nbsp;</p>
+
+    <div class="c2">
+      <a href="#720b1s" >Nota: Cálculo de una integral usando 
+      la definición</a>
+    </div>
+  </div><br />
+</body>
+</html>

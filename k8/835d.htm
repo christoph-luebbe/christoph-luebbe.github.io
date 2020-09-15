@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>8 Komplexe Zahlen</h2>
+
+    <h3>8.3 Funktionen einer komplexen Variablen</h3>
+
+    <h4>8.3.5 Exponentialfunktion</h4>
+  </div>
+
+  <div class="c3">
+    <p>Die bei weitem wichtigste komplexe Funktion ist die <em>natürliche Exponentialfunktion</em>. Wir wurden bereits im 
+    <a href="#815d">Abschnitt 8.1.5</a> durch die Euler-Formel auf ihre Definition für rein imaginäre Variable geführt und können diese natürlich leicht für allgemeine komplexe Variablen ergänzen:</p>
+
+    <div class="c2">
+      <em>Exponentialfunktion</em>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k8/gif/f83501.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>d.h. für den Betrag: 
+    <img src="k8/gif/f83502.gif" alt="math formula" hspace="5" align="middle" /><br />
+    und für das Argument: 
+    <img src="k8/gif/f83503.gif" alt="math formula" hspace="5" align="middle" />.</p>
+
+    <p>Während sie als Funktion des Realteils nach wie vor so rasant ansteigt, wie wir 
+    <a href="#423d">früher</a> gesehen hatten, ist sie in Abhängigkeit vom Imaginärteil ihrer Variablen 
+    <img src="eq/2pi.gif" alt="math formula" hspace="5" align="bottom" />-periodisch.</p>
+
+    <div class="c2">
+      <em>
+      <img src="eq/2pii.gif" alt="math formula" hspace="5" align="bottom" />-periodisch</em>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k8/gif/f83505.gif" alt="math formula" hspace="5" align="bottom" /> mit 
+      <img src="eq/kez.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Der Konvergenzradius der Taylor-Entwicklung ist, wie wir früher gesehen haben, unendlich.</p>
+
+    <div class="c2">
+      Die <em>Funktionalgleichung</em>: 
+      <img src="k8/gif/f83507.gif" alt="math formula" hspace="5" align="bottom" /> für 
+      <img src="eq/zwec.gif" alt="math formula" hspace="5" align="middle" /> gilt nach wie vor.
+    </div>
+    <br />
+
+    <p>Um uns ein Bild der Funktion machen zu können, berechnen wir zunächst wieder <em>einige Bildpunkte</em>:</p>
+
+    <div class="c2">
+      <img src="k8/gif/f83509.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Dann sehen wir, dass die <em>senkrechten Geraden</em> 
+    <img src="k8/gif/f83510.gif" alt="math formula" hspace="5" align="bottom" /> in Kreise 
+    <img src="k8/gif/f83511.gif" alt="math formula" hspace="5" align="middle" /> übergehen: die Gerade 
+    <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" /> in den mit 
+    <img src="k8/gif/f83512.gif" alt="math formula" hspace="5" align="middle" />, die mit 
+    <img src="eq/xg1.gif" alt="math formula" hspace="5" align="bottom" /> in den 
+    <img src="k8/gif/f83513.gif" alt="math formula" hspace="5" align="middle" /> und die Gerade 
+    <img src="k8/gif/f83514.gif" alt="math formula" hspace="5" align="bottom" /> in den Kreis mit 
+    <img src="k8/gif/f83515.gif" alt="math formula" hspace="5" align="middle" />.<br />
+    Die <em>waagrechten Geraden</em> 
+    <img src="k8/gif/f83516.gif" alt="math formula" hspace="5" align="middle" /> werden in Speichen 
+    <img src="k8/gif/f83517.gif" alt="math formula" hspace="5" align="middle" /> abgebildet, und zwar die Gerade 
+    <img src="k8/gif/f83518.gif" alt="math formula" hspace="5" align="middle" /> in die Speiche <img src="k8/gif/f83519.gif" alt="math formula" hspace="5" align="middle" />, die Gerade 
+    <img src="k8/gif/f83520.gif" alt="math formula" hspace="5" align="middle" /> in 
+    <img src="k8/gif/f83521.gif" alt="math formula" hspace="5" align="middle" />, usw..</p>
+
+    <p>Aus diesen Ergebnissen erkennen wir, dass die Exponentialfunktion einen <em>waagrechten Streifen</em> der z-Ebene mit der Höhe 
+    <img src="eq/2pi.gif" alt="math formula" hspace="5" align="bottom" />, z.B. den sogenannten <em>Fundamentalbereich</em> mit 
+    <img src="k8/gif/f83522.gif" alt="math formula" hspace="5" align="middle" /> auf die zwischen den Verzweigungspunkten 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" /> und 
+    <img src="eq/inf.gif" alt="math formula" hspace="5" align="bottom" /> (z.B. entlang der negativen reellen Achse) aufgeschnittene w-Ebene abbildet. Die ganze z-Ebene geht also in eine Riemann-Fläche mit <em>unendlich vielen</em> Blättern über. Bei jedem Blatt ist dabei das obere Ufer entlang dem Schnitt mit dem unteren Ufer des darunterliegenden Blattes stetig verbunden und das obere Ufer des letzten "durch alle anderen Verbindungen hindurch" mit dem unteren Ufer des ersten Blattes. Die folgende Darstellung kann helfen, sich ein Bild von dem Wirken der Funktion zu machen.</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="k8/gif/b8351.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Bild 8.12: Bild vom waagrechten Fundamentalstreifen in der z-Ebene und der aufgeschnittenen w-Ebene für die Exponentialfunktion</span></p>
+  </div>
+</body>
+</html>

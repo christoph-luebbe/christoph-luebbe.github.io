@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Векторы</h2>
+
+    <h3>9.8 Преобразование произведений векторов  </h3>
+
+    <h4>9.8.2 Группа ортогональных матриц</h4>
+  </div>
+
+  <div class="c3">
+    <p>Для ответа на поставленный вопрос, рассмотрим условие ортонормальности. Должно вполняться следующее:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98201.gif" alt="math formula" hspace="5" align="middle" /><br />
+      
+      т.е. 
+       
+      <img src="k9/gif/f98202.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Исходя из этого, допустимы только матрицы, имеющие свойство 
+    <img src="k9/gif/f98203.gif" alt="math formula" hspace="5" align="middle" /> или 
+    <img src="k9/gif/f98204.gif" alt="math formula" hspace="5" align="middle" />. Такие матрицы в математике называются <em>ортогональными</em>. Среди девяти элементов матрицы <em>только три вещественных числа являются независимыми</em> вследствие шести дополнительных условий:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td>
+          <img src="k9/gif/f98205.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>для 
+          <img src="k9/gif/f98206.gif" alt="math formula" hspace="5" align="middle" /> и</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k9/gif/f98207.gif" alt="math formula" hspace="5" align="middle" />&nbsp;&nbsp;</td>
+
+          <td>для 
+          <img src="k9/gif/f98208.gif" alt="math formula" hspace="5" align="middle" />.</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Ортогональные матрицы образуют группу относительно умножения, называемую 
+    <img src="k9/gif/f98209.gif" alt="math formula" hspace="5" align="middle" />, которая, разумеется, не может быть коммутативной, т.к. 
+    <a href="#923b1r" >матричное умножение</a> мы в общем случае признали некоммутативным:</p>
+
+    <p>Чтобы проверить групповые свойства, давайте, рассмотрим произведение 
+    <img src="k9/gif/f98210.gif" alt="math formula" hspace="5" align="middle" /> двух ортогональных матриц 
+    <img src="k9/gif/f98211.gif" alt="math formula" hspace="5" align="middle" /> с 
+    <img src="k9/gif/f98212.gif" alt="math formula" hspace="5" align="middle" /> и 
+    <img src="k9/gif/f98213.gif" alt="math formula" hspace="5" align="middle" /> с 
+    <img src="k9/gif/f98214.gif" alt="math formula" hspace="5" align="middle" /> и рассчитаем:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98215.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>т.е. <em>произведение двух ортогональных матриц дает ортогональную матрицу</em>.</p>
+
+    <p><em>Ассоциативный закон</em> выполняется как и для всякого 
+    <a href="#923b1r" >умножения матриц</a>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98216.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Существует единственный <em>единичный элемент</em>, единичная матрица 
+    <img src="k9/gif/f98217.gif" alt="math formula" hspace="5" align="middle" /> (которая также ортогональна т.к. 
+    <img src="k9/gif/f98218.gif" alt="math formula" hspace="5" align="middle" /> и, следовательно, 
+    <img src="k9/gif/f98219.gif" alt="math formula" hspace="5" align="middle" />):</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98220.gif" alt="math formula" hspace="5" align="bottom" />  Единичный элемент 
+      <img src="k9/gif/f98217.gif" alt="math formula" hspace="5" align="middle" />: 
+      <img src="k9/gif/f98220b.gif" alt="math formula" hspace="5" align="middle" /> для всех 
+      <img src="k9/gif/f98220c.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Умножение матрицы 
+    <img src="k9/gif/f98211.gif" alt="math formula" hspace="5" align="middle" /> слева или справа на единичную матрицу 
+    <img src="k9/gif/f98217.gif" alt="math formula" hspace="5" align="middle" /> дает нам снова старую матрицу.</p>
+
+    <p>Для каждой прямоугольной матрицы 
+    <img src="k9/gif/f98211.gif" alt="math formula" hspace="5" align="middle" /> существует однозначно определенная обратная матрица, а именно транспонированная матрица, что как раз и является условием ортогональности:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98221.gif" alt="math formula" hspace="5" align="middle" /> 
+      <img src="k9/gif/f98222.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Условие для существования обратной матрицы 
+    <img src="k9/gif/f98223.gif" alt="math formula" hspace="5" align="middle" /> выполнено автоматически, так как 
+    <img src="k9/gif/f98224.gif" alt="math formula" hspace="5" align="middle" />, что дает для детерминанта </p>
+
+    <div class="c2">
+      <img src="k9/gif/f98225.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <div class="c2">
+      <img src="k9/gif/f98226.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Таким образом, мы доказали все групповые свойства для множества ортогональных матриц. Очевидно, что <em>существуют два вида прямоугольных матриц</em> в зависимости от значения их детерминанта: матрицы с детерминантом 
+
+    <img src="k9/gif/f98227.gif" alt="math formula" hspace="5" align="middle" /> - вращения, и матрицы с детерминантом 
+    <img src="k9/gif/f98228.gif" alt="math formula" hspace="5" align="bottom" /> - отражения.</p>
+
+    <p>Уравнение, определяющее прямоугольную матрицу 
+    <img src="k9/gif/f98229.gif" alt="math formula" hspace="5" align="middle" /> позволяет нам иначе взглянуть на наш символ Кронекера: введем в левую часть уравнения лишний знак 
+    <img src="k9/gif/f98230.gif" alt="math formula" hspace="5" align="bottom" /> при помощи дополнительной операции суммирования и получим: 
+    <img src="k9/gif/f98231.gif" alt="math formula" hspace="5" align="middle" />. Теперь рассмотрим двух-индексный символ Кронекера как <em>тензор второго ранга</em>; тогда с левой стороны стоят 
+    <img src="k9/gif/f98232.gif" alt="math formula" hspace="5" align="middle" />, т.е. 9 составляющих тензора относительно преобразованной системы координат: одна матрица преобразования для каждого индекса. Тогда уравнение 
+    <img src="k9/gif/f98233.gif" alt="math formula" hspace="5" align="middle" /> означает инвариантность элементов матрицы относительно вращений и отражений; это значит, что единицы и нули в каждой системе координат всегда остаются одинаковыми и на одном и том же месте. Симметричный относительно перестановки индексов символ Кронекера, таким образом, можно назвать "<em>численно-инвариантным тензором второго ранга</em>". Вы еще часто будете встречать такое его название.</p>
+  </div>
+</body>
+</html>

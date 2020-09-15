@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik ( Einschub )</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {text-align: center}
+  div.c1 {margin-left: 2em}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <p><b>Matrizen</b>:</p>
+
+  <p>Die Drehmatrizen sind nur ein Beispiel für die Größen mit zwei Indizes, die die Mathematiker Matrizen nennen. 
+  Man kann ganz allgemein für 
+  <img src="k9/gif/f92348.gif" alt="math formula" hspace="5" align="middle" width="45" height="24" />-Matrizen, 
+  d.h. Schemata mit <img src="eq/z.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+  Zeilen und 
+  <img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+  Spalten Rechenregeln definieren und deren Strukturen untersuchen. Wir wollen unsere Überlegungen hier auf 
+  quadratischen 
+  <img src="k9/gif/f92351.gif" alt="math formula" hspace="5" align="middle" width="49" height="24" /> 
+  -Matrizen und sogar speziell auf 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> 
+  -Matrizen mit reellen Elementen beschränken.</p>
+
+  <p>Wir bezeichnen die Matrizen durch unterstrichene große Buchstaben z.B. 
+  <img src="k9/gif/f92353.gif" alt="math formula" hspace="5" align="middle" width="14" height="24" />. Ihre Elemente 
+  <img src="k9/gif/f92354.gif" alt="math formula" hspace="5" align="middle" width="25" height="24" /> tragen zwei 
+  Indizes: der linke 
+  <img src="k9/gif/f92322.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> bezeichnet die 
+  (waagrechte) <em>Zeile</em> und der rechte 
+  <img src="k9/gif/f92323.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> die (senkrechte) 
+  <em>Spalte</em> der Matrix:</p>
+
+  <div class="c1">
+    <em>Matrix:</em> 
+    <img src="k9/gif/f92355.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div><br />
+  <br />
+
+  <p>Es gibt einige Arten von Matrizen die ihrer Wichtigkeit wegen besondere Namen haben:</p>
+
+  <p>Vor allem <em>Diagonalmatrizen</em>, bei denen nur die drei Elemenete 
+  <img src="k9/gif/f92356.gif" alt="math formula" hspace="5" align="middle" width="23" height="24" />, 
+  <img src="k9/gif/f92357.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> und 
+  <img src="k9/gif/f92358.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> in der 
+  sogenannten <em>Hauptdiagonale</em> (:von links oben nach rechts unten) von 
+  <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> verschieden sind, 
+  haben besondere Bedeutung. Die Nebendiagonale (:von rechts oben nach links unten) ist im Vergleich dazu weniger 
+  wichtig.</p>
+
+  <div class="c1">
+    <em>Diagonalmatrix:</em> 
+    <img src="k9/gif/f92359.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div><br />
+  <br />
+
+  <p>Die Matrizen für Drehungen um Vielfache des Winkels 
+  <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> sind Beispiele für 
+  Diagonalmatrizen: <img src="k9/gif/f92360.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" />, 
+  <img src="k9/gif/f92361.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" /> und 
+  <img src="k9/gif/f92362.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" />.</p>
+
+  <p>Auf halbem Weg zur Diagonalgestalt ist die <em>Dreiecksform</em> zu erwähnen, bei der entweder unter oder 
+  über der Hauptdiagonale nur Nullen stehen:</p>
+
+  <div class="c1">
+    <em>Dreiecksmatrix:</em> 
+    <img src="k9/gif/f92363.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div><br />
+  <br />
+
+  <p>Auch <em>Matrizen in Kästchenform</em> sind für viele Zwecke besonders angenehm. Bei ihnen sind nur 
+  "Kästchen" um die Hauptdiagonale von Null verschieden. Unsere Drehmatrizen 
+  <a href="#923b4d" >
+  <img src="k9/gif/f92364.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" /></a> und 
+  <a href="#923b5d" >
+  <img src="k9/gif/f92365.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" /></a> 
+  sind von dieser Art.</p>
+
+  <div class="c1">
+    <em>Matrix in Kästchenform:</em> 
+    <img src="k9/gif/f92366.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div><br />
+  <br />
+
+  <p>Eine einfache Operation, die bei jeder Matrix durchgeführt werden kann, ist die <em>Transposition:
+  </em> Gemeint ist die Spiegelung der Matrixelemente an der Hauptdiagonale, bzw. die Vertauschung der 
+  Zeilen mit den Spalten: 
+  <img src="k9/gif/f92367.gif" alt="math formula" hspace="5" align="middle" width="70" height="29" /></p>
+
+  <div class="c1">
+    <em>Transponierte Matrix:</em> 
+    <img src="k9/gif/f92368.gif" alt="math formula" hspace="5" align="middle" width="193" height="66" />
+  </div><br />
+  <br />
+
+  <p>Es gibt Matrizen, bei denen die Transposition nichts ändert: Man nennt sie <em>symmetrisch.</em></p>
+
+  <div class="c1">
+    <em>Symmetrische Matrix:</em> 
+    <img src="k9/gif/f92369.gif" alt="math formula" hspace="5" align="middle" width="228" height="66" />
+  </div><br />
+  <br />
+
+  <p>Diese symmetrischen Matrizen treten in der Physik häufig auf und haben den Vorteil, dass man sie mit 
+  bestimmten einfachen Umformungen auf Diagonalgestalt bringen kann.</p>
+
+  <p>Wie Sie unmittelbar sehen, hat eine symmetrische Matrix nur sechs unabhängige Elemente.</p>
+
+  <p>Falls die Spiegelung an der Hauptdiagonale ein Minuszeichen ergibt, heißt die Matrix <em>antisymmetrisch:</em></p>
+
+  <div class="c1">
+    <em>Antisymmetrische Matrix:</em> 
+    <img src="k9/gif/f92370.gif" alt="math formula" hspace="5" align="middle" width="208" height="66" />
+  </div><br />
+  <br />
+
+  <p>Die Diagonalelemente müssen in diesem Fall natürlich verschwinden. Offensichtlich besitzt eine 
+  antisymmetrische 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />-Matrix nur 
+  genau drei unabhängige Elemente. Das ist der tiefere Grund für die Existenz eines Vektorprodukts in drei 
+  Dimensionen, wie wir bald genauer sehen werden.</p>
+
+  <p>Schließlich folgt noch ein Spezialausdruck für eine charakteristische Größe jeder 
+	quadratischen Matrix: <em>Die Summe der Elemente in der Hauptdiagonalen</em> heißt <em>Spur</em> 
+	(:englisch Trace) der Matrix:</p>
+
+  <div class="c1">
+    <em>Spur:</em> <img src="k9/gif/f92371.gif" alt="math formula" hspace="5" align="middle" width="204" height="48" />
+  </div><br />
+  <br />
+
+  <p>Sie können sich leicht vorstellen, dass man für die reellen 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> -Matrizen eine 
+  gliedweise Addition definieren kann und dass diese dann eine <em>abelsche Gruppe</em> der Addition bilden mit 
+  Assoziativgesetz, eindeutiger Nullmatrix, genau einem Negativen zu jeder Matrix und Kommutativem Gesetz, weil 
+  sich die entsprechenden Eigenschaften der reellen Zahlen einfach übertragen. Auch die elementweise 
+  <em>Multiplikation mit einem Zahlenfaktor</em> ist möglich und führt zu den üblichen Distributivgesetzen.</p>
+
+  <p>Für die Physik viel wichtiger ist jedoch die <em>Multiplikation zweier 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> -Matrizen,</em> 
+  was im Spezialfall der Transformationsmatrizen zwei hintereinander ausgeführten Transformationen des 
+  Koordinatensystems entspricht:</p>
+
+  <p>Dabei gilt folgende</p>
+
+  <div class="c1">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p><em>Matrizenmultiplikationsvorschrift:</em> 
+          <img src="k9/gif/f92372.gif" alt="math formula" hspace="5" align="middle" width="312" height="48" /></p>
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <p>Bei der letzten angegebenen Formulierung wurde nach der Einsteinschen Summenkonvention (Siehe Abschnitt 9.2.3.2) das 
+  Summenzeichen weggelassen, weil die beiden gleichlautenden Indizes k die Summation genügend deutlich 
+  signalisieren.</p>
+
+  <p>In der Praxis denkt man sich zur Berechnung des Produktmatrixelements 
+  <img src="k9/gif/f92373.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" />
+   der z-ten Zeile und der s-ten Spalte die s-te (senkrechte) Spalte 
+   <img src="k9/gif/f92374.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> 
+   der rechten Faktormatrix 
+   <img src="k9/gif/f92353.gif" alt="math formula" hspace="5" align="middle" width="14" height="24" /> 
+   waagrecht auf die z-te Zeile 
+   <img src="k9/gif/f92375.gif" alt="math formula" hspace="5" align="middle" width="30" height="22" /> der linken 
+   Faktormatrix 
+   <img src="k9/gif/f92376.gif" alt="math formula" hspace="5" align="middle" width="13" height="22" /> gelegt, 
+   aufeinanderliegende Elemente miteinander multipliziert und die drei Produkte addiert: z.B. 
+   <img src="k9/gif/f92377.gif" alt="math formula" hspace="5" align="middle" width="427" height="31" />, also insgesamt:
+   </p>
+
+  <div class="c1">
+    <img src="k9/gif/f92378.gif" alt="math formula" hspace="5" align="middle" width="552" height="68" />
+  </div><br />
+  <br />
+
+  <div class="c1">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p><b>Aufgabe 9.10:</b> Matrizenmultiplikation</p>
+
+          <p>Multiplizieren Sie folgende Transformations-Matrizen:</p>
+
+          <table border="0">
+            <tr>
+              <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td><img src="k9/gif/f92379.gif" alt="math formula" hspace="5" align="middle" width="104" height="32" /> 
+              und vergleichen Sie mit 
+              <img src="k9/gif/f92380.gif" alt="math formula" hspace="5" align="middle" width="110" height="32" /> 
+              <a href="#923b1l1001d" >Lösung</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td>speziell 
+              <img src="k9/gif/f92381.gif" alt="math formula" hspace="5" align="middle" width="121" height="33" /> 
+              zu vergleichen mit 
+              <img src="k9/gif/f92382.gif" alt="math formula" hspace="5" align="middle" width="127" height="32" /> 
+              <a href="#923b1l1002d" >Lösung</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td><img src="k9/gif/f92383.gif" alt="math formula" hspace="5" align="middle" width="104" height="33" /> 
+              und vergleichen Sie mit 
+              <img src="k9/gif/f92384.gif" alt="math formula" hspace="5" align="middle" width="110" height="32" /> 
+              <a href="#923b1l1003d" >Lösung</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td><img src="k9/gif/f92385.gif" alt="math formula" hspace="5" align="middle" width="106" height="33" /> 
+              und vergleichen Sie mit 
+              <img src="k9/gif/f92386.gif" alt="math formula" hspace="5" align="middle" width="106" height="33" />. 
+              <a href="#923b1l1004d" >Lösung</a></td>
+            </tr>
+          </table><br />
+          <br />
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <p>Die wichtigste Entdeckung bei der Bearbeitung der Übungsaufgabe 9.10 ist, dass im allgemeinen für zwei 
+  Drehungen und folglich auch für die darstellenden Matrizen <em>kein Kommutatives Gesetz</em> gilt. 
+  Diese Tatsache können Sie mit jeder Streichholzschachtel leicht und anschaulich überprüfen, wie im folgenden 
+  Bild illustriert:</p>
+
+  <div class="c2">
+    <p><img src="k9/gif/b92310.gif" alt="math formula" width="682" height="253" /><br clear="all" />
+    <span class="bild">Bild 9.10: Streichholzschachtel, die zuerst um 
+    <img src="k9/gif/f92387.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" /> um die 
+    3-Achse, dann um <img src="k9/gif/f92387.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" /> 
+    um die 1-Achse gedreht wurde, verglichen mit einer, die zuerst um die 1-Achse und dann um die 3-Achse gedreht 
+    wurde.</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Die Beispiele der Aufgabe 9.10 haben Ihnen jedoch auch schon gezeigt, dass in einigen <em>Ausnahmefällen</em> 
+    das <em>Kommutative Gesetz</em> doch gilt: Z.B. sind alle Drehungen um ein und dieselbe Achse vertauschbar. 
+    Auch Diagonalmatrizen sind miteinander vertauschbar. Das ist ein Grund für ihre Beliebtheit. Wenn 
+    <img src="k9/gif/f92389.gif" alt="math formula" hspace="5" align="middle" width="80" height="24" /> ist, dann 
+    verspricht die sogenannte Vertauschungsrelation 
+    <img src="k9/gif/f92390.gif" alt="math formula" hspace="5" align="middle" width="146" height="24" /> eine 
+    interessante Größe zu sein. Das wird später in der Quantenmechanik noch große Bedeutung gewinnen.</p>
+
+    <p>Von der Kommutativität abgesehen, verhält sich die Matrizenmultiplikation jedoch, wie wir das erwarten: 
+    Sie befolgt ein</p>
+
+    <div class="c1">
+      <em>Assoziatives Gesetz:</em> 
+      <img src="k9/gif/f92391.gif" alt="math formula" hspace="5" align="middle" width="198" height="24" />.
+    </div><br />
+    <br />
+
+    <div class="c1">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.11:</b> Assoziativgesetz bei Matrizenmultiplikation</p>
+
+            <p>Verifizieren Sie das Assoziative Gesetz an der Euler-Drehung: 
+            <img src="k9/gif/f92392.gif" alt="math formula" hspace="5" align="middle" width="265" height="33" />, 
+            die vom raumfesten Koordinatensystem zum körperfesten System eines sich drehenden Kreisels führt. 
+            <a href="#923b1l1101d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Es existiert eine eindeutig bestimmte</p>
+
+    <div class="c1">
+      <em>Einheitsmatrix:</em> 
+      <img src="k9/gif/f92393.gif" alt="math formula" hspace="5" align="middle" width="130" height="66" /> mit 
+      <img src="k9/gif/f92393b.gif" alt="math formula" hspace="5" align="middle" width="146" height="24" />,
+    </div><br />
+    <br />
+
+    <p>unabhängig davon, ob von rechts oder von links multipliziert wird.</p>
+
+    <p>Nur bei der</p>
+
+    <div class="c1">
+      <em>inversen Matrix:</em> 
+      <img src="k9/gif/f92394.gif" alt="math formula" hspace="5" align="middle" width="29" height="29" /> mit 
+      <img src="k9/gif/f92394b.gif" alt="math formula" hspace="5" align="middle" width="78" height="29" />
+    </div><br />
+    <br />
+
+    <p>gibt es eine gewisse Komplikation ähnlich der Bedingung 
+    <img src="k9/gif/f92395.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> bei der 
+    Division durch eine reelle Zahl. Eine eindeutig bestimmte Inverse gibt es nur für sogenannte 
+    <em>nichtsinguläre</em> Matrizen. Das sind Matrizen, deren <a href="#923b2d" >
+    Determinante</a> nicht verschwindet: 
+    <img src="k9/gif/f92396.gif" alt="math formula" hspace="5" align="middle" width="49" height="24" />. 
+    Mit den Determinanten, dem wichtigsten Charakteristikum jeder Matrix, beschäftigen wir uns in einer 
+    gesonderten Schublade.</p>
+
+    <p>Für unsere Transformationsmatrizen ist diese Einschränkung jedoch bedeutungslos. Für sie ist nämlich die 
+    inverse Matrix einfach gleich der transponierten 
+    <img src="k9/gif/f92397.gif" alt="math formula" hspace="5" align="middle" width="75" height="30" />, 
+    die, wie wir gesehen haben, immer existiert: Man nennt eine derartige Matrix orthogonal 
+    (Siehe Abschnitt 9.8.2) und wir werden uns diese noch 
+    besonders ansehen:</p>
+
+    <div class="c1">
+      <em>orthogonale Matrix:</em> 
+      <img src="k9/gif/f92397.gif" alt="math formula" hspace="5" align="middle" width="75" height="30" /> oder 
+      <img src="k9/gif/f92398.gif" alt="math formula" hspace="5" align="middle" width="71" height="30" /><br />
+      <br />
+
+      <p><a href="javascript:history.back()">Zurück zum Text</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>5 Diferenciación</h2>
+
+    <h3>5.6 Diferenciación numérica</h3>
+  </div>
+
+  <div class="c3">
+    <span style="color: black; font-family: Arial;">En algunos casos no podemos 
+    o no deseamos calcular la derivada de una función en forma analítica, 
+    utilizando las reglas de la sección anterior. Esto sucede por ejemplo, 
+    cuando desconocemos la forma analítica del gráfico de una función. En ese 
+    caso dependemos de la <b>diferenciación numérica</b></span>.<p>La ecuación 
+    de definición del cociente diferencial de la&nbsp; <a href="#520s">
+    Sección 5.2:</a></p>
+
+    <div class="c2">
+      <img src="k5/gif/f56001.gif" alt="math formula" hspace="5" align="middle" width="227" height="33" />
+    </div><br />
+    se puede también utilizar para el cálculo numérico de la derivada. Dado 
+    el punto 
+    <img src="k5/gif/f56002.gif" alt="math formula" hspace="5" align="middle" width="72" height="24" />, 
+    se busca el punto vecino 
+    <img src="k5/gif/f56003.gif" alt="math formula" hspace="5" align="middle" width="155" height="24" /> 
+    y de esta forma se calcula el cociente de diferencias, permitiendo que luego 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" /> 
+    vaya a 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />.<p>Dado que en los números usados por un computador se pueden almacenar solo 
+    con cierta precisión (por ejemplo, 8 cifras decimales), al hacer la 
+    diferencia 
+    <img src="k5/gif/f56004.gif" alt="math formula" hspace="5" align="middle" width="136" height="24" /> 
+    aparecen errores de redondeo que, si bien siempre permanecen del mismo orden 
+    de magnitud, aumentan cada vez más en relación al valor de la diferencia. De 
+    este modo, el cociente de diferencias se aproxima cada vez con mayor 
+    precisión a&nbsp; 
+    <img src="k5/gif/f56005.gif" alt="math formula" hspace="5" align="middle" width="41" height="26" /> 
+    , a medida que&nbsp; 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" /> 
+    se hace más pequeño, pero entonces el error de redondeo se hace cada vez 
+    mayor para valores más pequeños de&nbsp; 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" />.&nbsp; 
+    Por tanto, debemos llegar a un compromiso. Una mejor aproximación se 
+    encuentra cuando se elige una forma simétrica para la definición:</p>
+
+    <div class="c2">
+      <img src="k5/gif/f56006.gif" alt="math formula" hspace="5" align="middle" width="255" height="33" />
+    </div><br />
+    Con ayuda de la expansión de Taylor, que examinaremos en el capítulo 
+    siguiente, se puede demostrar que debido a la simetrización, el error se 
+    puede reducir de<img src="k5/gif/f56007.gif" alt="math formula" hspace="5" align="middle" width="89" height="26" /> 
+    a 
+    <img src="k5/gif/f56008.gif" alt="math formula" hspace="5" align="middle" width="111" height="28" /> 
+    . Esto es, el error disminuye con 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" /> 
+    en forma cuadrática.</div>
+</body>
+</html>

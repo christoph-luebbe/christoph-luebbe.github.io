@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Векторы</h2>
+
+    <h3>9.5 Скалярное произведение и символ Кронекера</h3>
+
+    <h4>9.5.2 Определение</h4>
+  </div>
+
+  <div class="c3">
+    <p>Итак, в качестве "произведения" двух векторов 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" /> и 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" /> мы выбираем следующее определение и называем его "скалярное произведение", так как оно поставляет обоим векторам-сомножителям вещественное число. Позже мы покажем, что здесь речь идет о скаляре:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Скалярное произведение</em> 
+            <img src="k9/gif/f95201.gif" alt="math formula" hspace="5" align="middle" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Кроме длины тривиальных сомножителей обоих векторов, мы выбираем <em>косинус</em> заключенного, при одинаковой начальной точке, между ними угла 
+    <img src="k9/gif/f95202.gif" alt="math formula" hspace="5" align="middle" />, т.к. он обнуляется, если 
+    <img src="k9/gif/f95203.gif" alt="math formula" hspace="5" align="middle" />, т.е. векторы перпендикулярны друг к другу. Выражение 
+    <img src="k9/gif/f95204.gif" alt="math formula" hspace="5" align="middle" /> является <em>проекцией</em> вектора 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" /> на направление 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" />, и наоборот, 
+    <img src="k9/gif/f95205.gif" alt="math formula" hspace="5" align="middle" /> является проекцией вектора 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" /> на направление 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" />. Каждая из этих проекций умножается на длину того вектора, на которую была сделана проекция. Если угол тупой, то им присваивается знак минус. Числовое значение произведения, в зависимости от расположения векторов, геометрически указывает на <em>площадь</em> (со знаком) соответственно <em>одной из двух</em>, выделенных на следующем рисунке цветом, плоскостей. Если угол межу обоими векторами-сомножителями лежит между 
+    <img src="k9/gif/f95206.gif" alt="math formula" hspace="5" align="middle" /> и 
+    <img src="k9/gif/f95207.gif" alt="math formula" hspace="5" align="middle" />, так что косинус становится отрицательным, то площади присваивается знак минус:</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="k9/gif/b9521.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Рисунок 9.16:  Иллюстрация скалярного произведения в зависимости от угла между двумя векторами: на данном изображении "чемодана", как площадь сечения "тела чемодана", так и более или менее подходящая по размеру "крышка чемодана", передают величину произведения.</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Очень интересны следующие <em>граничные случаи</em>:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td>если 
+          <img src="k9/gif/f95211a.gif" alt="math formula" hspace="5" align="middle" /> и 
+          <img src="k9/gif/f95211b.gif" alt="math formula" hspace="5" align="middle" /> параллельны,</td>
+
+          <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>следует<img src="k9/gif/f95211.gif" alt="math formula" hspace="5" align="middle" />,</td>
+        </tr>
+
+        <tr>
+          <td>если 
+          <img src="k9/gif/f95211a.gif" alt="math formula" hspace="5" align="middle" /> и 
+          <img src="k9/gif/f95211b.gif" alt="math formula" hspace="5" align="middle" /> антипараллельны,</td>
+
+          <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>следует 
+          <img src="k9/gif/f95212.gif" alt="math formula" hspace="5" align="middle" />, и особенно важно</td>
+        </tr>
+
+        <tr>
+          <td>если 
+          <img src="k9/gif/f95211a.gif" alt="math formula" hspace="5" align="middle" /> и 
+          <img src="k9/gif/f95211b.gif" alt="math formula" hspace="5" align="middle" /> перпендикулярны,</td>
+
+          <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>следует 
+          <img src="k9/gif/f95213.gif" alt="math formula" hspace="5" align="middle" />.</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>В частности, <img src="k9/gif/f95214.gif" alt="math formula" hspace="5" align="middle" />,</p>
+
+    <div class="c2">
+      <img src="k9/gif/f95215.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>так что только нулевой вектор <img src="eq/0vekt.gif" alt="math formula" hspace="5" align="bottom" /> имеет нулевую длину, т.к. <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" /> не может быть ортогонален самому себе.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.20:</b> Угол в скалярном произведении</p>
+
+            <p>Что значит: 
+            <img src="k9/gif/f95216.gif" alt="math formula" hspace="5" align="middle" /> для угла между векторами? 
+            <a href="#952l2001r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.21:</b> Теорема косинусов</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Докажите при помощи скалярного произведения теорему косинуса в планиметрии, согласно которой в треугольнике с длинами сторон 
+                <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" />, 
+                <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" /> и 
+                <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" /> имеем: 
+                <img src="k9/gif/f95217.gif" alt="math formula" hspace="5" align="middle" />, причем 
+                <img src="eq/gamma.gif" alt="math formula" hspace="5" align="middle" /> обозначает угол, противолежащий стороне 
+                <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" />. 
+                <a href="#952l2101r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Что из этого следует для 
+                <img src="k9/gif/f95219.gif" alt="math formula" hspace="5" align="middle" />? 
+                <a href="#952l2102r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.22:</b> Неравенство Шварца</p>
+
+            <p>Почему для модуля скалярного произведения справедливо неравенство Шварца: 
+            <img src="k9/gif/f95220.gif" alt="math formula" hspace="5" align="middle" />. 
+            <a href="#952l2201r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

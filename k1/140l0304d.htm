@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <script language="JavaScript" type="text/javascript">
+  //<![CDATA[
+                <!--
+                        s1=0;
+
+                        function zeige( nr )
+                        {
+                                if(nr==1) {
+                                        s1++;
+                                        if(s1==1) document.getElementById("s11").style.visibility="visible";
+                                        if(s1==2) document.getElementById("s12").style.visibility="visible";
+                                        if(s1==3) document.getElementById("s13").style.visibility="visible";
+                                        if(s1==4) document.getElementById("s14").style.visibility="visible";
+                                        if(s1==5) document.getElementById("s15").style.visibility="visible";
+                                }
+                        }
+                //-->
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c2 {visibility:hidden}
+  p.c1 {font-weight: bold}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <p class="c1">Lösung schrittweise:</p>
+
+  <p>E<sub>p</sub> / c<sup>2</sup><br />
+  <a href="javascript:zeige(1);">Nächster Schritt</a></p>
+
+  <div id="s11" class="c2">
+    = 1,22 · 10<sup>16</sup> · 10<sup>12</sup> · 1,6 · 10<sup>-19</sup> J / ( 2,997 · 10<sup>8</sup> m/s )<sup>2</sup>
+  </div>
+
+  <div id="s12" class="c2">
+    = 1,22 · 1,6 · 10<sup>9</sup> Nm / ( 2,997<sup>2</sup> · 10<sup>16</sup> m<sup>2</sup>/s<sup>2</sup> )
+  </div>
+
+  <div id="s13" class="c2">
+    = ( 1,22 · 1,6 · / 2,997<sup>2</sup> ) · 10<sup>-7</sup> ( kg m / s<sup>2</sup> ) m / ( m<sup>2</sup>/s<sup>2</sup> )
+  </div>
+
+  <div id="s14" class="c2">
+    = 0,22 · 10<sup>-4</sup> g
+  </div>
+
+  <div id="s15" class="c2">
+    = 22 <img src="eq/mu.gif" alt="math formula" align="middle" />g
+  </div><br />
+  <br />
+
+  <p><a href="javascript:history.back()">Zurück zum Text</a></p>
+</body>
+</html>

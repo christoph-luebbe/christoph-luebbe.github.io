@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Интегральное исчисление    </h2>
+
+    <h3>7.5 Искусство интегрирования    </h3>
+
+    <h4>7.5.4 Частичное по частям</h4>
+  </div>
+
+  <div class="c4">
+    <p>Если подинтегральное выражение может быть представлено в виде произведения 
+    <img src="k7/gif/f75401.gif" alt="math formula" hspace="5" align="middle" />, при котором для одного из сомножителей 
+    <img src="eq/fsvx.gif" alt="math formula" hspace="5" align="middle" /> известна первообразная функция 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" />, следует пробовать применить интегрирование по частям. Мы знаем правило дифференцирования произведения из 
+    <a href="#552r">раздела 5.5.2</a>:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75403.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Проинтегрируем обе части этого равенства и используем вторую часть основной теоремы интегралного исчисления для интегрирования производной от произведения:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75404.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Из этого равенства легко получить выражение для первого члена в правой части и таким образом получить формулу:</p>
+
+    <div class="c2">
+      <em>Интегрирования по частям</em>: 
+       
+      <img src="k7/gif/f75405.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>По-прежнему, мы имеем интеграл в правой чаасти, так что данное выражение еще не дает решения проблемы . Но во многих случаях интеграл в правой части берется легче, чем исходный интеграл  </p>
+
+    <p>Обратимся к тем же типичным примерам, которые мы рассмотрели выше, например, 
+    <img src="k7/gif/f75406.gif" alt="math formula" hspace="5" align="middle" /> и 
+    <img src="k7/gif/f75407.gif" alt="math formula" hspace="5" align="middle" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75408.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Или еще один, возможно неожиданный, но не редко встречающийся пример с 
+    <img src="k7/gif/f75409.gif" alt="math formula" hspace="5" align="middle" /> и 
+    <img src="k7/gif/f75407.gif" alt="math formula" hspace="5" align="middle" />, в котором, при добавлении единицы, искусственно может быть получено тривиальное произведение:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75411.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Не всегда просто увидеть, какой сомножитель произведения целесообразно рассматривать как производную 
+    <img src="k7/gif/f75412.gif" alt="math formula" hspace="5" align="middle" />. Рассмотрим пример с 
+    <img src="k7/gif/f75413.gif" alt="math formula" hspace="5" align="bottom" />.  Сначала попробуем взять 
+    <img src="k7/gif/f75414.gif" alt="math formula" hspace="5" align="middle" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75415.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Видно, что такой выбор нам ничего не дает, а наоборот, он лишь делает оставшееся подинтегральное выражение еще сложнее. Другой выбор 
+    <img src="k7/gif/f75416.gif" alt="math formula" hspace="5" align="middle" />, напротив, приводит нас к успеху:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75417.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Давайте рассмотрим еще и подинтегральное выражение 
+    <img src="k7/gif/f75418.gif" alt="math formula" hspace="5" align="bottom" /> и выберем, исходя из нашего только что полученного опыта 
+    <img src="k7/gif/f75419.gif" alt="math formula" hspace="5" align="middle" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75420.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Это хоть и не является решением нашей проблемы, но уже шаг в правильном направлении, так как оставшийся интеграл мы только что взяли в последнем примере. Из этого следует:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75421.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Итак, к цели нас привело <b>двукратное интегрирование по частям</b>.</p>
+
+    <p>Приведем еще один интересный пример (для разнообразия, в качестве примера возьмем неопределенный интеграл):
+    
+    
+    
+    </p>
+
+    <div class="c2">
+      <img src="k7/gif/f75422.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Оставшийся интеграл равен исходному, далее получим с новой 
+    <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75423.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Достойным внимания является и следующий пример с 
+    <img src="k7/gif/f75424.gif" alt="math formula" hspace="5" align="middle" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75425.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Подставляем отношение 
+    <img src="k7/gif/f75426.gif" alt="math formula" hspace="5" align="middle" /> и получаем:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75427.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Далее следует целый ряд примеров подобного типа с 
+    <img src="k7/gif/f75428.gif" alt="math formula" hspace="5" align="middle" />, для которых, из-за их значимости и для физики, даже установили особое определение:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75429.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <div class="c2">
+      <img src="k7/gif/f75430.gif" alt="math formula" hspace="5" align="middle" />    и т.д..
+    
+    
+    
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="c2">
+      <img src="k7/gif/f75431.gif" alt="math formula" hspace="5" align="middle" />
+    </div>&lt;
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 7.10:</p>
+
+            <p>Интегрируйте следующие интегралы, применяя интегрирование по частям:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f75432.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1001r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75433.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1002r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f75433c.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1003r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f75433d.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1004r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f75433e.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1005r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f75433f.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1006r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">g)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f75433g.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1007r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td></td>
+
+                <td valign="top">и докажите следующую рекурсивную формулу для 
+                <img src="k7/gif/f75434.gif" alt="math formula" hspace="5" align="middle" />:</td>
+              </tr>
+
+              <tr>
+                <td valign="top">h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f75433h.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1008r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f75433i.gif" alt="math formula" hspace="5" align="middle" />    для 
+                <img src="k7/gif/l71033.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1009r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">j)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f75433j.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1010r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">k)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f75433k.gif" alt="math formula" hspace="5" align="middle" /> 
+                <a href="#754l1011r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 7.11:</p>
+
+            <p>Покажите, что при прямолинейном движении материальной точки при заданном ускорении 
+            <img src="k7/gif/f75435.gif" alt="math formula" hspace="5" align="middle" />, начальной скорости 
+            <img src="k7/gif/f75436.gif" alt="math formula" hspace="5" align="middle" /> и начальном положении 
+            <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" />, пройденный путь 
+            <img src="eq/xvt.gif" alt="math formula" hspace="5" align="middle" /> может быть представлен (посредством интегрирования по частям) в следующем виде:</p>
+
+            <div class="c2">
+              
+              <img src="k7/gif/f75437.gif" alt="math formula" hspace="5" align="middle" />
+            </div>
+            <a href="#754l1101r" >Ответ</a>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

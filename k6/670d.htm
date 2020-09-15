@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Taylor-Entwicklung</h2>
+
+    <h3>6.7 Güte der Konvergenz: Restglied</h3>
+  </div>
+
+  <div class="c4">
+    <p>Nach den Ergebnissen aus den letzten Abschnitten bleibt nur noch die Frage 4) nach der Güte der Konvergenz: Auch wenn wir der Konvergenz der Reihe sicher sind, ist es natürlich nicht unwesentlich, wie groß der Fehler wird, wenn man statt der unendlichen Potenzreihe nur ein</p>
+
+    <div class="c2">
+      <em>Näherungspolynom m-ten Grades</em>: <img src="k6/gif/f67001.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>verwendet. Anstatt das <em>Restglied</em> <img src="k6/gif/f67002.gif" alt="math formula" hspace="5" align="middle" /> genau zu berechnen, wollen wir nur eine Formel angeben, die aus dieser Rechnung hervorgeht und dazu dienen kann, <img src="k6/gif/f67003.gif" alt="math formula" hspace="5" align="middle" /> abzuschätzen, die sogenannte</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Lagrange-Form des Restglieds</em> <img src="k6/gif/f67004.gif" alt="math formula" hspace="5" align="middle" /> , wobei <img src="eq/0kthk1b.gif" alt="math formula" hspace="5" align="bottom" />.</p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Der Ausdruck setzt uns zunächst in Erstaunen, denn er hat die leicht einprägsame Form des (m+1)-ten Gliedes der Reihe, d.h. des ersten weggelassenen Terms, soll jedoch für die ganze Restreihe stehen. Dieser scheinbare Widerspruch wird dadurch aufgeklärt, dass die (m+1)-te Ableitung im Restglied nicht wie beim (m+1)-ten Glied der Reihe am Entwicklungspunkt <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" /> zu nehmen ist, sondern <em>an einer unbekannten Zwischenstelle</em> <img src="k6/gif/f67005.gif" alt="math formula" hspace="5" align="bottom" /> zwischen dem Entwicklungspunkt <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" /> und der interessierenden Stelle <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" />, ausgedrückt durch die unbekannte Zahl <img src="eq/th.gif" alt="math formula" hspace="5" align="bottom" /> mit <img src="eq/0kthk1b.gif" alt="math formula" hspace="5" align="bottom" /> . Wegen dieser Unbekanntheit von <img src="eq/th.gif" alt="math formula" hspace="5" align="bottom" /> läßt sich das Restglied im allgemeinen nicht ausrechnen, sondern nur</p>
+
+    <div class="c2">
+      <em>abschätzen</em>: <img src="k6/gif/f67006.gif" alt="math formula" hspace="5" align="middle" /> .
+    </div><br />
+    <br />
+
+    <p>Aus dieser Abschätzungsformel sieht man, dass der Fehler klein wird mit der (m+1)-ten Potenz des Abstands der untersuchten Stelle <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> vom Entwicklungspunkt <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" />, dass es also günstig ist, mit dem Entwicklungspunkt möglichst nahe an den interessierenden Punkt heranzugehen.</p>
+
+    <p>Als Beispiel wollen wir <img src="k6/gif/f67007.gif" alt="math formula" hspace="5" align="middle" /> bis auf <img src="k6/gif/f67008.gif" alt="math formula" hspace="5" align="middle" /> berechnen mit der in Abschnitt 6.4.2 gewonnen Taylor-Reihe um den Punkt <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" /></p>
+
+    <div class="c2">
+      <img src="k6/gif/f67009.gif" alt="math formula" hspace="5" align="middle" /> :
+    </div><br />
+    <br />
+
+    <p>Wir erhalten: <img src="k6/gif/f67010.gif" alt="math formula" hspace="5" align="middle" /> , wobei die Restgliedabschätzung mit <img src="k6/gif/f67011.gif" alt="math formula" hspace="5" align="bottom" /> ergibt:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f67012.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Der exakte Wert ist <img src="k6/gif/f67013.gif" alt="math formula" hspace="5" align="middle" /> und seine Differenz zum Näherungswert beträgt <img src="k6/gif/f67014.gif" alt="math formula" hspace="5" align="middle" /> .</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 6.10:</p>
+
+            <p>Berechnen Sie die quadratischen Glieder der Taylor-Entwicklungen und die Restglieder <img src="k6/gif/f67015.gif" alt="math formula" hspace="5" align="middle" /> in unserer kleinen Tabelle aus <a href="#643d">Abschnitt 6.4.3</a>. Wählen Sie dazu z.B. für <img src="k6/gif/f67016.gif" alt="math formula" hspace="5d" align="middle" /> , <img src="eq/m1d2.gif" alt="math formula" hspace="5d" align="middle" /> und <img src="k6/gif/f67017.gif" alt="math formula" hspace="5d" align="middle" /> und schätzen Sie die Fehler ab: Bei welchen Stellen <img src="eq/x.gif" alt="math formula" hspace="5d" align="bottom" /> betragen die relativen Fehler <img src="k6/gif/f67018.gif" alt="math formula" hspace="5d" align="middle" /> jeweils 1% bzw. 10%? <a href="#670l1001d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 6.11:</p>
+
+            <p>Berechnen Sie <img src="k6/gif/f67021.gif" alt="math formula" hspace="5" align="middle" /> mit der Taylor-Reihe um <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" /> bis auf <img src="k6/gif/f67022.gif" alt="math formula" hspace="5" align="middle" /> . <a href="#670l1101d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

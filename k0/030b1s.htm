@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+</head>
+
+<body>
+  <div class="centeredText">
+    <h2>Agradecimientos</h2>
+  </div><br />
+  <br />
+
+  <div class="justifiedText">
+    <p>An erster Stelle möchte ich Herrn Prof. Dr. Jörg Hüfner danken für die Idee und 
+       Einladung, mein altbewährtes Vorkurs-Manuskript zu überarbeiten und attraktiv 
+       auszugestalten, um es mit Hilfe des neuen Mediums der CD-ROM bzw. on-line einem 
+       größeren Kreis von Interessenten (auch schon vor und noch nach dem eigentlichen 
+       Vorkurs) zugänglich zu machen, ferner für viele bis in Einzelfragen gehende 
+       Diskussionen, Ratschläge, Anregungen und Beiträge dazu und die laufende Ermunterung 
+       während der langen wechselvollen Zeit der Arbeit an dem Projekt.
+    </p>
+
+    <p>Dann gilt ein besonderer Dank Herrn Prof. Dr. Hans-Joachim Nastold, der mir vor 
+       45 Jahren durch die Beantwortung einiger mathematischer Fragen aus einer 
+       persönlichen Krise geholfen und wieder Mut gemacht hat, als ich aus einem 
+       Juristen-Elternhaus von einem humanistischen Gymnasium kommend, ohne irgendeinen 
+       Naturwissenschaftler zu kennen, und ohne irgendwelchen Zugang zu Lehrbüchern oder 
+       einer Bibliothek unter dem Eindruck zweier junger genialer Mathematikdozenten in 
+       ähnlicher Situation, aber ungleich hoffnungsloserer Lage war als Sie eventuell jetzt.
+    </p>
+
+    <p>Herrn Prof. Dr. Dieter Heermann gebührt mein Dank für seinen kompetenten Rat, seine 
+       zukunftsweisende Unterstützung bis zur tätigen Hilfe im Frühstadium des Projekts. 
+       Herrn Dr. Thomas Fuhrmann danke ich herzlich für seine Begeisterung für die 
+       multimedialer Idee, die ersten Arbeiten zur elektronischen Umsetzung des Manuskripts, 
+       für die drei Java-Applets und insbesondere für die Programmierung des 
+       Funktionenschaufensters, die er noch durchführte, ehe es ihn zu einträglicheren 
+       Arbeitsgebieten zog.
+    </p>
+
+    <p>Folgenden Mitarbeitern des Instituts habe ich für mannigfache Diskussionen, Hinweise 
+       und Hilfe zu danken, vor allem Herrn Prof. F. Wegner für die aufmerksame Durchsicht 
+       der letzten Kapitel des Word-Skriptums in einem frühen Stadium, Herrn Dr. E. Thommes 
+       für außerordentlich sorgfältige Hilfe bei der Fehlersuche im html-Text, Herrn 
+       Prof. W. Wetzel für unermüdlichen Rat und unschätzbare Hilfe bei allen Computerfragen, 
+       Herrn Dr. Peter John besonders für Unterstützung bei einigen Abbildungen, Herrn Ting 
+       Wang für seine elektronische Hilfsbereitschaft und vielen vielen anderen Mitgliedern 
+       des Instituts für gelegentliche Unterstützung und dauernde Ermutigung.
+    </p>
+
+    <p>Mein Hauptdank gilt meinem engeren Mitarbeiterteam: zunächst Frau Melanie Steiert und 
+       dann vor allem Frau Dipl.-Math. Katharina Schmock für die aufmerksame souveräne 
+       Übertragung des Textes in LATEX, Frau Birgitta Schiedt und Herrn Bernhard Zielbauer 
+       für ihre Einsatzfreude und Arbeitsgeschwindigkeit bei der Übertragung der TEX-Formlen 
+       in die html-Version und last not least Olsen Technologies für die Konzeption der 
+       Navigation und die souveräne Gestaltung der html-Fassung. Dem Direktorium des 
+       Instituts, insbesondere Herrn Prof. C. Wetterich und Herrn Prof. F. Wegner, danke 
+       ich für die Bereitstellung der Hilfskraftmittel für dieses Team im entscheidenden 
+       Stadium.
+    </p>
+
+    <p>Einer großen Zahl interessierter Studentinnen und Studenten vieler Jahrgänge schulde 
+       ich Dank, die durch ihre begeisternde Mitarbeit und ihre Fragen während der Kurse und 
+       auch noch spätere Rückkopplung entscheidend zum Zustandekommen und zur Optimierung 
+       der kompakten Form meines Vorlesungsskripts "Mathematische Methoden des Physikers", 
+       dessen erster Teil der Vorkurs darstellte, beigetragen haben. Stellvertretend für 
+       die vielen, deren Gesichter und Stimmen mir in besserer Erinnerung sind als ihre 
+       Namen, möchte ich Herrn Björn Seidel nennen. Großen Dank auch all denjenigen Benutzern 
+       des Online-Kurses, die die Mühe nicht gescheut haben, mir aktuelle Übertragungsprobleme 
+       oder die immer noch verbliebenen Tipp- und Setzfehler zu melden und dadurch mitgeholfen 
+       haben, dass wir uns allmählich dem Ideal eines fehlerfreien Textes nähern, zuletzt den 
+       Herren F. Heiderich, M. Frohnapfel, J. Rist, J. Küchenmeister, S. Stolzenberg, 
+       H. Jung und Frau Jenny Wagner. Bei Herrn Prof. Dr. rer.nat.habil. L. Paditz 
+       bedanke ich mich für kritische Hinweise und Änderungsvorschläge zur Wahl der Grenzen der 
+       Argumente komplexer Zahlen.
+    </p>
+
+    <p>Für ihre Mithilfe, die Abiturientinnen und Abiturienten aus nah und fern fröhlich zu 
+       empfangen, sie zu motivieren, ihnen Mut zu machen und unseren Kurs aus dem Alltagstrott 
+       herauszuheben und zu einem Erlebnis zu machen, an das man noch lange mit Freude 
+       zurückdenkt, vor allem aber für Ideen zu den Übungsaufgaben und Hilfe beim 
+       Korrekturlesen geht mein Dank vor allem an meine ehemaligen studentischen Tutoren 
+       Peter Nalbach, Rainer Tafelmayer, Steffen Weinstock und Carola von Saldern.
+    </p>
+
+    <p>Schließlich danke ich besonders herzlich meinen Kindern und meinem Schwiegersohn 
+       Christoph Lübbe, ohne deren dauernde Ermunterung und unermüdliche Hilfe zu jeder 
+       Tages- und Nachtzeit ich nie so weit hätte in die moderne Medienwelt eindringen können. 
+       Ihnen und meinen Enkeln möchte ich dieses Zukunftsprojekt auch widmen:
+    </p>
+  </div>
+
+  <div class="centeredText">
+    für <em>ANGELIKA, JOHANNES, BETTINA und CHRISTOPH</em><br />
+    sowie <em>CAROLINE, TOBIAS, FABIAN und NIKLAS.</em>
+  </div><br />
+  <br />
+
+  	 <div class="justifiedText">
+ 	<p>Auch im   S p a n i s c h  sprechenden Südamerika gibt es offenbar dieselben Probleme beim Übergang 
+ 	von der Schule zur Universität. Herr Prof. Dr. Lautaro Vergara vom Departamento de Física der 
+ 	Universidad de Santiago de Chile hat deshalb angeboten, den Text ins Spanische zu übertragen. 
+ 	Ich danke ihm ganz herzlich für diese mühevolle Arbeit und die dadurch mögliche Erweiterung des 
+ 	Benutzerkreises unseres Brückenkurses.</p>
+  
+  <div>
+    <a href="javascript:history.back()">Regresar al texto</a>
+  </div><br />
+  <br />
+</body>
+</html>

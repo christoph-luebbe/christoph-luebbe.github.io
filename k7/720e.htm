@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematical Preparation Course before Studying Physics</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.2 Area under a Function over an Interval</h3>
+  </div>
+
+  <div class="c3">
+    <p>We calculate the&nbsp;<em>area</em>
+    <img src="k7/gif/f72001.gif" alt="math formula" hspace="5" align="middle" width="84" height="24" /> "under" 
+    any bounded continuous, however for the moment positive function
+    <img src="k7/gif/f72002.gif" alt="math formula" hspace="5" align="middle" width="60" height="24" /> 
+	&quot;over&quot; the finite distance &quot;between&quot; the starting point
+	<img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+    and the final point 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" />, 
+    also often called
+    <img src="k7/gif/f72003.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" />, 
+	following the recipe indicated above for the straight line: We divide the 
+	desired area in many narrow vertical strips, whose upper sides are nearly 
+	straight lines, calculate the areas of the strips as indicated above, sum 
+	up the single parts and finally let the number of strips grow without limit in the hope that this way we will 
+	find the wanted area 
+    as the limiting value.</p>
+
+    <p>We want to document this <em>limiting procedure</em> just this once and then let it 
+	run in a standardized way: the&nbsp;interval 
+    <img src="k7/gif/f72004.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> 
+    between the starting point, called 
+    <img src="k7/gif/f72005.gif" alt="math formula" hspace="5" align="middle" width="79" height="17" />, 
+    and the final point, called 
+    <img src="k7/gif/f72006.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" />, 
+	will be divided through the choice of e g. 
+    <img src="k7/gif/f72007.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" />
+    <em>intermediate points</em> 
+    <img src="eq/x_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="17" /> 
+    with 
+    <img src="k7/gif/f72008.gif" alt="math formula" hspace="5" align="middle" width="290" height="24" /> in 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" />partial 
+	intervals 
+    <img src="k7/gif/f72009.gif" alt="math formula" hspace="5" align="middle" width="65" height="24" /> 
+    of the respective length 
+    <img src="k7/gif/f72010.gif" alt="math formula" hspace="5" align="middle" width="121" height="24" />. 
+    The partial intervals 
+	must not be of equal length, but they may be: 
+    <img src="k7/gif/f72011.gif" alt="math formula" hspace="5" align="middle" width="121" height="24" />.&nbsp; 
+    In the interior of each of the small partial intervals we chose a&nbsp;<em>node
+    </em><img src="k7/gif/f72012.gif" alt="math formula" hspace="5" align="middle" width="101" height="24" /> , 
+    which does not necessarily has to be the&nbsp;arithmetical midpoint 
+    <img src="k7/gif/f72013.gif" alt="math formula" hspace="5" align="middle" width="136" height="24" />, 
+    but it can be. Then we determine the functional values above these nodes and 
+    we approximate the actual area of the single strips through 
+    <img src="k7/gif/f72014.gif" alt="math formula" hspace="5" align="middle" width="67" height="24" />, 
+	that of the corresponding rectangles under the horizontal lines through
+	<img src="k7/gif/f72015.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" />. 
+	We sum up these<img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> 
+    rectangular areas and call them</p>
+
+    <div class="c2">
+      <em>Riemann sum</em>: 
+      <img src="k7/gif/f72016.gif" alt="math formula" hspace="5" align="middle" width="141" height="41" />
+    </div>
+  </div><br />
+
+  <div class="c1">
+    <p><img src="k7/gif/b7201e.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Figure 7.3: Interval dissection and strips</span></p>
+  </div>
+
+  <div class="c3">
+    <p>The announced limiting procedure consists now in the 
+    refinement of the interval dissection by increasing the number 
+    <img src="k7/gif/f72007.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" /> 
+    of the intermediate points without limit, where we have to 
+    pay attention that in case of a non-equidistant dissection, the width of the 
+    thickest&nbsp; stripe&nbsp;
+    <img src="k7/gif/f72017.gif" alt="math formula" hspace="5" align="middle" width="62" height="24" /> 
+    approaches zero. If the sequence of the Riemann sums 
+    <img src="k7/gif/f72018.gif" alt="math formula" hspace="5" align="middle" width="21" height="24" />converges 
+	to a limiting value which is independent of the dissection of the 
+    interval and the selection of the nodes&nbsp;
+    <img src="k7/gif/f72019.gif" alt="math formula" hspace="5" align="middle" width="15" height="24" /> in 
+    the single stripes, we call this limit the "definite" (or Riemann) integral 
+    of the function<img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    from 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+    to 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" />, 
+	respectively the area "under" the&nbsp; function 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> "over" 
+    the interval 
+    <img src="k7/gif/f72004.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> 
+    and write it as proposed by Leibniz with a stylized
+    <img src="k7/gif/f72020.gif" alt="math formula" hspace="5" align="bottom" width="11" height="13" /> for 
+    sum:</p>
+
+    <div class="c2">
+      <em>(Riemann) integral</em>: 
+      <img src="k7/gif/f72021.gif" alt="math formula" hspace="5" align="middle" width="317" height="53" />
+    </div>
+    <br />
+
+    The integrand<img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />
+    may also be placed between the integral sign and the differential.<p>Mathematicians guarantee that the 
+    <span lang="en-us"></span>considered 
+	limit exists, if the 
+    integrand function 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    is continuous and bounded, and the interval is finite and closed:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>A bounded continuous function is (Riemann) integrable over a closed 
+            interval .</em></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>In contrast to this, differentiability did not at all follow from continuity.</p>
+
+    <div class="c2">
+      <a href="#720b1e">Insert</a><a href="#720b1e" >: 
+      Calculation of an integral according to the definition</a>
+    </div>
+  </div><br />
+</body>
+</html>

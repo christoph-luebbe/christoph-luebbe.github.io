@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {text-align: center}
+  div.c1 {margin-left: 2em}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <p><b>Matrices</b>:</p>
+
+  <p>Las matrices de rotación son solo un ejemplo de cantidades con dos índices 
+  que son llamadas matrices por lo matemáticos.  </p>
+
+  <p>Es posible definir reglas de cálculo generalmente para matrices de
+  <img src="k9/gif/f92348.gif" alt="math formula" hspace="5" align="middle" width="45" height="24" />, 
+  es decir, esquemas con 
+  <img src="eq/z.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+  filas y 
+  <img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+  columnas, y examinar sus estructuras. Deseamos restringir nuestras 
+  consideraciones a matrices cuadradas de
+  <img src="k9/gif/f92351.gif" alt="math formula" hspace="5" align="middle" width="49" height="24" />, 
+  y aun más específicamente a matrices de 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />con 
+  elementos reales.</p>
+
+  <p>Denotamos las matrices por letras mayúsculas en negritas, por ejemplo
+  <img src="k9/gif/f92353.gif" alt="math formula" hspace="5" align="middle" width="14" height="24" />. 
+  Sus elementos
+  <img src="k9/gif/f92354.gif" alt="math formula" hspace="5" align="middle" width="25" height="24" /> 
+  llevan dos índices: el izquierdo
+  <img src="k9/gif/f92322.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+  denota la <b>fila</b> (horizontal) y el derecho
+  <img src="k9/gif/f92323.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+  , la <b>columna</b> (vertical) de la matriz:</p>
+
+  <div class="c1">
+    <em>matriz:</em>
+    
+    <img src="k9/gif/f92355.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div>
+  <br />
+
+  <p>Algunas clases de matrices tiene nombres especiales debido a su importancia:</p>
+
+  <p>En particular, <em>matrices diagonales&nbsp; <span style="font-weight: 400">
+  son de especial importancia, teniendo sólo tres elementos</span></em>
+  <img src="k9/gif/f92356.gif" alt="math formula" hspace="5" align="middle" width="23" height="24" />, 
+  <img src="k9/gif/f92357.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> 
+  y 
+  <img src="k9/gif/f92358.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" />a 
+  lo largo de la llamada <b>diagonal principal </b>(:desde la izquierda arriba 
+  hasta la derecha abajo) diferentes de 
+  <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />. 
+  La segunda diagonal (:desde la derecha arriba hasta la izquierda abajo) es, 
+  comparativamente, mucho menos importante.</p>
+
+  <div class="c1">
+    <em>matriz diagonal:</em> 
+    <img src="k9/gif/f92359.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div><br />
+  <br />
+
+  <p>Las matrices de rotaciones por un múltiplo de
+  <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" />son 
+  ejemplos de matrices diagonales: 
+  <img src="k9/gif/f92360.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" />, 
+  <img src="k9/gif/f92361.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" /> 
+  y 
+  <img src="k9/gif/f92362.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" />.</p>
+
+  <p>A la mitad de camino de las matrices diagonales se encuentran las <b>
+  matrices triangulares,<span style="font-weight: 400"> que únicamente tiene 
+  ceros ya sea por sobre o por debajo de la diagonal principal</span></b>:</p>
+
+  <div class="c1">
+    <em>matriz triangular:</em> 
+    <img src="k9/gif/f92363.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div><br />
+  
+  <p>También matrices en forma de cajas (diagonales por bloques) son especialmente convenientes para 
+  muchos propósitos. En estas matrices, los elementos no nulos ocurren sólo en 
+  cajas alrededor de la diagonal principal. Nuestras matrices de rotación<a href="#923b4s" >
+  <img src="k9/gif/f92364.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" /></a> 
+  y <a href="#923b5s" >
+  <img src="k9/gif/f92365.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" /></a>son 
+  de este tipo.</p>
+
+
+  <div class="c1">
+    <em>matriz en forma de caja:</em> 
+    <img src="k9/gif/f92366.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div>
+  <br />
+
+  <p>Una simple operación que puede ser llevada a cabo con cualquier matriz es 
+  la <b>transposición:</b> esto significa la reflexión de toda la matriz a 
+  trevés de la diagonal principal, o en otras palabras, el intercambio de filas 
+  por columnas: 
+  <img src="k9/gif/f92367.gif" alt="math formula" hspace="5" align="middle" width="70" height="29" /></p>
+
+  <div class="c1">
+    <em>matriz transpuesta:</em> 
+    <img src="k9/gif/f92368.gif" alt="math formula" hspace="5" align="middle" width="193" height="66" />
+  </div>
+  <br />
+
+  <p>Existen matrices para las cuales la transposición nada cambia. Ellas se 
+  denomina <b>simétricas</b><em>.</em></p>
+
+  <div class="c1">
+    <em>matriz simétrica:</em> 
+    <img src="k9/gif/f92369.gif" alt="math formula" hspace="5" align="middle" width="228" height="66" />
+  </div>
+  <br />
+
+  <p>Estas matrices simétricas ocurren muy frecuentemente en física y tiene la 
+  ventaja que ellas pueden diagonalizarse por medio de ciertas transformaciones 
+  simples.</p>
+
+  <p>Como Usted ve inmediatamente, cada matriz simétrica tiene sólo seis 
+  elementos independientes.</p>
+
+  <p>Si las reflexiones a través de la diagonal principal dan un signo menos, 
+  la matriz se denomina <b>antisimétrica</b><em>:</em></p>
+
+  <div class="c1">
+    <em>matriz antisimétrica:</em> 
+    <img src="k9/gif/f92370.gif" alt="math formula" hspace="5" align="middle" width="208" height="66" />
+  </div><br />
+  <br />
+
+  <p>Por supuesto, los elementos diagonales deben anularse en este caso. 
+  Claramente, una matriz antisimétrica de
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />tiene 
+  sólo tres elementos independientes. Esta es la razón profunda para la 
+  existencia de un producto vectorial en tres dimensiones, como veremos pronto 
+  en mayor detalle.</p>
+
+  <p>Finalmente, mencionamos una cantidad especial de toda matriz: la suma de 
+  los elementos a lo largo de la diagonal principal se denomina <b>traza</b> de 
+  la matriz:</p>
+
+  <div class="c1">
+    <em>trace:</em> 
+    <img src="k9/gif/f92371.gif" alt="math formula" hspace="5" align="middle" width="204" height="48" />
+  </div>
+  <br />
+
+  Usted puede imaginar fácilmente que se puede definir una adición término a 
+  término para el conjunto de matrices reales de 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />, 
+  y que estas forman un <b>grupo abeliano</b> de la adición con ley asociativa, 
+  matriz nula única, exactamente un negativo para cada matriz, y ley 
+  conmutativa, porque las correspondientes propiedades de los números reales se 
+  pueden transferir simplemente a esta nueva situación. También, la <b>
+  multiplicación término a término por un factor numérico</b> es posible y 
+  conduce a la ley distributiva usual.<p>Sin embargo, mucho más importante para 
+  la física es la <b>multiplicación de dos matrices de</b> <em>
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /></em>que 
+  corresponde en el caso de matrices de transformación a dos transformaciones de 
+  sistemas coordenados, realizadas una tras la otra:</p>
+
+  <p>Se satisface la siguiente:</p>
+
+  <div class="c1">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p><em>multiplicación de matrices:</em> 
+          <img src="k9/gif/f92372.gif" alt="math formula" hspace="5" align="middle" width="312" height="48" /></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+
+  <p>En la última parte, el símbolo de suma se ha omitido de acuerdo a la
+  convención de suma de Einstein (véase sección 9.2.3.2), dado que dos índice idénticos indican la suma 
+  suficientemente bien.</p>
+
+  <p>Para calcular el elemento de matriz del producto 
+  <img src="k9/gif/f92373.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> 
+  en la fila z y en la columna s, podemos imaginar que la s-ésima columna 
+  (vertical) 
+  <img src="k9/gif/f92374.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> 
+  de la matriz factor
+  <img src="k9/gif/f92353.gif" alt="math formula" hspace="5" align="middle" width="14" height="24" />en 
+  el lado derecho se coloca horizontalmente sobre la z-ésima fila
+  <img src="k9/gif/f92375.gif" alt="math formula" hspace="5" align="middle" width="30" height="22" /> 
+  de la matriz factor de la izquierda
+  <img src="k9/gif/f92376.gif" alt="math formula" hspace="5" align="middle" width="13" height="22" />, 
+  se multiplican los elementos término a término y se suman los tres productos 
+  resultantes: por ejemplo 
+  <img src="k9/gif/f92377.gif" alt="math formula" hspace="5" align="middle" width="427" height="31" />, 
+  luego, en resumen:</p>
+
+  <div class="c1">
+    <img src="k9/gif/f92378.gif" alt="math formula" hspace="5" align="middle" width="552" height="68" />
+  </div><br />
+  <br />
+
+  <div class="c1">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p><b>Ejercicio 9.10:</b> Multiplicación de matrices</p>
+
+          <p>Multiplique las siguientes matrices de transformación:</p>
+
+          <table border="0">
+            <tr>
+              <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td>
+              <img src="k9/gif/f92379.gif" alt="math formula" hspace="5" align="middle" width="104" height="32" /> 
+              y compare con 
+              <img src="k9/gif/f92380.gif" alt="math formula" hspace="5" align="middle" width="110" height="32" /> </a>
+              <a href="#922s">
+              <a href="#923b1l1001s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td>especialmente 
+              <img src="k9/gif/f92381.gif" alt="math formula" hspace="5" align="middle" width="121" height="33" /> 
+              a compararse con 
+              <img src="k9/gif/f92382.gif" alt="math formula" hspace="5" align="middle" width="127" height="32" /> 
+              <a href="#923b1l1002s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td>
+              <img src="k9/gif/f92383.gif" alt="math formula" hspace="5" align="middle" width="104" height="33" /> 
+              y compare con 
+              <img src="k9/gif/f92384.gif" alt="math formula" hspace="5" align="middle" width="110" height="32" /> 
+              <a href="#923b1l1003s" >Solución</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td>
+              <img src="k9/gif/f92385.gif" alt="math formula" hspace="5" align="middle" width="106" height="33" /> 
+              y compare con 
+              <img src="k9/gif/f92386.gif" alt="math formula" hspace="5" align="middle" width="106" height="33" />. 
+              <a href="#923b1l1004s" >Solución</a></td>
+            </tr>
+          </table><br />
+          <br />
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <p>El descubrimiento más importante al trabajar con el Ejercicio 9.10 es el 
+  hecho que en general <b>no</b> se satisface la <b>ley conmutativa</b> para 
+  rotaciones y, consecuentemente, tampoco para las matrices que las representan. 
+  Usted puede corroborar esto visualmente con cualquier caja de fósforos 
+  (cerillas) como se ilustra en la siguiente Figura:</p>
+
+  <div class="c2">
+    <p>
+    <img src="k9/gif/b92310e.gif" alt="math formula" width="682" height="253" /><br clear="all" />
+    <span class="bild">Figura 9.10: Caja de fósforos, primero rotada por 
+    <img src="k9/gif/f92387.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" />alrededor 
+    del eje 3 y luego por 
+    <img src="k9/gif/f92387.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" />alrededor 
+    del eje 1, comparada con una caja que se rota primero alrededor del eje 1 y 
+    posteriormente alrededor del eje 3.</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Los ejemplos del Ejercicio 9.10 ya le han&nbsp; mostrado que en algunos
+    <b>casos excepcionales</b> , la ley conmutativa <b>sí se satisface</b>: 
+    todas las rotaciones alrededor de un eje por ejemplo, son conmutables. 
+    También, todas las matrices diagonales conmutan entre sí. Esta es la razón 
+    para su popularidad. si 
+    <img src="k9/gif/f92389.gif" alt="math formula" hspace="5" align="middle" width="80" height="24" />, 
+    la llamada relación de conmutación 
+    <img src="k9/gif/f92390.gif" alt="math formula" hspace="5" align="middle" width="146" height="24" /> 
+    promete ser una cantidad interesante. Ésta adquirirá gran significado más 
+    tarde en Mecánica Cuántica.</p>
+
+    <p>Aparte de la conmutatividad, la multiplicación de matrices se comporta 
+    como esperado: 
+    se satisface una</p>
+
+    <div class="c1">
+      <em>Ley asociativa :</em> 
+      <img src="k9/gif/f92391.gif" alt="math formula" hspace="5" align="middle" width="198" height="24" />.
+    </div><br />
+    <br />
+
+    <div class="c1">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Ejercicio 9.11:</b> Ley asociativa para la multiplicación de 
+            matrices</p>
+
+            <p>Verifique la ley asociativa para la rotación de Euler: 
+            <img src="k9/gif/f92392.gif" alt="math formula" hspace="5" align="middle" width="265" height="33" />que 
+            nos lleva desde el sistema coordenado fijo en el espacio al sistema 
+            coordenado fijo en el cuerpo de un giróscopo rotante. 
+            <a href="#923b1l1101s" >Solución</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    Una
+
+    <div class="c1">
+      <em>matriz unidad:</em> 
+      <img src="k9/gif/f92393.gif" alt="math formula" hspace="5" align="middle" width="130" height="66" /> 
+      determinada unívocamente, con 
+      <img src="k9/gif/f92393b.gif" alt="math formula" hspace="5" align="middle" width="146" height="24" />,
+    </div><br />
+    existe
+    independientemente de si Usted multiplica por la izquierda o por la derecha.<p>
+    Con la</p>
+
+    <div class="c1">
+      <em>matriz inversa:</em> 
+      <img src="k9/gif/f92394.gif" alt="math formula" hspace="5" align="middle" width="29" height="29" /> 
+      con 
+      <img src="k9/gif/f92394b.gif" alt="math formula" hspace="5" align="middle" width="78" height="29" />
+    </div><br />
+    encontramos cierta complicación análoga a la condición&nbsp; 
+    <img src="k9/gif/f92395.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> 
+    para la división por un número real. Una matriz inversa determinada 
+    unívocamente existe sólo para las llamadas matrices <b>no singulares<span style="font-weight: 400">. 
+    Estas son matrices cuyo </span></b> 
+    <a href="#923b2s" > determinante</a>&nbsp; 
+    no se anula: 
+    <img src="k9/gif/f92396.gif" alt="math formula" hspace="5" align="middle" width="49" height="24" />. 
+    Los determinantes, la característica más importante de las matrices, serán 
+    considerados en una nota extra en la siguiente subsección.<p>Para nuestras 
+    matrices de transformación, sin embargo, esta ligadura no es importante. 
+    Para estas matrices, la inversa es simplemente la transpuesta
+    <img src="k9/gif/f92397.gif" alt="math formula" hspace="5" align="middle" width="75" height="30" />, 
+    que existe en cada caso, como hemos visto: los matemáticos llama a estas 
+    matrices ortogonales (véase sección 9.8.2) y las inspeccionaremos cuidadosamente más tarde:</p>
+
+    <div class="c1">
+      <em>matriz ortogonal:</em> 
+      <img src="k9/gif/f92397.gif" alt="math formula" hspace="5" align="middle" width="75" height="30" /> 
+      o 
+      <img src="k9/gif/f92398.gif" alt="math formula" hspace="5" align="middle" width="71" height="30" /><br />
+      <br />
+
+      <p><a href="javascript:history.back()">Regresar al texto</a></p>
+    </div>
+  </div>
+</body>
+</html>

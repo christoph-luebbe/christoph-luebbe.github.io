@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>3 Sucesiones y series</h2>
+
+    <h3>3.5 Series</h3>
+  </div>
+
+  <div class="c3">
+    <p>Después de haber estudiado los valores límites de sucesiones de números, 
+    podemos aplicar de inmediato este nuevo conocimiento a objetos matemáticos 
+    que aparecen a menudo en física, esto es, <b>sumas infinitas</b> 
+    <img src="k3/gif/f32001.gif" alt="math formula" hspace="5" align="middle" width="72" height="41" />, 
+    que serán llamadas <b>series</b>:</p>
+
+    <p>Éstas se necesitarán una y otra vez en interesantes problemas físicos: 
+    cuando por ejemplo deseemos sumar la energía electrostática de una cadena de 
+    un número infinito de cargas puntuales equidistantes y que alternan su signo 
+    (este es un modelo simple, pero sorprendentemente bueno, de un cristal de 
+    iones unidimensional), nos enfrentaremos a la suma infinita de los miembros 
+    de la serie armónica alternante (F7): la serie 
+    <img src="k3/gif/f32002.gif" alt="math formula" hspace="5" align="middle" width="76" height="41" />. 
+    ¿Cómo se suma esta serie?</p>
+
+    <p>Las series son sucesiones, cuyos miembros son sumas finitas de números 
+    reales: La definición de una</p>
+
+    <div class="c2">
+      <em>serie</em> 
+      <img src="k3/gif/f32003.gif" alt="math formula" hspace="5" align="middle" width="43" height="41" /> 
+      como <em>sucesión de las sumas parciales</em> 
+      <img src="k3/gif/f32003b.gif" alt="math formula" hspace="5" align="middle" width="136" height="47" />
+    </div><br />
+    conduce a las series a partir de las sucesiones, que ya hemos tratado 
+    anteriormente.<p>En particular, una serie es <b>convergente</b> y tiene el valor 
+    <img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, 
+    cuando la sucesión de sus sumas parciales 
+    <img src="k3/gif/f32004.gif" alt="math formula" hspace="5" align="middle" width="19" height="17" /> (<em>no</em> 
+    de sus <b>s</b><em>umandos</em> 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" />!!) 
+    converge: 
+    <img src="k3/gif/f32005.gif" alt="math formula" hspace="5" align="middle" width="87" height="23" />:</p>
+
+    <div class="c2">
+      <em>serie</em> 
+      <img src="k3/gif/f32003.gif" alt="math formula" hspace="5" align="middle" width="43" height="41" />, 
+      esto es, la sucesión de las sumas parciales 
+      <img src="k3/gif/f32006.gif" alt="math formula" hspace="5" align="middle" width="84" height="41" /> <em>
+      <span style="font-weight: 400">es </span>convergente</em> 
+      <img src="k3/gif/f32007.gif" alt="math formula" hspace="5" align="middle" width="185" height="41" /> 
+      .</div><br />
+    
+    <p>También, el múltiplo de una serie convergente y&nbsp; la suma y la 
+    diferencia de dos series convergente son convergentes.</p>
+
+    <p>Los pocos ejemplos clásicos de series, que son necesarios para observar 
+    lo más importante, los obtenemos a partir de la suma por trozos de nuestras 
+    sucesiones clásicas.:</p>
+
+    <p>La <b>serie</b><em> (R1)</em> que se obtiene de las sumas parciales de la 
+    sucesión (F1) de números naturales: 
+    <img src="k3/gif/f32008.gif" alt="math formula" hspace="5" align="middle" width="260" height="47" /> 
+    es claramente divergente.</p>
+
+    <p>La<em> serie (R2) <span style="font-weight: 400">de los miembros de la 
+    sucesión alternante</span></em> (F2) salta siempre entre 
+    <img src="eq/1.gif" alt="math formula" hspace="5" align="bottom" width="6" height="11" /> 
+    y 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />y 
+    por lo tanto tiene dos puntos de acumulación y luego ningún límite.</p>
+
+    <p>También, la <b>&quot;serie armónica&quot; (R3)</b> proveniente la sucesión 
+    armónica, esto es, de la sucesión 
+    <img src="k3/gif/f32009.gif" alt="math formula" hspace="5" align="middle" width="298" height="47" />, 
+    es divergente. Luego, el criterio (necesario) de Cauchy no se satisface:</p>
+
+    <p><br />
+    Si elegimos por ejemplo 
+    <img src="k3/gif/f32010.gif" alt="math formula" hspace="5" align="middle" width="68" height="29" /> 
+    y para 
+    <img src="k3/gif/f32011.gif" alt="math formula" hspace="5" align="bottom" width="53" height="12" /> 
+    observamos que el trozo de la serie compuesto de 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" />miembros:<br />
+    <img src="k3/gif/f32012.gif" alt="math formula" hspace="5" align="middle" width="601" height="70" />, 
+    mientras que para convergencia necesitaríamos&nbsp; 
+    <img src="k3/gif/f32013.gif" alt="math formula" hspace="5" align="middle" width="23" height="19" />.</p>
+
+    <p>Su <b>variante alternante</b> <em>(R7)</em>, construida a partir de la 
+    sucesión (F7), es nuestro ejemplo físico de más arriba y converge: 
+    <img src="k3/gif/f32014.gif" alt="math formula" hspace="5" align="middle" width="76" height="41" /> (
+    <img src="k3/gif/f32014b.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" />, 
+    como mostraremos más adelante). Debido a esta diferencia entre series con 
+    miembros positivos y alternantes, es apropiado introducir un nuevo concepto: 
+    Una serie se llama <b>absolutamente convergente</b> si la serie de sus 
+    valores absolutos converge.</p>
+
+    <div class="c2">
+      serie 
+      <img src="k3/gif/f32015.gif" alt="math formula" hspace="5" align="middle" width="84" height="41" />
+      <b>absolutamente convergente</b> 
+      <img src="k3/gif/f32016.gif" alt="math formula" hspace="5" align="middle" width="165" height="41" />
+    </div><br />
+    Se puede entender fácilmente que para una serie sea absolutamente convergente, 
+    los sumandos se pueden reordenar sin tener efecto sobre el límite. Dos 
+    series absolutamente convergentes se pueden multiplicar término a término 
+    para obtener otra serie absolutamente convergente.<p>Para la convergencia 
+    absoluta los matemáticos han desarrollado varios criterios de suficiencia, 
+    los llamados criterios de mayorantes, que usted estudiará más detalladamente 
+    en un curso de Análisis:</p>
+
+    <div class="c2">
+      <a href="#350b1s" >Nota: Mayorantes</a>
+    </div><br />
+    <p>Muy a menudo la "<em>serie geométrica</em>" <em>(R6)</em>: 
+    <img src="k3/gif/f32022.gif" alt="math formula" hspace="5" align="middle" width="42" height="41" />, 
+    que aparece de la sucesión geométrica (F6) 
+    <img src="k3/gif/f32023.gif" alt="math formula" hspace="5" align="middle" width="105" height="24" />, 
+    sirve como mayorantes. Para calcularlos, nos beneficiamos de la primera para <img src="k3/gif/f32024.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" />obtenida 
+    de la suma geométrica :</p>
+    <div class="c2">
+      <img src="k3/gif/f32025.gif" alt="math formula" hspace="5" align="middle" width="340" height="35" /> 
+      ,</div>
+    <p><br />
+    que significa que es convergente para 
+    <img src="k3/gif/f32026.gif" alt="math formula" hspace="5" align="middle" width="44" height="24" /> 
+    y divergente para 
+    <img src="k3/gif/f32027.gif" alt="math formula" hspace="5" align="middle" width="44" height="24" />.</p>
+
+    <div class="c2">
+      <a href="#350b2s" >Nota: 
+      Criterio del cociente</a>
+    </div><br />
+    <p>La serie del <b>inverso del factorial de los naturales</b><em> (R4)</em> 
+    <img src="k3/gif/f32036.gif" alt="math formula" hspace="5" align="middle" width="41" height="41" />merece 
+    ser examinada en mayor detalle :</p>
+    <p>Primero, nos damos cuenta que la sucesión de las sumas parciales 
+    <img src="k3/gif/f32037.gif" alt="math formula" hspace="5" align="middle" width="131" height="47" />aumenta 
+    monótonamente: 
+    <img src="k3/gif/f32038.gif" alt="math formula" hspace="5" align="middle" width="170" height="29" />.</p>
+
+    <p>Para obtener una cota superior, 
+    <img src="eq/gb.gif" alt="math formula" hspace="5" align="bottom" width="12" height="11" />, 
+    la estimamos por medio de la suma geométrica mayorante con 
+    <img src="k3/gif/f32040.gif" alt="math formula" hspace="5" align="middle" width="38" height="29" />:</p>
+
+    <div class="c2">
+      <img src="k3/gif/f32041.gif" alt="math formula" hspace="5" align="middle" width="211" height="155" />
+    </div>
+    <p><br />
+    Dado que sucesión de sumas parciales&nbsp; 
+    <img src="k3/gif/f32042.gif" alt="math formula" hspace="5" align="middle" width="19" height="17" /> 
+    , monótonamente creciente, es acotada por arriba por<img src="k3/gif/f32043.gif" alt="math formula" hspace="5" align="bottom" width="42" height="11" />, 
+    el Teorema de Bolzano y Weierstrass nos garantiza la convergencia. Aun no 
+    conocemos el valor límite. Este límite es en realidad completamente nuevo, 
+    esto es, un número irracional. Lo llamamos&nbsp;<img src="k3/gif/f32044.gif" alt="math formula" hspace="5" align="middle" width="50" height="23" />, 
+    de modo que el número 
+    <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, 
+    después de la convención suplementaria&nbsp;<img src="k3/gif/f32045.gif" alt="math formula" hspace="5" align="bottom" width="41" height="13" />, 
+    se define por la siguiente serie que comienza en 
+    <img src="k3/gif/f32046.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" />:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Serie exponencial </em> definida por: 
+            <img src="k3/gif/f32047.gif" alt="math formula" hspace="5" align="middle" width="73" height="41" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#350b3s">Nota</a><a href="#350b3s" >: e es 
+      irracional</a>
+    </div><br />
+    <br />
+
+    <p>Para obtener el valor numérico de 
+    <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, 
+    primero calculamos los miembros de la sucesión cero (F4) 
+    <img src="k3/gif/f32058.gif" alt="math formula" hspace="5" align="middle" width="52" height="29" /> :</p>
+
+    <div class="c2">
+      <table width="100%" border="0">
+        <tr>
+          <td>
+          <img src="k3/gif/f32059.gif" alt="math formula" hspace="5" align="middle" width="79" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32060e.gif" alt="math formula" hspace="5" align="middle" width="134" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32061e.gif" alt="math formula" hspace="5" align="middle" width="150" height="29" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32062e.gif" alt="math formula" hspace="5" align="middle" width="178" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32063e.gif" alt="math formula" hspace="5" align="middle" width="176" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32064e.gif" alt="math formula" hspace="5" align="middle" width="184" height="29" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32065e.gif" alt="math formula" hspace="5" align="middle" width="196" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32066e.gif" alt="math formula" hspace="5" align="middle" width="202" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32067e.gif" alt="math formula" hspace="5" align="middle" width="208" height="29" /></td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>y sumamos las sumas parciales: 
+    <img src="k3/gif/f32068.gif" alt="math formula" hspace="5" align="middle" width="286" height="41" /></p>
+
+    <div class="c2">
+      <table width="100%" border="0">
+        <tr>
+          <td>
+          <img src="k3/gif/f32069.gif" alt="math formula" hspace="5" align="middle" width="43" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32070e.gif" alt="math formula" hspace="5" align="middle" width="67" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32071e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32072e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32073e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32074e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32075e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32076e.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32077e.gif" alt="math formula" hspace="5" align="middle" width="103" height="23" /></td>
+        </tr>
+      </table>
+    </div><br />
+    Si observamos la convergencia rápida, podemos imaginar fácilmente que, 
+    después de un cálculo corto, obtenemos el siguiente resultado para el valor 
+    límite:<br />
+
+    <br />
+    <br />
+    <img src="k3/gif/f32078e.gif" alt="math formula" hspace="5" align="middle" width="205" height="23" /> .<div class="c2">
+      &nbsp;<p><a href="#350b4s">Nota</a><a href="#350b4s" >: 
+      Una sucesión convergiendo a e</a>
+    </div><br />
+    <p>Por medio de estas consideraciones, hemos obtenido una primera visión 
+    acerca de los procedimientos de límite y algunas de las sucesiones y series 
+    importantes para las ciencias naturales, con sus límites, lo que nos será de 
+    gran ayuda en el futuro.
+  </div>
+</body>
+</html>

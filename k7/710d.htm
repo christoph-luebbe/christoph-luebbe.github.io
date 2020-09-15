@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {margin-left: 2em}
+  div.c2 {text-align: left}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.1 Arbeit</h3>
+  </div>
+
+  <div class="c2">
+    <p>Wir betrachten wieder zunächst die <em>gleichförmige Bewegung</em> eines Massenpunkts auf einer Geraden, z.B. den Schwerpunkt eines Autos auf einer Autobahn. Nachdem wir die erste Frage nach der Geschwindigkeit mit Hilfe der Differentialrechnung beantwortet haben, fragen wir mit den Physikern eine Schicht tiefer nach dem Grund: Warum bewegt sich das Auto auf dem geraden ebenen Autobahnabschnitt mit der beobachteten gleichförmigen Geschwindigkeit? Klarerweise ist die Ursache der gleichförmigen geradlinigen Bewegung nach Newton eine Kraft, und zwar die Kraft <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" />, mit welcher der Motor den Wagen gegen Trägheit, Wind und andere Reibungsverluste vorantreibt. Spätestens beim Tanken kommt dann die <em>Frage nach der Arbeit</em> <img src="k7/gif/f71000b.gif" alt="math formula" hspace="5" align="bottom" />, die der Motor auf der zurückgelegten Strecke <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> geleistet hat. Diese Arbeit ist umso größer, je größer die benötigte Kraft war, und ist außerdem der zurückgelegten Wegstrecke <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> proportional, ja sie ist genau gleich dem Produkt dieser beiden Größen: <img src="k7/gif/f71001.gif" alt="math formula" hspace="5" align="bottom" /> , geometrisch gleich der <em>Rechtecksfläche</em> aus <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" /> mal <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" />, wenn wir etwa in einem kartesischen, d.h. rechtwinkligen Koordinatensystem den zurückgelegten Weg <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> in Richtung der 1-Achse und die jeweils wirkende Kraft <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" /> in Richtung der 2-Achse auftragen.</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k7/gif/b7101.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Bild 7.1: Konstante Kraft <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" /> als Funktion der zurückgelegten Wegstrecke von <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> bis <img src="k7/gif/f71002.gif" alt="math formula" hspace="5" align="middle" />. Die gelbe Rechteckfläche ist proportional der Arbeit <img src="k7/gif/f71003.gif" alt="math formula" hspace="5" align="bottom" />.</span></p>
+  </div>
+
+  <div class="c2">
+    <p>Nach diesem idealisierten Fall einer konstant wirkenden Kraft gehen wir sogleich zu dem realistischeren Fall über, dass die Kraft sich auf der Strecke ändert, z.B. durch Gasgeben von einem Anfangswert <img src="k7/gif/f71004.gif" alt="math formula" hspace="5" align="middle" /> <em>linear anwächst</em>: <img src="k7/gif/f71005.gif" alt="math formula" hspace="5" align="middle" /> :</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k7/gif/b7102.gif" alt="math formula" /><br clear="all" />
+    <span class="bild">Bild 7.2: Linear vom Anfangswert <img src="k7/gif/f71004.gif" alt="math formula" hspace="5" align="middle" /> nach <img src="k7/gif/f71005.gif" alt="math formula" hspace="5" align="middle" /> anwachsende Kraft über dem zurückgelegten Weg <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> zwischen den Punkten <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> und <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" /> .</span></p>
+  </div>
+
+  <div class="c2">
+    <p>Aus dem Bild sehen wir sofort, wie wir uns behelfen, wenn beim Tanken wieder die Frage nach der auf der ganzen Strecke geleisteten Arbeit auftaucht. Wir nehmen den Mittelwert <img src="k7/gif/f71006.gif" alt="math formula" hspace="5" align="middle" /> zwischen dem Startpunkt <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> und dem Endpunkt <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" />, lesen den entsprechenden Funktionswert der Kraft <img src="k7/gif/f71007.gif" alt="math formula" hspace="5" align="middle" /> ab und multiplizieren diesen mit der zurückgelegten Wegstrecke <img src="k7/gif/f71008.gif" alt="math formula" hspace="5" align="bottom" /> :</p>
+
+    <div class="c3">
+      <img src="k7/gif/f71009.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Damit haben wir die physikalische Frage nach der Arbeit auf die geometrische Fragestellung nach der "<em>Fläche unter der Kraftgeraden über dem Intervall</em> <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> ", genauer nach dem Inhalt der Fläche zurückgeführt, die von einer Funktion nach oben, der Geraden <img src="k7/gif/f71010.gif" alt="math formula" hspace="5" align="bottom" /> nach links, der Geraden <img src="k7/gif/f71011.gif" alt="math formula" hspace="5" align="bottom" /> nach rechts und der 1-Achse <img src="k7/gif/f71012.gif" alt="math formula" hspace="5" align="middle" /> nach unten begrenzt wird. Die weitergehende Frage nach der Arbeit bei einer nach einer <em>beliebigen</em> Funktion variablen Kraft ist damit zurückgeführt auf das mathematische Problem der Bestimmung des Flächeninhalts eines Rechtecks, bei dem eine (hier die obere) Seite durch eine krumme Linie ersetzt ist. Wir wollen im folgenden sogleich diese allgemeinere mathematische Fragestellung untersuchen und einer Lösung zuführen, die dann auch alle Wünsche der Physiker nach der Arbeit und darüber hinaus noch viele andere Wünsche erfüllt.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих ( Дополнение )</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {text-align: center}
+  div.c1 {margin-left: 2em}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <p><b>Матрицы</b>:</p>
+
+  <p>Матрицы поворота - это лишь один пример величин с двумя признаками, которые в математике называются матрицами.  В общем, для 
+  <img src="k9/gif/f92348.gif" alt="math formula" hspace="5" align="middle" width="45" height="24" />-матриц, т.е. для схем с 
+  <img src="eq/z.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> строками и 
+  <img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> столбцами, можно легко определить правила вычитания и изучить их структуры. Здесь мы хотели бы ограничиться рассмотрением квадратных 
+  <img src="k9/gif/f92351.gif" alt="math formula" hspace="5" align="middle" width="49" height="24" /> -матриц, а также 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> -матриц с вещественными элементами.</p>
+
+  <p>Мы обозначаем матрицы при помощи подчеркнутых больших букв, например: 
+  <img src="k9/gif/f92353.gif" alt="math formula" hspace="5" align="middle" width="14" height="24" />. Ее элементы 
+  <img src="k9/gif/f92354.gif" alt="math formula" hspace="5" align="middle" width="25" height="24" /> имеют два признака: левый 
+  <img src="k9/gif/f92322.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> обозначает (горизонтальную) <em>строку</em>, а правый 
+  <img src="k9/gif/f92323.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> - (вертикальный) <em>столбец</em> матрицы:</p>
+
+  <div class="c1">
+    <em>Матрица:</em> 
+    <img src="k9/gif/f92355.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div>
+  <br />
+
+  <p>Существуют некоторые виды матриц, которые из-за их большой значимости, имеют свои особые имена:</p>
+
+  <p>Прежде всего, <em>диагональные матрицы</em>, при которых важны лишь три элемента 
+  <img src="k9/gif/f92356.gif" alt="math formula" hspace="5" align="middle" width="23" height="24" />, 
+  <img src="k9/gif/f92357.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> и 
+  <img src="k9/gif/f92358.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> в так называемой <em>главной диагонали</em> (:на отрезке, соединяющем верхний левый угол с правым нижним), они не равны 
+  <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />. В сравнении с ними, элементы вне главной диагонали (:на отрезке, соединяющем правый верхний угол с левым нижним) - менее важны.</p>
+
+  <div class="c1">
+    <em>Диагональная матрица:</em> 
+    <img src="k9/gif/f92359.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div>
+  <br />
+
+  <p>Матрицы для поворотов на кратное угла 
+  <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> являются примерами диагональных матриц: 
+  <img src="k9/gif/f92360.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" />, 
+  <img src="k9/gif/f92361.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" /> и 
+  <img src="k9/gif/f92362.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" />.</p>
+
+  <p>Здесь следует упомянуть и <em>треугольную форму</em> матрицы, при которой выше или ниже главной диагонали стоят только нули:</p>
+
+  <div class="c1">
+    <em>Треугольная матрица:</em> 
+    <img src="k9/gif/f92363.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div>
+  <br />
+
+  <p>Также <em>квадратные матрицы</em> в особых случаях являются очень удобными. В таких матрицах только "ячейки" около главной диагонали не равны нулю. Наши матрицы поворотов 
+  <a href="#923b4r" > 
+  <img src="k9/gif/f92364.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" /></a> и 
+  <a href="#923b5r" > 
+  <img src="k9/gif/f92365.gif" alt="math formula" hspace="5" align="middle" width="52" height="33" /></a> являются матрицами этого типа.</p>
+
+  <div class="c1">
+    <em>Квадратная матрица:</em> 
+    <img src="k9/gif/f92366.gif" alt="math formula" hspace="5" align="middle" width="183" height="66" />
+  </div>
+  <br />
+
+  <p>Простая операция, которую можно провести с любой матрицей, это <em>транспозиция: </em> при этом в виду имеется отражение элементов матрицы относительно главной диагонали, т.е. замена строк столбцами: 
+  <img src="k9/gif/f92367.gif" alt="math formula" hspace="5" align="middle" width="70" height="29" /></p>
+
+  <div class="c1">
+    <em>Транспонированная матрица:</em> 
+    <img src="k9/gif/f92368.gif" alt="math formula" hspace="5" align="middle" width="193" height="66" />
+  </div>
+  <br />
+
+  <p>Существуют такие матрицы, в которых при транспозиции ничего не меняется: такие матрицы называют <em>симметричными.</em></p>
+
+  <div class="c1">
+    <em>Симметричная матрица:</em> 
+    <img src="k9/gif/f92369.gif" alt="math formula" hspace="5" align="middle" width="228" height="66" />
+  </div>
+  <br />
+
+  <p>Такие симметричные матрицы встречаются в физике довольно часто, так что при помощи определенных простых преобразований их легко можно привести в диагональную форму.</p>
+
+  <p>Как Вы сразу могли заметить, симметрическая матрица имеет лишь шесть независимых элементов.</p>
+
+  <p>В случае, если отражение относительно главной диагонали дает знак минус, такая матрица называется <em>антисимметричной:</em></p>
+
+  <div class="c1">
+    <em>Антисимметричная матрица:</em> 
+    <img src="k9/gif/f92370.gif" alt="math formula" hspace="5" align="middle" width="208" height="66" />
+  </div>
+  <br />
+
+  <p>Элементы диагонали в этом случае, разумеется должны, исчезнуть. Очевидно, что антисимметричная 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> матрица имеет три независимых элемента. Это является причиной существования векторного произведения в трех измерениях, в чем мы сами скоро сможем убедиться.</p>
+
+  <p>Для характерной величины каждой квадратной матрицы существует еще одно специальное обозначение: <em>сумма элементов в главной диагонали</em> называется <em>след</em> (:англ. trace) матрицы:</p>
+
+  <div class="c1">
+    <em>След:</em> 
+    <img src="k9/gif/f92371.gif" alt="math formula" hspace="5" align="middle" width="204" height="48" />
+  </div>
+  <br />
+
+  <p>Вы можете себе легко представить, что для вещественных 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> -матриц может быть представлено почленное сложение, и что эти члены тогда образуют <em>абелеву группу</em> сложения с ассоциативным законом, однозначную нулевую матрицу, с одним отрицательным для каждой матрицы, и с коммутативным законом, т.к. просто переносятся соответствующие свойства вещественных чисел. Так же возможно <em>умножение с числовым множителем</em>  элементов, которое приводит к, уже известному нам, дистрибутивному закону.</p>
+
+  <p>Для физики, все же, важнее <em>умножение двух 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> -матриц,</em>, что в частном случае матриц преобразования соответствует двум, проведенным одна за другой преобразованиям системы координат:</p>
+
+  <p>При этом действительно следующее</p>
+
+  <div class="c1">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p><em>правило умножения матриц:</em> 
+          <img src="k9/gif/f92372.gif" alt="math formula" hspace="5" align="middle" width="312" height="48" /></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+
+  <p>При последней заданной формулировке по соглашению Эйнштейна о суммировании (смотри раздел 9.2.3.2) знак суммы был опущен, так как оба одинаково звучащие индекса k  уже сами по себе четко сигнализировали нам об операции сложения.</p>
+
+  <p>На практике, для расчета элемента матрицы-продукта 
+  <img src="k9/gif/f92373.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> строки с индексом z  и столбца с индексом s следует задумать в уме (вертикальный) s столбец 
+  <img src="k9/gif/f92374.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> правой матрицы множителя 
+  <img src="k9/gif/f92353.gif" alt="math formula" hspace="5" align="middle" width="14" height="24" />, горизонтально положенный на строку z 
+  <img src="k9/gif/f92375.gif" alt="math formula" hspace="5" align="middle" width="30" height="22" /> левой матрицы множителя 
+  <img src="k9/gif/f92376.gif" alt="math formula" hspace="5" align="middle" width="13" height="22" />, лежащие друг на друге элементы следует помножить между собой и сложить три произведения: например 
+  <img src="k9/gif/f92377.gif" alt="math formula" hspace="5" align="middle" width="427" height="31" />, итого:
+   </p>
+
+  <div class="c1">
+    <img src="k9/gif/f92378.gif" alt="math formula" hspace="5" align="middle" width="552" height="68" />
+  </div>
+  <br />
+
+  <div class="c1">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p><b>Задание 9.10:</b> Умножение матриц</p>
+
+          <p>Умножьте следующие матрицы преобразования:</p>
+
+          <table border="0">
+            <tr>
+              <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td>
+              <img src="k9/gif/f92379.gif" alt="math formula" hspace="5" align="middle" width="104" height="32" /> 
+              и сравните с 
+              <img src="k9/gif/f92380.gif" alt="math formula" hspace="5" align="middle" width="110" height="32" /> 
+              <a href="#923b1l1001r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td>особенно 
+              <img src="k9/gif/f92381.gif" alt="math formula" hspace="5" align="middle" width="121" height="33" /> для сравнения с 
+              <img src="k9/gif/f92382.gif" alt="math formula" hspace="5" align="middle" width="127" height="32" /> 
+              <a href="#923b1l1002r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td>
+              <img src="k9/gif/f92383.gif" alt="math formula" hspace="5" align="middle" width="104" height="33" /> 
+              и сравните с 
+              <img src="k9/gif/f92384.gif" alt="math formula" hspace="5" align="middle" width="110" height="32" /> 
+              <a href="#923b1l1003r" >Ответ</a></td>
+            </tr>
+
+            <tr>
+              <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+              <td>
+              <img src="k9/gif/f92385.gif" alt="math formula" hspace="5" align="middle" width="106" height="33" /> 
+              и сравните с 
+              <img src="k9/gif/f92386.gif" alt="math formula" hspace="5" align="middle" width="106" height="33" />. 
+              <a href="#923b1l1004r" >Ответ</a></td>
+            </tr>
+          </table>
+          <br />
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+
+  <p>Важным открытием при выполнении задания 9.10 является то, что, в общем, для двух поворотов, а следовательно и для двух представляющих матриц, <em>коммутативный закон не действует</em>. Этот факт Вы можете легко и наглядно проверить при помощи спичечного коробка, как показано на следующем рисунке:</p>
+
+  <div class="c2">
+    <p>
+    <img src="k9/gif/b92310e.gif" alt="math formula" width="682" height="253" /><br clear="all" />
+    <span class="bild">Рисунок 9.10: Спичечный коробок, который был повернут сначала на 
+    <img src="k9/gif/f92387.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" /> вокруг оси 3, а затем на 
+    <img src="k9/gif/f92387.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" /> вокруг оси 1, в сравнении со спичечным коробком, который  сначала был повернут вокруг оси 1, а затем вокруг оси 3.</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Примеры из задания 9.10 также показывают, что в некоторых <em>исключительных случаях</em> <em>коммутативный закон</em> все же действует: Например, вращения вокруг одной и той же оси коммутативны. Так же коммутативны между собой и диагональные матрицы. Это является причиной их популярности. Если  
+    <img src="k9/gif/f92389.gif" alt="math formula" hspace="5" align="middle" width="80" height="24" />, то, так называемое, перестановочное отношение 
+    <img src="k9/gif/f92390.gif" alt="math formula" hspace="5" align="middle" width="146" height="24" /> является очень интересной величиной.  Позже, в квантовой механике, оно приобретет еще большее значение.</p>
+
+    <p>Не смотря на коммутативность, матричное умножение, тем не менее, ведет себя так, как мы и ожидали: Оно следует</p>
+
+    <div class="c1">
+      <em>Ассоциативному закону:</em> 
+      <img src="k9/gif/f92391.gif" alt="math formula" hspace="5" align="middle" width="198" height="24" />.
+    </div>
+    <br />
+
+    <div class="c1">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.11:</b> Ассоциативный закон при умножении матриц </p>
+
+            <p>Проверьте ассоциативный закон на повороте Эйлера: 
+            <img src="k9/gif/f92392.gif" alt="math formula" hspace="5" align="middle" width="265" height="33" />, который ведет от пространственно-ориентированной системы координат в связанную с телом систему крутящегося волчка.  
+            <a href="#923b1l1101r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Существует однозначная определенная</p>
+
+    <div class="c1">
+      <em>единичная матрица:</em> 
+      <img src="k9/gif/f92393.gif" alt="math formula" hspace="5" align="middle" width="130" height="66" /> с 
+      <img src="k9/gif/f92393b.gif" alt="math formula" hspace="5" align="middle" width="146" height="24" />,
+    </div><br />
+    <br />
+
+    <p>независимо от того, начиналось ли умножение слева или справа.</p>
+
+    <p>Только при</p>
+
+    <div class="c1">
+      <em>обратной матрице:</em> 
+      <img src="k9/gif/f92394.gif" alt="math formula" hspace="5" align="middle" width="29" height="29" /> с 
+      <img src="k9/gif/f92394b.gif" alt="math formula" hspace="5" align="middle" width="78" height="29" />
+    </div>
+    <br />
+
+    <p>существует некое усложнение, схожее с условием 
+    <img src="k9/gif/f92395.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> при делении на вещественное число. Однозначный определенный обратный элемент существует только для так называемой <em>невырожденной</em> матрицы. Это такие матрицы, чьи <a href="#923b2d" > детерминанты</a> не исчезают: 
+    <img src="k9/gif/f92396.gif" alt="math formula" hspace="5" align="middle" width="49" height="24" />. Мы рассмотрим детерминанты, важнейшую характеристику каждой матрицы, в отдельном дополнении.  </p>
+
+    <p>Для наших матриц преобразования данное ограничение значения не имеет. Для них, собственно говоря, обратная матрица просто равна транспонированной 
+    <img src="k9/gif/f92397.gif" alt="math formula" hspace="5" align="middle" width="75" height="30" />, которая, как мы видели, всегда существует: Такую матрицу называют ортогональной (прямоугольной) (смотри раздел 9.8.2) . Позже мы еще будем ее рассматривать:</p>
+
+    <div class="c1">
+      <em>прямоугольная матрица:</em> 
+      <img src="k9/gif/f92397.gif" alt="math formula" hspace="5" align="middle" width="75" height="30" /> или 
+      <img src="k9/gif/f92398.gif" alt="math formula" hspace="5" align="middle" width="71" height="30" /><br />
+      <br />
+
+      <p><a href="javascript:history.back()">Назад</a></p>
+    </div>
+  </div>
+</body>
+</html>

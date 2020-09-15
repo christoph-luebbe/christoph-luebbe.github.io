@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>5 Дифференциальное исчисление    </h2>
+
+    <h3>5.6 Численное дифференцирование</h3>
+  </div>
+
+  <div class="c3">
+    <p>В некоторых случаях возможно рассчитать производную функции, не прибегая к помощи аналитических правил, рассмотренных в предыдущем разделе: например, если аналитическая форма графика функции еще не найдена. В таком случае, следует обратиться к <em>численному дифференцированию</em>.</p>
+
+    <p>Наше определяющее уравнение дифференциального отношения из 
+    <a href="#520r">раздела 5.2:</a></p>
+
+    <div class="c2">
+      <img src="k5/gif/f56001.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>может быть применено для расчета производной численным методом. При этом, возле точки 
+    <img src="k5/gif/f56002.gif" alt="math formula" hspace="5" align="middle" /> следует выбрать близлежащие точки 
+    <img src="k5/gif/f56003.gif" alt="math formula" hspace="5" align="middle" /> , рассчитывать для каждого выбора дифференциальное отношение и устремить 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> к 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" />.</p>
+
+    <p>Так как все числа представленные в памяти компьютера сохраняются лишь с определенной точностью (например, восьмизначно), то при разности 
+    <img src="k5/gif/f56004.gif" alt="math formula" hspace="5" align="middle" /> возникают ошибки, связанные с округлением. Они, хотя и остаются одинаковыми по абсолютной величине, но относительно величины разности все время увеличиваются. Поэтому, хотя разностное отношение все более точно аппроксимирует 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> с уменьшающимся 
+    <img src="k5/gif/f56005.gif" alt="math formula" hspace="5" align="middle" />, относительные ошибки округления растут с уменьшением 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" />. Необходимо найти компромисс. Можно достичь большей точности, если выбрать симметричную форму определения:  </p>
+
+    <div class="c2">
+      <img src="k5/gif/f56006.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>При помощи ряда Тейлора, который мы рассмотрим в следующей главе, можно показать, как симметризация уменьшает ошибку до порядка 
+    <img src="k5/gif/f56008.gif" alt="math formula" hspace="5" align="middle" /> тогда как несимметризированное выражение имеет ошибку порядка 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" />.</p>
+  </div>
+</body>
+</html>

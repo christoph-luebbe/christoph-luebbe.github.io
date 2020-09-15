@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>5 Diferenciación</h2>
+
+    <h3>5.7 Mirada a las ecuaciones diferenciales</h3>
+  </div>
+
+  <div class="c3">
+    <p>Como motivación de este capítulo sobre diferenciación, hemos notado desde 
+    el principio que muchas leyes de la Naturaleza se pueden describir como 
+    ecuaciones diferenciales. ¿Qué es una ecuación diferencial?</p>
+
+    <p>Una <b>ecuación diferencial</b> es una relación entre una <b>función 
+    incógnita</b><em> 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />y 
+    sus derivadas 
+    <img src="eq/fsvx.gif" alt="math formula" hspace="5" align="middle" width="34" height="26" /> , 
+    <img src="k5/gif/f57001.gif" alt="math formula" hspace="5" align="middle" width="64" height="26" />
+    </em></p>
+
+    <p>Por ejemplo, cuando colgamos una masa desde el cielo raso usando una 
+    resorte y denotamos por 
+    <img src="eq/xvt.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+    la elongación del resorte desde su posición de reposo, donde 
+    <img src="eq/t.gif" alt="math formula" hspace="5" align="bottom" width="6" height="11" /> 
+    representa el tiempo, entonces se obtiene a partir de la segunda ley de 
+    Newton (cuando se deprecia la resistencia del aire) la siguiente ecuación 
+    diferencial:</p>
+
+    <div class="c2">
+      <img src="k5/gif/f57002.gif" alt="math formula" hspace="5" align="middle" width="121" height="28" />con 
+      una constante 
+      <img src="k5/gif/f57003.gif" alt="math formula" hspace="5" align="bottom" width="10" height="9" />.
+    </div><br />
+    <br />
+
+    <p>Como la mayoría de las ecuaciones difererenciales de la Física, esta 
+    ecuación es de <b>
+    <span style="font-weight: 400">&quot;</span>segundo orden
+    <span style="font-weight: 400">&quot;, 
+    esto es, el cociente diferencial de mayor orden que aparece en la ecuación 
+    es una </span>segunda
+    <span style="font-weight: 400"> derivada de la función 
+    incógnita</span></b>. En el caso de una ecuación &quot;normal&quot; , por ejemplo con 
+    una incógnita, por ser&nbsp; 
+    <img src="k5/gif/f57004.gif" alt="math formula" hspace="5" align="middle" width="73" height="28" /> , 
+    se buscan los valores numéricos de 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />, 
+    que en este caso son 
+    <img src="k5/gif/f57005.gif" alt="math formula" hspace="5" align="middle" width="50" height="23" />, 
+    pero en el caso de una ecuación diferencial se buscan funciones 
+    <img src="eq/xvt.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" />como 
+    solución. Resulta fácil convencerse de que 
+    <img src="k5/gif/f57006.gif" alt="math formula" hspace="5" align="middle" width="87" height="24" /> 
+    es una solución, dado que
+    <img src="k5/gif/f57007.gif" alt="math formula" hspace="5" align="middle" width="102" height="24" /> 
+    y luego 
+    <img src="k5/gif/f57008.gif" alt="math formula" hspace="5" align="middle" width="120" height="28" /> . 
+    ¿Pero es esta la única solución? Con este tipo de preguntas usted se ocupará 
+    aún mucho más.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Ejercicio 5.9:</b> Diferenciación física</p>
+
+            <p>Determine la primera 
+            <img src="k5/gif/f57009.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            y segunda 
+            <img src="k5/gif/f57010.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            derivadas de las siguientes funciones del tiempo 
+            <img src="eq/xvt.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" />, 
+            con constantes 
+            <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> , 
+            <img src="k5/gif/f57011.gif" alt="math formula" hspace="5" align="middle" width="14" height="17" /> , 
+            <img src="eq/g.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" /> , 
+            <img src="k5/gif/f57012.gif" alt="math formula" hspace="5" align="middle" width="10" height="9" /> , 
+            <img src="k5/gif/f57013.gif" alt="math formula" hspace="5" align="middle" width="16" height="17" /> , 
+            <img src="k5/gif/f57014.gif" alt="math formula" hspace="5" align="middle" width="9" height="17" />, 
+            <img src="k5/gif/f57015.gif" alt="math formula" hspace="5" align="middle" width="8" height="17" />, 
+            <img src="k5/gif/f57016.gif" alt="math formula" hspace="5" align="middle" width="13" height="24" />, 
+            <img src="k5/gif/f57017.gif" alt="math formula" hspace="5" align="middle" width="11" height="9" />, 
+            <img src="k5/gif/f57018.gif" alt="math formula" hspace="5" align="middle" width="20" height="17" /> 
+            y 
+            <img src="k5/gif/f57019.gif" alt="math formula" hspace="5" align="middle" width="9" height="17" /> :</p>
+
+            <p>La igualdad de 
+            <img src="k5/gif/f57010.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            con combinaciones de 
+            <img src="eq/xvt.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            y 
+            <img src="k5/gif/f57009.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            conduce a &quot;ecuaciones diferenciales&quot;. ¿Reconoce los sistemas físicos 
+            descritos por estas ecuaciones diferenciales? ¿Cuál es el 
+            significado físico de las las constantes?</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57020.gif" alt="math formula" hspace="5" align="middle" width="105" height="24" /> 
+                <a href="#570l0901s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57021.gif" alt="math formula" hspace="5" align="middle" width="161" height="28" /> 
+                <a href="#570l0902s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57022.gif" alt="math formula" hspace="5" align="middle" width="214" height="24" /> 
+                
+               <a href="#570l0903s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57023.gif" alt="math formula" hspace="5" align="middle" width="167" height="26" /> 
+                <a href="#570l0904s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57024.gif" alt="math formula" hspace="5" align="middle" width="290" height="26" /> 
+                <a href="#570l0905s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57025.gif" alt="math formula" hspace="5" align="middle" width="193" height="24" />
+                <a href="#570l0906s" >Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">g)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57026.gif" alt="math formula" hspace="5" align="middle" width="228" height="24" /> 
+                <a href="#570l0907s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57027.gif" alt="math formula" hspace="5" align="middle" width="403" height="53" />
+                <a href="#570l0908s" >Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57028.gif" alt="math formula" hspace="5" align="middle" width="421" height="53" /> 
+                <a href="#570l0909s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">j)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57029.gif" alt="math formula" hspace="5" align="middle" width="462" height="30" /> 
+                <a href="#570l0910s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">k)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57030.gif" alt="math formula" hspace="5" align="middle" width="127" height="24" />
+                <a href="#570l0911s" >Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">l)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57031.gif" alt="math formula" hspace="5" align="middle" width="389" height="28" />
+                <a href="#570l0912s" >Solución</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    
+    <p>Más tarde, al considerar funciones de muchas variables, usted se 
+    encontrará con ecuaciones diferenciales más complicadas: con la ayuda de las 
+    así llamadas derivadas parciales usted construirá gradientes de campos 
+    escalares, así como la divergencia o la rotación de campos vectoriales. Sin 
+    embargo, en el caso que desee calcular números, usted no necesitará más de 
+    lo que aquí ha aprendido.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Ejercicio 5.10:</b> Derivadas parciales</p>
+
+            <p>El cambio de funciones de muchas variables, por ejemplo, de 
+            campos que dependen de las tres variables de posición&nbsp; 
+            <img src="k5/gif/f57032.gif" alt="math formula" hspace="5" align="middle" width="14" height="17" />, 
+            <img src="k5/gif/f57033.gif" alt="math formula" hspace="5" align="middle" width="15" height="17" />, 
+            <img src="k5/gif/f57034.gif" alt="math formula" hspace="5" align="middle" width="15" height="17" />, 
+            los describirá más tarde por medio de los así llamados cocientes 
+            diferenciales parciales, en los cuales sólo una de las variables se 
+            modifica, por ejemplo, 
+            <img src="k5/gif/f57032.gif" alt="math formula" hspace="5" align="middle" width="14" height="17" />, 
+            manteniendo constante las otras variables: aquí 
+            <img src="k5/gif/f57035.gif" alt="math formula" hspace="5" align="middle" width="75" height="21" /> 
+            y 
+            <img src="k5/gif/f57036.gif" alt="math formula" hspace="5" align="middle" width="75" height="21" />. 
+            Sin mayor comprensión del profundo trasfondo, usted puede calcular 
+            esas derivadas &quot;parciales&quot; usando lo aprendido anteriormente ; para 
+            ello debemos incluir una nueva notación (nabla: 
+            <img src="k5/gif/f57037.gif" alt="math formula" hspace="5" align="middle" width="18" height="16" />). 
+            En el proceso, usted debe proceder de la misma forma como lo hizo con 
+            las distintas constantes. Calcule por ejemplo:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57038.gif" alt="math formula" hspace="5" align="middle" width="121" height="30" /> 
+                <a href="#570l1001s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57039.gif" alt="math formula" hspace="5" align="middle" width="121" height="30" /> 
+                <a href="#570l1002s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57040.gif" alt="math formula" hspace="5" align="middle" width="82" height="30" /> 
+                <a href="#570l1003s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57041.gif" alt="math formula" hspace="5" align="middle" width="144" height="48" /> 
+                <a href="#570l1004s" >
+                Solución</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k5/gif/f57042.gif" alt="math formula" hspace="5" align="middle" width="162" height="66" /> 
+                <a href="#570l1005s" >
+                Solución</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

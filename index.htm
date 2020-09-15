@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+<title>Mathematischer Vorkurs</title>
+<link rel="stylesheet" type="text/css" href="layout.css" />
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.pathchange.js"></script>
+<script src="js/jcanvas.min.js"></script>
+<script>
+//**********************************************************************
+//
+// jQuery based site navigation for the MATHEMATICAL PREPARATION COURSE
+// copyright 2013 Christoph Luebbe 
+//
+// History:
+// 30.11.2013 V1.00 initial version only supportiing left menu
+// 01.12.2013 V1.10 notes will also be displayed in the content area
+//**********************************************************************
+
+
+// 	global var current_language is needed to reload the navigation pane
+//	only at start or when the language is changed
+    var current_language = '';
+    
+//  change the last char of the current hashtag to force a language change
+//  vk_lang contains the one letter language code    
+	function SwitchMenu(vk_lang) {
+		if (current_language != vk_lang) {
+			window.location = document.location.hash.slice(0, -1) + vk_lang;
+		}
+	};
+	
+	
+//  This function is called when the document hash is changed
+//  this can be triggered in three ways
+//  1. by code: changing document.location.hash
+//  2. by url:  change the hashtag in the url address line
+//  3. by link: e.g. href="#000d" pointing on the same page
+    function respondToUrl() {
+        var div_id   = document.location.hash
+		var xurl     = 'k' + div_id.slice(1,2) + '/' + div_id.slice(1) + '.htm';
+		var href_sel = '[href="' + div_id + '"]';
+		var vk_lang  = div_id.slice(-1);
+		if (current_language != vk_lang) {
+	 		$("#navigation").load("menu_" + vk_lang + ".htm", function(e) {   
+				current_language = vk_lang;
+				$(".treebranch").hide();
+				load_content_and_adjust_menu(div_id, href_sel, xurl);
+			});
+		} else {
+			load_content_and_adjust_menu(div_id, href_sel, xurl);
+		}
+		
+    };
+
+// This function loads the content area and adjusts the navigation tree
+// Three cases are supported based on the hashtag
+// 1. the hash points to the navigation tree with content (class = mlink1)
+//    the tree is adjusted and the content area is loaded
+// 2. the hash points to the  navigation tree without content (class = mlink2)
+//    the tree is adjusted but the content area still displays the actual content
+// 3. the hash has no occurence in the navigation tree
+//    the navigation stays untouched and only the content area is loaded
+//    this is used to display the notes and the solutions of the exercises
+    function load_content_and_adjust_menu(div_id, href_sel, xurl) {
+		if ($(".mlink1" + href_sel).index() != -1) {  // check for case 1
+			$(".treebranch").hide();
+			$(div_id).show();
+			$(href_sel).parents(".treebranch").show();		
+			$('#content').load(xurl);
+			$(".mlink1").css('color', 'blue');
+			$(href_sel).css('color', 'red');
+		} else {
+			if ($(".mlink2" + href_sel).index() != -1) {  // check for case 2
+				$(".treebranch").hide();
+				$(div_id).show();
+				$(".mlink2" + href_sel).parents(".treebranch").show();		
+			} else {
+				$('#content').load(xurl);  // case 3
+			}
+		}
+    }
+
+//  Initialisation of the whole page
+//  This is called when the page is loaded or refreshed
+	$(document).ready(function() {
+//		initialize pathchange to call respondToUrl after each page change
+		$.pathchange.init();
+		$(window).on("pathchange", function(e) {
+			respondToUrl();
+		});
+		
+//      setup click event to change language when flag is clicked
+		$("#lang_en").click(function() {SwitchMenu('e'); });
+		$("#lang_de").click(function() {SwitchMenu('d'); });
+		$("#lang_es").click(function() {SwitchMenu('s'); });
+		$("#lang_ru").click(function() {SwitchMenu('r'); });
+
+//		determine regional settings to choose language at startup
+//      default language is english      
+        var language = window.navigator.userLanguage || window.navigator.language;
+        var temp_lang = 'e';
+        if (language.slice(0,2) == "de") temp_lang = 'd';
+        if (language.slice(0,2) == "ru") temp_lang = 'r';
+        if (language.slice(0,2) == "es") temp_lang = 's';
+              
+//		if no hashtag is set come up with the titlepage      
+        if (document.location.hash == '')  {
+			document.location.hash= "#000" + temp_lang;
+        } else {
+        	respondToUrl();
+        }
+	});
+
+</script>
+</head>
+
+
+<body>
+	<div id="left-column" class="menu">
+		<div id="languages">
+			<img src="gif/flag_e.bmp" id="lang_en" alt="Englische Version" title="Englische Version" />		
+			<img src="gif/flag_d.bmp" id="lang_de" alt="Deutsche Version"  title="Deutsche Version"  />
+			<img src="gif/flag_s.bmp" id="lang_es" alt="Spanische Version" title="Spanische Version" />
+			<img src="gif/flag_r.bmp" id="lang_ru" alt="Russische Version" title="Russische Version" /> 
+		</div>
+		<div id="navigation">
+		</div>
+		<div id="logos">
+			<table border="0" width="100%">
+			<tbody>
+			<tr>
+			<td align="center" class="menu">
+				<a href="http://www.uni-heidelberg.de">
+					<img src="gif/btn_uni.gif" alt="Universität Heidelberg" 
+					title="Universität Heidelberg"/>
+				</a>
+			</td>
+			<td align="center" class="menu">
+				<a href="http://www.thphys.uni-heidelberg.de">
+					<img src="gif/btn_fak.gif" alt="Institut für Theoretische Physik" 
+					title="Institut für Theoretische Physik"/>
+				</a>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+<p><img src="http://vg01.met.vgwort.de/na/7669cedafeec4f30bcfc2e140e71a52d" width="1" height="1" alt=""></p>
+		</div>
+	</div>
+	<div id="content">
+		<!-- Column 1 end -->
+	</div>
+		  
+</body>
+</html>

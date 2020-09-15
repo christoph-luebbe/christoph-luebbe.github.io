@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Ряд Тейлора                                </h2>
+
+    <h3>6.7 Качество сходимости: остаточный член</h3>
+  </div>
+
+  <div class="c4">
+    <p>После рассмотренного нами в предыдущих частях данной главы материала, остается открытым вопрос 4) о качестве сходимости: даже если мы уверенны в сходимости ряда, то все же немаловажно знать, как велика будет погрешность вычислений, если вместо бесконечного степенного ряда мы используем</p>
+
+    <div class="c2">
+      <em>Приближенный многочлен m-ной степени</em>:    
+          
+          
+          
+      <img src="k6/gif/f67001.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>. Вместо того, чтобы точно рассчитывать <em>остаточный член</em> 
+    <img src="k6/gif/f67002.gif" alt="math formula" hspace="5" align="middle" />, мы приведем формулу, которая получается в результате такого расчета и служит для того, чтобы определять 
+    <img src="k6/gif/f67003.gif" alt="math formula" hspace="5" align="middle" />. Эта формула называется</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Остаточный член в форме Легранжа</em> 
+            <img src="k6/gif/f67004.gif" alt="math formula" hspace="5" align="middle" /> , причем 
+            <img src="eq/0kthk1b.gif" alt="math formula" hspace="5" align="bottom" />.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Это выражение может вызывать удивление, так как оно имеет вид члена ряда порядка (m+1), т.е. первого опущенного члена. Таким образом, этот первый опущенный член должен описывать вклад всего остаточного ряда.  Это кажущееся противоречие разрешается тем,  что (m+1)-ая производная в опущенном члене берется не в точке 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" />, а <em>в неизвестной промежуточной точке</em> 
+    <img src="k6/gif/f67005.gif" alt="math formula" hspace="5" align="bottom" /> между точкой разложения 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" /> и интересующей нас точкой 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" />. Поскольку значение 
+    <img src="eq/th.gif" alt="math formula" hspace="5" align="bottom" /> неизвестено, невозможно точно рассчитать остаточный член, а только лишь</p>
+
+    <div class="c2">
+      <em>приближенно определить</em>: 
+      <img src="k6/gif/f67006.gif" alt="math formula" hspace="5" align="middle" /> .
+    
+    
+    
+    </div>
+    <br />
+
+    <p>Из этой формулы видно, что погрешность уменьшается как (m+1)-ая степень растояния от точки 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> до точки разложения 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" />. Таким образом, предпочтительно выбирать точку разложения как можно ближе к интересующей нас точке.        </p>
+
+    <p>В качестве примера, рассчитаем 
+    <img src="k6/gif/f67007.gif" alt="math formula" hspace="5" align="middle" /> до 
+    <img src="k6/gif/f67008.gif" alt="math formula" hspace="5" align="middle" /> при помощи полученного в разделе 6.4.2 ряда Тейлора в окрестностях точки 
+    <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" /></p>
+
+    <div class="c2">
+      <img src="k6/gif/f67009.gif" alt="math formula" hspace="5" align="middle" />                                                                :
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    <br />
+
+    <p>Мы получим: 
+    <img src="k6/gif/f67010.gif" alt="math formula" hspace="5" align="middle" />, причем определение остаточного 
+    члена при помощи 
+    <img src="k6/gif/f67011.gif" alt="math formula" hspace="5" align="bottom" /> дает такой результат:</p>
+
+    <div class="c2">
+      
+    <img src="k6/gif/f67012.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>Точное значение равно 
+    <img src="k6/gif/f67013.gif" alt="math formula" hspace="5" align="middle" /> и его разность относительно 
+    приближенного значения составляет 
+    <img src="k6/gif/f67014.gif" alt="math formula" hspace="5" align="middle" /> .</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 6.10:</p>
+
+            <p>Вычислите квадратичные члены ряда Тейлора и остаточные члены 
+            <img src="k6/gif/f67015.gif" alt="math formula" hspace="5" align="middle" /> в нашей маленькой таблице из 
+            <a href="#643r">раздела 6.4.3</a>. Для этого выберите, например, для 
+            <img src="k6/gif/f67016.gif" alt="math formula" hspace="5" align="middle" /> , 
+            <img src="eq/m1d2.gif" alt="math formula" hspace="5" align="middle" /> и 
+            <img src="k6/gif/f67017.gif" alt="math formula" hspace="5" align="middle" /> и приблизительно определите погрешность: для какиех значений 
+            <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> относительные погрешности 
+            <img src="k6/gif/f67018.gif" alt="math formula" hspace="5" align="middle" /> равны, соответсвенно, 1% или 10%? 
+            <a href="#670l1001r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 6.11:</p>
+
+            <p>Вычислите 
+            <img src="k6/gif/f67021.gif" alt="math formula" hspace="5" align="middle" /> при помощи ряда Тейлора в окрестностях 
+            <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" /> до 
+            <img src="k6/gif/f67022.gif" alt="math formula" hspace="5" align="middle" /> . 
+            <a href="#670l1101r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

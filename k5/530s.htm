@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {margin-left: 2em}
+  div.c2 {text-align: left}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>5 Diferenciación</h2>
+
+    <h3>5.3 Diferenciablidad</h3>
+  </div>
+
+  <div class="c2">
+    <p>De la construcción anterior del cociente diferencial como límite del 
+    cociente de diferencias, y de nuestro conocimiento sobre la construcción de 
+    límites, se deduce de inmediato que no para toda función que sea continua en 
+    todo punto se puede calcular una pendiente. Esto es, no toda función es 
+    diferenciable en cada punto de su intervalo de definición:</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> <em>
+    diferenciable en</em> 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" />: 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <img src="k5/gif/f53001.gif" alt="math formula" hspace="5" align="bottom" width="27" height="10" /> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;el 
+    valor límite del cociente de diferencias existe.</p>
+  </div>
+
+  <div class="c2">
+    <p>Para ello es necesario que el &quot;límite por la derecha&quot; 
+    <img src="k5/gif/f53002.gif" alt="math formula" hspace="5" align="middle" width="107" height="37" />, 
+    que hemos elegido 
+    como el segundo punto de la secante, a la derecha de&nbsp; 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> 
+    (ver <a href="#530b2s" >Figura 5.2</a>), y el &quot;límite 
+    por la izquierda&quot; 
+    <img src="k5/gif/f53003.gif" alt="math formula" hspace="5" align="middle" width="107" height="37" /> 
+    , elegido como el punto 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" />a 
+    la izquierda de 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" />, 
+    ambos existan, esto es, en particular ambos son finitos y además coinciden:</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    <em>diferenciable 
+    en</em>
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" />: 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <img src="k5/gif/f53004.gif" alt="math formula" hspace="5" align="middle" width="407" height="42" /></p>
+  </div>
+
+  <div class="c2">
+    <p>Para el gráfico, eso significa obviamente que no puede tener &quot;esquinas&quot; o 
+    &quot;quiebres&quot;; por ejemplo, la función valor absoluto&nbsp; 
+    <img src="k5/gif/f53005.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /> 
+    es continua en todas partes, pero en 
+    <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" /> 
+    no es diferenciable porque 
+    <img src="k5/gif/f53006.gif" alt="math formula" hspace="5" align="middle" width="121" height="33" />, 
+    mientras que 
+    <img src="k5/gif/f53007.gif" alt="math formula" hspace="5" align="middle" width="98" height="33" />; 
+    esto es, ambos límites existen, pero no coinciden. Por otra parte, la 
+    función raíz, definida sólo para argumentos no negativos&nbsp; 
+    <img src="k5/gif/f53008.gif" alt="math formula" hspace="5" align="middle" width="116" height="24" /> 
+    no es diferenciable en el lado izquierdo de su rango de definición alrededor 
+    de 
+    <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" />, 
+    porque el posible &quot;límite por derecha&quot; 
+    <img src="k5/gif/f53009.gif" alt="math formula" hspace="5" align="middle" width="165" height="36" /> 
+    no existe, ya que la pendiente allí es infinita.</p>
+
+    <p>De la definición, se observa de inmediato que a partir de la 
+    diferenciabilidad de una función en un punto, se sigue su continuidad allí. 
+    Luego, se satisface que para una sucesión 
+    <img src="eq/x_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="17" /> 
+    que tiende a 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" />: 
+    <img src="k5/gif/f53010.gif" alt="math formula" hspace="5" align="middle" width="405" height="39" />. 
+    Sin embargo, lo contrario <b>no</b> es válido : No toda función continua es 
+    diferenciable como lo muestra el ejemplo que hemos visto sobre la función 
+    valor absoluto
+    <img src="k5/gif/f53011.gif" alt="math formula" hspace="5" align="middle" width="69" height="24" />.</p>
+  </div>
+
+  <div class="c3">
+    <a href="#530b1s" >Nota: ¿función discontinua 
+    diferenciable?</a>
+  </div><br />
+  <br />
+
+  <div class="c3">
+    <table border="1" class="aufgabenrand" cellpadding="10">
+      <tr>
+        <td class="aufgaben">
+          <p class="c4">Ejercicio 5.1: Diferenciabilidad:</p>
+
+          <p>Investigue la diferenciabilidad en 
+          <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" />de 
+          las siguientes funciones
+          <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />:</p>
+
+          <p>a)<img src="k5/gif/f53016.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" /> 
+          <a href="#530l0101s" >
+          Solución</a></p>
+
+          <p>b)<img src="k5/gif/f53017.gif" alt="math formula" hspace="5" align="middle" width="8" height="29" />
+          <a href="#530l0102s" >Solución</a></p>
+
+          <p>c)<img src="k5/gif/f53018.gif" alt="math formula" hspace="5" align="middle" width="25" height="30" /> 
+          <a href="#530l0103s" >
+          Solución</a></p>
+
+          <p>d)<img src="k5/gif/f53019.gif" alt="math formula" hspace="5" align="bottom" width="32" height="16" />
+          <a href="#530l0104s" >
+          Solución</a> y</p>
+
+          <p>e)<img src="k5/gif/f53020.gif" alt="math formula" hspace="5" align="middle" width="56" height="24" /> 
+          <a href="#530l0105s" >
+          Solución</a></p>
+        </td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+
+  <div class="c2" style="width: 1025; height: 18">
+    <p>Sólo usaremos ocasionalmente un único teorema sobre la diferenciabilidad 
+    de funciones, hablamos del</p>
+  </div>
+
+  <div class="c2">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p><b>Teorema del valor medio del cálculo diferencial</b>:</p>
+
+          <p>En caso de que una función 
+          <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />
+          sea continua en el intervalo cerrado 
+          <img src="eq/giab.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> 
+          y diferenciable en el intervalo abierto 
+          <img src="k5/gif/f53021.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />, 
+          entonces existe al menos un punto 
+          <img src="k5/gif/f53022.gif" alt="math formula" hspace="5" align="middle" width="62" height="24" />, 
+          llamado el &quot;valor medio&quot;, tal que la pendiente de la tangente 
+          <img src="k5/gif/f53023.gif" alt="math formula" hspace="5" align="middle" width="41" height="26" /> 
+          en el gráfico de la función en ese punto es igual a la pendiente de la 
+          secante sobre el intervalo:</p>
+
+          <div class="c2">
+            <img src="k5/gif/f53024.gif" alt="math formula" hspace="5" align="middle" width="121" height="33" />.
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c3">
+    <p>Gráficamente, la demostración resulta de la siguiente figura:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k5/gif/b5301s.gif" alt="math formula" width="429" height="253" /><br clear="all" />
+    <span class="bild">Figura 5.3: Acerca del teorema del valor medio del 
+    cálculo diferencial</span></p>
+  </div>
+</body>
+</html>

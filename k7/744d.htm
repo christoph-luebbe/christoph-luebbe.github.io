@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.4 Hauptsatz der Differential- und Integralrechnung</h3>
+
+    <h4>7.4.4 Stammfunktion</h4>
+  </div>
+
+  <div class="c4">
+    <p>Nachdem wir nun eine beträchtliche Zahl von bestimmten Integralen über eine große Menge von Intervallen ausrechnen können, bleibt noch die Frage nach dem <em>unbestimmten Integral eines Differentialquotienten</em> <img src="k7/gif/f74401.gif" alt="math formula" hspace="5" align="middle" /> . Wir ersetzen dazu wieder die konstante obere Grenze <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" /> des bestimmten Integrals durch eine <em>Variable</em> <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" /> und kommen wie oben zu</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74402.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Dies schreiben wir folgendermaßen um</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74403.gif" alt="math formula" hspace="5" align="middle" />,
+    </div><br />
+    <br />
+
+    <p>denn <img src="k7/gif/f74404.gif" alt="math formula" hspace="5" align="middle" /> ist bezüglich der Variablen <img src="eq/y.gif" alt="math formula" hspace="5" align="middle" /> ja tatsächlich eine Konstante, die allerdings noch von dem Anfangspunkt des Intervalls <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> abhängt. Da man in der Funktion <img src="k7/gif/f74405.gif" alt="math formula" hspace="5" align="middle" /> gerne wieder das übliche <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> als Zeichen für die unabhängige Variable haben will, hat sich nun für die obige Gleichung eine unerhört schlampige Schreibweise weltweit eingebürgert: man schreibt nämlich dafür einfach symbolisch:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74406.gif" alt="math formula" hspace="5" align="middle" /> und nennt <img src="k7/gif/f74407.gif" alt="math formula" hspace="5" align="middle" /> die <em>Stammfunktion</em> von <img src="k7/gif/f74408.gif" alt="math formula" hspace="5" align="middle" /> .
+    </div><br />
+    <br />
+
+    <p>Das <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> auf der linken Seite dient nur als Hinweis, dass es sich um eine Funktion einer unabhängigen Variablen handelt, und hat natürlich überhaupt nichts zu tun mit der ohnehin beliebig bezeichenbaren Integrationsvariablen <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" /> auf der rechten Seite, die selbstverständlich nach der Integration rechts gar nicht mehr vorkommt. Wenn man sich diese Schlamperei einmal klargemacht hat, ist sie eine äußerst bequeme Sache und in der Tat in den größten Tafelwerken benützt und weltweit anerkannt.</p>
+
+    <p>So lässig geschrieben ist die Stammfunktion eigentlich eine ganze Funktionenschar mit dem Scharparameter <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" />. Die Stammfunktion <img src="k7/gif/f74407.gif" alt="math formula" hspace="5" align="middle" />von <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> ist genau die Funktionenschar, die unsere ursprüngliche Differentialgleichung <img src="k7/gif/f74410.gif" alt="math formula" hspace="5" align="middle" /> löst, und deshalb für die Physiker von so großer Wichtigkeit. Aus dieser Funktionenschar mit vorgegebenem Steigungsverlauf <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" /> muß der Physiker nun nur noch durch Wahl der Konstanten <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" /> diejenige Lösungsfunktion aussuchen, welche die richtige Randbedingung <img src="k7/gif/f74411.gif" alt="math formula" hspace="5" align="middle" /> erfüllt, und schon ist das Problem gelöst.</p>
+
+    <p>Gesucht ist z.B. die Stammfunktion <img src="k7/gif/f74407.gif" alt="math formula" hspace="5" align="middle" /> von <img src="k7/gif/f74412.gif" alt="math formula" hspace="5" align="middle" />, welche die Randbedingung <img src="k7/gif/f74413.gif" alt="math formula" hspace="5" align="middle" /> erfüllt. Aus der Funktionenschar <img src="k7/gif/f74414.gif" alt="math formula" hspace="5" align="middle" /> ist also diejenige Funktion auszuwählen, für die <img src="k7/gif/f74415.gif" alt="math formula" hspace="5" align="middle" /> gilt, also <img src="k7/gif/f74416.gif" alt="math formula" hspace="5" align="middle" /> zu wählen: folglich ist <img src="k7/gif/f74417.gif" alt="math formula" hspace="5" align="middle" /> die gesuchte Lösung.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 7.2:</p>
+
+            <p>Bestimmen Sie allgemein die Stammfunktion von folgenden Funktionen:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74418.gif" alt="math formula" hspace="5" align="middle" /> <a href="#744l0201d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74419.gif" alt="math formula" hspace="5" align="middle" /> <a href="#744l0202d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74420.gif" alt="math formula" hspace="5" align="middle" /> <a href="#744l0203d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74421.gif" alt="math formula" hspace="5" align="middle" /> <a href="#744l0204d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 7.3:</p>
+
+            <p>Bestimmen Sie die Stammfunktion von folgender Funktion mit folgenden Randbedingungen:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74422.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k7/gif/f74422b.gif" alt="math formula" hspace="5" align="middle" /> <a href="#744l0301d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74423.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k7/gif/f74423b.gif" alt="math formula" hspace="5" align="middle" /> <a href="#744l0302d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74424.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k7/gif/f74424b.gif" alt="math formula" hspace="5" align="middle" /> <a href="#744l0303d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

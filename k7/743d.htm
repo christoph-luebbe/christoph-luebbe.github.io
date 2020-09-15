@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.4 Hauptsatz der Differential- und Integralrechnung</h3>
+
+    <h4>7.4.3 Integrieren über einen Differentialquotienten</h4>
+  </div>
+
+  <div class="c4">
+    <p>Nachdem wir gelernt haben, wie man ein Integral differenziert, sind wir neugierig auf den umgekehrten Vorgang, nämlich auf das Integral über einen Differentialquotienten: Wir gehen aus von 
+	einem Differentialquotienten <img src="k7/gif/f74301.gif" alt="math formula" hspace="5" align="middle" />, 
+	der uns als stetig Funktion <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" />gegeben 
+	sei, also eigentlich von einer Differentialgleichung erster Ordnung für <img src="k7/gif/f74407.gif" alt="math formula" hspace="5" align="middle" />. Diesen Differentialquotienten wollen wir über das Intervall <img src="eq/giab.gif" alt="math formula" hspace="5" align="middle" /> integrieren:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74302.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>mit den Stützstellen <img src="k7/gif/f72012.gif" alt="math formula" hspace="5" align="middle" /> im Intervall der Länge <img src="k7/gif/f74304.gif" alt="math formula" hspace="5" align="middle" /> , wenn wir die Definition des Integrals einsetzen. Nach dem <a href="#530d">Mittelwertsatz der Differentialrechnung</a> läßt sich die Steigung an der Stützstelle <img src="k7/gif/f74305.gif" alt="math formula" hspace="5d" align="middle" /> durch die Steigung der Sekanten, d.h. der Differentialquotient durch den Differenzenquotienten der Intervallrandpunkte ersetzen:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74306.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Ausgeschrieben ergibt sich dann:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74307.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Man sieht, dass sich alle Terme paarweise wegheben bis auf den zweiten und den zweitletzten, die gar nicht mehr von <img src="k7/gif/f74307b.gif" alt="math formula" hspace="5" align="bottom" /> abhängen, also durch den Grenzprozeß überhaupt nicht berührt werden:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74308.gif" alt="math formula" hspace="5" align="middle" />.
+    </div><br />
+    <br />
+
+    <p>Insgesamt ergibt sich demnach als</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Zweiter Teil des HAUPTSATZES</em>: <img src="k7/gif/f74309.gif" alt="math formula" hspace="5" align="middle" />, d.h.<br />
+            <em>das bestimmte Integral des Differentialquotienten einer stetig differenzierbaren Funktion über ein Intervall<br />
+            ist gleich der Differenz der Funktionswerte an der oberen und unteren Grenze des Intervalls.</em></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Auch in diesem Sinne ist die Integration die Umkehrung der Differentiation.</p>
+
+    <p>Z.B. folgt sofort wieder unser mühsam aus der Definition des Integrals hergeleitetes Ergebnis: <img src="k7/gif/f74310.gif" alt="math formula" hspace="5" align="middle" /> , jetzt aber mühelos aus der Differentiation <img src="k7/gif/f74311.gif" alt="math formula" hspace="5" align="middle" /> .</p>
+
+    <p>Dieser zweite Teil des Hauptsatzes ist der entscheidende Schritt zur Lösung unseres Integrationsproblems: Wir können jetzt nämlich sofort alle bestimmten Integrale berechnen von all den Funktionen, die wir in der zweiten Spalte unserer <a href="#553d">Differentiationstabelle in Kapitel 5</a> finden. Wir lesen die TABELLE einfach rückwärts von rechts nach links und ergänzen die Überschriften entsprechend folgendermaßen:</p>
+
+    <div class="c1">
+      <table border="2" cellpadding="6">
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td colspan="4" align="center"><em>TABELLE&nbsp;&nbsp;ZUR&nbsp;&nbsp;DIFFERENTIATION&nbsp;&nbsp;UND&nbsp;&nbsp;INTEGRATION</em></td>
+        </tr>
+
+        <tr>
+          <td>Zeile</td>
+
+          <td><img src="k7/gif/f74312.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74313.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>Bemerkungen:</td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+
+          <td><img src="k7/gif/f74314.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+
+          <td><img src="k7/gif/f74315.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74316.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/rer.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+
+          <td><img src="k7/gif/f74317.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74315.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74319.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+
+          <td><img src="eq/sinx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+
+          <td><img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74320.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+
+          <td><img src="eq/tanx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74321.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74322.gif" alt="math formula" hspace="5" align="middle" />,<img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+
+          <td><img src="k7/gif/f74324.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74325.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74326.gif" alt="math formula" hspace="5" align="middle" />,<img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>8</td>
+
+          <td><img src="k7/gif/f74328.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74329.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>9</td>
+
+          <td><img src="k7/gif/f74330.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74331.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>10</td>
+
+          <td><img src="k7/gif/f74332.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74333.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>11</td>
+
+          <td><img src="k7/gif/f74334.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74335.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>12</td>
+
+          <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>13</td>
+
+          <td><img src="k7/gif/f74336.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74337.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74338.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>14</td>
+
+          <td><img src="k7/gif/f74339.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74340.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>15</td>
+
+          <td><img src="k7/gif/f74341.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74342.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" />,<img src="k7/gif/f74343.gif" alt="math formula" hspace="5" align="middle" />,<img src="k7/gif/f74344.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>16</td>
+
+          <td><img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>17</td>
+
+          <td><img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>18</td>
+
+          <td><img src="k7/gif/f74347.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74348.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>19</td>
+
+          <td><img src="k7/gif/f74349.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74350.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>20</td>
+
+          <td><img src="k7/gif/f74351.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74352.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>21</td>
+
+          <td><img src="k7/gif/f74353.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74354.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74355.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>22</td>
+
+          <td><img src="k7/gif/f74356.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74357.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>23</td>
+
+          <td><img src="k7/gif/f74358.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74359.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74360.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+      </table>
+    </div><br />
+
+    <p>Unser obiges Beispiel aus der Schublade entnehmen wir z.B. der Zeile zwei für <img src="k7/gif/f74361.gif" alt="math formula" hspace="5" align="bottom" /> .</p>
+
+    <p>Ein weiteres Beispiel aus dieser Zeile mit den Grenzen <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" /> und <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" /> ist <img src="k7/gif/f74362.gif" alt="math formula" hspace="5" align="middle" /> , allgemein für beliebiges reelles <img src="eq/rer.gif" alt="math formula" hspace="5" align="middle" /> folgt:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74363.gif" alt="math formula" hspace="5" align="middle" />,
+    </div>was wir in die dritte bisher freigelassene Zeile der TABELLE eingetragen haben, da es sehr häufig vorkommt.<br />
+    <br />
+
+    <p>Aus der vierten Zeile etwa finden wir:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74364.gif" alt="math formula" hspace="5" align="middle" />,
+    </div><br />
+    <br />
+
+    <p>aus der zwölften Zeile:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f74365.gif" alt="math formula" hspace="5" align="middle" />,
+    </div><br />
+    <br />
+
+    <p>und analog viele weitere Integrale.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 7.1:</p>
+
+            <p>Berechnen Sie folgende Beispiele von Integralen:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74366.gif" alt="math formula" hspace="5" align="middle" /> <a href="#743l0101d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74367.gif" alt="math formula" hspace="5" align="middle" /> <a href="#743l0102d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74368.gif" alt="math formula" hspace="5" align="middle" /> <a href="#743l0103d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74369.gif" alt="math formula" hspace="5" align="middle" /> <a href="#743l0104d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74370.gif" alt="math formula" hspace="5" align="middle" /> <a href="#743l0105d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74371.gif" alt="math formula" hspace="5" align="middle" /> <a href="#743l0106d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">g)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74372.gif" alt="math formula" hspace="5" align="middle" /> <a href="#743l0107d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k7/gif/f74373.gif" alt="math formula" hspace="5" align="middle" /> für natürliche n. <a href="#743l0108d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

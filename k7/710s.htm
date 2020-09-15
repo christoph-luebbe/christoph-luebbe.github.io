@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la fisica</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {margin-left: 2em}
+  div.c2 {text-align: left}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integración</h2>
+
+    <h3>7.1 Trabajo</h3>
+  </div>
+
+  <div class="c2">
+    <p>Primero consideramos nuevamente el <b>movimiento uniforme<span style="font-weight: 400"> 
+    de una masa puntual sobre una línea recta, por ejemplo, el centro de masa de 
+    un auto sobre una autopista. Después de que hemos respondido nuestra 
+    primera pregunta acerca de la velocidad, con la ayuda del cálculo 
+    diferencial, como físicos vamos a un nivel más profundo y nos preguntamos 
+    por la razón: ¿por qué el auto se mueve sobre esa parte de la autopista en 
+    línea recta, con la velocidad uniforme observada? </span></b>&nbsp;Obviamente, 
+    según Newton la razón para el movimiento rectilíneo uniforme es una fuerza, 
+    la fuerza 
+    <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" width="14" height="11" />, 
+    con la cual el motor empuja al auto en contra de la inercia, viento y otras 
+    pérdidas por fricción. Luego, en la estación de gasolina <b>aparece la 
+    pregunta <span style="font-weight: 400">acerca de cuánto</span> trabajo</b> 
+    <img src="k7/gif/f71000b.gif" alt="math formula" hspace="5" align="bottom" width="12" height="12" /> 
+    ha realizado el motor durante la distancia recorrida 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" />. 
+    Este trabajo es mayor cuanto mayor sea la fuerza necesaria y además es 
+    proporcional a la distancia recorrida 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" />. 
+    De hecho, es exactamente igual al producto de ambas cantidades: 
+    <img src="k7/gif/f71001.gif" alt="math formula" hspace="5" align="bottom" width="70" height="13" />; 
+    geométricamente es igual al <b>área rectangular</b>&nbsp; 
+    <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" width="14" height="11" />por 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" />, 
+    si dibujamos en un sistema cartesiano de coordenadas (es decir, recto) la 
+    distancia recorrida 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> 
+    en dirección del eje 1 y la fuerza actuante 
+    <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" width="14" height="11" />en 
+    dirección del eje 2.</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k7/gif/b7101.gif" alt="math formula" width="388" height="285" /><br clear="all" />
+    <span class="bild">Figura 7.1: Fuerza constante 
+    <img src="k7/gif/f71000.gif" alt="math formula" hspace="5" align="bottom" width="14" height="11" /> 
+    como función de la distancia recorrida desde 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+    hasta 
+    <img src="k7/gif/f71002.gif" alt="math formula" hspace="5" align="middle" width="78" height="24" />. 
+    El área rectangular amarilla es proporcional al trabajo 
+    <img src="k7/gif/f71003.gif" alt="math formula" hspace="5" align="bottom" width="70" height="13" />.</span></p>
+  </div>
+
+  <div class="c2">
+    <p>Después de analizar este caso idealizado de una fuerza externa constante, 
+    vemos el caso más realista en que la fuerza cambia a lo largo de la 
+    trayectoria, por ejemplo, en <b>forma lineal</b> desde un valor inicial 
+    <img src="k7/gif/f71004.gif" alt="math formula" hspace="5" align="middle" width="20" height="22" />,<img src="k7/gif/f71005.gif" alt="math formula" hspace="5" align="middle" width="113" height="24" />, 
+    al presionar el acelerador :</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k7/gif/b7102.gif" alt="math formula" width="426" height="314" /><br clear="all" />
+    <span class="bild">Figura 7.2: Fuerza lineal creciente, con valor inicial 
+    <img src="k7/gif/f71004.gif" alt="math formula" hspace="5" align="middle" width="20" height="22" />, 
+    <img src="k7/gif/f71005.gif" alt="math formula" hspace="5" align="middle" width="113" height="24" /> 
+    , entre los puntos 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> und 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" /> .</span></p>
+  </div>
+
+  <div class="c2">
+    <p>De la figura notamos de inmediato cómo nos podemos ayudar si, al llenar 
+    el tanque de gasolina, nos preguntamos cuánto trabajo se realizó en toda 
+    la distancia. Tomamos la distancia promedio 
+    <img src="k7/gif/f71006.gif" alt="math formula" hspace="5" align="middle" width="92" height="24" />entre 
+    el punto de partida 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />y 
+    el punto de llegada 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" />, 
+    leemos el correspondiente valor de la fuerza 
+    <img src="k7/gif/f71007.gif" alt="math formula" hspace="5" align="middle" width="145" height="24" /> 
+    y multiplicamos ésta por la distancia recorrida 
+    <img src="k7/gif/f71008.gif" alt="math formula" hspace="5" align="bottom" width="78" height="13" />:</p>
+
+    <div class="c3">
+      <img src="k7/gif/f71009.gif" alt="math formula" hspace="5" align="middle" width="210" height="30" />
+    </div>&nbsp;<p>De este modo reducimos la pregunta física acerca del trabajo, 
+    a una pregunta geométrica acerca del &quot;<b>área bajo la línea que representa 
+    la fuerza sobre el intervalo<span style="font-weight: 400"> </span></b> 
+    <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" width="22" height="13" /><b><span style="font-weight: 400">&quot;, 
+    más precisamente, acerca del contenido del área encerrada por arriba por una 
+    función conocida, por la izquierda por la línea recta </span></b> 
+    <img src="k7/gif/f71010.gif" alt="math formula" hspace="5" align="bottom" width="38" height="9" />, 
+    por la derecha por la recta 
+    <img src="k7/gif/f71011.gif" alt="math formula" hspace="5" align="bottom" width="37" height="13" /> 
+    y por abajo por el eje 1 ,<img src="k7/gif/f71012.gif" alt="math formula" hspace="5" align="middle" width="65" height="24" />. 
+    La pregunta más avanzada acerca del trabajo realizado por una fuerza que 
+    varía de acuerdo a una función <b>arbitraria<span style="font-weight: 400">
+    </span></b>&nbsp;se reduce al problema matemático de determinar el área de 
+    un rectángulo en que un lado (aquí el lado superior) se reemplaza por una 
+    línea curva. A continuación deseamos invetigar esta pregunta matemática más 
+    general y dar una respuesta que satisfaga todos los deseos de los físicos 
+    acerca del trabajo y muchos otros deseos más.</div>
+</body>
+</html>

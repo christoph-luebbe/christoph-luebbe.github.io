@@ -1,0 +1,533 @@
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {margin-left: 2em}
+  div.c2 {text-align: left}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>5 Diferenciación</h2>
+
+    <h3>5.5 La técnica de la diferenciación</h3>
+
+    <h4>5.5.2 Reglas simples de diferenciación: Funciones básicas</h4>
+  </div>
+
+  <div class="c2">
+    <p>En la práctica, uno se encuentra en pocas ocasiones con la tarea de 
+    diferenciar solo alguna de las funciones básicas, sino que expresiones más o 
+    menos complicadas compuestas de distintas funciones, por ejemplo
+    <img src="k5/gif/f55201.gif" alt="math formula" hspace="5" align="middle" width="229" height="29" /> 
+    con constantes reales 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />, 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" />, 
+    <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, 
+    <img src="eq/d.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> 
+    y 
+    <img src="eq/n.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" />.</p>
+
+    <p>Es por eso que en esta sección componemos las reglas que nos permiten 
+    construir cocientes diferenciales de expresiones complicadas a partir de 
+    derivadas conocidas de componentes individuales. Como ejemplos aplicados 
+    consideramos primero las funciones de nuestro conjunto básico y luego, a 
+    partir de ellas, otras funciones interesantes e importantes para la ciencia. 
+    Los resultados los incluimos en una <b>TABLA<span style="font-weight: 400">, 
+    que usaremos más tarde también al realizar integraciones</span></b>.</p>
+
+    <p>A continuación denotamos por
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    y 
+    <img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> 
+    a dos funciones diferenciables y 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />, 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" />, 
+    <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, ... 
+    constantes reales. Las demostraciones a partir de la definición de límite 
+    las puede realizar usted mismo o también verlas en las &quot;Notas&quot;:</p>
+
+    <p>Debido a la obvia homogeneidad (un factor constante puede salir de la 
+    operación de límite) del límite 
+    <img src="k5/gif/f55202.gif" alt="math formula" hspace="5" align="middle" width="139" height="26" />, 
+    comenzamos con la conocida <b>regla de suma</b> 
+    <img src="k5/gif/f55203.gif" alt="math formula" hspace="5" align="middle" width="205" height="26" /> 
+    y de inmediato con la</p>
+  </div>
+
+  <div class="c1">
+    <table border="0" width="80%">
+      <tr>
+        <td><em>linealidad:</em></td>
+
+        <td>
+        <img src="k5/gif/f55204.gif" alt="math formula" hspace="5" align="middle" width="258" height="26" /></td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c2">
+    <p>Esto es, el cociente direrencial de una combinación lineal de funciones 
+    es igual a la combinación lineal de los cocientes diferenciales.</p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b1s" >Demostración</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>De aquí, por ejemplo, se obtiene a partir de la regla de potencias el 
+    cociente diferencial de cualquier polinomio, por ejemplo de grado 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" />-ésimo </p>
+
+    <p> 
+    <img src="k5/gif/f55206.gif" alt="math formula" hspace="5" align="middle" width="126" height="41" /> 
+    , como un polinomio de grado&nbsp; 
+    <img src="k5/gif/f55207.gif" alt="math formula" hspace="5" align="middle" width="52" height="24" />-ésimo:</p>
+
+    <p><img src="k5/gif/f55208.gif" alt="math formula" hspace="5" align="middle" width="230" height="32" />. 
+    Caso especial es 
+    <img src="k5/gif/f55209.gif" alt="math formula" hspace="5" align="middle" width="101" height="34" />.</p>
+
+    <p>También, la <b>regla del producto</b> es familiar a muchos de ustedes:</p>
+  </div>
+
+  <div class="c1">
+    <table border="0" width="80%">
+      <tr>
+        <td><b>regla del producto</b><em>:</em></td>
+
+        <td>
+        <img src="k5/gif/f55210.gif" alt="math formula" hspace="5" align="middle" width="280" height="26" /></td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c2">
+    <p>El cociente diferencial del producto de dos funciones diferenciables 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    y <img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> 
+    es el cociente diferencial del primer factor por el segundo factor, más el 
+    cociente diferencial del segundo factor por el primer factor:</p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b2s" >Demostración</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>Ejemplo 
+    <img src="k5/gif/f55212.gif" alt="math formula" hspace="5" align="middle" width="209" height="28" /></p>
+
+    <p>También necesitamos la <b>regla del inverso</b>:</p>
+  </div>
+
+  <div class="c1">
+    <table border="0" width="80%">
+      <tr>
+        <td><b>regla del inverso</b><em>:</em></td>
+
+        <td><img src="k5/gif/f55213.gif" alt="math formula" hspace="5" align="middle" width="131" height="53" /> 
+        para <img src="eq/gxug0.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /></td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c2">
+    <p>El cociente diferencial del inverso de una función diferenciable que no 
+    se anula 
+    <img src="eq/gxug0.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> 
+    se obtiene dividiendo el cociente diferencial de la función por el negativo 
+    del cuadrado de la función:</p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b3s" >Demostración</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>Con ello es posible, por ejemplo, extender la regla de potencias a 
+    exponentes negativos enteros&nbsp; 
+    <img src="k5/gif/f55217.gif" alt="math formula" hspace="5" align="middle" width="511" height="32" />, 
+    como arriba, pero ahora para 
+    <img src="k5/gif/f55218.gif" alt="math formula" hspace="5" align="middle" width="39" height="22" />.<br />
+    También podemos ahora diferenciar la función exponencial : 
+    <img src="k5/gif/f55219.gif" alt="math formula" hspace="5" align="middle" width="191" height="28" />.<br />
+    Y con ello obtenemos, usando la propiedad de linealidad de las
+    <a href="#423s">funciones hiperbólicas</a>:<br />
+    <img src="k5/gif/f55220.gif" alt="math formula" hspace="5" align="middle" width="263" height="38" /> 
+    y análogamente 
+    <img src="k5/gif/f55221.gif" alt="math formula" hspace="5" align="middle" width="134" height="26" /></p>
+
+    <p>A partir de la regla del producto y de la regla del inverso obtenemos la
+    <b>regla del cociente</b>:</p>
+  </div>
+
+  <div class="c1">
+    <table border="0" width="80%">
+      <tr>
+        <td><b>regla del cociente</b><em>:</em></td>
+
+        <td>
+        <img src="k5/gif/f55222.gif" alt="math formula" hspace="5" align="middle" width="233" height="53" /> 
+        para 
+        <img src="eq/gxug0.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /></td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c2">
+    <p>El cociente diferencial del cociente de dos funciones diferenciables es 
+    el cociente diferencial del numerador por el numerador, menos el cociente 
+    diferencial del denominador por el numerador, dividido por el cuadrado de la 
+    función denominador, la que no debe anularse.</p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b4s" >Demostración</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>Con estas reglas podemos determinar el cociente diferencial de todas las 
+    funciones racionales
+    <img src="k5/gif/f55224.gif" alt="math formula" hspace="5" align="middle" width="103" height="42" />, 
+    esto es, el cociente de dos polinomios 
+    <img src="k5/gif/f55225.gif" alt="math formula" hspace="5" align="middle" width="39" height="24" /> 
+    y 
+    <img src="k5/gif/f55226.gif" alt="math formula" hspace="5" align="middle" width="45" height="24" />. 
+    También podemos ahora diferenciar la tangente y la cotangente: 
+    <img src="k5/gif/f55227.gif" alt="math formula" hspace="5" align="middle" width="130" height="28" /> 
+    y 
+    <img src="k5/gif/f55228.gif" alt="math formula" hspace="5" align="middle" width="139" height="30" />, 
+    o bien, las correspondientes funciones hiperbólicas: 
+    <img src="k5/gif/f55229.gif" alt="math formula" hspace="5" align="middle" width="148" height="31" /> 
+    y 
+    <img src="k5/gif/f55229b.gif" alt="math formula" hspace="5" align="middle" width="157" height="31" />.</p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b5s" >Demostraciones</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>Con esto tenemos los cocientes diferenciales de todas las funciones de 
+    nuestro conjunto básico y ponemos la información en una <b>TABLA<span style="font-weight: 400">, 
+    que debe resumir todos nuestros cocientes diferenciales</span></b>:</p>
+  </div>
+
+  <div class="c1">
+    <table border="2" cellpadding="6">
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td colspan="4" align="center">TABLA&nbsp;&nbsp; DE &nbsp;&nbsp;DIFERENCIACIÓN</td>
+      </tr>
+
+      <tr>
+        <td>Línea</td>
+
+        <td>
+        <img src="k5/gif/f55234.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" /></td>
+
+        <td>
+        <img src="k5/gif/f55235.gif" alt="math formula" hspace="5" align="middle" width="138" height="26" /></td>
+
+        <td>Observaciones:</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+
+        <td>
+        <img src="k7/gif/f74314.gif" alt="math formula" hspace="5" align="bottom" width="36" height="11" /></td>
+
+        <td>
+        <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+
+        <td>
+        <img src="k7/gif/f74315.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /></td>
+
+        <td>
+        <img src="k7/gif/f74316.gif" alt="math formula" hspace="5" align="bottom" width="38" height="15" /></td>
+
+        <td>primero solo para 
+        <img src="eq/rez.gif" alt="math formula" hspace="5" align="middle" width="37" height="22" /></td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+
+        <td>
+        <img src="eq/sinx.gif" alt="math formula" hspace="5" align="bottom" width="31" height="12" /></td>
+
+        <td>
+        <img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" width="33" height="9" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+
+        <td>
+        <img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" width="33" height="9" /></td>
+
+        <td>
+        <img src="k7/gif/f74320.gif" alt="math formula" hspace="5" align="bottom" width="45" height="12" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+
+        <td>
+        <img src="eq/tanx.gif" alt="math formula" hspace="5" align="bottom" width="35" height="11" /></td>
+
+        <td>
+        <img src="k7/gif/f74321.gif" alt="math formula" hspace="5" align="bottom" width="58" height="28" /></td>
+
+        <td>
+        <img src="k7/gif/f74322.gif" alt="math formula" hspace="5" align="middle" width="103" height="24" />,
+        <img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" width="38" height="22" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+
+        <td>
+        <img src="k7/gif/f74324.gif" alt="math formula" hspace="5" align="bottom" width="33" height="11" /></td>
+
+        <td>
+        <img src="k7/gif/f74325.gif" alt="math formula" hspace="5" align="middle" width="66" height="28" /></td>
+
+        <td>
+        <img src="k7/gif/f74326.gif" alt="math formula" hspace="5" align="middle" width="47" height="24" />,
+        <img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" width="38" height="22" />
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+
+        <td><img src="k5/gif/f55236.gif" alt="math formula" hspace="5" align="middle" width="52" height="12" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+
+        <td><img src="k5/gif/f55237.gif" alt="math formula" hspace="5" align="middle" width="54" height="9" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>10</td>
+
+        <td><img src="k5/gif/f55238.gif" alt="math formula" hspace="5" align="middle" width="56" height="11" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>11</td>
+
+        <td><img src="k5/gif/f55239.gif" alt="math formula" hspace="5" align="middle" width="57" height="11" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>12</td>
+
+        <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /></td>
+
+        <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>13</td>
+
+        <td><img src="k7/gif/f74336.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>14</td>
+
+        <td><img src="k7/gif/f74339.gif" alt="math formula" hspace="5" align="middle" width="32" height="24" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>15</td>
+
+        <td><img src="k7/gif/f74341.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>16</td>
+
+        <td><img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" width="40" height="13" /></td>
+
+        <td><img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>17</td>
+
+        <td><img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" /></td>
+
+        <td><img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" width="40" height="13" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>18</td>
+
+        <td><img src="k7/gif/f74347.gif" alt="math formula" hspace="5" align="bottom" width="44" height="13" /></td>
+
+        <td><img src="k7/gif/f74348.gif" alt="math formula" hspace="5" align="middle" width="66" height="31" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>19</td>
+
+        <td><img src="k7/gif/f74349.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" /></td>
+
+        <td><img src="k7/gif/f74350.gif" alt="math formula" hspace="5" align="middle" width="77" height="31" /></td>
+
+        <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" /></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>20</td>
+
+        <td><img src="k7/gif/f74351.gif" alt="math formula" hspace="5" align="bottom" width="55" height="13" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>21</td>
+
+        <td><img src="k5/gif/f55240.gif" alt="math formula" hspace="5" align="middle" width="58" height="13" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>22</td>
+
+        <td><img src="k7/gif/f74356.gif" alt="math formula" hspace="5" align="bottom" width="59" height="13" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>23</td>
+
+        <td><img src="k7/gif/f74358.gif" alt="math formula" hspace="5" align="bottom" width="57" height="13" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+    </table>
+  </div><br />
+</body>
+</html>

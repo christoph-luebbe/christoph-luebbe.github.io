@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>3 Folgen und Reihen</h2>
+
+    <h3>3.4 Konvergenz</h3>
+  </div>
+
+  <div class="c4">
+    <p>Nun folgt der Kernpunkt dieses ganzen Kapitels: Wie Sie aus der Projektion der Darstellungspunkte auf 
+    die 2-Achse gesehen haben, gibt es Zahlenfolgen, deren Glieder 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" /> sich auf der 
+    Zahlengeraden um eine Zahl 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> herum häufen, 
+    so dass unendlich viele Folgenglieder, in jeder 
+    <img src="eq/eps.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />- 
+    <a href="#222b4d" >Umgebung</a> 
+    <img src="k3/gif/f31301.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" /> dieser Zahl 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> liegen, die 
+    übrigens nicht unbedingt selbst ein Glied der Folge zu sein braucht. Man nennt 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> in einem solchen 
+    Fall einen <em>Häufungspunkt</em> der Folge. Von unseren Beispielen hat die Folge der natürlichen 
+    Zahlen (F1) <em>keinen</em> und die harmonische Folge (F3) <em>einen</em> Häufungspunkt, und zwar bei Null. 
+    Die alternierende Folge (F2) hat sogar <em>zwei</em> Häufungspunkte: einen bei 
+    <img src="k3/gif/f31302.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" /> und einen bei 
+    <img src="k3/gif/f31303.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" />.</p>
+
+    <p>Der <em>Satz von Bolzano und Weierstraß</em> garantiert uns, dass jede nach oben und unten beschränkte Folge 
+    <em>mindestens einen Häufungspunkt</em> haben muß.</p>Falls eine Folge nur einen einzigen Häufungspunkt besitzt, 
+    kann es vorkommen, dass alle Folgenglieder ab einer bestimmten Nummer in der Umgebung dieses Punktes liegen. 
+    Man nennt diesen Punkt dann den <em>Grenzwert</em> der Folge und dieser Fall erweist sich als zentraler Begriff 
+    der Analysis: Die Mathematiker haben deshalb mehrere Bezeichnungen dafür. Sie sagen auch, die Folge hat einen 
+    <em>Limes</em> oder die Folge ist <em>konvergent</em> gegen 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> und schreiben: 
+    <img src="k3/gif/f31304.gif" alt="math formula" hspace="5" align="middle" width="82" height="23" />, manchmal 
+    lässiger: <img src="k3/gif/f31305.gif" alt="math formula" hspace="5" align="middle" width="67" height="31" />
+    <br />
+
+    <div class="c2">
+      <img src="k3/gif/f31307.gif" alt="math formula" hspace="5" align="middle" width="53" height="24" /> 
+      <em>konvergent:</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k3/gif/f31308.gif" alt="math formula" hspace="5" align="middle" width="113" height="23" /> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k3/gif/f31309.gif" alt="math formula" hspace="5" align="middle" width="331" height="24" />
+    </div>
+    <br />
+
+    <p>Mit dem letzten Stenogramm ist gemeint: für jede vorgegebene auch noch so kleine positive Zahl 
+    <img src="eq/eps.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> kann man eine 
+    Nummer <img src="k3/gif/f31310.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" /> 
+    angeben, so dass der Abstand vom Häufungspunkt 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> für alle 
+    Folgenglieder mit einer größeren Nummer als 
+    <img src="k3/gif/f31310.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" /> kleiner ist
+    als das vorgegebene kleine 
+    <img src="eq/eps.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />.</p>
+
+    <p>Für manche Folgen erkennt man die Konvergenz oder sogar den Grenzwert nach einiger Übung mit bloßem Auge, 
+    aber manchmal ist es gar nicht so einfach, festzustellen, ob eine Folge konvergent ist. Deshalb ist der Satz 
+    von Bolzano und Weierstraß sehr erwünscht, der uns zeigt, wann man ganz allgemein auf die Konvergenz einer 
+    Folge schließen kann:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p class="c3">Satz von Bolzano und Weierstraß:</p>
+
+            <p><em>Jede nach oben beschränkte monoton steigende Folge ist konvergent</em>,<br />
+            bzw. <em>jede nach unten beschränkte monoton fallende Folge ist konvergent.</em></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>In all den Fällen, bei denen man den Grenzwert nicht kennt oder nicht leicht herausfinden kann, 
+    hilft den Mathematikern oft auch das notwendige 
+    <img src="k3/gif/f31311.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> und 
+    hinreichende 
+    <img src="k3/gif/f31312.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /></p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><b>Cauchy - Kriterium:</b>&nbsp;&nbsp;&nbsp;&nbsp; 
+            <img src="k3/gif/f31313.gif" alt="math formula" hspace="5" align="middle" width="27" height="24" /> 
+            konvergent 
+            <img src="k3/gif/f31314.gif" alt="math formula" hspace="5" align="middle" width="364" height="24" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>d.h. eine Folge konvergiert genau dann, wenn die Abstände zwischen den Gliedern der Folge ab einer 
+    bestimmten Nummer immer kleiner werden, die entsprechenden Punkte auf der Zahlengeraden also immer näher 
+    zusammenrücken; wenn das nicht der Fall ist, dann divergiert sie.</p>
+
+    <p>Außerdem kann man zeigen, dass jede Teilfolge einer konvergenten Folge und die Summe und Differenz, 
+    sowie das Produkt und, falls der Nenner ungleich 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> ist, 
+    auch der Quotient zweier konvergenten Folgen wieder konvergent sind, d.h. der Grenzwert ist mit den 
+    rationalen Rechenoperationen vertauschbar.</p>
+
+    <p>Viele konvergente Folgen haben die Null als Häufungspunkt, man nennt sie <em>Nullfolgen</em>.</p>
+
+    <p>Die harmonische Folge (F3) mit 
+    <img src="k3/gif/f31315.gif" alt="math formula" hspace="5" align="middle" width="48" height="29" /> ist z.B. 
+    eine Nullfolge.</p>
+
+    <div class="c2">
+      <a href="#340b1d" >Einschub: Konvergenzbeweise</a>
+    </div>
+    <br />
+
+    <p>Die Folgen (F1) und (F2) konvergieren offensichtlich nicht.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 3.4: Konvergente Folgen</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)</td>
+
+                <td>Untersuchen Sie die anderen drei Musterfolgen auf Konvergenz. 
+                <a href="#340l0401d" >Lösung für (F4)</a> , 
+                <a href="#340l0402d" >(F5)</a>, <a href="#340l0403d" >(F6)</a>.</td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)</td>
+
+                <td>Berechnen Sie, damit Sie vorsichtig werden, die ersten zehn Glieder der Folge 
+                <img src="k3/gif/f31336.gif" alt="math formula" hspace="5" align="middle" width="90" height="23" />, 
+                dem Produkt aus (F1) mit (F6) für 
+                <img src="k3/gif/f31337.gif" alt="math formula" hspace="5" align="middle" width="52" height="23" />, und 
+                vergleichen Sie mit 
+                <img src="k3/gif/f31338.gif" alt="math formula" hspace="5" align="middle" width="21" height="17" />, sowie von 
+                <img src="k3/gif/f31339.gif" alt="math formula" hspace="5" align="middle" width="61" height="30" />, dem Quotienten 
+                aus (F6) für <img src="k3/gif/f31340.gif" alt="math formula" hspace="5" align="middle" width="44" height="29" /> und 
+                (F4), und vergleichen Sie mit 
+                <img src="k3/gif/f31343.gif" alt="math formula" hspace="5" align="middle" />. 
+                <a href="#340l0404d" >Lösung (1)</a> <a href="#340l0405d" >(2)</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)</td>
+
+                <td>Die Folge, die abwechselnd aus Gliedern von (F1) und (F3) besteht: d.h. 
+                <img src="k3/gif/f31341.gif" alt="math formula" hspace="5" align="middle" width="109" height="30" /> 
+                hat nur einen einzigen Häufungspunkt, nämlich 
+                <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />. 
+                Konvergiert Sie gegen 
+                <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />? 
+                <a href="#340l0406d" >Lösung</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

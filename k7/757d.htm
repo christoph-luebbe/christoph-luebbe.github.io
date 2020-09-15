@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.5 Die Kunst des Integrierens</h3>
+
+    <h4>7.5.7 Numerische Integration</h4>
+  </div>
+
+  <div class="c3">
+    <p>Die älteste und primitivste Art, ein bestimmtes Integral, d.h. den Flächeninhalt "unter" einer Funktion "über" einem Intervall zu berechnen, ist natürlich, den Integranden auf Millimeterpapier zu zeichnen und die Kästchen zu zählen.</p>
+
+    <p>Mit den elektronischen Rechnern von heute können wir das natürlich vornehmer und schneller, indem wir uns auf den definierenden Grenzwert besinnen und nach der Zerlegung des Intervalls die Flächeninhalte der Streifen aufsummieren. Dabei braucht man umso weniger Streifen bzw. Iterationsschritte je genauer man die Oberkante der Streifen der wirklichen zu integrierenden Funktion anpaßt.</p>
+
+    <p>Das einfachste sind dabei horizontale Geraden, wie wir das bei der Definition gemacht haben, so dass die Streifen Rechtecke werden, deren Flächeninhalt einfach zu berechnen ist. Man kann statt der Stützstellen <img src="k7/gif/f75700.gif" alt="math formula" hspace="5" align="middle" /> im Inneren der Teilintervalle wie bei der Riemann-Summe, auch die Minima oder Maxima der Funktion im Teilintervall nehmen und erhält dann eine Unter- bzw. Obersumme, die in der Grenze das Integral einschließen.</p>
+
+    <p>Die nächst vornehmere Methode ist die <b>Sehnen-Trapez-Regel</b>, bei der die Funktion in jedem Teilintervall durch die Sekante approximiert und die wirklichen Flächeninhalte der Streifen durch die Trapezflächen angenähert werden. Für jedes Teilintervall nimmt man statt <img src="k7/gif/f75701.gif" alt="math formula" hspace="5" align="middle" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75702.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Eine noch bessere Approximation liefert die <b>Simpson-Regel</b>, bei der die Integrandenfunktion in den Teilintervallen jeweils durch eine Parabel nach der <b>Keplerschen Fassregel</b> angenähert wird. Man nimmt die Funktion also an drei Punkten in jedem Streifen:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f75703.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Noch raffiniertere Vorschriften zu finden, mit denen das gesuchte Integral bei vorgegebener Genauigkeitsanforderung in möglichst wenigen Schritten berechnet werden kann, ist eine der Aufgaben der numerischen Mathematik.</p>
+  </div>
+</body>
+</html>

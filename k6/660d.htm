@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Taylor - Entwicklung</h2>
+
+    <h3>6.6 Genaue Regeln für das ungenaue Rechnen</h3>
+  </div>
+
+  <div class="c4">
+    <p>Auch wenn die Physik das Paradebeispiel für eine exakte Wissenschaft ist, sind Approximationen an der Tagesordnung. Das Entscheidende für die exakten Wissenschaften ist, dass man eine Näherung begründet, konsequent durchführt und die Genauigkeit zu kontrollieren imstande ist.<br />
+    Oft ist es z.B. nicht sinnvoll, genauer zu rechnen als der Meßfehler des Experiments. Auch in der Mathematik ist es manchmal ausreichend, den Wert einer Funktion <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> aus der <em>Taylor-Reihe nur bis zur Ordnung <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /></em> auszuwerten d.h. nur die ersten <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> Glieder mitzunehmen. Wir schreiben das dann folgendermaßen:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66001.gif" alt="math formula" hspace="5" align="middle" width="234" height="50" />
+    </div><br />
+    <br />
+
+    <p>Dabei bedeutet <img src="k6/gif/f66002.gif" alt="math formula" hspace="5" align="middle" width="61" height="28" /> , dass der weggelassene Term mindestens von der Ordnung <img src="k6/gif/f66003.gif" alt="math formula" hspace="5" align="bottom" width="35" height="15" /> ist, also <img src="k6/gif/f66004.gif" alt="math formula" hspace="5" align="middle" width="40" height="23" /> oder mehr Faktoren <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> enthält.</p>
+
+    <p>Wir wollen hier die Regeln für das approximative Rechnen zusammenstellen. Dabei besteht die Approximation darin, dass wir konsequent bis zur Ordnung <img src="eq/xhm.gif" alt="math formula" hspace="5" align="bottom" width="20" height="11" /> alle Terme mitnehmen. Welche Regeln sich daraus ergeben, zeigen wir am einfachsten, aber häufig auftretenden Fall <img src="k6/gif/f66005.gif" alt="math formula" hspace="5" align="bottom" width="42" height="12" /> , d.h. wenn die Reihe schon nach dem zweiten Term abgebrochen wird:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66006.gif" alt="math formula" hspace="5" align="middle" width="367" height="28" />
+    </div><br />
+    <br />
+
+    <p>Dabei verwenden wir folgende Abkürzungen <img src="k6/gif/f66007.gif" alt="math formula" hspace="5" align="middle" width="65" height="24" /> und <img src="k6/gif/f66008.gif" alt="math formula" hspace="5" align="middle" width="69" height="26" /> .</p>
+
+    <p>Wir betrachten eine <em>zweite Funktion</em> mit analogen Bezeichnungen:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66009.gif" alt="math formula" hspace="5" align="middle" width="180" height="28" />
+    </div><br />
+    <br />
+
+    <p>Beachten Sie, dass wir in den Entwicklungen für <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> und <img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> denselben Ausdruck <img src="eq/oxh2.gif" alt="math formula" hspace="5" align="middle" width="40" height="28" /> verwenden: <img src="eq/oxh2.gif" alt="math formula" hspace="5" align="middle" width="40" height="28" /> steht nicht für einen bestimmten numerischen Wert, sondern ist nur eine <em>symbolische Schreibweise</em> für das, was weggelassen wurde.</p>
+
+    <p>Für das Produkt der beiden Funktionen <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> und <img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> ergibt sich dann:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66010.gif" alt="math formula" hspace="5" align="middle" width="539" height="28" />
+    </div><br />
+    <br />
+
+    <p>Hier sind die ersten drei Terme klar definiert, im letzten werden jedoch konkret angegebene Ausdrücke mit dem Symbol <img src="eq/oxh2.gif" alt="math formula" hspace="5" align="middle" width="40" height="28" /> multipliziert. Was bedeutet das?</p>
+
+    <p>Wir können schreiben <img src="k6/gif/f66011.gif" alt="math formula" hspace="5" align="middle" width="123" height="41" /> mit irgendwelchen Koeffizienten <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" />. Dann läßt sich der erste Teil des interessierenden Ausdrucks schreiben als</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66012.gif" alt="math formula" hspace="5" align="middle" width="306" height="41" />
+    </div><br />
+    <br />
+
+    <p>da diese Reihe wieder mit <img src="eq/xh2.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" /> beginnt, wenn auch mit anderen Koeffizienten <img src="k6/gif/f66013.gif" alt="math formula" hspace="5" align="middle" width="68" height="24" /> . Weiterhin gilt:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66014.gif" alt="math formula" hspace="5" align="middle" width="331" height="41" />
+    </div><br />
+    <br />
+
+    <p>weil diese Reihe mit einem <img src="k6/gif/f66015.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" />-Term anfängt. Für die Summe erhalten wir</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66016.gif" alt="math formula" hspace="5" align="middle" width="295" height="28" />
+    </div><br />
+    <br />
+
+    <p>denn die niedrigste und in der Umgebung des Ursprungs dominante Potenz ist <img src="eq/xh2.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" /> . Wenn wir in dem Ausdruck für das Produkt <img src="k6/gif/f66017.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> auch den dritten Term als von der Ordnung <img src="eq/xh2.gif" alt="math formula" hspace="5" align="bottom" width="15" height="15" /> identifizieren und zu den übrigen hinzuschlagen, erhalten wir insgesamt:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66018.gif" alt="math formula" hspace="5" align="middle" width="302" height="28" />
+    </div><br />
+    <br />
+
+    <p>Diesen Ausdruck hätten wir auch erhalten, wenn wir die Taylor-Reihe für die Produktfunktion <img src="k6/gif/f66019.gif" alt="math formula" hspace="5" align="middle" width="119" height="24" /> berechnet hätten</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66020.gif" alt="math formula" hspace="5" align="middle" width="213" height="28" />
+    </div><br />
+    <br />
+
+    <p>wobei <img src="k6/gif/f66021.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" /> ist und die Produktregel bei der Differentiation <img src="k6/gif/f66022.gif" alt="math formula" hspace="5" align="middle" width="136" height="26" /> ergeben hätte. Noch eine <em>Warnung</em>: Übereifrige könnten meinen, man solle doch in dem approximativen Ausdruck für <img src="k6/gif/f66023.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> wenigstens noch den leicht berechenbaren Term <img src="k6/gif/f66024.gif" alt="math formula" hspace="5" align="middle" width="45" height="28" /> mitnehmen. Das wäre jedoch <em>inkonsequent</em>, da andere Terme derselben Ordnung nicht berücksichtigt wurden.</p>
+
+    <p>Für die <em>r-te Potenz einer beliebigen Funktion</em> <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> ergibt sich:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66025.gif" alt="math formula" hspace="5" align="middle" width="318" height="37" />
+    </div><br />
+    <br />
+
+    <p>wobei wir die allgemeine binomische Reihe <img src="k6/gif/f66026.gif" alt="math formula" hspace="5" align="middle" width="191" height="28" /> aus unserer kleinen <a href="#643d">Tabelle</a> entnommen haben. Speziell für <img src="k6/gif/f66027.gif" alt="math formula" hspace="5d" align="middle" width="48d" height="23d" /> , d.h. das Inverse einer Funktion <img src="eq/fvx.gif" alt="math formula" hspace="5d" align="middle" width="31d" height="24d" /> folgt:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66028.gif" alt="math formula" hspace="5" align="middle" width="220" height="37" />
+    </div><br />
+    <br />
+
+    <p>Man erhält diese Entwicklung natürlich auch, wenn man die Taylor-Reihe für die inverse Funktion nach dem zweiten Glied abbricht.</p>
+
+    <p>Bei <em>verketteten Funktionen</em> <img src="k6/gif/f66029.gif" alt="math formula" hspace="5" align="middle" width="103" height="24" /> schreibt man am einfachsten die Taylor-Entwicklung direkt hin</p>
+
+    <div class="c2">
+      <img src="k6/gif/f66030.gif" alt="math formula" hspace="5" align="middle" width="295" height="28" />
+    </div><br />
+    <br />
+
+    <p>Als numerisches Beispiel betrachten wir die Aufgabe <img src="k6/gif/f66031.gif" alt="math formula" hspace="5" align="middle" width="480" height="29" /> , während der exakte Wert <img src="k6/gif/f66032.gif" alt="math formula" hspace="5" align="middle" width="54" height="23" /> ist, der Fehler also bei <img src="k6/gif/f66033.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" /> liegt.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 6.8:</p>
+
+            <p>Entwickeln Sie um die Stelle <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" /> bis zur ersten Ordnung:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66034.gif" alt="math formula" hspace="5" align="middle" width="62" height="24" /> <a href="#660l0801d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66034a.gif" alt="math formula" hspace="5" align="bottom" width="60" height="12" /><a href="#660l0802d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66034b.gif" alt="math formula" hspace="5" align="middle" width="57" height="28" /><a href="#660l0803d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66034c.gif" alt="math formula" hspace="5" align="bottom" width="71" height="12" /><a href="#660l0804d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66034d.gif" alt="math formula" hspace="5" align="middle" width="58" height="24" /><a href="#660l0805d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66034e.gif" alt="math formula" hspace="5" align="middle" width="70" height="24" /><a href="#660l0806d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 6.9:</p>
+
+            <p>Berechnen Sie bis zur ersten Ordnung und vergleichen jeweils mit den exakten Werten:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66035.gif" alt="math formula" hspace="5" align="middle" width="44" height="22" /> <a href="#660l0901d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66036.gif" alt="math formula" hspace="5" align="bottom" width="34" height="15" /> <a href="#660l0902d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66037.gif" alt="math formula" hspace="5" align="middle" width="135" height="24" /> <a href="#660l0903d" >Lösung</a> und</td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k6/gif/f66038.gif" alt="math formula" hspace="5" align="middle" width="131" height="29" /> <a href="#660l0904d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

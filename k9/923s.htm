@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la fisica</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Vectores</h2>
+
+    <h3>9.2 Vectores como Desplazamientos</h3>
+
+    <h4>9.2.3 Transformaciones de los sistemas coordenados</h4>
+  </div>
+
+  <div class="c3">
+    <p>
+    Deseamos investigar cómo las componentes <img src="k9/gif/f92301.gif" alt="math formula" hspace="5" align="middle" 
+	width="15" height="17"> del vector fijo<img src="k9/gif/f92215.gif" alt="math formula" 
+	hspace="5" align="middle" width="79" height="47" />, dado físicamente y 
+    posiblemente representado por <img src="k9/gif/f92302.gif" alt="math formula" hspace="5" align="middle" width="24" 
+	height="40" />, 
+    cambian si el sistema coordenado es sujeto a las cuatro transformaciones 
+    especiales seleccionadas de la 
+    <a href="#914')" 
+	>Sección 9.1.4</a> 
+    .</p>
+
+    <p>Comenzamos con las:</p>
+
+    <p><em>1) TRANSLACIONES (DESPLAZAMIENTOS)</em>: por ejemplo, por 1 en la 
+    dirección 3:</p>
+
+    <p>Primero nos preocupamos de la arbitrariedad de la elección del origen: ¿cómo 
+    lucirían las componentes de nuestro vector si hubiésemos seleccionado en vez 
+    del punto <img src="eq/go.gif" alt="math formula" hspace="5" align="bottom" width="12" height="13" />otro 
+    punto&nbsp; como zero, por ejemplo, <img src="k9/gif/f92304.gif" alt="math formula" hspace="5" align="middle" width="51" height="33" /> 
+    , que está desplazado por la distancia&nbsp; <img src="k9/gif/f92305.gif" alt="math formula" hspace="5" align="middle" 
+	width="68" height="24" /> en la dirección postiva 3? Con ayuda de nuestros 
+    resultados de&nbsp; 9.1.4.1 obtenemos:</p>
+    <div class="c2">
+      <img src="k9/gif/f92306.gif" alt="math formula" hspace="5" align="middle" width="359" height="66" />
+    </div><br /><br />
+    <p>Debido a que los términos de la traslación de los puntos inicial y final 
+    del representante se cancelan al hacer la diferencia, obtenemos (como se 
+    espera debido a la libertad de movimiento en la definición de vector) la <b>
+    invariancia traslacional de vectores<span style="font-weight: 400">, es 
+    decir, la elección arbitraria del origen de nuestro sistema de coordenadas
+    </span>no<span style="font-weight: 400"> tiene consecuencia para las 
+    componentes del vector</span></b>.</p>
+
+	
+    De aquí se deduce que la longitud del vector es una <b>cantidad invariante 
+    bajo traslaciones</b>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92307.gif" alt="math formula" hspace="5" align="middle" width="283" height="30" />
+    </div><br /><br />
+    Sin embargo, no todas las cantidades tipo vector en física son invariantes 
+    bajo traslaciones y tampoco en cada problema físico. Por ejemplo, las 
+    fuerzas actuando sobre un cuerpo rígido lejos del centro de masa o también 
+    el intensidad de campo de un campo eléctrico no homogéneo. Los físicos 
+    hablan en este caso de <b>vectores fijos</b>. En tales casos, antes de 
+    aplicar el álgebra vectorial, lo que haremos en las siguientes secciones, 
+    tenemos que considerar en cada caso hasta dónde se aplican los resultados 
+    obtenidos.</p>
+
+    <p>Como un segundo ejemplo examinamos</p>
+
+    <p><em>2) ROTACIONES (GIROS)</em>, por ejemplo, por un ángulo 
+    <img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17"/> 
+    alrededor de la dirección 3:</p>
+
+    <p>Manteniendo fijo el origen 
+    <img src="k9/gif/f92308.gif" alt="math formula" hspace="5" align="bottom" width="46" height="17" /> , 
+    consideramos una vez más, además de nuestro viejo sistema de coordenadas 
+    <img src="eq/gs.gif" alt="math formula" hspace="5" align="bottom" width="11" height="12" /> 
+    como en la &nbsp; 
+    <a  href="#923b3s">Figura 9.5</a> , uno nuevo: 
+    <img src="eq/gsd.gif" alt="math formula" hspace="5" align="bottom" width="11" height="16" /> 
+    que está rotado por ejemplo, por un 
+    ángulo&nbsp; 
+    <img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" /> 
+    alrededor del eje 3, en el sentido de las manecillas del reloj mirando hacia el eje 3 positivo, 
+    y obtenemos por ejemplo, con el representante&nbsp; 
+    <img src="k9/gif/f92311.gif" alt="math formula" hspace="5" align="bottom" width="54" height="21" />:</p>
+
+    <div class="c2">
+    <img src="k9/gif/f92312.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />, 
+    <img src="k9/gif/f92312b.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />, 
+    <img src="k9/gif/f92313.gif" alt="math formula" hspace="5" align="middle" width="51" height="24" />
+    </div><br /><br />
+
+    <p>Para la regla en que las nuevas coordenadas se calculan a partir de las 
+    antiguas, la matemática ofrece una formulación conocida desde el colegio: la
+    <a  href="#923b1s">formulación matricial: </a></p>
+
+    <p>Para obtenerla, escribimos las tres ecuaciones de transformación una bajo 
+    la otra y completamos las ecuaciones con ceros de la siguiente manera:</p>
+
+    <div class="c2">
+     <img src="k9/gif/f92314.gif" alt="math formula" hspace="5" align="middle" width="228" height="59" />
+    </div><br />
+    <br />
+
+    <p>Los factores necesarios para obtener las nuevas componentes 
+    <img src="k9/gif/f92315.gif" alt="math formula" hspace="5" align="middle" width="15" height="24" /> 
+    a partir de las antiguas 
+    <img src="k9/gif/f92317.gif" alt="math formula" hspace="5" align="middle" width="13" height="17" /> 
+    se resumen en la siguiente matris&nbsp;
+    <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24">,
+    <img src="k9/gif/f92318.gif" alt="math formula" hspace="5" align="middle" width="53" height="33">:</p>
+
+    <div class="c2">
+    <img src="k9/gif/f92319.gif" alt="math formula" hspace="5" align="middle" width="241" height="66" />
+    </div><br /><br />
+    <p>con los elementos de matriz 
+    <img src="k9/gif/f92320.gif" alt="math formula" hspace="5" align="middle" width="52" height="34" /> 
+    para 
+    <img src="k9/gif/f92321.gif" alt="math formula" hspace="5" align="middle" width="82" height="23" /> 
+    donde el índice 
+    <img src="k9/gif/f92322.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+    marca las filas (horizontales) y el índice 
+    <img src="k9/gif/f92323.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+    las columnas (verticales). Por ejemplo, </p>
+
+	<div class="c2">
+      
+      <img src="k9/gif/f92324.gif" alt="math formula" hspace="5" align="middle" width="183" height="34" /> 
+      y<br />
+      <img src="k9/gif/f92325.gif" alt="math formula" hspace="5" align="middle" width="194" height="34" /> 
+      debido a que el plano 1-2 está rotado,<br />
+      <img src="k9/gif/f92326.gif" alt="math formula" hspace="5" align="middle" width="82" height="34" /> 
+      para señalar que el eje 3 permanece inalterado, y</span><br />
+      <img src="k9/gif/f92327.gif" alt="math formula" hspace="5" align="middle" width="307" height="34" />.
+  </div><br /><br />
+
+      <p>
+      Si nos interesa la matriz completa con sus nueve elementos,&nbsp; en vez 
+      de cada uno de los elementos de matriz 
+      <img src="k9/gif/f92320.gif" alt="math formula" hspace="5" align="middle" width="52" height="34" />, 
+      usamos una letra mayúscula en negrita 
+      <img src="k9/gif/f92318.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" />. 
+      Las tres ecuaciones para el cálculo de las nuevas coordenadas a partir de 
+      las antiguas se obtiene en esta nueva formulación por medio de la 
+      siguiente prescripción de una <b>regla de multiplicación generalizada para</b> 
+      <img src="k9/gif/f92328.gif" alt="math formula" hspace="5" align="middle" width="67" height="23" /></p>
+
+    <div class="c2">
+      <img src="k9/gif/f92329.gif" alt="math formula" hspace="5" align="middle" width="509" height="34" />
+    </div><br />
+    <br />
+
+    <p>En el último término se ha utilizado la <b>convención de suma de Einstein
+    <span style="font-weight: 400">. 
+    Esto nos permite omitir el símbolo de suma en el caso que aparezcan </span>
+    dos índices idénticos<span style="font-weight: 400"> (en este caso los dos 
+    índices</span></b> <em>
+    <img src="k9/gif/f92323.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /></em> ) 
+    y de este modo indicar la suma aun sin usar explícitamente el símbolo suma.</p>
+
+    <p>De acuerdo a esta prescripción, obtenemos el vector columna de las 
+    componentes en el sistema de coordenadas rotado al multiplicar el vector 
+    columna de las componentes en el sistema antiguo por la izquierda con la 
+    matriz de rotación:</p>
+
+
+    <div class="c2">
+    <img src="k9/gif/f92332.gif" alt="math formula" hspace="5" align="middle" width="437" height="66" />
+    </div><br />
+    <br />
+
+    <p>Para hacer esto imaginamos más simplemente el vector columna transpuesto 
+    y lo llevamos fila a fila sobre la matriz de rotación, multiplicamos entre 
+    sí los términos ubicados uno sobre otro, y luego sumamos los tres productos.</p>
+
+	<div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Ejercicio 9.6</b>: Vectores especiales en el sistema 
+            coordenado rotado</p>
+
+            <p>¿Cuáles son las componentes de los vectores&nbsp; 
+            <img src="k9/gif/f92333a.gif" alt="math formula" hspace="5" align="middle" width="72" height="47" />, 
+            <img src="k9/gif/f92333b.gif" alt="math formula" hspace="5" align="middle" width="81" height="47" /> 
+            y
+            <img src="k9/gif/f92333c.gif" alt="math formula" hspace="5" align="middle" width="71" height="47" /> 
+            en un sistema coordenado 
+            <img src="eq/gsd.gif" alt="math formula" hspace="5" align="bottom" width="11" height="16"> 
+            que ha sido rotado con respecto al sistema original 
+            <img src="eq/gs.gif" alt="math formula" hspace="5" align="bottom" width="11" height="12"> 
+            por 
+            <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" />
+            <a  href="#923l0601s">Solución</a>
+            <img src="k9/gif/f92334.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" />
+            <a  href="#923l0602s">Solución</a> o 
+            <img src="k9/gif/f92335.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" />
+            <a  href="#923l0603s">Solución</a> alrededor de la 
+            dirección 3?</p>
+	</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Ejercicio 9.7</b>: 
+            Cambio de las componentes del vector por rotaciones especiales del 
+            sistema coordenado</span></p>
+
+            <p>¿Cómo cambian las componentes 
+            <img src="k9/gif/f92301.gif" alt="math formula" hspace="5" align="middle" width="15" height="17" /> 
+            del vector 
+            <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> , 
+            si rotamos el sistema de coordenadas por un ángulo&nbsp;
+            <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" />
+            <a  href="#923l0701s">Solución</a> o
+            <img src="k9/gif/f92334.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" />
+            <a  href="#923l0702s">Solución</a> alrededor del eje 
+            3?</p>
+		</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>En la formulación matricial las ecuaciones de transformación pueden ser 
+    más fácilmente memorizadas. El número 1 ocupa la posición 
+	<img src="k9/gif/f92336.gif" alt="math formula" hspace="5" align="middle" width="52" height="34" />debido 
+    a que el eje 3, como eje de rotación, permanece inalterado durante la 
+    rotación y el plano 1-2 se rota por  
+	<img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" />. 
+    También, la extensión a rotaciones alrededor de los otros dos ejes se puede 
+    imaginar fácilmente: por ejemplo para la rotación 
+	<img src="k9/gif/f92337.gif" alt="math formula" hspace="5" align="middle" width="52" height="29" /> 
+    por 
+	<img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" /> 
+    alrededor del eje 1, el elemento de matriz debe ser ciertamente&nbsp; 
+	<img src="k9/gif/f92337b.gif" alt="math formula" hspace="5" align="middle" width="82" height="34" /> 
+    y el plano&nbsp; 2-3 es rotado:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92338.gif" alt="math formula" hspace="5" align="middle" width="241" height="66" />
+    </div><br /><br />
+
+    <p>lo que significa que 
+    <img src="k9/gif/f92339.gif" alt="math formula" hspace="5" align="middle" width="218" height="24" /> 
+    y <img src="k9/gif/f92340.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Ejercicio 9.8</b>: Rotaciones alrededor del eje 2:&nbsp; </p>
+
+            <p>Convénzase por medio de un bosquejo similar a nuestra
+            <a  href="#923b3s">Figura 9.5</a>&nbsp; que las 
+            coordenadas de un punto 
+            <img src="eq/ga.gif" alt="math formula" hspace="5" align="bottom" width="12" height="12" />, 
+            y consecuentemente también las componentes de un vector&nbsp; 
+            <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" />
+            transforman de acuerdo a la siguiente matriz de rotación, en el caso 
+            de una rotación alrededor del eje 2.</p>
+
+            <div class="c2">
+              <img src="k9/gif/f92342.gif" alt="math formula" hspace="5" align="middle" width="241" height="66" />
+            </div><br /><br />
+
+            <p>que significa&nbsp; 
+            <img src="k9/gif/f92342b.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" /> 
+            y 
+            <img src="k9/gif/f92343.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />.
+            <a  href="#923l0801s">Solución</a></p>
+	</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>A partir de este ejercicio usted puede encontrar las fórmulas de 
+    transformación para las tres rotaciones a partir de las otras sin mucho 
+    cálculo, simplemente reemplazando los índices <b>cíclicamente</b> (es decir, 
+    en un círculo), esto es&nbsp; 1 por 2,&nbsp; 2 por 3 y 3 por 1:</p></div>
+
+  <div class="c1">
+    <p><img src="k9/gif/b9231.gif" alt="math formula" width="284" height="275" /><br clear="all" />
+    <span class="bild">Figura 9.9: Reemplazo cíclico</span></p>
+  </div>
+
+  <div class="c3">
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Ejercicio 9.9</b>: Matrices de rotación especiales:</p>
+
+            <p>Determine las siguientes matrices de rotación:
+            <img src="k9/gif/f92344.gif" alt="math formula" hspace="5" align="middle" width="68" height="33" />
+            <a  href="#923l0901s">Solución</a> , 
+            <img src="k9/gif/f92345.gif" alt="math formula" hspace="5" align="middle" width="68" height="33" />
+            <a  href="#923l0902s">Solución</a>, y 
+            <img src="k9/gif/f92346.gif" alt="math formula" hspace="5" align="middle" width="68" height="33" />
+            <a  href="#923l0903s">Solución</a>.</p>
+	</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>La fórmula de transformación para las componentes de un vector con 
+    rotaciones del sistema de coordenadas es una característica importante de los 
+    vectores y algunas veces los vectores se definen simplemente como cantidades 
+    cuyas tres componentes transforman de una manera dada bajo rotaciones del 
+    sistema de coordenado. 
+    De hecho, cuando un físico desea determinar si una cantidad con tres 
+    componentes es un vector, mide sus componentes en dos sistemas de 
+    coordenadas rotados con respecto al otro e investiga si los resultados 
+    medidos pueden conectarse por la matriz de rotación correspondiente.</p>
+
+    <p>También examinamos el comportamiento bajo rotaciones de la <b>longitud 
+    del vector</b>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92347.gif" alt="math formula" hspace="5" align="middle" width="526" height="41" />
+    </div><br /><br />
+
+	<p>y encontramos que es <b>invariante bajo rotaciones</b>, como se esperaba.</p>
+
+	<div class="c2">
+      <a  href="#923b1s">Nota: Matrices</a></div><br />
+    <br />
+
+    <p>Nuestra siguiente&nbsp; transformación del sistema de coordenadas 
+    corresponde a las:</p>
+
+    <p><em>3) REFLECCIONES (ESPECULARES)</em>, por ejemplo, a través del origen 
+    (transformación de paridad)</p>
+
+    <p>Consideramos una vez más la transformación de paridad, es decir, la 
+    reflexión a través del origen que transfiere todas las coordenadas y 
+    consecuentemente todas las componentes a sus negativos: También esta 
+    transformación, que deja invariante al origen
+    <img src="k9/gif/f92399.gif" alt="math formula" hspace="5" align="bottom" width="46" height="17" /> 
+    en forma trivial, puede ser descrita por una matriz&nbsp;
+    <img src="k9/gif/f923100.gif" alt="math formula" hspace="5" align="middle" width="13" height="22" />, 
+    esto es, por el negativo de la matriz unidad y que denotamos por 
+    <img src="k9/gif/f923101.gif" alt="math formula" hspace="5" align="middle" width="9" height="23" />:
+    	<img src="k9/gif/f923102.gif" alt="math formula" hspace="5" align="middle" width="55" height="22" /></p>
+
+    <div class="c2">
+      <em>paridad</em>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k9/gif/f923103.gif" alt="math formula" hspace="5" align="middle" width="171" height="66" />
+    </div><br />
+    <br />
+
+    <p>Luego, obtenemos el para las componentes de un vector en el sistema 
+    relejado:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923104.gif" alt="math formula" hspace="5" align="middle" width="460" height="66" />
+    </div><br />
+    <br />
+
+    <p>Todos los vectores cuyas componentes 
+    <img src="k9/gif/f923105.gif" alt="math formula" hspace="5" align="middle" width="64" height="24" /> 
+    cambian de signo bajo reflexiones se denominan <b>vectores polares</b>. 
+    Nuevamente, no todos los vectores importantes en física tiene esta propiedad. 
+    Pronto volveremos a vectores físicos, por ejemplo, el momento angular, que 
+    son invariantes bajo paridad . 
+    A este vectores los llamamos <b>vectores axiales</b>.</p>
+
+    <p>Sin embargo, para toda clase de vectores la longitud es un <b>invariante 
+    bajo paridad</b>, 
+    debido a que en todo caso se cumple</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923106.gif" alt="math formula" hspace="5" align="middle" width="282" height="42" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a  href="#923b2s">Nota: Determinantes</a>
+    </div><br />
+    <br />
+
+    <p>Finalmente volvemos a las :</p>
+
+    <p><em>4) DILATACIONES (ALARGAMIENTOS)</em>: 
+    especialmente de todos los ejes por un factor común, por ejemplo, 10.:</p>
+
+    <p>Examinamos nuevamente, como un ejemplo, el cambio de escala de 
+    centímetros cm a decímetros dm, mientras los ejes coordenados permanecen 
+    inalterados y sólo se modifican los puntos 
+    <img src="k9/gif/f923163.gif" alt="math formula" hspace="5" align="middle" width="18" height="22" /> 
+    sobre los ejes, de modo tal que las distancias desde el origen&nbsp;
+    <img src="k9/gif/f923164.gif" alt="math formula" hspace="5" align="middle" width="77" height="33" /> 
+    aumentan. En este caso, los valores de las componentes del vector decrecen. 
+    La matriz de transformación correspondiente a la dilatación es:
+    <img src="k9/gif/f923165.gif" alt="math formula" hspace="5" align="middle" width="60" height="29" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923166.gif" alt="math formula" hspace="5" align="middle" width="465" height="68" />
+    </div><br />
+    <br />
+
+    <p>Bajo cambios de escala, por supuesto, ningún vector permanece invariante y 
+    luego su longitud se reduce por el factor
+    <img src="k9/gif/f923167.gif" alt="math formula" hspace="5" align="middle" width="13" height="29" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923168.gif" alt="math formula" hspace="5" align="middle" width="315" height="42" />
+    </div><br />
+    <br />
+
+    <p>Con estas investigaciones, la parte más difícil de nuestro programa para 
+    comprender los vectores se ha completado. Ahora procedemos a estudiar cómo 
+    podemos calcular con vectores, teniendo siempre en mente que tratamos con 
+    desplazamientos que poseen puntos de partida elegibles libremente.</p>
+
+    <p >Aun queda por recalcar que por supuesto existen también cantidades 
+    físicas para las cuales se necesita solo una medida, valor y unidad, como 
+    por ejemplo masa, carga, temperatura, intensidad de corriente, etc. Estas 
+    cantidades se denominan <b>escalares</b> (o algunas veces <b>tensores de 
+    orden cero</b>) en contraste con a los vectores (que ocasionalmente llamamos 
+    tensores de primer orden) y otras cantidades aun más complicadas, como ser 
+    el momento de inercia.
+</div>
+</body>
+</html>

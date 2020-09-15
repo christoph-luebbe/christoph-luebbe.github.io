@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la fisica</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>6 Desarrollo de Taylor</h2>
+
+    <h3>6.3 Forma y univocidad</h3>
+  </div>
+
+  <div class="c3">
+    <p>Antes de que nos ocupemos con la pregunta de existencia, deseamos poner 
+    atención a las preguntas 2) y 3): Para obtener información sobre las 
+    propiedades de las series buscadas, vamos a <b>suponer<span style="font-weight: 400">
+    </span></b>&nbsp;por mientras que ya hemos encontrado una serie de 
+    potencias:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f63001.gif" alt="math formula" hspace="5" align="middle" width="381" height="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      con 
+      <img src="k6/gif/f63002b.gif" alt="math formula" hspace="5" align="middle" width="67" height="23" />
+    </div><br />
+    <br />
+
+    <p>que representa a la función 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> 
+    en un intervalo, por ejemplo, para 
+    <img src="k6/gif/f63003b.gif" alt="math formula" hspace="5" align="middle" width="51" height="23" /> 
+    , alrededor del origen. Dado que todas las funciones de nuestro conjunto 
+    básico son claramente infinitamente diferenciables, podemos calcular las 
+    derivadas de&nbsp; la serie de potencias término a término:</p>
+
+    <div class="c2">
+      <img src="k6/gif/f63004.gif" alt="math formula" hspace="5" align="middle" width="392" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      con 
+      <img src="k6/gif/f63005.gif" alt="math formula" hspace="5" align="middle" width="71" height="31" /> 
+      , luego 
+      <img src="k6/gif/f63006.gif" alt="math formula" hspace="5" align="middle" width="69" height="41" /><br />
+      <img src="k6/gif/f63007.gif" alt="math formula" hspace="5" align="middle" width="418" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      con
+      <img src="k6/gif/f63008.gif" alt="math formula" hspace="5" align="middle" width="83" height="31" /> 
+      , luego 
+      <img src="k6/gif/f63009.gif" alt="math formula" hspace="5" align="middle" width="72" height="41" /><br />
+      <img src="k6/gif/f63010.gif" alt="math formula" hspace="5" align="middle" width="396" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      con 
+      <img src="k6/gif/f63011.gif" alt="math formula" hspace="5" align="middle" width="95" height="31" /> 
+      , luego 
+      <img src="k6/gif/f63012.gif" alt="math formula" hspace="5" align="middle" width="76" height="41" /><br />
+      En general:<br />
+      <img src="k6/gif/f63013.gif" alt="math formula" hspace="5" align="middle" width="389" height="30" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      con 
+      <img src="k6/gif/f63014.gif" alt="math formula" hspace="5" align="middle" width="105" height="30" /> 
+      , luego 
+      <img src="k6/gif/f63015.gif" alt="math formula" hspace="5" align="middle" width="82" height="44" /> .
+    </div><br />
+    <br />
+
+    <p>De este modo obtenemos los coeficientes buscados 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" />, 
+    a partir de las derivadas 
+    <img src="k6/gif/f63016b.gif" alt="math formula" hspace="5" align="middle" width="49" height="28" /> 
+    de la función, en la posición 
+    <img src="eq/x_0g0.gif" alt="math formula" hspace="5" align="middle" width="45" height="22" />. 
+    En caso de que exista una representación en serie de potencias de nuestra 
+    función, ésta tiene la siguiente <b>forma</b> y la llamamos:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>SERIE DE TAYLOR:</em> 
+            <img src="k6/gif/f63017.gif" alt="math formula" hspace="5" align="middle" width="149" height="55" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>De acuerdo a la construcción dada, los coeficientes son <b>unívocos<span style="font-weight: 400">, 
+    de modo que también podríamos haber respondido la pregunta 3)</span></b>.</p>
+
+    <p>Nuestras reflexiones nos muestran también que la función a ser 
+    representada debe <em>necesariamente</em> ser <em>infinitamente diferenciable</em>, para que 
+    la serie de Taylor exista.</p>
+
+    <p>Sin embargo, esta condición necesaria <em>no es suficiente</em> para que exista la 
+    serie de Taylor, lo que se observa del siguiente contraejemplo: la función 
+    mostrada en la figura de más abajo&nbsp; 
+    <img src="k6/gif/f63018b.gif" alt="math formula" hspace="5" align="middle" width="134" height="27" /> 
+    para 
+    <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" /> 
+    y 
+    <img src="eq/fv0g0.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> 
+    es de hecho infinitamente diferenciable en todas partes. Sin embargo, todas 
+    sus derivadas 
+    <img src="k6/gif/f63019b.gif" alt="math formula" hspace="5" align="middle" width="78" height="28" /> 
+    se anulan en el punto 
+    <img src="eq/xg0.gif" alt="math formula" hspace="5" align="bottom" width="38" height="12" />, 
+    de modo que no se puede construir una serie de Taylor alrededor de 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />.</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k6/gif/b6301.gif" alt="math formula" width="600" height="200" /><br clear="all" />
+    <span class="bild">Figura 6.1: Gráfico de la función 
+    <img src="k6/gif/f63020b.gif" alt="math formula" hspace="5" align="middle" width="134" height="27" /> 
+    para 
+    <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" /> 
+    y 
+    <img src="eq/fv0g0.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /></span></p>
+  </div>
+
+  <div class="c3">
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Ejercicio 6.1:</p>
+
+            <p>Calcule, como test de consistencia, la serie de Taylor de nuestro 
+            modelo, la serie geométrica para 
+            <img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" />. <a href="#630l0101s" >
+            Solución</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+
+  <div class="c1">
+    <p><img src="k6/gif/b6302.gif" alt="math formula" width="454" height="500" /><br clear="all" />
+    <span class="bild">Figura 6.2: Construcción de la serie geométrica como 
+    desarrollo de Taylor de la función racional<img src="k6/gif/f63021.gif" alt="math formula" hspace="5" align="middle" width="63" height="23" /></span></p>
+  </div>
+</body>
+</html>

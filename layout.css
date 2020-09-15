@@ -1,0 +1,152 @@
+/* general setup for two column layout with fixed left column 250px */
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	height: 100%; 
+	max-height: 100%; 
+}
+
+#left-column {
+	position: absolute;
+	top: 0;
+	bottom: 0; 
+	left: 0;
+	width: 239px; /*Width of frame div*/
+	height: 100%;
+	overflow: scroll; /*Disable scrollbars. Set to "scroll" to enable*/
+	background: #E0E0E0;
+	padding-top: 10px;	
+	padding-left: 10px;
+}
+
+#languages{
+  text-align:right;
+  padding-right: 25px;
+}
+
+#navigation{
+  font-family:arial, sans-serif;
+  font-style:normal;
+  font-variant:normal;
+  font-size:12px;
+  font-weight:normal;
+  padding-right: 15px;
+}
+
+#logos{
+  text-align:center;
+  padding-right: 25px;
+}
+
+#content {
+	position: fixed;
+	top: 0; 
+	left: 250px; /*Set left value to WidthOfFrameDiv*/
+	right: 0;
+	bottom: 0;
+	overflow: auto; 
+	background: #fff;
+	border-left: 5px solid black;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* styles for navigation tree */
+
+div.hidden {display:none}
+
+/* styles for content area */
+
+body{
+  font-family:arial, sans-serif;
+  font-style:normal;
+  font-variant:normal;
+  font-size:16px;
+  font-weight:normal;
+  color:#000000;
+  background-color:#FFFFFF
+ }
+h1{
+  font-size:22px;
+  font-weight:bold;
+}
+h2{
+  font-size:20px;
+  font-weight:bold;
+}
+h3{
+  font-size:18px;
+  font-weight:bold;
+}
+h4{
+  font-weight:bold;
+  text-align:left
+}
+em{
+  font-style:normal;
+  font-weight:bold
+}
+b{font-weight:bold}
+a:link{color:#0000FF}
+a:visited{color:#0000FF}
+a:hover{color:#FF0000}
+a:link.blass{color:#8080FF}
+a:visited.blass{color:#8080FF}
+a:hover.blass{color:#FF8080}
+
+a.mlink1:link{color:#0000FF}
+a.mlink1:visited{color:#0000FF}
+a.mlink1:hover{color:#0000FF}
+
+a.mlink2:link{color:#8080FF}
+a.mlink2:visited{color:#8080FF}
+a.mlink2:hover{color:#8080FF}
+
+
+.bild{font-size:16px}
+.aufgaben{
+  font-size:16px;
+  background-color:#FFFFFF
+}
+.aufgabenrand{
+  border-width:1pt;
+  border-color:#6666FF;
+  border-style:solid
+}
+.satz{
+  font-size:16px;
+  background-color:#FFFFFF
+}
+.satzrand{
+  border-width:1pt;
+  border-color:#FF3333;
+  border-style:solid
+}
+
+.inhalt{
+  font-size:16px;
+}
+
+.centeredText{
+   text-align: center;
+}
+.justifiedText{
+   text-align: justify;
+}
+.rightAlignedText{
+   text-align: right;
+}
+.leftAlignedText{
+   text-align: left;
+}
+.identText{
+   margin-left: 2em;
+}
+.boldText{
+   font-weight: bold;
+}
+.noListBullets{
+   list-style: none;
+}

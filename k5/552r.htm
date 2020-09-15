@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {margin-left: 2em}
+  div.c2 {text-align: left}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>5 Дифференциальные исчисления    </h2>
+
+    <h3>5.5 Правила дифференцирования</h3>
+
+    <h4>5.5.2 Простейшие правила дифференцирования</h4>
+  </div>
+
+  <div class="c2">
+    <p>Разумеется, на практике редко можно встретить такой случай, когда нужно дифференцировать одну из четырех рассмотренных функций в отдельности. Чаще всего можно встретить более или менее сложные выражения, составленные из этих функций, например, 
+    <img src="k5/gif/f55201.gif" alt="math formula" hspace="5" align="middle" width="229" height="29" /> с вещественными константами 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />, 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" />, 
+    <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, 
+    <img src="eq/d.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> и 
+    <img src="eq/n.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" />.</p>
+
+    <p>Поэтому, в данном разделе мы собрали правила, которые позволяют дифференцировать сложные выражения, составленные из уже знакомых функций. В качестве примера использования этих правил мы рассмотрим функции, которые представляют особый интерес для естественных наук. Результаты мы занесем в <em>ТАБЛИЦУ</em>, которая в дальнейшем нам пригодится и при интегрировании.</p>
+
+    <p>В дальнейшем 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> и 
+    <img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> будут обозначать две дифференцируемые функции, а 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />, 
+    <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" />, 
+    <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, ... вещественные константы. Вы можете сами попробовать вывести доказательства из определения предела функции или же посмотреть их в дополнении:  </p>
+
+    <p>Исходя из свойств однородности предельного значения, постоянный множитель может быть вынесен из под знака дифференцирования: 
+    <img src="k5/gif/f55202.gif" alt="math formula" hspace="5" align="middle" width="139" height="26" />. Поэтому, мы вместо давно знакомого <em>правила сложения</em> 
+    <img src="k5/gif/f55203.gif" alt="math formula" hspace="5" align="middle" width="205" height="26" /> сразу же начнем использовать понятие  </p>
+  </div>
+
+  <div class="c1">
+    <table border="0" width="80%">
+      <tr>
+        <td><em>линейности:</em></td>
+
+        <td><img src="k5/gif/f55204.gif" alt="math formula" hspace="5" align="middle" width="258" height="26" /></td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c2">
+    <p>Это значит, что производная линейной комбинации функций равно линейной комбинации их производных.  </p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b1r" >Доказательство</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>Из правила степеней, например, следует, что производная многочлена, например 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" />-ной степени 
+    <img src="k5/gif/f55206.gif" alt="math formula" hspace="5" align="middle" width="126" height="41" /> является многочленом 
+    <img src="k5/gif/f55207.gif" alt="math formula" hspace="5" align="middle" width="52" height="24" />-ой степени:</p>
+
+    <p>
+    <img src="k5/gif/f55208.gif" alt="math formula" hspace="5" align="middle" width="230" height="32" />. В частности, производная (m+1)-го порядка от многочлена m-ной степени обращается в ноль: 
+    <img src="k5/gif/f55209.gif" alt="math formula" hspace="5" align="middle" width="101" height="34" />.</p>
+
+    <p>Многим из вас хорошо знакомо <em>правило дифференцирования произведения</em>:</p>
+  </div>
+
+  <div class="c1">
+    <table border="0" width="80%">
+      <tr>
+        <td><em>Правило произведения:</em></td>
+
+        <td><img src="k5/gif/f55210.gif" alt="math formula" hspace="5" align="middle" width="280" height="26" /></td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c2">
+    <p>Производная произведения двух дифференцируемых функций 
+    <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" /> и 
+    <img src="eq/gvx.gif" alt="math formula" hspace="5" align="middle" width="28" height="24" /> равняется производной первого сомножителя, помноженной на второй сомножитель плюс производная второго сомножителя, помноженная на первый сомножитель:</p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b2r" >Доказательство</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>Пример:  
+      
+      
+      
+    <img src="k5/gif/f55212.gif" alt="math formula" hspace="5" align="middle" width="209" height="28" /></p>
+
+    <p>Следующее правило, которое нам понадобится - это <em>правило инверсии</em>:</p>
+  </div>
+
+  <div class="c1">
+    <table border="0" width="80%">
+      <tr>
+        <td><em>Правило инверсии:</em></td>
+
+        <td>
+        <img src="k5/gif/f55213.gif" alt="math formula" hspace="5" align="middle" width="131" height="53" />    для 
+         
+         
+         
+        <img src="eq/gxug0.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /></td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c2">
+    <p>Производная инверсии дифференцируемой неисчезающей функции 
+    <img src="eq/gxug0.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> равна взтому со знаком "минус" частному от деления производной функции и ее кадрата.</p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b3r" >Доказательство</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>Теперь мы можем распространить формулу вычисления производной степенной функции также на отрицательные показатели степени  
+    <img src="k5/gif/f55217.gif" alt="math formula" hspace="5" align="middle" width="511" height="32" />. Это соотношение было получено выше для натуральных показателей степени; теперь оно доказано для всех целых чисел 
+    <img src="k5/gif/f55218.gif" alt="math formula" hspace="5" align="middle" width="39" height="22" />.<br /> Мы также можем найти производную показательной функции с отрицательным показателем: 
+    <img src="k5/gif/f55219.gif" alt="math formula" hspace="5" align="middle" width="191" height="28" />.<br /> Далее, мы получаем из свойств линейности для <a href="#423r">гиперболических функций</a>:<br /> 
+    <img src="k5/gif/f55220.gif" alt="math formula" hspace="5" align="middle" width="263" height="38" /> и <img src="k5/gif/f55221.gif" alt="math formula" hspace="5" align="middle" width="134" height="26" /></p>
+
+    <p>Из правила произведения и правила инверсии следует <em>правило дифференцирования частного двух функций</em>:</p>
+  </div>
+
+  <div class="c1">
+    <table border="0" width="80%">
+      <tr>
+        <td><em>Правило дифференцирования частного:</em></td>
+
+        <td>
+        <img src="k5/gif/f55222.gif" alt="math formula" hspace="5" align="middle" width="233" height="53" />    для 
+         
+         
+         
+        <img src="eq/gxug0.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /></td>
+      </tr>
+    </table>
+  </div><br />
+
+  <div class="c2">
+    <p>Производная частного двух дифференцируемых функций представляет собой дробь; в числителе этой дроби стоит разность произвдений производной числителя на знаменатель и производной знаменателя на числитель, а в знаменателе стоит квадрат функции знаменателя, который не должен обращаться в ноль.</p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b4r" >Доказательство</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>На основе этих правил мы можем рассчитать производную рациональной функции 
+    <img src="k5/gif/f55224.gif" alt="math formula" hspace="5" align="middle" width="103" height="42" />, т.е. определить производную частного двух многочленов 
+    <img src="k5/gif/f55225.gif" alt="math formula" hspace="5" align="middle" width="39" height="24" /> и 
+    <img src="k5/gif/f55226.gif" alt="math formula" hspace="5" align="middle" width="45" height="24" />. Теперь мы можем продифференцировать тангенс и котангенс: 
+    <img src="k5/gif/f55227.gif" alt="math formula" hspace="5" align="middle" width="130" height="28" /> и 
+    <img src="k5/gif/f55228.gif" alt="math formula" hspace="5" align="middle" width="139" height="30" /> также, соответствующие гиперболическим функциям: 
+    <img src="k5/gif/f55229.gif" alt="math formula" hspace="5" align="middle" width="148" height="31" /> и 
+    <img src="k5/gif/f55229b.gif" alt="math formula" hspace="5" align="middle" width="157" height="31" />.</p>
+  </div>
+
+  <div class="c3">
+    <a href="#552b5r" >Доказательства</a>
+  </div><br />
+  <br />
+
+  <div class="c2">
+    <p>Итак, мы получили производные функций нашего основного арсенала и теперь можем занести их в <em> ТАБЛИЦУ</em>, которая суммирует наши знания на настоящий момент:</p>
+  </div>
+
+  <div class="c1">
+    <table border="2" cellpadding="6">
+      
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+      
+
+      <tr>
+        <td colspan="4" align="center">ТАБЛИЦА ПРОИЗВОДНЫХ</td>
+      </tr>
+
+      <tr>
+        <td>Строка</td>
+
+        <td>
+        <img src="k5/gif/f55234.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" /></td>
+
+        <td>
+        <img src="k5/gif/f55235.gif" alt="math formula" hspace="5" align="middle" width="138" height="26" /></td>
+
+        <td>Примечания:</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+
+        <td>
+        <img src="k7/gif/f74314.gif" alt="math formula" hspace="5" align="bottom" width="36" height="11" />
+        </td>
+
+        <td>
+        <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+
+        <td>
+        <img src="k7/gif/f74315.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" />
+        </td>
+
+        <td>
+        <img src="k7/gif/f74316.gif" alt="math formula" hspace="5" align="bottom" width="38" height="15" />
+        </td>
+
+        <td>для начала только 
+         
+         
+         
+        <img src="eq/rez.gif" alt="math formula" hspace="5" align="middle" width="37" height="22" /></td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+
+        <td>
+        <img src="eq/sinx.gif" alt="math formula" hspace="5" align="bottom" width="31" height="12" /></td>
+
+        <td>
+        <img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" width="33" height="9" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+
+        <td>
+        <img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" width="33" height="9" /></td>
+
+        <td>
+        <img src="k7/gif/f74320.gif" alt="math formula" hspace="5" align="bottom" width="45" height="12" />
+        </td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+
+        <td>
+        <img src="eq/tanx.gif" alt="math formula" hspace="5" align="bottom" width="35" height="11" /></td>
+
+        <td>
+        <img src="k7/gif/f74321.gif" alt="math formula" hspace="5" align="bottom" width="58" height="28" />
+        </td>
+
+        <td>
+        <img src="k7/gif/f74322.gif" alt="math formula" hspace="5" align="middle" width="103" height="24" />,
+        <img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" width="38" height="22" /></td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+
+        <td>
+        <img src="k7/gif/f74324.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+        <td>
+        <img src="k7/gif/f74325.gif" alt="math formula" hspace="5" align="middle" width="66" height="28" />
+        </td>
+
+        <td>
+        <img src="k7/gif/f74326.gif" alt="math formula" hspace="5" align="middle" width="47" height="24" />,
+        <img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" width="38" height="22" /></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+
+        <td>
+        <img src="k5/gif/f55236.gif" alt="math formula" hspace="5" align="middle" width="52" height="12" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+
+        <td>
+        <img src="k5/gif/f55237.gif" alt="math formula" hspace="5" align="middle" width="54" height="9" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>10</td>
+
+        <td>
+        <img src="k5/gif/f55238.gif" alt="math formula" hspace="5" align="middle" width="56" height="11" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>11</td>
+
+        <td>
+        <img src="k5/gif/f55239.gif" alt="math formula" hspace="5" align="middle" width="57" height="11" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>12</td>
+
+        <td>
+        <img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /></td>
+
+        <td>
+        <img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>13</td>
+
+        <td>
+        <img src="k7/gif/f74336.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>14</td>
+
+        <td>
+        <img src="k7/gif/f74339.gif" alt="math formula" hspace="5" align="middle" width="32" height="24" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>15</td>
+
+        <td>
+        <img src="k7/gif/f74341.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>16</td>
+
+        <td>
+        <img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" width="40" height="13" /></td>
+
+        <td>
+        <img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>17</td>
+
+        <td>
+        <img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" /></td>
+
+        <td>
+        <img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" width="40" height="13" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>18</td>
+
+        <td>
+        <img src="k7/gif/f74347.gif" alt="math formula" hspace="5" align="bottom" width="44" height="13" /></td>
+
+        <td>
+        <img src="k7/gif/f74348.gif" alt="math formula" hspace="5" align="middle" width="66" height="31" /></td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>19</td>
+
+        <td>
+        <img src="k7/gif/f74349.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" /></td>
+
+        <td><img src="k7/gif/f74350.gif" alt="math formula" hspace="5" align="middle" width="77" height="31" /></td>
+
+        <td>
+        <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" /></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+
+      <tr>
+        <td>20</td>
+
+        <td>
+        <img src="k7/gif/f74351.gif" alt="math formula" hspace="5" align="bottom" width="55" height="13" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>21</td>
+
+        <td>
+        <img src="k5/gif/f55240.gif" alt="math formula" hspace="5" align="middle" width="58" height="13" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>22</td>
+
+        <td>
+        <img src="k7/gif/f74356.gif" alt="math formula" hspace="5" align="bottom" width="59" height="13" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>23</td>
+
+        <td>
+        <img src="k7/gif/f74358.gif" alt="math formula" hspace="5" align="bottom" width="57" height="13" /></td>
+
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+    </table>
+  </div><br />
+</body>
+</html>

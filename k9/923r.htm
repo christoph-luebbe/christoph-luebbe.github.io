@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Векторы</h2>
+
+    <h3>9.2 Векторы как трансляции</h3>
+
+    <h4>9.2.3 Преобразования системы координат  </h4>
+  </div>
+
+  <div class="c3">
+    <p>Мы хотим изучить, как изменяются составляющие 
+    <img src="k9/gif/f92301.gif" alt="math formula" hspace="5" align="middle" width="15" height="17" /> постоянного вектора 
+    <img src="k9/gif/f92215.gif" alt="math formula" hspace="5" align="middle" width="79" height="47" />, при необходимости представленного как 
+    <img src="k9/gif/f92302.gif" alt="math formula" hspace="5" align="middle" width="24" height="40" />, если систему координат мы подвергнем четырем типичным преобразованиям, которые были рассмотренны в 
+    <a href="#914r">разделе 9.1.4</a>.</p>
+
+    <p>Начнем с:</p>
+
+    <p><em>1) ПАРАЛЛЕЛЬНОГО ПЕРЕНОСА (ТРАНСЛЯЦИЙ)</em>: например, на единицу длины в направлении оси 3:</p>
+
+    <p>Прежде всего, отметим еще раз произвольность при выборе начала координат: как выглядели бы составляющие нашего вектора, если бы вместо точки 
+    <img src="eq/go.gif" alt="math formula" hspace="5" align="bottom" width="12" height="13" /> мы бы выбрали другую точку, например, 
+    <img src="k9/gif/f92304.gif" alt="math formula" hspace="5" align="middle" width="51" height="33" /> в качестве начала координат (нуля), который перенесен на отрезок 
+    <img src="k9/gif/f92305.gif" alt="math formula" hspace="5" align="middle" width="68" height="24" /> в положительном направлении 3? Используя полученные из 9.1.4.1 результаты, мы получаем:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92306.gif" alt="math formula" hspace="5" align="middle" width="359" height="66" />
+    </div>
+    <br />
+
+    <p>Т.к. члены, определяющие изменение координат начальной и конечной точек в результате трансляции сокращаются в разности, мы получаем (ожидаемую из определения вектора), <em>трансляционную инвариантность векторов</em>. Это значит, что произвольный выбор начала нашей системы координат <em>никак</em> не влияет на составляющие вектора.</p>
+
+    <p>При этом, также и <em>длина</em> векторов является <em>инвариантной относительно параллельного переноса</em>:
+	</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92307.gif" alt="math formula" hspace="5" align="middle" width="283" height="30" />
+    </div>
+    <br />
+
+    <p>Тем не менее, не все встречающиеся в физике векторные величины и не в каждой физической задаче являются инвариантными относительно переноса. Например, силы, которые действуют на твердое тело с точной приложения вне центра его тяжести, или, например, напряженность неоднородного электрического поля. Тогда в физике говорят о "<em>связанных векторах</em>". В таких случаях, прежде чем применять векторную алгебру, которую мы будем рассматривать в следующий разделах, следует хорошенько подумать, как следует применять полученные результаты. </p>
+
+    <p>В качестве второго примера рассмотрим</p>
+
+    <p><em>2) ПОВОРОТЫ (ВРАЩЕНИЯ)</em>, например, на угол 
+    <img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" /> вокруг оси 3:</p>
+
+    <p>Оставляя начало координат неизменным, 
+    <img src="k9/gif/f92308.gif" alt="math formula" hspace="5" align="bottom" width="46" height="17" />, рассмотрим, в дополнении к нашей старой системе координат 
+    <img src="eq/gs.gif" alt="math formula" hspace="5" align="bottom" width="11" height="12" />, как показано на <a href="#923b3r" >рисунке 9.5</a>, новую систему координат 
+    <img src="eq/gsd.gif" alt="math formula" hspace="5" align="bottom" width="11" height="16" />, которая, допустим, повернута на угол 
+    <img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" /> в положительном направлении по часовой стрелке вокруг оси 3. Тогда получаем (например, для представителя 
+    <img src="k9/gif/f92311.gif" alt="math formula" hspace="5" align="bottom" width="54" height="21" />):</p>
+
+    <div class="c2">
+  <img src="k9/gif/f92312.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />, 
+	<img src="k9/gif/f92312b.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />, 
+	<img src="k9/gif/f92313.gif" alt="math formula" hspace="5" align="middle" width="51" height="24" />
+    </div>
+    <br />
+
+    <p>Для закона, по которому рассчитываются новые координаты из старых, в математике существует особая форма написания, которая многим из Вас знакома со школы: 
+    <a href="#923b1r" >матричная форма написания: </a></p>
+
+    <p>Три уравнения преобразования записываются при этом в следующей форме, друг под другом, и дополняются нулями:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92314.gif" alt="math formula" hspace="5" align="middle" width="228" height="59" />
+    </div>
+    <br />
+
+    <p>Члены, которые нужны для получения новых составляющих 
+    <img src="k9/gif/f92315.gif" alt="math formula" hspace="5" align="middle" width="15" height="24" /> из старых 
+    <img src="k9/gif/f92317.gif" alt="math formula" hspace="5" align="middle" width="13" height="17" />, объединены в следующей 
+    <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />-матрице 
+    <img src="k9/gif/f92318.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92319.gif" alt="math formula" hspace="5" align="middle" width="241" height="66" />
+    </div>
+    <br />
+
+    <p>с матричным элементом 
+    <img src="k9/gif/f92320.gif" alt="math formula" hspace="5" align="middle" width="52" height="34" /> для 
+    <img src="k9/gif/f92321.gif" alt="math formula" hspace="5" align="middle" width="82" height="23" />, причем индекс 
+    <img src="k9/gif/f92322.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> обозначает (горизонтальные) строки, а 
+    <img src="k9/gif/f92323.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> - (вертикальные) столбцы. Например,</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92324.gif" alt="math formula" hspace="5" align="middle" width="183" height="34" />  и<br /> 
+      <img src="k9/gif/f92325.gif" alt="math formula" hspace="5" align="middle" width="194" height="34" />, так как плоскость 1-2 будет повернута,<br /> 
+      <img src="k9/gif/f92326.gif" alt="math formula" hspace="5" align="middle" width="82" height="34" /> как знак того, что ось 3 остается неизменной, и<br /> 
+      <img src="k9/gif/f92327.gif" alt="math formula" hspace="5" align="middle" width="307" height="34" />.
+    
+    </div>
+    <br />
+
+    <p>Если же вместо отдельных элементов матрицы 
+    <img src="k9/gif/f92320.gif" alt="math formula" hspace="5" align="middle" width="52" height="34" /> мы имеем в виду всю матрицу с девятью элементами, тогда мы используем написанную жирным шрифтом большую букву 
+    <img src="k9/gif/f92318.gif" alt="math formula" hspace="5" align="middle" width="53" height="33" />. Три уравнения для расчета новых координат из страх в этой новой форме написания получаются посредством правила <em>обобщенного умножения</em> для 
+    <img src="k9/gif/f92328.gif" alt="math formula" hspace="5" align="middle" width="67" height="23" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92329.gif" alt="math formula" hspace="5" align="middle" width="509" height="34" />
+    </div>
+    <br />
+
+    <p>Для последнего члена было применено <em>соглашение Эйнштейна о суммировании</em>. Оно позволяет нам опускать знак суммирования всегда, когда появляются <em>два одинаковых индекса</em>, в данном случае - два индекса <em> 
+    <img src="k9/gif/f92323.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /></em>, и предпологает суммирование для 
+    <img src="k9/gif/f92331.gif" alt="math formula" hspace="5" align="middle" width="67" height="23" /> без специальных знаков сложения.</p>
+
+    <p>Затем, для того, чтобы получить вектор-столбец в повернутой системе координат, "умножаем" вектор-столбец в исходной системе координат слева на матрицу поворота:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92332.gif" alt="math formula" hspace="5" align="middle" width="437" height="66" />
+    </div>
+    <br />
+
+    <p>Для этого проще всего взять вектор-столбец, транспонированный строка за строкой и сдвинутый через матрицу поворота, умножить стоящие друг над другом члены и сложить.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.6</b>: Специальные векторы в повернутой системе координат</p>
+
+            <p>Определите составляющие векторов 
+            <img src="k9/gif/f92333a.gif" alt="math formula" hspace="5" align="middle" width="72" height="47" />, 
+            <img src="k9/gif/f92333b.gif" alt="math formula" hspace="5" align="middle" width="81" height="47" /> и 
+            <img src="k9/gif/f92333c.gif" alt="math formula" hspace="5" align="middle" width="71" height="47" /> в системе координат 
+            <img src="eq/gsd.gif" alt="math formula" hspace="5" align="bottom" width="11" height="16" />, которая повернута по отношению к исходной системе 
+            <img src="eq/gs.gif" alt="math formula" hspace="5" align="bottom" width="11" height="12" /> вокруг 3-ей оси на 
+            <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> 
+            <a href="#923l0601r" >Ответ</a>, 
+            <img src="k9/gif/f92334.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            <a href="#923l0602r" >Ответ</a>, или также на 
+            <img src="k9/gif/f92335.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            <a href="#923l0603r" >Ответ</a> в направлении 3?</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.7</b>: Изменение составляющих вектора при вращениях системы координат</p>
+
+            <p>Как изменятся составляющие 
+            <img src="k9/gif/f92301.gif" alt="math formula" hspace="5" align="middle" width="15" height="17" /> вектора 
+            <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" />, если мы повернем систему координат вокруг оси 3 на угол 
+            <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> 
+            <a href="#923l0701r" >Ответ</a> или 
+            <img src="k9/gif/f92334.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            <a href="#923l0702r" >Ответ</a>?</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>В матричной форме уравнения преобразования особенно легко запомнить: единица стоит на месте 
+    <img src="k9/gif/f92336.gif" alt="math formula" hspace="5" align="middle" width="52" height="34" />, т.к. ось 3, как ось поворота, остается при вращении неизменной, а плоскость 1-2 будет повернута на угол 
+    <img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" />. При этом легко обобщить данное правило на повороты вокруг двух других осей: например, при вращении 
+    <img src="k9/gif/f92337.gif" alt="math formula" hspace="5" align="middle" width="52" height="29" /> на 
+    <img src="eq/phi.gif" alt="math formula" hspace="5" align="middle" width="10" height="17" /> вокруг оси 1, имеем 
+    <img src="k9/gif/f92337b.gif" alt="math formula" hspace="5" align="middle" width="82" height="34" />, а плоскость 2-3 будет повернута:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92338.gif" alt="math formula" hspace="5" align="middle" width="241" height="66" />
+    </div>
+    <br />
+
+    <p>это значит, что 
+    <img src="k9/gif/f92339.gif" alt="math formula" hspace="5" align="middle" width="218" height="24" /> и 
+    <img src="k9/gif/f92340.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.8</b>: Вращения вокруг оси 2 &nbsp;</p>
+
+            <p>На данном рисунке, похожем на 
+            <a href="#923b3r" >изображение 9.5</a>, хорошо видно, что координаты точки 
+            <img src="eq/ga.gif" alt="math formula" hspace="5" align="bottom" width="12" height="12" />, а, следовательно, и составляющие вектора 
+            <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" />, после поворота вокруг оси 2 преобразуются с помощью следующей матрицы поворота.</p>
+
+            <div class="c2">
+              
+              <img src="k9/gif/f92342.gif" alt="math formula" hspace="5" align="middle" width="241" height="66" />
+            </div>
+            <br />
+
+            <p>это значит, что 
+            <img src="k9/gif/f92342b.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" /> и 
+            <img src="k9/gif/f92343.gif" alt="math formula" hspace="5" align="middle" width="159" height="24" />. 
+            <a href="#923l0801r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Из этого уравнения видно, что формулы преобразования для трех поворотов можно получить без вычислений, а следует просто заменить индексы <em>циклически</em> (т.е. по кругу), это значит: 1 заменить на 2, 2 заменить на 3, а 3 заменить на 1:</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="k9/gif/b9231.gif" alt="math formula" width="284" height="275" />
+	<br clear="all" />
+    <span class="bild">Рисунок 9.9: Циклическая подстановка</span></p>
+  </div>
+
+  <div class="c3">
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.9</b>: Специальные матрицы поворота</p>
+
+            <p>Рассчитайте следующие матрицы поворота: 
+            <img src="k9/gif/f92344.gif" alt="math formula" hspace="5" align="middle" width="68" height="33" /> 
+            <a href="#923l0901r" >Ответ</a> , 
+            <img src="k9/gif/f92345.gif" alt="math formula" hspace="5" align="middle" width="68" height="33" /> 
+            <a href="#923l0902r" >Ответ</a> и 
+            <img src="k9/gif/f92346.gif" alt="math formula" hspace="5" align="middle" width="68" height="33" />. 
+            <a href="#923l0903r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Формула преобразования для составляющих вектора при вращении системы координат является важной характеристикой вектора, так что удобно определять векторы как величины,  составляющие которых меняются при повороте системы координат указанным образом. На самом же деле, если физик хочет установить, является ли трехкомпонентная величина вектором, он измеряет ее составляющие в двух повернутых друг к другу системах координат и исследует, могут ли результаты измерений при помощи соответствующей матрицы поворота быть перенесены друг в друга.</p>
+
+    <p>Мы также хотели бы рассмотреть, как ведет себя при повороте <em>длина вектора</em>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f92347.gif" alt="math formula" hspace="5" align="middle" width="526" height="41" />
+    </div>
+    <br />
+
+    <p>и установить, что она является <em>инвариантной относительно вращения</em>, как мы и ожидали.</p>
+
+    <div class="c2">
+      <a href="#923b1r" >Дополнение: Матрицы</a>
+    </div>
+    <br />
+
+    <p>Следующим способом преобразования системы координат, который мы рассмотрим, будет:</p>
+
+    <p><em>3) ЗЕРКАЛЬНОЕ ОТРАЖЕНИЕ</em>, например, относительно начала координат (преобразование четности, или просто четность).</p>
+
+    <p>Мы снова рассматриваем только лишь четность, т.е. отражение относительно нулевой точки, при котором все координаты и все компоненты меняются на противоположные: это преобразование, которое оставляет нулевую точку инвариантной 
+    <img src="k9/gif/f92399.gif" alt="math formula" hspace="5" align="bottom" width="46" height="17" />, может быть описано при помощи матрицы 
+    <img src="k9/gif/f923100.gif" alt="math formula" hspace="5" align="middle" width="13" height="22" />, а именно, при помощи отрицательной единичной матрицы, которую мы также можем обозначить при помощи 
+    <img src="k9/gif/f923101.gif" alt="math formula" hspace="5" align="middle" width="9" height="23" />: 
+    <img src="k9/gif/f923102.gif" alt="math formula" hspace="5" align="middle" width="55" height="22" /></p>
+
+    <div class="c2">
+      <em>Четность</em>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+       
+      <img src="k9/gif/f923103.gif" alt="math formula" hspace="5" align="middle" width="171" height="66" />
+    </div>
+    <br />
+
+    <p>Таким образом, для составляющих вектора в отраженной системе мы получим:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923104.gif" alt="math formula" hspace="5" align="middle" width="460" height="66" />
+    </div>
+    <br />
+
+    <p>Все векторы, компоненты которых 
+    <img src="k9/gif/f923105.gif" alt="math formula" hspace="5" align="middle" width="64" height="24" /> при отражении от начала координат меняют свой математический знак, называют <em>полярными (истинными) векторами</em>. И снова, такое свойство имеют не все важные для физики векторы. Нам встретятся такие физические векторы, как, например, угловой момент, которые являются инвариантными относительно четности. Их мы будем называть <em>аксиальные векторы (псевдовекторы)</em>.</p>
+
+    <p>Для всех видах векторов <em>длина является инвариантной относительно отражения</em>, т.е. в каждом случае </p>
+
+    <div class="c2">
+      <img src="k9/gif/f923106.gif" alt="math formula" hspace="5" align="middle" width="282" height="42" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#923b2r" >Дополнение: Детерминанты</a>
+    </div><br />
+    <br />
+
+    <p>И наконец, обратимся к:</p>
+
+    <p><em>4) РАСТЯЖЕНИЯ (ДИЛАТАЦИИ)</em>: например, растяжение вдоль всех осей на общий множитель, например 10:</p>
+
+    <p>В качестве показательного примера, давайте снова рассмотрим изменение масштаба, а именно от сантиметров (см) перейдем к дециметрам (дм), причем оси координат остаются неизменными и только лишь размерные точки 
+    <img src="k9/gif/f923163.gif" alt="math formula" hspace="5" align="middle" width="18" height="22" /> на оси будут передвинуты так, что расстояния от начала координат 
+    <img src="k9/gif/f923164.gif" alt="math formula" hspace="5" align="middle" width="77" height="33" /> изменятся. При этом числовые меры составляющих вектора уменьшаются. Соответствующая матрица преобразования растяжения равна 
+    <img src="k9/gif/f923165.gif" alt="math formula" hspace="5" align="middle" width="60" height="29" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f923166.gif" alt="math formula" hspace="5" align="middle" width="465" height="68" />
+    </div>
+    <br />
+
+    <p>При изменении масштаба, разумеется, никакой вектор не остается инвариантным, а также числовая мера длины уменьшится на множитель 
+    <img src="k9/gif/f923167.gif" alt="math formula" hspace="5" align="middle" width="13" height="29" />:</p>
+
+    <div class="c2">
+      
+      <img src="k9/gif/f923168.gif" alt="math formula" hspace="5" align="middle" width="315" height="42" />
+    </div>
+    <br />
+
+    <p>При исследовании данных вопросов мы проделали самую сложную работу для понимания векторов. Сейчас же мы можем приступить к изучению расчетов с векторами, и будем помнить, что речь идет о трансляциях со свободно выбираемой исходной точкой. </p>
+
+    <p>Остается только заметить, что существуют и такие физические величины, для определения которых достаточно лишь одной единственной величины измерения, т.е. числа и единицы измерения. Такими физическими величинами являются, например, масса, заряд, температура, сила тока и т.п. Такие величины называют <em>скалярными величинами</em> (или также <em>тензорами нулевого ранга</em>), в отличии от векторов (которые также называют тензорами первого ранга), и в отличии от более сложных физических величин, как, например, момент инерции.</p>
+  </div>
+</body>
+</html>

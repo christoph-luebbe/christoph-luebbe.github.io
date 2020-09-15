@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Vektoren</h2>
+
+    <h3>9.6 Vektorprodukt und Levi-Civita-Symbol</h3>
+
+    <h4>9.6.2 Definition</h4>
+  </div>
+
+  <div class="c3">
+    <p>Wir versuchen deshalb folgenden Ansatz als echte innere Verknüpfung zweier beliebiger Vektoren 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> und 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" />:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Vektorprodukt:</em> 
+            <img src="k9/gif/f96201.gif" alt="math formula" hspace="5" align="middle" width="249" height="39" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Außer dem <em>Sinus</em> des eingeschlossenen Winkels und den Längen der beiden Vektoren haben wir den 
+    <em>Einheitsvektor</em> 
+    <img src="k9/gif/f96202.gif" alt="math formula" hspace="5" align="middle" width="63" height="25" /> 
+    dazugenommen, der senkrecht auf der von den beiden Vektoren aufgespannten Ebene steht und mit den Vektoren 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> und 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" /> 
+    (in dieser Reihenfolge!) eine <a href="#962b1d" >Rechtsschraube</a> bildet. 
+    Zur deutlichen Unterscheidung vom Skalarprodukt verwenden wir als Malzeichen ein <em>Kreuz</em> 
+    statt des Punktes <em>und</em> dazu noch <em>eckige Klammern</em> statt der runden. Viele geben sich 
+    mit einem der beiden Unterscheidungsmerkmale zufrieden: 
+    <img src="k9/gif/f96203.gif" alt="math formula" hspace="5" align="middle" width="152" height="39" />. 
+    Manche nennen das Vektorprodukt auch "äußeres Produkt". Wir wollen diesen Ausdruck für eine echte 
+    innere Verknüpfung im Vektorraum jedoch verständlicherweise möglichst vermeiden.</p>
+
+    <p>Wie beim Skalarprodukt betrachten wir zunächst wieder die <em>Spezialfälle</em>:</p>
+
+    <p>Für 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> und 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" /> 
+    <em>kollinear</em>, d.h. parallel oder antiparallel: 
+    <img src="k9/gif/f96204.gif" alt="math formula" hspace="5" align="middle" width="91" height="33" /> folgt 
+    <img src="k9/gif/f96205.gif" alt="math formula" hspace="5" align="middle" width="76" height="39" />,<br />
+    insbesondere: 
+    <img src="k9/gif/f96206.gif" alt="math formula" hspace="5" align="middle" width="112" height="24" /></p>
+
+    <p>Für 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> und 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" /> 
+    <em>orthogonal</em>, d.h. 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> senkrecht auf 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" />: 
+    <img src="k9/gif/f96207.gif" alt="math formula" hspace="5" align="middle" width="92" height="33" /> folgt 
+    <img src="k9/gif/f96208.gif" alt="math formula" hspace="5" align="middle" width="161" height="39" />,<br />
+    insbesondere: 
+    <img src="k9/gif/f96209.gif" alt="math formula" hspace="5" align="middle" width="91" height="24" />.</p>
+
+    <p>Die Länge des Produktvektors ist in diesem Fall maximal: 
+    <img src="k9/gif/f96210.gif" alt="math formula" hspace="5" align="middle" width="111" height="39" />, 
+    d.h. die Rechteckfläche mit den Längen der beiden Faktoren als Kantenlängen:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k9/gif/b9621.gif" alt="math formula" width="365" height="272" /><br clear="all" />
+    <span class="bild">Bild 9.21: des Rechtecks 
+    <img src="k9/gif/f96210.gif" alt="math formula" hspace="5" align="middle" width="106" height="39" /></span></p>
+  </div>
+
+  <div class="c3">
+    <p>Im allgemeinen Fall ist die <em>Länge des Produktvektors</em> 
+    <img src="k9/gif/f96212.gif" alt="math formula" hspace="5" align="middle" width="182" height="39" /> 
+    die Fläche des von den beiden Faktoren aufgespannten Parallelogramms oder von gleicher Größe: eine der 
+    beiden im nächsten Bild farbig getönten Rechteckflächen mit den Höhen des Parallelogramms.</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k9/gif/b9622.gif" alt="math formula" width="806" height="541" /><br clear="all" />
+    <span class="bild">Bild 9.22: Veranschaulichung der Größe des Betrags des Vektorprodukts in Abhängigkeit 
+    vom Winkel zwischen den beiden Vektoren: Die Flächen sowohl des Parallelogramms als auch jedes der beiden 
+    Rechtecke mit den Höhen des Parallelegramms geben den Betrag des Vektorproduktes wieder.</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Falls der Winkel zwischen den Faktorvektoren 
+    <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> überschreitet, 
+    wird der Sinus und folglich auch die Fläche negativ, was hier zu einer Umkehr der Richtung des Produktvektors 
+    führt.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.32:</b> Physikalische Vektorprodukte</p>
+
+            <p>Wie erhalten Sie</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>bei einer Drehbewegung die lineare Geschwindigkeit 
+                <img src="k9/gif/f96213.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> 
+                aus der Winkelgeschwindigkeit 
+                <img src="k9/gif/f96214.gif" alt="math formula" hspace="5" align="middle" width="89" height="24" /> 
+                und dem Ort 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" />? 
+                <a href="#962l3201d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>bei der Kepler-Bewegung die Flächengeschwindigkeit 
+                <img src="k9/gif/f96215.gif" alt="math formula" hspace="5" align="middle" width="12" height="33" /> 
+                aus Ort 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" /> 
+                und Geschwindigkeit 
+                <img src="k9/gif/f96213.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> 
+                des Planeten? <a href="#962l3202d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>den Bahndrehimpuls 
+                <img src="k9/gif/f96215b.gif" alt="math formula" hspace="5" align="bottom" width="11" height="16" /> 
+                aus Ortsvektor 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" /> 
+                und Impuls 
+                <img src="eq/pvekt.gif" alt="math formula" hspace="5" align="middle" width="11" height="25" />? 
+                <a href="#962l3203d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>das mechanische Drehmoments 
+                <img src="k9/gif/f96215c.gif" alt="math formula" hspace="5" align="bottom" width="13" height="16" /> 
+                aus Kraft 
+                <img src="k9/gif/f96216.gif" alt="math formula" hspace="5" align="bottom" width="12" height="15" /> 
+                und Hebelarm 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" />? 
+                <a href="#962l3204d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>das Drehmoment auf einen elektrischen Dipol mit Dipolmoment 
+                <img src="eq/pvekt.gif" alt="math formula" hspace="5" align="middle" width="11" height="25" /> 
+                in einem homogenen elektrischen Feld 
+                <img src="k9/gif/f96217.gif" alt="math formula" hspace="5" align="bottom" width="13" height="15" />? 
+                <a href="#962l3205d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>das Drehmoment auf einen magnetischen Dipol mit Dipolmoment 
+                <img src="k9/gif/f96218.gif" alt="math formula" hspace="5" align="bottom" width="14" height="13" /> 
+                in einem homogenen Magnetfeld 
+                <img src="k9/gif/f96219.gif" alt="math formula" hspace="5" align="bottom" width="14" height="16" />? 
+                <a href="#962l3206d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">g)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>die Dichte der elektromagnetischen Lorentz-Kraft 
+                <img src="k9/gif/f96220.gif" alt="math formula" hspace="5" align="bottom" width="9" height="17" /> 
+                aus der Geschwindigkeit 
+                <img src="k9/gif/f96213.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> 
+                eines Elektrons mit Masse 
+                <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> und 
+                Ladung <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+                und der magnetischen Induktion 
+                <img src="k9/gif/f96221.gif" alt="math formula" hspace="5" align="bottom" width="12" height="16" />? 
+                <a href="#962l3207d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>den Poynting-Vektor 
+                <img src="k9/gif/f96222.gif" alt="math formula" hspace="5" align="bottom" width="11" height="17" /> 
+                des elektromagnetischen Strahlungsflusses aus dem elektrischen 
+                <img src="k9/gif/f96223.gif" alt="math formula" hspace="5" align="bottom" width="13" height="16" /> 
+                und magnetischen Feld 
+                <img src="k9/gif/f96219.gif" alt="math formula" hspace="5" align="bottom" width="14" height="16" /> 
+                der Strahlung? <a href="#962l3208d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>das Magnetfeld 
+                <img src="k9/gif/f96219.gif" alt="math formula" hspace="5" align="bottom" width="14" height="16" /> 
+                im Abstand 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" /> 
+                von einem elektrischen Stromfaden 
+                <img src="k9/gif/f96224.gif" alt="math formula" hspace="5" align="middle" width="8" height="28" /> 
+                nach dem Biot-Savartschen Gesetz? <a href="#962l3209d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.33:</b> Drehmomente</p>
+
+            <p>Diskutieren Sie den Betrag und die Richtung des Drehmoments auf eine Kompaßnadel im magnetischen 
+            Erdfeld, wenn der Winkel 
+            <img src="k9/gif/f96225.gif" alt="math formula" hspace="5" align="middle" width="89" height="33" /> 
+            zwischen Dipolmoment 
+            <img src="k9/gif/f96218.gif" alt="math formula" hspace="5" align="bottom" width="14" height="13" /> 
+            und Feld 
+            <img src="k9/gif/f96219.gif" alt="math formula" hspace="5" align="bottom" width="14" height="16" />:<br />
+            <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> 
+            <a href="#962l3301d" >Lösung</a> , 
+            <img src="k9/gif/f96226.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            <a href="#962l3302d" >Lösung</a>, 
+            <img src="k9/gif/f96227.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            <a href="#962l3303d" >Lösung</a>, 
+            <img src="k9/gif/f96228.gif" alt="math formula" hspace="5" align="middle" width="34" height="24" /> 
+            <a href="#962l3304d" >Lösung</a>, 
+            <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> 
+            <a href="#962l3305d" >Lösung</a>, 
+            <img src="k9/gif/f96229.gif" alt="math formula" hspace="5" align="middle" width="34" height="24" /> 
+            <a href="#962l3306d" >Lösung</a> beträgt.</p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.34:</b> Bilanz der Drehmomente</p>
+
+            <div class="c1">
+              <p>
+              <img src="k9/gif/b9623.gif" alt="math formula" width="291" height="255" /><br clear="all" />
+              <span class="bild">Bild 9.23: Mit welcher Kraft 
+              <img src="k9/gif/f96230.gif" alt="math formula" hspace="5" align="middle" width="16" height="33" /> 
+              muss man an der angegebenen Stelle ziehen, damit das abgebildete starre T-Stück sich n i c h t um 
+              den Drehpunkt 
+              <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> dreht? 
+              <a href="#962l3401d" >Lösung</a></span></p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

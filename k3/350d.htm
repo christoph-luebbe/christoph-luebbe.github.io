@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>3 Folgen und Reihen</h2>
+
+    <h3>3.5 Reihen</h3>
+  </div>
+
+  <div class="c3">
+    <p>Nachdem wir die Grenzwerte von Zahlenfolgen studiert haben, können wir unser neu erworbenes Wissen sogleich auf 
+    häufiger in der Physik vorkommende Dinge anwenden, wie etwa <em>unendliche Summen</em> 
+    <img src="k3/gif/f32001.gif" alt="math formula" hspace="5" align="middle" width="72" height="41" />, 
+    die <em>Reihen</em> genannt werden:</p>
+
+    <p>Diese werden schon hin und wieder bei interessanteren physikalischen Fragestellungen gebraucht: 
+    Wenn wir z.B. die elektrostatische Energie einer Kette von unendlich vielen äquidistanten abwechselnd 
+    positiven und negativen Punktladungen für ein Kettenglied aufsummieren wollen (die ein einfaches, 
+    aber erstaunlich gutes eindimensionales Modell für einen Ionenkristall darstellt) stoßen wir auf die 
+    unendliche Summe über die Glieder der alternierenden harmonischen Folge (F7): die Reihe 
+    <img src="k3/gif/f32002.gif" alt="math formula" hspace="5" align="middle" width="76" height="41" />. 
+    Wie rechnet man das aus ?</p>
+
+    <p>Reihen sind Folgen, deren Glieder endliche Summen reeller Zahlen sind: Die Definition der</p>
+
+    <div class="c2">
+      <em>Reihe</em> 
+      <img src="k3/gif/f32003.gif" alt="math formula" hspace="5" align="middle" width="43" height="41" /> als <em>
+      Folge der Teilsummen</em> 
+      <img src="k3/gif/f32003b.gif" alt="math formula" hspace="5" align="middle" width="136" height="47" />
+    </div><br />
+    <br />
+
+    <p>führt die Reihen auf die Folgen zurück, die wir oben gerade behandelt haben.</p>
+
+    <p>Insbesondere ist eine Reihe genau dann <em>konvergent</em> und hat den Wert 
+    <img src="eq/s.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />, 
+    wenn die Folge ihrer Teilsummen 
+    <img src="k3/gif/f32004.gif" alt="math formula" hspace="5" align="middle" width="19" height="17" /> 
+    (<em>nicht</em> etwa die ihrer <em>Summanden</em> 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" />!!) 
+    konvergiert: 
+    <img src="k3/gif/f32005.gif" alt="math formula" hspace="5" align="middle" width="87" height="23" />:</p>
+
+    <div class="c2">
+      <em>Reihe</em> 
+      <img src="k3/gif/f32003.gif" alt="math formula" hspace="5" align="middle" width="43" height="41" />, d.h. Folge 
+      <img src="k3/gif/f32006.gif" alt="math formula" hspace="5" align="middle" width="84" height="41" /> <em>konvergent</em> 
+      <img src="k3/gif/f32007.gif" alt="math formula" hspace="5" align="middle" width="185" height="41" />
+    </div><br />
+    <br />
+
+    <p>Auch das Vielfache einer konvergenten Reihe und die Summe und Differenz von zwei konvergenten Reihen sind 
+    wieder konvergent.</p>
+
+    <p>Die wenigen <em>Musterbeispiele</em> für Reihen, die nötig sind, um das Wichtigste bereits sehen zu können, 
+    gewinnen wir am einfachsten durch stückweises Aufsummieren unserer Musterfolgen:</p>
+
+    <p>Die <em>Reihe (R1)</em> aus den Teilsummen der Folge (F1) der natürlichen Zahlen: 
+    <img src="k3/gif/f32008.gif" alt="math formula" hspace="5" align="middle" width="260" height="47" /> 
+    ist klarerweise divergent.</p>
+
+    <p>Die <em>Reihe (R2)</em> aus den Gliedern der alternierenden Folge (F2) hüpft immer zwischen 
+    <img src="eq/1.gif" alt="math formula" hspace="5" align="bottom" width="6" height="11" /> und 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> hin und her, 
+    hat demnach zwei Häufungspunkte, also keinen Grenzwert.</p>
+
+    <p>Auch die aus den Gliedern der harmonischen Folge (F3) aufsummierte "<em>harmonische Reihe</em>" <em>(R3)</em>, 
+    d.h. die Folge 
+    <img src="k3/gif/f32009.gif" alt="math formula" hspace="5" align="middle" width="298" height="47" /> ist divergent. 
+    Denn das (auch notwendige) Cauchy-Kriterium ist nicht erfüllt:<br />
+    Wenn wir z.B. 
+    <img src="k3/gif/f32010.gif" alt="math formula" hspace="5" align="middle" width="68" height="29" /> wählen und für 
+    <img src="k3/gif/f32011.gif" alt="math formula" hspace="5" align="bottom" width="53" height="12" /> ein aus 
+    <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> 
+    Gliedern bestehendes Stück der Reihe betrachten:<br />
+    <img src="k3/gif/f32012.gif" alt="math formula" hspace="5" align="middle" width="601" height="70" />, 
+    während zur Konvergenz doch 
+    <img src="k3/gif/f32013.gif" alt="math formula" hspace="5" align="middle" width="23" height="19" /> 
+    erforderlich gewesen wäre.</p>
+
+    <p>Deren <em>alternierende Variante (R7)</em>, gebildet aus der Folge (F7), unser physikalisches Beispiel 
+    von oben konvergiert jedoch 
+    <img src="k3/gif/f32014.gif" alt="math formula" hspace="5" align="middle" width="76" height="41" /> (
+    <img src="k3/gif/f32014b.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" />, 
+    wie wir später zeigen werden). Wegen dieses Unterschieds zwischen Reihen mit positiven Gliedern und 
+    alternierenden ist es zweckmäßig, einen neuen Begriff einzuführen: Eine Reihe heißt <em>absolut konvergent</em>, 
+    wenn bereits die Reihe der Beträge konvergiert.</p>
+
+    <div class="c2">
+      Reihe 
+      <img src="k3/gif/f32015.gif" alt="math formula" hspace="5" align="middle" width="84" height="41" /> <em>
+      absolut konvergent</em> 
+      <img src="k3/gif/f32016.gif" alt="math formula" hspace="5" align="middle" width="165" height="41" />
+    </div><br />
+    <br />
+
+    <p>Man kann leicht verstehen, dass bei einer absolut konvergenten Reihe die Summanden ohne Schaden für den 
+    Grenzwert umgeordnet werden können. Zwei absolut konvergente Reihen können gliedweise zu einer neuen absolut 
+    konvergenten Reihe multipliziert werden.</p>
+
+    <p>Für die absolute Konvergenz haben die Mathematiker verschiedene <em>hinreichende</em> Kriterien, 
+    die sogenannten <em>Majoranten-Kriterien</em> entwickelt, mit denen Sie sich in der Vorlesung über 
+    Analysis noch ausführlich beschäftigen werden:</p>
+
+    <div class="c2">
+      <a href="#350b1d" >Einschub: Majoranten</a>
+    </div><br />
+    <br />
+
+    <p>Als Majoranten dienen dabei sehr häufig die "<em>geometrischen Reihen</em>" <em>(R6)</em>: 
+    <img src="k3/gif/f32022.gif" alt="math formula" hspace="5" align="middle" width="42" height="41" />, 
+    die aus den geometrischen Folgen (F6) 
+    <img src="k3/gif/f32023.gif" alt="math formula" hspace="5" align="middle" width="105" height="24" /> 
+    hervorgehen. Bei deren Berechnung kommt uns die früher für 
+    <img src="k3/gif/f32024.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" /> 
+    hergeleitete geometrischer Summe zugute:</p>
+
+    <div class="c2">
+      <img src="k3/gif/f32025.gif" alt="math formula" hspace="5" align="middle" width="340" height="35" />
+    </div><br />
+    <br />
+
+    <p>d.h. konvergent für 
+    <img src="k3/gif/f32026.gif" alt="math formula" hspace="5" align="middle" width="44" height="24" /> und divergent für 
+    <img src="k3/gif/f32027.gif" alt="math formula" hspace="5" align="middle" width="44" height="24" />.</p>
+
+    <div class="c2">
+      <a href="#350b2d" >Einschub: Quotienten-Kriterium</a>
+    </div><br />
+    <br />
+
+    <p>Die <em>Reihe der inversen natürlichen Fakultäten (R4)</em> 
+    <img src="k3/gif/f32036.gif" alt="math formula" hspace="5" align="middle" width="41" height="41" />
+    wollen wir genauer betrachten:</p>
+
+    <p>Wir sehen zunächst, dass die Folge der Teilsummen 
+    <img src="k3/gif/f32037.gif" alt="math formula" hspace="5" align="middle" width="131" height="47" />
+    monoton steigt: 
+    <img src="k3/gif/f32038.gif" alt="math formula" hspace="5" align="middle" width="170" height="29" />.</p>
+
+    <p>Zur Berechnung der oberen Schranke 
+    <img src="eq/gb.gif" alt="math formula" hspace="5" align="bottom" width="12" height="11" /> 
+    schätzen wir durch die majorante geometrische Summe mit 
+    <img src="k3/gif/f32040.gif" alt="math formula" hspace="5" align="middle" width="38" height="29" /> ab:</p>
+
+    <div class="c2">
+      <img src="k3/gif/f32041.gif" alt="math formula" hspace="5" align="middle" width="211" height="155" />
+    </div><br />
+    <br />
+
+    <p>Da die monoton steigende Folge der Teilsummen 
+    <img src="k3/gif/f32042.gif" alt="math formula" hspace="5" align="middle" width="19" height="17" /> 
+    also durch 
+    <img src="k3/gif/f32043.gif" alt="math formula" hspace="5" align="bottom" width="42" height="11" /> 
+    nach oben beschränkt ist, garantiert uns der Satz von Bolzano und Weierstraß die Konvergenz. 
+    Nur den Grenzwert kennen wir noch nicht. Dieser Grenzwert ist nun tatsächlich etwas völlig Neues, 
+    eine irrationale Zahl. Wir nennen sie 
+    <img src="k3/gif/f32044.gif" alt="math formula" hspace="5" align="middle" width="50" height="23" />, 
+    so dass die Zahl 
+    <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+    nach der ergänzenden Konvention 
+    <img src="k3/gif/f32045.gif" alt="math formula" hspace="5" align="bottom" width="41" height="13" /> 
+    folgendermaßen durch die mit 
+    <img src="k3/gif/f32046.gif" alt="math formula" hspace="5" align="bottom" width="39" height="12" /> 
+    beginnende Reihe definiert wird:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Exponential-Reihe</em> definiert durch: 
+            <img src="k3/gif/f32047.gif" alt="math formula" hspace="5" align="middle" width="73" height="41" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#350b3d" >Einschub: e ist irrational</a>
+    </div><br />
+    <br />
+
+    <p>Zur Bestimmung des numerischen Wertes von 
+    <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> 
+    rechnen wir uns die Glieder der Nullfolge (F4) 
+    <img src="k3/gif/f32058.gif" alt="math formula" hspace="5" align="middle" width="52" height="29" /> einmal aus:</p>
+
+    <div class="c2">
+      <table width="100%" border="0">
+        <tr>
+          <td>
+          <img src="k3/gif/f32059.gif" alt="math formula" hspace="5" align="middle" width="79" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32060.gif" alt="math formula" hspace="5" align="middle" width="134" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32061.gif" alt="math formula" hspace="5" align="middle" width="150" height="29" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32062.gif" alt="math formula" hspace="5" align="middle" width="178" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32063.gif" alt="math formula" hspace="5" align="middle" width="176" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32064.gif" alt="math formula" hspace="5" align="middle" width="184" height="29" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32065.gif" alt="math formula" hspace="5" align="middle" width="196" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32066.gif" alt="math formula" hspace="5" align="middle" width="202" height="29" />,</td>
+
+          <td>
+          <img src="k3/gif/f32067.gif" alt="math formula" hspace="5" align="middle" width="208" height="29" /></td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>und summieren die Teilsummen: 
+    <img src="k3/gif/f32068.gif" alt="math formula" hspace="5" align="middle" width="286" height="41" /></p>
+
+    <div class="c2">
+      <table width="100%" border="0">
+        <tr>
+          <td>
+          <img src="k3/gif/f32069.gif" alt="math formula" hspace="5" align="middle" width="43" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32070.gif" alt="math formula" hspace="5" align="middle" width="67" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32071.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32072.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32073.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32074.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+        </tr>
+
+        <tr>
+          <td>
+          <img src="k3/gif/f32075.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32076.gif" alt="math formula" hspace="5" align="middle" width="104" height="23" />,</td>
+
+          <td>
+          <img src="k3/gif/f32077.gif" alt="math formula" hspace="5" align="middle" width="103" height="23" /></td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Wenn wir die rasche Konvergenz betrachten, können wir uns leicht vorstellen, dass man nach kurzer 
+    Rechnung für den Grenzwert<br />
+    <br />
+    <img src="k3/gif/f32078.gif" alt="math formula" hspace="5" align="middle" width="205" height="23" /> erhält.</p>
+
+    <div class="c2">
+      <a href="#350b4d" >Einschub: Folge gegen e</a>
+    </div><br />
+    <br />
+
+    <p>Damit haben wir einen ersten Überblick über die Grenzprozesse gewonnen und einige für die 
+    Naturwissenschaften wichtige Folgen und Reihen mit ihren Grenzwerten kennengelernt, 
+    die uns im folgenden helfen werden.</p>
+  </div>
+</body>
+</html>

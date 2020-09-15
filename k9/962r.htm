@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Векторы</h2>
+
+    <h3>9.6 Векторное произведение и символ Леви-Чивиты  </h3>
+
+    <h4>9.6.2 Определение</h4>
+  </div>
+
+  <div class="c3">
+    <p>Мы попробуем использовать следующее математическое выражение в качестве внутренней (бинарной) операции над двумя произвольными векторами 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> и 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" />:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Векторное произведение:</em> 
+            <img src="k9/gif/f96201.gif" alt="math formula" hspace="5" align="middle" width="249" height="39" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Кроме длины обоих векторов и <em>синуса</em> угла между ними, мы взяли еще и <em>единичный вектор</em> 
+    <img src="k9/gif/f96202.gif" alt="math formula" hspace="5" align="middle" width="63" height="25" />, который расположен перпендикулярно плоскости, построенной по двум векторам и образует с векторами 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> и 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" /> (именно в такой последовательности!) 
+    <a href="#962b1d" >правый винт</a>. Для того, чтобы мы могли точно отличить векторное произведение от скалярного, в качестве знака умножения применяем вместо точки <em>крестик</em> <em>и</em> в добавок <em>квадратные скобки</em> вместо круглых. Многих такие отличительные признаки вполне удовлетворяют: 
+    <img src="k9/gif/f96203.gif" alt="math formula" hspace="5" align="middle" width="152" height="39" />. Некоторые называют векторное произведение также "внешним произведением". Нам бы хотелось избежать такого названия для внутренней операции на векторном пространстве.</p>
+
+    <p>Как и при рассмотрении скалярного продукта, давайте, для начала, разберем <em>частные случаи</em>:</p>
+
+    <p>Пусть 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> и 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" /> <em>коллинеарны</em>, т.е. параллельны или антипараллельны: 
+    <img src="k9/gif/f96204.gif" alt="math formula" hspace="5" align="middle" width="91" height="33" /> тогда 
+    <img src="k9/gif/f96205.gif" alt="math formula" hspace="5" align="middle" width="76" height="39" />,<br /> в частности: 
+    <img src="k9/gif/f96206.gif" alt="math formula" hspace="5" align="middle" width="112" height="24" /></p>
+
+    <p>Пусть 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> и 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" /> <em>ортогональны</em>, т.е. 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> перпендикулярно 
+    <img src="eq/bvekt.gif" alt="math formula" hspace="5" align="bottom" width="8" height="17" />: 
+    <img src="k9/gif/f96207.gif" alt="math formula" hspace="5" align="middle" width="92" height="33" /> и 
+    <img src="k9/gif/f96208.gif" alt="math formula" hspace="5" align="middle" width="161" height="39" />,<br /> в частности: 
+    <img src="k9/gif/f96209.gif" alt="math formula" hspace="5" align="middle" width="91" height="24" />.</p>
+
+    <p>Длина вектора-произведения является в данном случае максимальной: 
+    <img src="k9/gif/f96210.gif" alt="math formula" hspace="5" align="middle" width="111" height="39" />, т.е. она дает площадь прямоугольника с длинами сторон, равным длинам каждого из сомножителей:</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="k9/gif/b9621.gif" alt="math formula" width="365" height="272" /><br clear="all" />
+    <span class="bild">Рисунок 9.21: Прямоугольник 
+     
+    <img src="k9/gif/f96210.gif" alt="math formula" hspace="5" align="middle" width="106" height="39" /></span></p>
+  </div>
+
+  <div class="c3">
+    <p>В общем случае,<em>длина вектора-произведения</em> 
+    <img src="k9/gif/f96212.gif" alt="math formula" hspace="5" align="middle" width="182" height="39" /> дает площадь параллелограмма, построенного на двух векторах-сомножителях; или, что то же самое, площадь одного из двух прямоугольников, имеющих те же высоты, что и параллелограмм, которые на следующем рисунке выделены цветом.</p>
+  </div>
+
+  <div class="c1">
+    <p>
+    <img src="k9/gif/b9622.gif" alt="math formula" width="806" height="541" /><br clear="all" />
+    <span class="bild">Рисунок 9.22: Иллюстрация длины векторного произведения в зависимости от угла между векторами: площадь параллелограмма и каждого их двух прямоугольников с высотами параллелограмма воспроизводят модуль векторного произведения..</span></p>
+  </div>
+
+  <div class="c3">
+    <p>В случае, если угол между векторами-сомножителями превышает 
+    <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" />, то синус, а как следствие и площадь, будут отрицательными, что приводит к изменению направления вектора-произведения.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.32:</b> Физические векторные произведения</p>
+
+            <p>Как получить  </p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>при вращении линейную скорость 
+                <img src="k9/gif/f96213.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> из угловой скорости 
+                <img src="k9/gif/f96214.gif" alt="math formula" hspace="5" align="middle" width="89" height="24" /> и радиус-вектора 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" />? 
+                <a href="#962l3201r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>при Кеплеровом движении секториальную скорость 
+                <img src="k9/gif/f96215.gif" alt="math formula" hspace="5" align="middle" width="12" height="33" /> из радиус-вектора 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" /> и скорости 
+                <img src="k9/gif/f96213.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> планеты? 
+                <a href="#962l3202r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>орбитальный момент 
+                <img src="k9/gif/f96215b.gif" alt="math formula" hspace="5" align="bottom" width="11" height="16" /> из радиус-вектора 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" /> и импульса 
+                <img src="eq/pvekt.gif" alt="math formula" hspace="5" align="middle" width="11" height="25" />? 
+                <a href="#962l3203r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>механический момент вращения 
+                <img src="k9/gif/f96215c.gif" alt="math formula" hspace="5" align="bottom" width="13" height="16" /> из силы 
+                <img src="k9/gif/f96216.gif" alt="math formula" hspace="5" align="bottom" width="12" height="15" /> и плеча 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" />? 
+                <a href="#962l3204r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>момент вращения электрического диполя с дипольным моментом 
+                <img src="eq/pvekt.gif" alt="math formula" hspace="5" align="middle" width="11" height="25" /> в однородном электрическом поле 
+                <img src="k9/gif/f96217.gif" alt="math formula" hspace="5" align="bottom" width="13" height="15" />? 
+                <a href="#962l3205r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>момент вращения магнитного диполя с дипольным моментом 
+                <img src="k9/gif/f96218.gif" alt="math formula" hspace="5" align="bottom" width="14" height="13" /> в однородном магнитном поле 
+                <img src="k9/gif/f96219.gif" alt="math formula" hspace="5" align="bottom" width="14" height="16" />? 
+                <a href="#962l3206r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">g)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>плотность электромагнитной силы Лоренца 
+                <img src="k9/gif/f96220.gif" alt="math formula" hspace="5" align="bottom" width="9" height="17" /> из скорости 
+                <img src="k9/gif/f96213.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" /> электрона с массой 
+                <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" width="14" height="9" /> и зарядом 
+                <img src="eq/e.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> и магнитной индукцией 
+                <img src="k9/gif/f96221.gif" alt="math formula" hspace="5" align="bottom" width="12" height="16" />? 
+                <a href="#962l3207r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>вектор Пойнтинга 
+                <img src="k9/gif/f96222.gif" alt="math formula" hspace="5" align="bottom" width="11" height="17" /> потока излучения электромагнитного поля из электрической 
+                <img src="k9/gif/f96223.gif" alt="math formula" hspace="5" align="bottom" width="13" height="16" /> и магнитного полей 
+                <img src="k9/gif/f96219.gif" alt="math formula" hspace="5" align="bottom" width="14" height="16" /> излучения? 
+                <a href="#962l3208r" >Ответ</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>магнитное поле 
+                <img src="k9/gif/f96219.gif" alt="math formula" hspace="5" align="bottom" width="14" height="16" /> на расстоянии 
+                <img src="eq/xvekt.gif" alt="math formula" hspace="5" align="bottom" width="10" height="13" /> от электрической линии тока 
+                <img src="k9/gif/f96224.gif" alt="math formula" hspace="5" align="middle" width="8" height="28" /> по закону Био-Савара? 
+                <a href="#962l3209r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.33:</b> Моменты вращения</p>
+
+            <p>Рассмотрите длину и направление момента вращения иглы компаса в магнитном поле, если угол 
+            <img src="k9/gif/f96225.gif" alt="math formula" hspace="5" align="middle" width="89" height="33" /> между дипольным моментом 
+            <img src="k9/gif/f96218.gif" alt="math formula" hspace="5" align="bottom" width="14" height="13" /> и полем 
+            <img src="k9/gif/f96219.gif" alt="math formula" hspace="5" align="bottom" width="14" height="16" /> составляет <br /> 
+            <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> 
+            <a href="#962l3301r" >Ответ</a> , 
+            <img src="k9/gif/f96226.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            <a href="#962l3302r" >Ответ</a>, 
+            <img src="k9/gif/f96227.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> 
+            <a href="#962l3303r" >Ответ</a>, 
+            <img src="k9/gif/f96228.gif" alt="math formula" hspace="5" align="middle" width="34" height="24" /> 
+            <a href="#962l3304r" >Ответ</a>, 
+            <img src="eq/pi.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> 
+            <a href="#962l3305r" >Ответ</a>, 
+            <img src="k9/gif/f96229.gif" alt="math formula" hspace="5" align="middle" width="34" height="24" /> 
+            <a href="#962l3306r" >Ответ</a> </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.34:</b> Баланс моментов сил</p>
+
+            <div class="c1">
+              <p>
+              <img src="k9/gif/b9623.gif" alt="math formula" width="291" height="255" /><br clear="all" />
+              <span class="bild">Рисунок 9.23: С какой силой 
+              <img src="k9/gif/f96230.gif" alt="math formula" hspace="5" align="middle" width="16" height="33" /> следует потянуть в отмеченной точке, чтобы изображенная неподвижная Т-образная фигура НЕ обернулась вокруг точки вращения 
+              <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />? 
+              <a href="#962l3401r" >Ответ</a></span></p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>3 Sucesiones y series</h2>
+
+    <h3>3.1 Sucesiones</h3>
+  </div>
+
+  <div class="c3">
+    <p>El primer concepto importante del que nos ocuparemos es el de <b>
+    sucesión</b>.</p>
+
+    <p>El físico piensa en la sucesión de alturas del salto de una bola de acero 
+    sobre un disco, que decrecen monótonamente con el tiempo debido a la 
+    inevitable disipación de energía y finalmente, más o menos rápido, tienden a 
+    cero. Después de un tiempo la bola permanece en reposo. Luego, la sucesión 
+    de alturas de salto tiene entonces sólo un número finito de términos, al 
+    contrario  de las sucesiones que interesan en matemáticas:<br />
+    Matemáticamente, una sucesión es un conjunto infinito de números, que pueden 
+    numerarse consecutivamente, 
+    esto es, que se pueden mapear al conjunto de números naturales: 
+    <img src="k3/gif/f31001.gif" alt="math formula" hspace="5" align="middle" width="53" height="24" />. 
+    Dado que no se pueden dar todos los infinitos términos 
+    <img src="k3/gif/f31002.gif" alt="math formula" hspace="5" align="middle" width="164" height="24" />, 
+    se define una sucesión a través de un &quot;miembro arbitrario&quot; 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" />, 
+    esto es,&nbsp; una ley que establece cómo calcular los miembros individuales 
+    de la sucesión. Demos una mirada a los siguientes ejemplos típicos que nos 
+    permiten mostrar de inmediato los conceptos más importantes:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></td>
+
+          <td>
+          <img src="k3/gif/f31003.gif" alt="math formula" hspace="5" align="middle" width="190" height="24" /></td>
+
+          <td>los números naturales,</td>
+        </tr>
+
+        <tr>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><em>(F2)</em></td>
+
+          <td>
+          <img src="k3/gif/f31004.gif" alt="math formula" hspace="5" align="middle" width="263" height="29" /></td>
+
+          <td>una sucesión &quot;alternante&quot; simple,</td>
+        </tr>
+
+        <tr>
+          <td><em>(F3)</em></td>
+
+          <td>
+          <img src="k3/gif/f31005.gif" alt="math formula" hspace="5" align="middle" width="174" height="29" /></td>
+
+          <td>los números naturales inversos, la llamada sucesión &quot;armónica&quot;,</td>
+        </tr>
+
+        <tr>
+          <td><em>(F4)</em></td>
+
+          <td>
+          <img src="k3/gif/f31006.gif" alt="math formula" hspace="5" align="middle" width="166" height="29" /></td>
+
+          <td>los factoriales inversos,</td>
+        </tr>
+
+        <tr>
+          <td><em>(F5)</em></td>
+
+          <td>
+          <img src="k3/gif/f31007.gif" alt="math formula" hspace="5" align="middle" width="178" height="39" /></td>
+
+          <td>una sucesión de de fracciones y</td>
+        </tr>
+
+        <tr>
+          <td><em>(F6)</em></td>
+
+          <td>
+          <img src="k3/gif/f31008.gif" alt="math formula" hspace="5" align="middle" width="191" height="28" />, 
+          <img src="k3/gif/f31009.gif" alt="math formula" hspace="5" align="middle" width="40" height="22" /></td>
+
+          <td>la sucesión &quot;geométrica&quot;.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a  href="#310b1s">Nota: interés compuesto</a>
+    </div><br />
+    Para darnos una primera clara idea acerca de estas sucesiones, 
+    representamos gráficamente sobre un sistema coordenado cartesiano plano al 
+    miembro de la sucesión 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" /> (en 
+    la dirección 2) contra números naturales equidistantes 
+    <img src="eq/n.gif" alt="math formula" hspace="5" align="bottom" width="9" height="8" /> (en 
+    la dirección 1):</div>
+
+  <div class="c1">
+    <p>&nbsp;&nbsp;<img src="k3/gif/b3101s.gif" alt="math formula" width="500" height="404" /> 
+    <img src="k3/gif/b3102s.gif" alt="math formula" width="530" height="436" /><br clear="all" />
+    <span class="bild">Figuras 3.1: Ilustración de los ejemplos de sucesiones 
+    sobre los números naturales y de la sucesión geométrica (F6) para q=2 y 
+    q=1/2</span></p>
+  </div>
+
+  <div class="c3">
+    <p>También, la suma, diferencia o el producto de dos sucesiones es 
+    nuevamente una sucesión. Por ejemplo, la sucesión ejemplo (F5) con 
+    <img src="k3/gif/f31016.gif" alt="math formula" hspace="5" align="middle" width="206" height="29" /> 
+    es la diferencia de la sucesión trivial 
+    <img src="k3/gif/f31017.gif" alt="math formula" hspace="5" align="middle" width="129" height="24" />, 
+    que sólo contiene unos, y la sucesión armónica&nbsp; (F3), excepto su primer 
+    miembro.</p>
+
+    <p>La multiplicación término a término de las sucesiones de muestra (F2) y (F3) 
+    conduce a una nueva sucesión</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F7)</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>
+          <img src="k3/gif/f31018.gif" alt="math formula" hspace="5" align="middle" width="220" height="39" /></td>
+
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;la sucesión &quot;armónica&quot; alternante.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>De la multiplicación término a término de la sucesión armónica (F3) 
+    consigo mismo es nuevamente una sucesión:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F8)</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>
+          <img src="k3/gif/f31019.gif" alt="math formula" hspace="5" align="middle" width="163" height="29" /></td>
+
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;la sucesión de los cuadrados 
+          inversos de los números naturales.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>La multiplicación término a término de las sucesiones de muestra (F1) y (F6) 
+    da una nueva sucesión</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F9)</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>
+          <img src="k3/gif/f31020.gif" alt="math formula" hspace="5" align="middle" width="295" height="28" /></td>
+
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;una sucesión geométrica cambiada.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Más tarde nos preocuparemos de una sucesión más complicada:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><em>(F10)</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          <td>
+          <img src="k3/gif/f31021.gif" alt="math formula" hspace="5" align="middle" width="228" height="29" /></td>
+
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;, &nbsp;la llamada sucesión exponencial.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Ejercicio 3.1:</p>
+
+            <p>Ilustre también estos otros ejemplos por medio de una
+            <a  href="#310l0101s">representación gráfica</a>.<br />
+            Proyecte los puntos sobre los dos ejes.</p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <b>
+    <br />
+
+    </b>
+
+    <p>Nos interesan<b> </b>particularmente<b> tres propiedades</b> de las 
+    sucesiones: finitud, monotonía y convergencia:</p>
+  </div>
+</body>
+</html>

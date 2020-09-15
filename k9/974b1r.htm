@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих ( Дополнение )</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c2 {margin-left: 2em}
+  p.c1 {font-weight: bold}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <p class="c1">Формула для вычисления детерминанта:</p>
+
+  <p>Выполняя различные преобразования, Вы не раз будете использовать следующую</p>
+
+  <div class="c2">
+    <table border="2" class="satzrand" cellpadding="10">
+      <tr>
+        <td class="satz">
+          <p><em>формулу для вычисления детерминанта:</em> 
+          <img src="k9/gif/f97411.gif" alt="math formula" hspace="5" align="middle" /></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+
+  <p>. Данное отношение выглядит сложнее, чем оно есть на самом деле. Нам бы хотелось вкратце показать, как оно получается:</p>
+
+  <p>Для этого мы рассматриваем произвольную 
+  <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" />-матрицу и образуем:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97413.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p>Мы здесь подставили для символа Леви-Чивиты его представление через детерминант, помня при этом о суммировании по 
+  <img src="eq/k.gif" alt="math formula" hspace="5" align="bottom" />, 
+  <img src="eq/l.gif" alt="math formula" hspace="5" align="bottom" /> и 
+  <img src="eq/m.gif" alt="math formula" hspace="5" align="bottom" />. Так как 
+  <a href="#923b2d" >детерминанты</a> являются однородными по своим рядам, мы умножаем первую строку детерминанта на первый сомножитель 
+  <img src="k9/gif/f97417.gif" alt="math formula" hspace="5" align="middle" />, вторую - на второй сомножитель 
+  <img src="k9/gif/f97418.gif" alt="math formula" hspace="5" align="middle" />, а третью - на третий сомножитель 
+  <img src="k9/gif/f97419.gif" alt="math formula" hspace="5" align="middle" />. Затем производим операции сложения во всех девяти элементах матрицы:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97420.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p>Теперь искусственно введём суммирования с соответвующими символами Кронекера (что не меняет результата) и представим нашу матрицу в виде произведения двух других матриц. В результате мы получим детерминант произведения двух матриц:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97421.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p> 
+  <a href="#923b2r" >Детерминант</a> произведения матриц равен произведению детерминант обоих сомножителей, так что</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97422.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p>Таким образом мы получили желаемый результат, который Вы часто будете использовать.</p>
+
+  <p>Такая же процедура может быть проведена также и для транспонированной матрицы, поэтому формула для вычисления детерминанта часто записывается также в следующей форме:</p>
+
+  <div class="c2">
+    <img src="k9/gif/f97423.gif" alt="math formula" hspace="5" align="middle" />
+  </div>
+  <br />
+
+  <p>Нашу формулу для вычисления детерминанта 
+  <img src="k9/gif/f97424.gif" alt="math formula" hspace="5" align="middle" /> можно рассмотреть и с другой точки зрения: символ Леви-Чивиты может быть рассмотрен как величина с тремя индексами, т.е. как <em>тензор третьего ранга</em>, а левая сторона нашей формулы - как 
+  <img src="k9/gif/f97425.gif" alt="math formula" hspace="5" align="middle" />, т.е. как представление 27 составляющих тензора в измененной системе координат: для каждого показателя степени одна матрица преобразования. С данной точки зрения, выражение 
+  <img src="k9/gif/f97427.gif" alt="math formula" hspace="5" align="middle" /> означает инвариантность относительно вращений отдельных компонент тензора, т.е. 
+  <img src="k9/gif/f97428.gif" alt="math formula" hspace="5" align="middle" /> единицы и нули остаются неизменными в каждой системе координат; к этому от 
+  <img src="k9/gif/f97429.gif" alt="math formula" hspace="5" align="middle" /> добавляется еще и знак минуса при отражениях, таким образом речь здесь идет о псевдотензоре. В соответствии с этим Вы можете встретить "абсолютно антисимметричный по отношению к перестановке любых двух индексов символ Леви-Чивиты" также под именем <em>"численно-инвариантного относительно вращений псевдотензора третьего ранга"</em>.</p>
+
+  <p><a href="javascript:history.back()">Назад</a></p>
+</body>
+</html>

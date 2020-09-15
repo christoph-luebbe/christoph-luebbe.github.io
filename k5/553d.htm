@@ -1,0 +1,683 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>5 Differentiation</h2>
+
+    <h3>5.5 Das Handwerk des Differenzierens</h3>
+
+    <h4>5.5.3 Ketten- und Umkehrfunktionsregel</h4>
+  </div>
+
+  <div class="c4">
+    <p>Um die in der Physik auftretenden Funktionen zu differenzieren, brauchen wir, wie man schon aus den Blanks in der TABELLE sieht, zu diesen einfachen meist aus der Schule bekannten Regeln <em>zwei weitere Differentiationsregeln</em>:</p>
+
+    <p>Bei der Differentiation mittelbarer Funktionen hilft uns die <em>Kettenregel</em>: Sie gibt uns den Differentialquotienten einer verketteten Funktion <img src="k5/gif/f55301.gif" alt="math formula" hspace="5" align="middle" width="80" height="24" /> aus den Differentialquotienten der eingesetzten "inneren" Funktion <img src="eq/ygfvx.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> und der "äußeren" Funktion <img src="k5/gif/f55303.gif" alt="math formula" hspace="5" align="middle" width="57" height="24" />, in die eingesetzt wurde mit <img src="k5/gif/f55304.gif" alt="math formula" hspace="5" align="middle" width="64" height="22" />. Mit den Bezeichnungen von Leibniz erhalten wir das Produkt aus der sogenannten "äußeren" <img src="k5/gif/f55305.gif" alt="math formula" hspace="5" align="middle" width="14" height="30" /> und der "inneren" Ableitung <img src="k5/gif/f55306.gif" alt="math formula" hspace="5" align="middle" width="14" height="32" />:</p>
+
+    <div class="c2">
+      <em>Kettenregel</em>: <img src="k5/gif/f55307.gif" alt="math formula" hspace="5" align="middle" width="224" height="33" />
+    </div><br />
+    <br />
+
+    <p>in Leibniz-Schreibweise oder in Lagrange-Schreibweise:</p>
+
+    <div class="c2">
+      <img src="k5/gif/f55308.gif" alt="math formula" hspace="5" align="middle" width="163" height="26" />.
+    </div><br />
+    <br />
+
+    <p>Nachdem wir mit dem Begriff der <a href="#520b2d" >Differentiale</a> vertraut sind, erscheint uns dieses Resultat als Trivialität, da einfach mit <img src="k5/gif/f55309.gif" alt="math formula" hspace="5d" align="middle" width="16d" height="24d" /> erweitert wurde. Dennoch wollen wir den <em>Beweis</em> kurz skizzieren zur Demonstration der Vorteile der Differentiale, mit deren Hilfe er nämlich besonders einfach wird:</p>
+
+    <p>Zuerst für die "innere" Funktion <img src="k5/gif/f55310.gif" alt="math formula" hspace="5" align="middle" width="198" height="26" /> mit <img src="k5/gif/f55311.gif" alt="math formula" hspace="5" align="middle" width="160" height="24" />,<br />
+    dann für die "äußere" Funktion <img src="k5/gif/f55312.gif" alt="math formula" hspace="5" align="middle" width="192" height="26" /> mit <img src="k5/gif/f55313.gif" alt="math formula" hspace="5" align="middle" width="157" height="28" />,<br />
+    nach Einsetzen ergibt dies: <img src="k5/gif/f55314.gif" alt="math formula" hspace="5" align="middle" width="413" height="26" />, was nach Division durch das Differential <img src="k5/gif/f55314b.gif" alt="math formula" hspace="5" align="middle" width="18" height="24" /> im Grenzwert übergeht in:</p>
+
+    <div class="c2">
+      <img src="k5/gif/f55315.gif" alt="math formula" hspace="5" align="middle" width="369" height="32" />.
+    </div><br />
+    <br />
+
+    <p>Folgendes <em>Beispiel</em> illustriert die Vorteile der Leibnizschen Schreibweise:<br />
+    <br />
+    Gesucht werde die erste Ableitung von <img src="k5/gif/f55316.gif" alt="math formula" hspace="5" align="middle" width="118" height="28" /> für <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" />:</p>
+
+    <div class="c2">
+      <img src="k5/gif/f55317.gif" alt="math formula" hspace="5" align="middle" width="261" height="34" /> <img src="k5/gif/f55318.gif" alt="math formula" hspace="5" align="middle" width="107" height="32" />nach der Kettenregel, <img src="k5/gif/f55319.gif" alt="math formula" hspace="5" align="middle" width="302" height="36" />,
+    </div><br />
+    <br />
+
+    <p>denn <img src="k5/gif/f55320.gif" alt="math formula" hspace="5" align="middle" width="135" height="24" /> mit <img src="k5/gif/f55321.gif" alt="math formula" hspace="5" align="middle" width="109" height="32" />, <img src="k5/gif/f55322.gif" alt="math formula" hspace="5" align="middle" width="121" height="28" /> mit <img src="k5/gif/f55323.gif" alt="math formula" hspace="5" align="middle" width="71" height="32" /> und <img src="k5/gif/f55324.gif" alt="math formula" hspace="5" align="middle" width="98" height="28" /> mit <img src="k5/gif/f55325.gif" alt="math formula" hspace="5" align="middle" width="74" height="32" />.</p>
+
+    <p>Ein weiteres Beispiel ist die</p>
+
+    <div class="c2">
+      <em>allgemeine Exponentialfunktion:</em> 
+      <img src="k5/gif/f55326.gif" alt="math formula" hspace="5" align="middle" width="92" height="26" />
+    </div><br />
+    <br />
+
+    <p>Beweis mit 
+    <img src="k5/gif/f55327.gif" alt="math formula" hspace="5" align="middle" width="69" height="24" />: 
+    <img src="k5/gif/f55328.gif" alt="math formula" hspace="5" align="middle" width="294" height="32" /> 
+    <img src="k5/gif/f55328b.gif" alt="math formula" hspace="5" align="middle" width="119" height="13" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgaben 5.3:</b> Kettenregel</p>
+
+            <p>Berechnen Sie folgende Differentialquotienten nach der Kettenregel:</p>
+
+            <table border="0">
+              <tr>
+                <td>a) &nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k5/gif/f55329.gif" alt="math formula" hspace="5" align="middle" width="158" height="26" /> <a href="#553l0301d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>b) &nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k5/gif/f55330.gif" alt="math formula" hspace="5" align="middle" width="54" height="28" /> <a href="#553l0302d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>c) &nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k5/gif/f55331.gif" alt="math formula" hspace="5" align="middle" width="54" height="30" /> <a href="#553l0303d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>d) &nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k5/gif/f55332.gif" alt="math formula" hspace="5" align="middle" width="41" height="24" /> <a href="#553l0304d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>e) &nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k5/gif/f55333.gif" alt="math formula" hspace="5" align="middle" width="80" height="28" /> <a href="#553l0305d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>f) &nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k5/gif/f55334.gif" alt="math formula" hspace="5" align="middle" width="54" height="43" /> <a href="#553l0306d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Schließlich brauchen wir noch die <em>Umkehrfunktions-Regel</em> für den Differentialquotienten der <a href="#480d">Umkehrfunktion</a> <img src="k5/gif/f55335.gif" alt="math formula" hspace="5d" align="middle" width="76d" height="28d" /> mit <img src="k5/gif/f55336.gif" alt="math formula" hspace="5d" align="middle" width="50d" height="22d" /> einer differenzierbaren eineindeutigen Funktion <img src="eq/ygfvx.gif" alt="math formula" hspace="5d" align="middle" width="59d" height="24d" /> mit <img src="k5/gif/f55338.gif" alt="math formula" hspace="5d" align="middle" width="49d" height="22d" />, deren Differentialquotient <img src="k5/gif/f55339.gif" alt="math formula" hspace="5d" align="middle" width="128d" height="26d" /> bekannt ist und im ganzen <img src="eq/d_f.gif" alt="math formula" hspace="5d" align="middle" width="20d" height="22d" /> nicht verschwindet:</p>
+
+    <div class="c2">
+      <em>Umkehrfunktionsregel:</em> <img src="k5/gif/f55341.gif" alt="math formula" hspace="5" align="middle" width="65" height="35" /> &nbsp;&nbsp;&nbsp;für&nbsp;&nbsp; <img src="k5/gif/f55342.gif" alt="math formula" hspace="5" align="middle" width="58" height="32" />.
+    </div><br />
+    <br />
+
+    <p>Wir wollen nur diese in der Leibnizschen Schreibweise suggestiv einfache und vom Standpunkt der Differentiale triviale Formel herleiten: Dazu bilden wir die Ableitung von <img src="k5/gif/f55343.gif" alt="math formula" hspace="5" align="middle" width="99" height="28" /> nach <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> nach der Kettenregel:</p>
+
+    <div class="c2">
+      <img src="k5/gif/f55344.gif" alt="math formula" hspace="5" align="middle" width="351" height="33" />
+    </div>und haben damit nach Division durch <img src="k5/gif/f55345.gif" alt="math formula" hspace="5" align="middle" width="45" height="32" /> das Ergebnis.<br />
+    <br />
+
+    <p>Mit diesem Vorrat an Regeln können wir nun alle gewünschten Ableitungen berechnen. Die meisten Beweise finden Sie in Schubladen:</p>
+
+    <p>Zunächst die</p>
+
+    <div class="c2">
+      <em>Wurzeln:</em> <img src="k5/gif/f55346.gif" alt="math formula" hspace="5" align="middle" width="100" height="31" /> für <img src="k5/gif/f55346b.gif" alt="math formula" hspace="5" align="middle" width="38" height="23" />: <img src="k5/gif/f55346c.gif" alt="math formula" hspace="5" align="middle" width="180" height="31" />
+    </div><br />
+    <br />
+
+    <p>als Umkehrfunktion von <img src="k5/gif/f55347.gif" alt="math formula" hspace="5" align="middle" width="50" height="23" /> für <img src="k5/gif/f55348.gif" alt="math formula" hspace="5" align="middle" width="38" height="23" />, denn <img src="k5/gif/f55349.gif" alt="math formula" hspace="5" align="middle" width="495" height="29" />, d.h. unsere <a href="#551d">Potenzregel (*)</a> gilt auch für reziproke Exponenten.</p>
+
+    <p>Dann allgemein für eine</p>
+
+    <div class="c2">
+      <em>rationale Potenz:</em> <img src="k5/gif/f55351.gif" alt="math formula" hspace="5" align="bottom" width="50" height="15" /> für <img src="eq/xgr0.gif" alt="math formula" hspace="5" align="middle" width="38" height="23" />: <img src="k5/gif/f55353.gif" alt="math formula" hspace="5" align="middle" width="113" height="29" />
+    </div><br />
+    <br />
+
+    <p>D.h. die <a href="#551d">Potenzregel (*)</a> gilt auch für beliebige rationale Exponenten.</p>
+
+    <div class="c2">
+      <a href="#553b1d" >Beweis</a>
+    </div><br />
+    <br />
+
+    <p>Dann den</p>
+
+    <div class="c2">
+      <em>natürlichen Logarithmus:</em> <img src="k5/gif/f55356.gif" alt="math formula" hspace="5" align="middle" width="54" height="24" /> für <img src="eq/xgr0.gif" alt="math formula" hspace="5" align="middle" width="38" height="23" />: <img src="k5/gif/f55357.gif" alt="math formula" hspace="5" align="middle" width="73" height="35" /> für <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" />
+    </div><br />
+    <br />
+
+    <p>als Umkehrfunktion der Exponentialfunktion <img src="k5/gif/f55358.gif" alt="math formula" hspace="5" align="bottom" width="45" height="11" /> für <img src="k5/gif/f55359.gif" alt="math formula" hspace="5" align="middle" width="40" height="22" />.</p>
+
+    <div class="c2">
+      <a href="#553b2d" >Beweis</a>
+    </div><br />
+    <br />
+
+    <p>Es gilt sogar: <img src="k5/gif/f55361.gif" alt="math formula" hspace="5" align="middle" width="82" height="35" />. Denn <img src="k5/gif/f55362.gif" alt="math formula" hspace="5" align="middle" width="440" height="26" /> für <img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" />.</p>
+
+    <p>Dann betrachten wir die</p>
+
+    <div class="c2">
+      <em>allgemeine Potenz:</em> <img src="k5/gif/f55363.gif" alt="math formula" hspace="5" align="bottom" width="103" height="15" /> mit <img src="eq/rer.gif" alt="math formula" hspace="5" align="middle" width="39" height="22" />: <img src="k5/gif/f55364.gif" alt="math formula" hspace="5" align="middle" width="91" height="28" />
+    </div><br />
+    <br />
+
+    <p>D.h. unsere <a href="#551d">Potenzregel (*)</a> gilt universell auch für beliebige reelle Exponenten.</p>
+
+    <div class="c2">
+      <a href="#553b3d" >Beweis</a>
+    </div><br />
+    <br />
+
+    <p>Auch für den</p>
+
+    <div class="c2">
+      <em>allgemeinen Logarithmus:</em> <img src="k5/gif/f55368.gif" alt="math formula" hspace="5" align="middle" width="65" height="24" /> für <img src="eq/xgr0.gif" alt="math formula" hspace="5" align="middle" width="38" height="23" />: <img src="k5/gif/f55369.gif" alt="math formula" hspace="5" align="middle" width="110" height="35" />
+    </div><br />
+    <br />
+
+    <p>zu einer beliebigen reellen Basis <img src="k5/gif/f55370.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" /> erhalten wir jetzt die Ableitung, und zwar als Umkehrfunktion der allgemeinen Exponentialfunktion <img src="k5/gif/f55371.gif" alt="math formula" hspace="5" align="bottom" width="44" height="13" />:</p>
+
+    <div class="c2">
+      <a href="#553b4d" >Beweis</a>
+    </div><br />
+    <br />
+
+    <p>Wir schließen diese auch für das übernächste Kapitel noch wichtige Liste der Differentialquotienten mit den zyklometrischen Funktionen und den Area-Funktionen ab:</p>
+
+    <p>Für den</p>
+
+    <div class="c2">
+      <em>Arcus tangens</em> für <img src="k5/gif/f55373.gif" alt="math formula" hspace="5" align="middle" width="161" height="24" />:<img src="k5/gif/f55374.gif" alt="math formula" hspace="5" align="middle" width="139" height="35" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#553b5d" >Beweis</a>
+    </div><br />
+    <br />
+
+    <p>Analog für den</p>
+
+    <div class="c2">
+      <em>Arcus cotangens</em> für <img src="k5/gif/f55378.gif" alt="math formula" hspace="5" align="middle" width="115" height="23" />: <img src="k5/gif/f55379.gif" alt="math formula" hspace="5" align="middle" width="151" height="35" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 5.4:</p>
+
+            <p>Beweisen Sie das mit der Umkehrfunktion: <img src="k5/gif/f55380.gif" alt="math formula" hspace="5" align="middle" width="62" height="21" />. <a href="#553l0401d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Für den</p>
+
+    <div class="c2">
+      <em>Arcus sinus</em> für <img src="k5/gif/f55381.gif" alt="math formula" hspace="5" align="middle" width="158" height="24" />: <img src="k5/gif/f55382.gif" alt="math formula" hspace="5" align="middle" width="152" height="36" /> für <img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#553b6d" >Beweis</a>
+    </div><br />
+    <br />
+
+    <p>Analog für</p>
+
+    <div class="c2">
+      <em>Arcus cosinus</em> für <img src="k5/gif/f55385.gif" alt="math formula" hspace="5" align="middle" width="114" height="23" />: <img src="k5/gif/f55386.gif" alt="math formula" hspace="5" align="middle" width="178" height="36" /> für <img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 5.5:</p>
+
+            <p>Beweisen Sie das mit der Umkehrfunktion: <img src="k5/gif/f55388.gif" alt="math formula" hspace="5" align="middle" width="62" height="17" />. <a href="#553l0501d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Die <em>Area-Funktionen</em>, die Umkehrfunktionen der Hyperbel-Funktionen, vervollständigen unsere Differentiationstabelle:</p>
+
+    <p>Für den</p>
+
+    <div class="c2">
+      <em>Area tangens hyperbolicus:</em> <img src="k5/gif/f55389.gif" alt="math formula" hspace="5" align="middle" width="142" height="35" /> für <img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" />
+    </div><br />
+    <br />
+
+    <p>und den</p>
+
+    <div class="c2">
+      <em>Area cotangens hyperbolicus:</em> <img src="k5/gif/f55391.gif" alt="math formula" hspace="5" align="middle" width="153" height="35" /> für <img src="k5/gif/f55392.gif" alt="math formula" hspace="5" align="middle" width="45" height="24" />.
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 5.6:</p>
+
+            <p>Beweisen Sie das mit der Umkehrfunktion: <img src="k5/gif/f55393.gif" alt="math formula" hspace="5" align="middle" width="73" height="24" />, bzw. mit <img src="k5/gif/f55394.gif" alt="math formula" hspace="5" align="middle" width="71" height="24" />. <a href="#553l0601d" >Lösung (1)</a> <a href="#553l0602d" >(2)</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Für den</p>
+
+    <div class="c2">
+      <em>Area sinus hyperbolicus:</em> <img src="k5/gif/f55395.gif" alt="math formula" hspace="5" align="middle" width="167" height="36" /> für <img src="k5/gif/f55396.gif" alt="math formula" hspace="5" align="middle" width="40" height="22" />
+    </div><br />
+    <br />
+
+    <p>und</p>
+
+    <div class="c2">
+      <em>Area cosinus hyperbolicus:</em> <img src="k5/gif/f55397.gif" alt="math formula" hspace="5" align="middle" width="87" height="24" />: <img src="k5/gif/f55398.gif" alt="math formula" hspace="5" align="middle" width="169" height="36" /> für <img src="k5/gif/f55399.gif" alt="math formula" hspace="5" align="middle" width="37" height="23" />.
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Aufgabe 5.7:</p>
+
+            <p>Beweisen Sie das mit der Umkehrfunktion: <img src="k5/gif/f553100.gif" alt="math formula" hspace="5" align="middle" width="69" height="24" />, bzw. mit <img src="k5/gif/f553101.gif" alt="math formula" hspace="5" align="middle" width="103" height="24" />, eineindeutig nur für <img src="k5/gif/f553102.gif" alt="math formula" hspace="5" align="middle" width="38" height="23" />. <a href="#553l0701d" >Lösung (1)</a> <a href="#553l0702d" >(2)</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Alle gewonnenen Ergebnisse finden Sie in der großen Differentiationtabelle vereint, auf die 
+    wir später noch oft zurückkommen werden:</p>
+
+    <div class="c1">
+      <table border="2" cellpadding="6">
+        
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td colspan="4" align="center">TABELLE&nbsp;&nbsp; ZUR&nbsp;&nbsp; DIFFERENTIATION</td>
+        </tr>
+
+        <tr>
+          <td>Zeile</td>
+
+          <td><img src="k5/gif/f55234.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" /></td>
+
+          <td><img src="k5/gif/f55235.gif" alt="math formula" hspace="5" align="middle" width="138" height="26" /></td>
+
+          <td>Bemerkungen:</td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+
+          <td><img src="k7/gif/f74314.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+
+          <td><img src="k7/gif/f74315.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74316.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/rer.gif" alt="math formula" hspace="5" align="middle" width="39" height="22" /></td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+
+          <td>&nbsp;</td>
+
+          <td>&nbsp;</td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+
+          <td><img src="eq/sinx.gif" alt="math formula" hspace="5" align="bottom" width="31" height="12" /></td>
+
+          <td><img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" width="33" height="9" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+
+          <td><img src="eq/cosx.gif" alt="math formula" hspace="5" align="bottom" width="33" height="9" /></td>
+
+          <td><img src="k7/gif/f74320.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+
+          <td><img src="eq/tanx.gif" alt="math formula" hspace="5" align="bottom" width="35" height="11" /></td>
+
+          <td><img src="k7/gif/f74321.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74322.gif" alt="math formula" hspace="5" align="middle" />,<img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+
+          <td><img src="k7/gif/f74324.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74325.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74326.gif" alt="math formula" hspace="5" align="middle" />,<img src="k7/gif/f74323.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>8</td>
+
+          <td><img src="k7/gif/f74328.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74329.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" /></td>
+        </tr>
+
+        <tr>
+          <td>9</td>
+
+          <td><img src="k7/gif/f74330.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74331.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" /></td>
+        </tr>
+
+        <tr>
+          <td>10</td>
+
+          <td><img src="k7/gif/f74332.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74333.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>11</td>
+
+          <td><img src="k7/gif/f74334.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74335.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>12</td>
+
+          <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /></td>
+
+          <td><img src="eq/ehx.gif" alt="math formula" hspace="5" align="bottom" width="15" height="11" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>13</td>
+
+          <td><img src="k7/gif/f74336.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74337.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74338.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>14</td>
+
+          <td><img src="k7/gif/f74339.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74340.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" /></td>
+        </tr>
+
+        <tr>
+          <td>15</td>
+
+          <td><img src="k7/gif/f74341.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74342.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" />,<img src="k7/gif/f74343.gif" alt="math formula" hspace="5" align="middle" />,<img src="k7/gif/f74344.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>16</td>
+
+          <td><img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>17</td>
+
+          <td><img src="eq/coshx.gif" alt="math formula" hspace="5" align="bottom" width="42" height="13" /></td>
+
+          <td><img src="k7/gif/f74345.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>18</td>
+
+          <td><img src="k7/gif/f74347.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74348.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>19</td>
+
+          <td><img src="k7/gif/f74349.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74350.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/xug0.gif" alt="math formula" hspace="5" align="middle" width="38" height="24" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+
+        <tr>
+          <td>20</td>
+
+          <td><img src="k7/gif/f74351.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74352.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>21</td>
+
+          <td><img src="k7/gif/f74353.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74354.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74355.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td>22</td>
+
+          <td><img src="k7/gif/f74356.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74357.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="eq/bxk1.gif" alt="math formula" hspace="5" align="middle" width="47" height="23" /></td>
+        </tr>
+
+        <tr>
+          <td>23</td>
+
+          <td><img src="k7/gif/f74358.gif" alt="math formula" hspace="5" align="bottom" /></td>
+
+          <td><img src="k7/gif/f74359.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td><img src="k7/gif/f74360.gif" alt="math formula" hspace="5" align="middle" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"></td>
+        </tr>
+      </table>
+    </div><br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 5.8:</b> Differentiationsbeispiele</p>
+
+            <p>Bestimmen Sie die Differentialquotienten für folgende Funktionen <img src="eq/ygfvx.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> mit Konstanten <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />, <img src="eq/b.gif" alt="math formula" hspace="5" align="bottom" width="7" height="13" />, <img src="eq/c.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> und <img src="eq/d.gif" alt="math formula" hspace="5" align="bottom" width="9" height="13" />:</p>
+
+            <table border="0">
+              <tr>
+                <td>a) <img src="k5/gif/f553105.gif" alt="math formula" hspace="5" align="middle" width="85" height="30" /> <a href="#553l0801d" >Lösung</a></td>
+
+                <td>b) <img src="k5/gif/f553106.gif" alt="math formula" hspace="5" align="middle" width="122" height="28" /> <a href="#553l0802d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>c) <img src="k5/gif/f553107.gif" alt="math formula" hspace="5" align="middle" width="79" height="30" /> <a href="#553l0803d" >Lösung</a></td>
+
+                <td>d) <img src="k5/gif/f553108.gif" alt="math formula" hspace="5" align="middle" width="84" height="28" /> <a href="#553l0804d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>e) <img src="k5/gif/f553109.gif" alt="math formula" hspace="5" align="middle" width="98" height="30" /> <a href="#553l0805d" >Lösung</a></td>
+
+                <td>f) <img src="k5/gif/f553110.gif" alt="math formula" hspace="5" align="middle" width="121" height="28" /> <a href="#553l0806d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>g) <img src="k5/gif/f553111.gif" alt="math formula" hspace="5" align="middle" width="184" height="24" /> <a href="#553l0807d" >Lösung</a></td>
+
+                <td>h) <img src="k5/gif/f553112.gif" alt="math formula" hspace="5" align="middle" width="84" height="29" /> <a href="#553l0808d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>i) <img src="k5/gif/f553113.gif" alt="math formula" hspace="5" align="middle" width="105" height="44" /> <a href="#553l0809d" >Lösung</a></td>
+
+                <td>j) <img src="k5/gif/f553114.gif" alt="math formula" hspace="5" align="middle" width="304" height="29" /> <a href="#553l0810d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+
+            <p>Berechnen Sie die ersten fünf Ableitungen folgender Funktionen <img src="eq/fvx.gif" alt="math formula" hspace="5" align="middle" width="31" height="24" />, die wir im nächsten Kapitel brauchen werden:</p>
+
+            <table border="0">
+              <tr>
+                <td>k) <img src="k5/gif/f553115.gif" alt="math formula" hspace="5" align="middle" width="83" height="24" /> <a href="#553l0811d" >Lösung</a></td>
+
+                <td>l) <img src="k5/gif/f553116.gif" alt="math formula" hspace="5" align="middle" width="87" height="24" /> <a href="#553l0812d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td>m) <img src="k5/gif/f553117.gif" alt="math formula" hspace="5" align="middle" width="67" height="24" /> <a href="#553l0813d" >Lösung</a></td>
+
+                <td>n) <img src="k5/gif/f553118.gif" alt="math formula" hspace="5" align="middle" width="84" height="29" /> <a href="#553l0814d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

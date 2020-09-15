@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Векторы</h2>
+
+    <h3>9.5 Скалярное произведение и символ Кронекера</h3>
+
+    <h4>9.5.9 Разложение на составляющие</h4>
+  </div>
+
+  <div class="c3">
+    <p>Нам бы хотелось теперь понять, как рассчитывают скалярное произведение, когда оба вектора заданы в виде составляющих: 
+    <img src="k9/gif/f95901.gif" alt="math formula" hspace="5" align="middle" /> и 
+    <img src="k9/gif/f95902.gif" alt="math formula" hspace="5" align="middle" />: (также соответственно соглашению Эйнштейна о суммировании!)</p>
+
+    <div class="c2">
+      <img src="k9/gif/f95903.gif" alt="math formula" hspace="5" align="middle" />  причем суммируется как по 
+      <img src="eq/k.gif" alt="math formula" hspace="5" align="bottom" />, так и по 
+      <img src="eq/l.gif" alt="math formula" hspace="5" align="bottom" />  <br />
+      <img src="k9/gif/f95904.gif" alt="math formula" hspace="5" align="middle" /> по причине однородности скалярного произведения<br /> 
+      <img src="k9/gif/f95905.gif" alt="math formula" hspace="5" align="middle" /> из-за ортогональности базисных векторов<br /> 
+      <img src="k9/gif/f95906.gif" alt="math formula" hspace="5" align="middle" /> из-за символа Кронекера от суммы по 
+      <img src="eq/l.gif" alt="math formula" hspace="5" align="bottom" /> остается лишь член 
+      <img src="k9/gif/f95907.gif" alt="math formula" hspace="5" align="bottom" />. Поэтому, остается только <br />сумма по 
+      <img src="k9/gif/f95908.gif" alt="math formula" hspace="5" align="middle" />, т.е.
+    
+    </div>
+    <br />
+
+    <div class="c2">
+      <em>Разложение на составляющие</em>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+       
+      <img src="k9/gif/f95909.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.26:</b> Символ Кронекера</p>
+
+            <p>Выведите приведенную выше формулу подробно, путем явного перемножения скобок 
+            <img src="k9/gif/f95910.gif" alt="math formula" hspace="5" align="middle" /> не используя символ Кронекера - для того, чтобы в полной мере оценить, на сколько этот символ сокращает объем вычислений. 
+            <a href="#959l2601r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.27:</b> Ортонормированный базис</p>
+
+            <p>Образуют ли три вектора 
+            <img src="k9/gif/f95911.gif" alt="math formula" hspace="5" align="middle" />, 
+            <img src="k9/gif/f95912.gif" alt="math formula" hspace="5" align="middle" /> и 
+            <img src="k9/gif/f95913.gif" alt="math formula" hspace="5" align="middle" /> ортонормированный базис векторного пространства? 
+            <a href="#959l2701r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>В частности, для одного из трех базисных векторов мы получаем:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f95914.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <p>подробно со знаком суммы: 
+    <img src="k9/gif/f95915.gif" alt="math formula" hspace="5" align="middle" />, k-ая составляющая вектора 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" />, т.к. скалярное умножение на k-ный базовый вектор дает проекцию вектора на ось k. Из этого можно снова легко составить целый вектор 
+    <img src="eq/avekt.gif" alt="math formula" hspace="5" align="bottom" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f95916.gif" alt="math formula" hspace="5" align="middle" />
+    </div>
+    <br />
+
+    <div class="c2">
+      <a href="#959b1r" >Дополнение: Полнота</a>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.28:</b> Скалярное произведение</p>
+
+            <p>Определите скалярное произведение и длину проекций для обоих векторов: 
+            <img src="k9/gif/f95923.gif" alt="math formula" hspace="5" align="middle" /> и 
+            <img src="k9/gif/f95924.gif" alt="math formula" hspace="5" align="middle" /> 
+            <a href="#959l2801r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Задание 9.29:</b> Угол с осями координат:</p>
+
+            <p>Какой угол образует вектор 
+            <img src="k9/gif/f95925.gif" alt="math formula" hspace="5" align="middle" /> с осями координат? 
+            <a href="#959l2901r" >Ответ</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

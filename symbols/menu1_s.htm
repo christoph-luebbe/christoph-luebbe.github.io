@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1" />
+  <link rel="stylesheet" type="text/css" href="menu.css" />
+  <title>Curso de matemática preparatorio para el estudio de la física</title>
+  <script language="JavaScript" type="text/javascript">
+  //<![CDATA[
+  <!--
+                    function Switch(activeElement) {
+                      var tag_node, evalstr;
+                      
+                      if (document.getElementById(activeElement)) {
+                        tag_node = document.getElementById(activeElement);
+                        evalstr = tag_node.href;
+                      }  
+                      tag_node = getParentDiv(tag_node);
+                      while (tag_node) {
+                        tag_node.style.display = "block";
+                        tag_node = getParentDiv(tag_node);
+                      }
+                      eval(evalstr);
+                    } 
+                    
+                    function getParentDiv(node) {
+                      while (node.parentNode) {
+                        node = node.parentNode;
+                        if (node.tagName == "DIV") return node;
+                      }
+                    }
+                    
+                    function JumpTo(div_id, new_link, activeElement)
+                    {
+                      var tag_node, par_node;
+                      if (div_id != "") {
+                        tag_node = document.getElementById(div_id);
+                        tag_node.style.display="block";
+                        par_node = getParentDiv(tag_node);
+                        curr_node = document.getElementById(top.div_id);
+                        if (par_node != curr_node) {
+                          while ((curr_node) && (curr_node != par_node) && (curr_node != tag_node)) {
+                            curr_node.style.display = "none";
+                            curr_node = getParentDiv(curr_node);
+                          }
+                        }
+                        top.div_id = div_id;
+                      }
+                      
+                      if (new_link != "") {
+                        parent.frames[1].location.href=new_link+".htm";
+                        if (document.getElementById(activeElement)) document.getElementById
+				(activeElement).style.color="#FF0000";
+                        if (activeElement != top.activeElement) {
+                          if (document.getElementById(top.activeElement)) 
+				document.getElementById(top.activeElement).style.color="#0000FF";
+                          top.activeElement = activeElement;
+                        }  
+                      }  
+                      window.focus();
+                    }
+                  
+                        //-->
+  //]]>
+  </script>  
+</head>
+
+<body onload="Switch(top.activeElement)" class="menu" background="../gif/btn_mn1.gif">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+        <tr>
+        <td align="left" valign="middle">
+	
+	<a href="javascript:top.SwitchMenubar_s()">
+	<img src="gif/btn_up.gif" alt="small menu" border="0" align="top" width="20" height="20"/>
+	</a>
+	</td>
+        <td align="right" valign="middle" class="menu">
+	
+	<a href="javascript:top.SwitchMenu_e()">
+	<img src="gif/flag_e.bmp" alt="English Version" title="English Version" border="0" width="27" height="15"/>
+    </a>
+	
+	<a href="javascript:top.SwitchMenu_d()">
+	<img src="gif/flag_d.bmp" alt="German Version" title="German Version" border="0" width="27" height="15"/>
+	</a>
+	
+	<img src="gif/flag_s.bmp" alt="Spanish Version" title="Spanish Version" border="0" width="27" height="15"/>
+	
+	<a href="javascript:top.SwitchMenu_r()">
+	<img src="gif/flag_r.bmp" alt="Russian Version" title="Russian Version" border="0" width="27" height="15"/>
+	</a>
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</td>
+        </tr>
+          </table>
+
+    <div id="k0" class="menu hidden"></div>
+    <p>
+    <a href="javascript:JumpTo('k0','k0/000s','t000')" class="mlink1" id="t000">Titulo</a><br />
+    <a href="javascript:JumpTo('k0','k0/010s','t010')" class="mlink1" id="t010">Sumario</a><br />
+    <a href="javascript:JumpTo('k0','k0/020s','t020')" class="mlink1" id="t020">Índice por palabras</a><br />
+    <a href="javascript:JumpTo('k0','k0/030s','t030')" class="mlink1" id="t030">Prólogo</a>
+    </p>
+
+    <p><a href="javascript:JumpTo('k1','','')" class="mlink2" id="t100">1: MEDIR</a></p>
+    <div id="k1" class="menu hidden">
+      <ul>
+        <li><a href="javascript:JumpTo('k1','k1/110s','t110')" class="mlink1" id="t110">1.1: Métodos empíricos</a></li>
+        <li><a href="javascript:JumpTo('k1','k1/120s','t120')" class="mlink1" id="t120">1.2: Cantidades físicas</a></li>
+        <li><a href="javascript:JumpTo('k1','k1/130s','t130')" class="mlink1" id="t130">1.3: Unidades de medición</a></li>
+        <li><a href="javascript:JumpTo('k1','k1/140s','t140')" class="mlink1" id="t140">1.4: Órdenes de magnitud</a></li>
+      </ul>
+    </div>
+
+    <p><a href="javascript:JumpTo('k2','k2/200s','t200')" class="mlink1" id="t200">2: SIGNOS Y NÚMEROS</a></p>
+    <div id="k2" class="menu hidden">
+      <ul>
+        <li><a href="javascript:JumpTo('k2','k2/210s','t210')" class="mlink1" id="t210">2.1: Signos</a></li>
+        <li><a href="javascript:JumpTo('k22','k2/220s','t220')" class="mlink1" id="t220">2.2: Números</a>
+          <div id="k22" class="menu hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k22','k2/221s','t221')" class="mlink1" id="t221">2.2.1: Números naturales</a></li>
+              <li><a href="javascript:JumpTo('k22','k2/222s','t222')" class="mlink1" id="t222">2.2.2: Números enteros</a></li>
+              <li><a href="javascript:JumpTo('k22','k2/223s','t223')" class="mlink1" id="t223">2.2.3: Números racionales</a></li>
+              <li><a href="javascript:JumpTo('k22','k2/224s','t224')" class="mlink1" id="t224">2.2.4: Números reales</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <p><a href="javascript:JumpTo('k3','k3/300s','t300')" class="mlink1" id="t300">3: SUCESIONES Y SERIES</a></p>
+    <div id="k3" class="menu hidden">
+      <ul>
+        <li><a href="javascript:JumpTo('k3','k3/310s','t310')" class="mlink1" id="t310">3.1: Sucesiones</a></li>
+        <li><a href="javascript:JumpTo('k3','k3/320s','t320')" class="mlink1" id="t320">3.2: Cotas</a></li>
+        <li><a href="javascript:JumpTo('k3','k3/330s','t330')" class="mlink1" id="t330">3.3: Monotonía</a></li>
+        <li><a href="javascript:JumpTo('k3','k3/340s','t340')" class="mlink1" id="t340">3.4: Convergencia</a></li>
+        <li><a href="javascript:JumpTo('k3','k3/350s','t350')" class="mlink1" id="t350">3.5: Series</a></li>
+      </ul>
+    </div>
+
+    <p><a href="javascript:JumpTo('k4','')" class="mlink2" id="t400">4: FUNCIONES</a></p>
+    <div id="k4" class="menu hidden">
+      <ul>
+        <li><a href="javascript:JumpTo('k4','k4/410s','t410')" class="mlink1" id="t410">4.1: Función 
+      como relación input-output o mapeo</a></li>
+        <li><a href="javascript:JumpTo('k42','k4/420s','t420')" class="mlink1" id="t420">4.2: Funciones formación básica</a>
+          <div id="k42" class="menu hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k42','k4/421s','t421')" class="mlink1" id="t421">4.2.1: Funciones racionales</a></li>
+              <li><a href="javascript:JumpTo('k42','k4/422s','t422')" class="mlink1" id="t422">4.2.2: Funciones trigonométricas</a></li>
+              <li><a href="javascript:JumpTo('k42','k4/423s','t423')" class="mlink1" id="t423">4.2.3: Funciones exponenciales</a></li>
+              <li><a href="javascript:JumpTo('k42','k4/424s','t424')" class="mlink1" id="t424">4.2.4: Funciones con esquinas y saltos</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k4','k4/430s','t430')" class="mlink1" id="t430">4.3: Funciones implícitas</a></li>
+        <li><a href="javascript:JumpTo('k4','k4/440s','t440')" class="mlink1" id="t440">4.4: Simetría especular</a></li>
+        <li><a href="javascript:JumpTo('k4','k4/450s','t450')" class="mlink1" id="t450">4.5: Finitud</a></li>
+        <li><a href="javascript:JumpTo('k4','k4/460s','t460')" class="mlink1" id="t460">4.6: Monotonía</a></li>
+        <li><a href="javascript:JumpTo('k4','k4/470s','t470')" class="mlink1" id="t470">4.7: Biyección</a></li>
+        <li><a href="javascript:JumpTo('k48','k4/480s','t480')" class="mlink1" id="t480">4.8: Funciones inversas</a>
+          <div id="k48" class="menu hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k48','k4/481s','t481')" class="mlink1" id="t481">4.8.1: Funciones raíz</a></li>
+              <li><a href="javascript:JumpTo('k48','k4/482s','t482')" class="mlink1" id="t482">4.8.2: Funciones ciclométricas</a></li>
+              <li><a href="javascript:JumpTo('k48','k4/483s','t483')" class="mlink1" id="t483">4.8.3: Logaritmos</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k4','k4/490s','t490')" class="mlink1" id="t490">4.9: Valores extremos</a></li>
+        <li><a href="javascript:JumpTo('k4','k4/4100s','t4100')" class="mlink1" id="t4100">4.10: Continuidad</a></li>
+      </ul>
+    </div>
+
+    <p><a href="javascript:JumpTo('k5','k5/500s','t500')" class="mlink1" id="t500">5: DIFERENCIACIÓN</a></p>
+
+    <div id="k5" class="hidden">
+      <ul>
+        <li><a href="javascript:JumpTo('k5','k5/510s','t510')" class="mlink1" id="t510">5.1: Cociente de diferencias</a></li>
+        <li><a href="javascript:JumpTo('k5','k5/520s','t520')" class="mlink1" id="t520">5.2: Cociente diferencial</a></li>
+        <li><a href="javascript:JumpTo('k5','k5/530s','t530')" class="mlink1" id="t530">5.3: Diferenciabilidad</a></li>
+        <li><a href="javascript:JumpTo('k5','k5/540s','t540')" class="mlink1" id="t540">5.4: Derivadas superiores</a></li>
+        <li><a href="javascript:JumpTo('k55','k5/550s','t550')" class="mlink1" id="t550">5.5: El oficio de diferenciar</a>
+          <div id="k55" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k55','k5/551s','t551')" class="mlink1" id="t551">5.5.1: Cuatro ejemplos</a></li>
+              <li><a href="javascript:JumpTo('k55','k5/552s','t552')" class="mlink1" id="t552">5.5.2: Reglas de diferenciación simples</a></li>
+              <li><a href="javascript:JumpTo('k55','k5/553s','t553')" class="mlink1" id="t553">5.5.3: Reglas de la cadena y de la función inversa</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k5','k5/560s','t560')" class="mlink1" id="t560">5.6: Diferenciación numérica</a></li>
+        <li><a href="javascript:JumpTo('k5','k5/570s','t570')" class="mlink1" id="t570">5.7: 
+        Mirada a las ecuaciones diferenciales</a></li>
+      </ul>
+    </div>
+
+    <p><a href="javascript:JumpTo('k6','k6/600s','t600')" class="mlink1" id="t600">6: EXPANSIÓN DE TAYLOR</a></p>
+    <div id="k6" class="hidden">
+      <ul>
+        <li><a href="javascript:JumpTo('k6','k6/610s','t610')" class="mlink1" id="t610">6.1: Series de potencias</a></li>
+        <li><a href="javascript:JumpTo('k6','k6/620s','t620')" class="mlink1" id="t620">6.2: Series geométrica</a></li>
+        <li><a href="javascript:JumpTo('k6','k6/630s','t630')" class="mlink1" id="t630">6.3: Forma y univocidad</a></li>
+        <li><a href="javascript:JumpTo('k64','k6/640s','t640')" class="mlink1" id="t640">6.4: Ejemplos desde 
+        el conjunto básica</a>
+          <div id="k64" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k64','k6/641s','t641')" class="mlink1" id="t641">6.4.1: Funciones racionales</a></li>
+              <li><a href="javascript:JumpTo('k64','k6/642s','t642')" class="mlink1" id="t642">6.4.2: Funciones trigonométricas</a></li>
+              <li><a href="javascript:JumpTo('k64','k6/643s','t643')" class="mlink1" id="t643">6.4.3: Funciones exponenciales</a></li>
+              <li><a href="javascript:JumpTo('k64','k6/644s','t644')" class="mlink1" id="t644">6.4.4: Otras series de Taylor</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k6','k6/650s','t650')" class="mlink1" id="t650">6.5: Radio de convergencia</a></li>
+        <li><a href="javascript:JumpTo('k6','k6/660s','t660')" class="mlink1" id="t660">6.6: Reglas claras para el cálculo aproximación</a></li>
+        <li><a href="javascript:JumpTo('k6','k6/670s','t670')" class="mlink1" id="t670">6.7: 
+        Criterio de la convergencia: Resto</a></li>
+        <li><a href="javascript:JumpTo('k6','k6/680s','t680')" class="mlink1" id="t680">6.8: Expansión de Taylor alrededor de un punto arbitrario</a></li>
+      </ul>
+    </div>
+
+    <p><a href="javascript:JumpTo('k7','k7/700s','t700')" class="mlink1" id="t700">7: INTEGRACIÓN</a></p>
+    <div id="k7" class="hidden">
+      <ul>
+        <li><a href="javascript:JumpTo('k7','k7/710s','t710')" class="mlink1" id="t710">7.1: Trabajo</a></li>
+        <li><a href="javascript:JumpTo('k7','k7/720s','t720')" class="mlink1" id="t720">7.2: 
+        Área "bajo" una función "sobre" un intervalo</a></li>
+        <li><a href="javascript:JumpTo('k73','k7/730s','t730')" class="mlink1" id="t730">7.3: Propiedades de la integral de Riemann</a>
+          <div id="k73" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k73','k7/731s','t731')" class="mlink1" id="t731">7.3.1: Linealidad</a></li>
+              <li><a href="javascript:JumpTo('k73','k7/732s','t732')" class="mlink1" id="t732">7.3.2: Adición de intervalo</a></li>
+              <li><a href="javascript:JumpTo('k73','k7/733s','t733')" class="mlink1" id="t733">7.3.3: Desigualdades</a></li>
+              <li><a href="javascript:JumpTo('k73','k7/734s','t734')" class="mlink1" id="t734">7.3.4: Teorema del 
+              valor medio del cálculo de integrales</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k74','','')" class="mlink2" id="t740">7.4: Teorema fundamental del cálculo diferencial e integral</a>
+          <div id="k74" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k74','k7/741s','t741')" class="mlink1" id="t741">7.4.1: Integral indefinida</a></li>
+              <li><a href="javascript:JumpTo('k74','k7/742s','t742')" class="mlink1" id="t742">7.4.2: Diferenciación 
+          con respecto al límite superior</a></li>
+              <li><a href="javascript:JumpTo('k74','k7/743s','t743')" class="mlink1" id="t743">7.4.3: Integración 
+          sobre un cuociente diferencial</a></li>
+              <li><a href="javascript:JumpTo('k74','k7/744s','t744')" class="mlink1" id="t744">7.4.4: Función básica</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k75','k7/750s','t750')" class="mlink1" id="t750">7.5: El arte de 
+        la integración</a>
+          <div id="k75" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k75','k7/751s','t751')" class="mlink1" id="t751">7.5.1: Tabla de diferenciación hacia atrás</a></li>
+              <li><a href="javascript:JumpTo('k75','k7/752s','t752')" class="mlink1" id="t752">7.5.2: Partición lineal</a></li>
+              <li><a href="javascript:JumpTo('k75','k7/753s','t753')" class="mlink1" id="t753">7.5.3: Sustitución</a></li>
+              <li><a href="javascript:JumpTo('k75','k7/754s','t754')" class="mlink1" id="t754">7.5.4: Integración parcial</a></li>
+              <li><a href="javascript:JumpTo('k75','k7/755s','t755')" class="mlink1" id="t755">7.5.5: Otros "trucos" para integrar</a></li>
+              <li><a href="javascript:JumpTo('k75','k7/756s','t756')" class="mlink1" id="t756">7.5.6: Funciones 
+              definidas por integrales</a></li>
+              <li><a href="javascript:JumpTo('k75','k7/757s','t757')" class="mlink1" id="t757">7.5.7: Integración numérica</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><a href="javascript:JumpTo('k76','k7/760s','t760')" class="mlink1" id="t760">7.6: Integrales impropias</a>
+          <div id="k76" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k76','k7/761s','t761')" class="mlink1" id="t761">7.6.1: Intervalo de integración infinito</a></li>
+              <li><a href="javascript:JumpTo('k76','k7/762s','t762')" class="mlink1" id="t762">7.6.2: Integrando no acotado</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <p><a href="javascript:JumpTo('k8','','')" class="mlink2" id="t800">8: NÚMEROS COMPLEJOS</a></p>
+    <div id="k8" class="hidden">
+      <ul>
+        <li><a href="javascript:JumpTo('k81','','')" class="mlink2" id="t810">8.1: 
+        Unidad imaginaria y representaciones</a>
+          <div id="k81" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k81','k8/811s','t811')" class="mlink1" id="t811">8.1.1: Motivación</a></li>
+              <li><a href="javascript:JumpTo('k81','k8/812s','t812')" class="mlink1" id="t812">8.1.2: Unidad imaginaria</a></li>
+              <li><a href="javascript:JumpTo('k81','k8/813s','t813')" class="mlink1" id="t813">8.1.3: Definición de los números complejos</a></li>
+              <li><a href="javascript:JumpTo('k81','k8/814s','t814')" class="mlink1" id="t814">8.1.4: Plano complejo</a></li>
+              <li><a href="javascript:JumpTo('k81','k8/815s','t815')" class="mlink1" id="t815">8.1.5: Fórmula de Euler</a></li>
+              <li><a href="javascript:JumpTo('k81','k8/816s','t816')" class="mlink1" id="t816">8.1.6: Conjugación compleja</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k82','k8/820s','t820')" class="mlink1" id="t820">8.2: Reglas de cálculo de los números complejos</a>
+          <div id="k82" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k82','k8/821s','t821')" class="mlink1" id="t821">8.2.1: Grupo abeliano de la adición</a></li>
+              <li><a href="javascript:JumpTo('k82','k8/822s','t822')" class="mlink1" id="t822">8.2.2: Grupo abeliano de la multiplicación</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k83','','')" class="mlink2" id="t830">8.3: Funciones de una variable compleja</a>
+          <div id="k83" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k83','k8/831s','t831')" class="mlink1" id="t831">8.3.1: Definición</a></li>
+              <li><a href="javascript:JumpTo('k83','k8/832s','t832')" class="mlink1" id="t832">8.3.2: Valores límites y continuidad</a></li>
+              <li><a href="javascript:JumpTo('k83','k8/833s','t833')" class="mlink1" id="t833">8.3.3: Representación gráfica</a></li>
+              <li><a href="javascript:JumpTo('k83','k8/834s','t834')" class="mlink1" id="t834">8.3.4: Potencias</a></li>
+              <li><a href="javascript:JumpTo('k83','k8/835s','t835')" class="mlink1" id="t835">8.3.5: Función exponencial</a></li>
+              <li><a href="javascript:JumpTo('k83','k8/836s','t836')" class="mlink1" id="t836">8.3.6: Funciones trigonométricas</a></li>
+              <li><a href="javascript:JumpTo('k83','k8/837s','t837')" class="mlink1" id="t837">8.3.7: Funciones raíz</a></li>
+              <li><a href="javascript:JumpTo('k83','k8/838s','t838')" class="mlink1" id="t838">8.3.8: Logaritmo</a></li>
+              <li><a href="javascript:JumpTo('k83','k8/839s','t839')" class="mlink1" id="t839">8.3.9: Potencia arbitraria</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <p><a href="javascript:JumpTo('k9','','')" class="mlink2" id="t900">9: VECTORES</a></p>
+    <div id="k9" class="hidden">
+      <ul>
+        <li><a href="javascript:JumpTo('k91','','')" class="mlink2" id="t910">9.1: Espacio Euclídeo tridimensional</a>
+          <div id="k91" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k91','k9/911s','t911')" class="mlink1" id="t911">9.1.1: Espacio real tridimensional</a></li>
+              <li><a href="javascript:JumpTo('k91','k9/912s','t912')" class="mlink1" id="t912">9.1.2: Sistemas coordenados</a></li>
+              <li><a href="javascript:JumpTo('k91','k9/913s','t913')" class="mlink1" id="t913">9.1.3: Espacio Euclídeo</a></li>
+              <li><a href="javascript:JumpTo('k91','k9/914s','t914')" class="mlink1" id="t914">9.1.4: Transformaciones 
+          del sistema de coordenadas:<br />
+                Translaciones,<br />
+                Rotaciones,<br />
+                Reflexiones,<br />
+                Dilataciones</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k92','','')" class="mlink2" id="t920">9.2: Vectores como desplazamientos</a>
+          <div id="k92" class="hidden">
+            <ul>
+              <li>
+              <a class="mlink1" id="t921" href="javascript:JumpTo('k92','k9/921s','t921')">9.2.1: Desplazamientos</a></li>
+              <li>
+              <a class="mlink1" id="t922" href="javascript:JumpTo('k92','k9/922s','t922')">9.2.2: Vectores</a></li>
+              <li>
+              <a class="mlink1" id="t923" href="javascript:JumpTo('k92','k9/923s','t923')">9.2.3: Transformaciones del sistema de coordenadas:<br />
+                Translaciones,<br />
+                Rotaciones,<br />
+                Reflexiones,<br />
+                Dilataciones</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k93','','')" class="mlink2" id="t930">9.3: Adición de vectores</a>
+          <div id="k93" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k93','k9/931s','t931')" class="mlink1" id="t931">9.3.1: Suma de vectores</a></li>
+              <li><a href="javascript:JumpTo('k93','k9/932s','t932')" class="mlink1" id="t932">9.3.2: Ley conmutativa</a></li>
+              <li><a href="javascript:JumpTo('k93','k9/933s','t933')" class="mlink1" id="t933">9.3.3: Ley asociativa</a></li>
+              <li><a href="javascript:JumpTo('k93','k9/934s','t934')" class="mlink1" id="t934">9.3.4: Vector nulo</a></li>
+              <li><a href="javascript:JumpTo('k93','k9/935s','t935')" class="mlink1" id="t935">9.3.5: Negativos y sustracción</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k94','','')" class="mlink2" id="t940">9.4: Multiplicación con números reales, vectores base</a>
+          <div id="k94" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k94','k9/941s','t941')" class="mlink1" id="t941">
+              9.4.1: Multiplicación de un vector por escalar</a></li>
+              <li><a href="javascript:JumpTo('k94','k9/942s','t942')" class="mlink1" id="t942">9.4.2: Leyes</a></li>
+              <li><a href="javascript:JumpTo('k94','k9/943s','t943')" class="mlink1" id="t943">9.4.3: Espacio vectorial</a></li>
+              <li><a href="javascript:JumpTo('k94','k9/944s','t944')" class="mlink1" id="t944">9.4.4: Dependencia lineal, vectores base</a></li>
+              <li><a href="javascript:JumpTo('k94','k9/945s','t945')" class="mlink1" id="t945">9.4.5: Vectores unitarios</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k95','','t')" class="mlink2" id="t950">9.5: Producto escalar y símbolo de Kronecker</a>
+          <div id="k95" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k95','k9/951s','t951')" class="mlink1" id="t951">9.5.1: Motivación</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/952s','t952')" class="mlink1" id="t952">9.5.2: Definición</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/953s','t953')" class="mlink1" id="t953">9.5.3: Ley conmutativa</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/954s','t954')" class="mlink1" id="t954">9.5.4: 
+              Inexistencia de ley asociativa</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/955s','t955')" class="mlink1" id="t955">9.5.5: Homogeneidad</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/956s','t956')" class="mlink1" id="t956">9.5.6: Ley distributiva</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/957s','t957')" class="mlink1" id="t957">9.5.7: Vectores base</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/958s','t958')" class="mlink1" id="t958">9.5.8: Símbolo de Kronecker</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/959s','t959')" class="mlink1" id="t959">9.5.9: Representación en componentes</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/9510s','t9510')" class="mlink1" id="t9510">9.5.10: Parte transversal</a></li>
+              <li><a href="javascript:JumpTo('k95','k9/9511s','t9511')" class="mlink1" id="t9511">9.5.11: 
+              Inexistencia del inverso</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k96','','')" class="mlink2" id="t960">9.6: Producto vectorial y símbolo de Levi-Civita</a>
+          <div id="k96" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k96','k9/961s','t961')" class="mlink1" id="t961">9.6.1: Motivación</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/962s','t962')" class="mlink1" id="t962">9.6.2: Definición</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/963s','t963')" class="mlink1" id="t963">9.6.3: Anticonmutatividad</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/964s','t964')" class="mlink1" id="t964">9.6.4: Homogeneidad</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/965s','t965')" class="mlink1" id="t965">9.6.5: Ley distributiva</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/966s','t966')" class="mlink1" id="t966">9.6.6: Con parte transversal</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/967s','t967')" class="mlink1" id="t967">9.6.7: Vectores base</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/968s','t968')" class="mlink1" id="t968">9.6.8: Símbolo de Levi-Civita</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/969s','t969')" class="mlink1" id="t969">9.6.9: Representación en componentes</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/9610s','t9610')" class="mlink1" id="t9610">9.6.10: 
+              Inexistencia del inverso</a></li>
+              <li><a href="javascript:JumpTo('k96','k9/9611s','t9611')" class="mlink1" id="t9611">9.6.11: 
+              Inexistencia de ley asociativa</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+        <a class="mlink1" id="t970" href="javascript:JumpTo('k97','k9/970s','t970')">9.7: Productos múltiples</a>
+          <div id="k97" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k97','k9/971s','t971')" class="mlink1" id="t971">9.7.1: Producto triple</a></li>
+              <li><a href="javascript:JumpTo('k97','k9/972s','t972')" class="mlink1" id="t972">9.7.2: Producto vectorial triple</a></li>
+              <li><a href="javascript:JumpTo('k97','k9/973s','t973')" class="mlink1" id="t973">9.7.3: Producto escalar de dos productos vectoriales</a></li>
+              <li><a href="javascript:JumpTo('k97','k9/974s','t974')" class="mlink1" id="t974">9.7.4: Producto vectorial de dos productos vectoriales</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="javascript:JumpTo('k98','','')" class="mlink2" id="t980">9.8: Propiedades de transformación de los productos</a>
+          <div id="k98" class="hidden">
+            <ul>
+              <li><a href="javascript:JumpTo('k98','k9/981s','t981')" class="mlink1" id="t981">9.8.1: Base ortonormal derecha</a></li>
+              <li><a href="javascript:JumpTo('k98','k9/982s','t982')" class="mlink1" id="t982">9.8.2: Grupo de las matrices ortogonales</a></li>
+              <li><a href="javascript:JumpTo('k98','k9/983s','t983')" class="mlink1" id="t983">9.8.3: Subgrupo de las rotaciones</a></li>
+              <li><a href="javascript:JumpTo('k98','k9/984s','t984')" class="mlink1" id="t984">9.8.4: Transformación de los productos</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <table border="0" width="100%">
+      <tbody>
+        <tr>
+          	<td align="center" class="menu">
+	<a href="http://www.uni-heidelberg.de" target="_top">
+	<img src="gif/btn_uni.gif" border="0" alt="University of Heidelberg" 
+	title="University of Heidelberg" width="71" height="71"/>
+	</a>
+		</td>
+		<td align="center" class="menu">
+	<a href="http://www.thphys.uni-heidelberg.de" target="_top">
+	<img src="gif/btn_fak.gif" border="0" alt="Institute of Theoretical Physics" 
+	title="Institute of Theoretical Physics" width="71" height="71" />
+	</a>
+		</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>

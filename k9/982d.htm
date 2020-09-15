@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Vektoren</h2>
+
+    <h3>9.8 Transformationsverhalten der Produkte</h3>
+
+    <h4>9.8.2 Gruppe der Orthogonalen Matrizen</h4>
+  </div>
+
+  <div class="c3">
+    <p>Um die aufgeworfene Frage zu beantworten, behandeln wir zunächst die Orthonormalität. Es soll also gelten:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98201.gif" alt="math formula" hspace="5" align="middle" /><br />
+      d.h. <img src="k9/gif/f98202.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Wir können demnach nur Matrizen zulassen mit der Eigenschaft <img src="k9/gif/f98203.gif" alt="math formula" hspace="5" align="middle" /> oder <img src="k9/gif/f98204.gif" alt="math formula" hspace="5" align="middle" />. Diese Matrizen heißen bei den Mathematikern <em>orthogonal</em>. Unter ihren neun Matrixelementen sind <em>nur drei reelle Zahlen unabhängig</em> wegen der sechs Bedingungsgleichungen:</p>
+
+    <div class="c2">
+      <table border="0">
+        <tr>
+          <td><img src="k9/gif/f98205.gif" alt="math formula" hspace="5" align="middle" /></td>
+
+          <td>für <img src="k9/gif/f98206.gif" alt="math formula" hspace="5" align="middle" /> und</td>
+        </tr>
+
+        <tr>
+          <td><img src="k9/gif/f98207.gif" alt="math formula" hspace="5" align="middle" />&nbsp;&nbsp;</td>
+
+          <td>für <img src="k9/gif/f98208.gif" alt="math formula" hspace="5" align="middle" />.</td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Die orthogonalen Matrizen bilden eine Gruppe, <img src="k9/gif/f98209.gif" alt="math formula" hspace="5" align="middle" /> genannt, bezüglich der Multiplikation, die natürlich nicht abelsch sein kann, weil wir die <a href="#923b1d" >Matrizenmultiplikation</a> allgemein als nicht kommutativ gefunden haben:</p>
+
+    <p>Um die Gruppeneigenschaft zu verifizieren, betrachten wir zunächst das Produkt <img src="k9/gif/f98210.gif" alt="math formula" hspace="5" align="middle" /> zweier orthogonaler Matrizen <img src="k9/gif/f98211.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k9/gif/f98212.gif" alt="math formula" hspace="5" align="middle" /> und <img src="k9/gif/f98213.gif" alt="math formula" hspace="5" align="middle" /> mit <img src="k9/gif/f98214.gif" alt="math formula" hspace="5" align="middle" /> und berechnen:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98215.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>d.h. das <em>Produkt zweier orthogonaler Matrizen ist wieder orthogonal</em>.</p>
+
+    <p>Ferner gilt das <em>Assoziative Gesetz</em> wie für jede <a href="#923b1d" >Matrizenmultiplikation</a>:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98216.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Es gibt genau ein <em>Einselement</em>, die Einheitsmatrix <img src="k9/gif/f98217.gif" alt="math formula" hspace="5" align="middle" /> ist nämlich orthogonal, da <img src="k9/gif/f98218.gif" alt="math formula" hspace="5" align="middle" /> folgt <img src="k9/gif/f98219.gif" alt="math formula" hspace="5" align="middle" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98220.gif" alt="math formula" hspace="5" align="bottom" /> Einselement <img src="k9/gif/f98217.gif" alt="math formula" hspace="5" align="middle" />: <img src="k9/gif/f98220b.gif" alt="math formula" hspace="5" align="middle" /> für alle <img src="k9/gif/f98220c.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Denn die Multiplikation einer Matrix <img src="k9/gif/f98211.gif" alt="math formula" hspace="5" align="middle" /> von links oder rechts mit der Einheitsmatrix <img src="k9/gif/f98217.gif" alt="math formula" hspace="5" align="middle" /> ergibt wieder die alte Matrix.</p>
+
+    <p>Und es existiert zu jeder orthogonalen Matrix <img src="k9/gif/f98211.gif" alt="math formula" hspace="5" align="middle" /> eine eindeutig bestimmte Inverse, nämlich genau die transponierte Matrix, das war ja gerade die Orthogonalitätsbedingung:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98221.gif" alt="math formula" hspace="5" align="middle" /> <img src="k9/gif/f98222.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Die für die Existenz der Inversen notwendige Bedingung <img src="k9/gif/f98223.gif" alt="math formula" hspace="5" align="middle" /> ist erfüllt, denn aus <img src="k9/gif/f98224.gif" alt="math formula" hspace="5" align="middle" /> folgt für die Determinante</p>
+
+    <div class="c2">
+      <img src="k9/gif/f98225.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <img src="k9/gif/f98226.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Damit sind alle Gruppeneigenschaften der othogonalen Matrizen bewiesen. Aus der Determinante sieht man darüber hinaus, dass es offenbar <em>zwei Arten von orthogonalen Matrizen gibt</em>, solche mit Determinante <img src="k9/gif/f98227.gif" alt="math formula" hspace="5" align="middle" />, die Drehungen, und andere mit Determinante <img src="k9/gif/f98228.gif" alt="math formula" hspace="5" align="bottom" />. Das sind gerade die Spiegelungen.</p>
+
+    <p>Die Definitionsgleichung für die orthogonalen Matrizen <img src="k9/gif/f98229.gif" alt="math formula" hspace="5" align="middle" /> eröffnet noch einen ganz anderen Blick auf unser Kronecker-Symbol: Sobald wir nämlich links ein überflüssiges <img src="k9/gif/f98230.gif" alt="math formula" hspace="5" align="bottom" /> mit einer weiteren Summation hinzufügen, erhalten wir: <img src="k9/gif/f98231.gif" alt="math formula" hspace="5" align="middle" />. Wenn wir das Kronecker-Symbol, seiner zwei Indizes wegen als <em>Tensor zweiter Stufe</em> ansehen, stehen auf der linken Seite <img src="k9/gif/f98232.gif" alt="math formula" hspace="5" align="middle" />, d.h. die 9 Tensorkomponenten bezüglich des transformierten Koordinatensystems: jeweils eine Transformationsmatrix für jeden Index. Die ganze Gleichung <img src="k9/gif/f98233.gif" alt="math formula" hspace="5" align="middle" /> bedeutet dann die Invarianz der Matrixelemente gegenüber Drehungen und Spiegelungen, d.h. die Einsen und Nullen bleiben in jedem Koordinatensystem immer gleich und an derselben Stelle: Das gegenüber Vertauschen der Indizes symmetrische Kronecker-Symbol ist also, vom höheren Standpunkt betrachtet, ein "<em>numerisch invarianter Tensor zweiter Stufe</em>". Unter dieser Bezeichnung werden Sie ihm später auch häufig begegnen.</p>
+  </div>
+</body>
+</html>

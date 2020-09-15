@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>9 Vektoren</h2>
+
+    <h3>9.6 Vektorprodukt und Levi-Civita-Symbol</h3>
+
+    <h4>9.6.8 Levi-Civita-Symbol</h4>
+  </div>
+
+  <div class="c3">
+    <p>Wir schreiben einfach:</p>
+
+    <div class="c2">
+      <em>Rechtssysem</em>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k9/gif/f96801.gif" alt="math formula" hspace="5" align="middle" width="226" height="48" />
+    </div><br />
+    <br />
+
+    <p>wobei der letzte Term noch einmal an die Einsteinsche Summenkonvention erinnert. 
+    Dabei ist das Levi-Civita-Symbol mit seinen drei Indizes definiert durch:</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><em>Levi-Civita-Symbol</em> 
+            <img src="k9/gif/f96802.gif" alt="math formula" hspace="5" align="middle" width="324" height="64" /></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Das Symbol ändert offenbar das Vorzeichen beim Vertauschen je zweier Indizes, man nennt das total 
+    antisymmetrisch gegen Vertauschen der Indizes:</p>
+
+    <div class="c2">
+      <em>Totale Antisymmetrie</em>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k9/gif/f96803.gif" alt="math formula" hspace="5" align="middle" width="325" height="17" />
+    </div><br />
+    <br />
+
+    <p>Bei allen geraden oder <a href="#923b6d" >zyklischen</a> Permutationen der 
+    Zahlenfolge 123 in den Indizes ergibt der Wert 
+    <img src="k9/gif/f96804.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" /> 
+    genau die drei oben angegebenen eine Rechtsbasis charakterisierenden Relationen. 
+    Die Indexkonstellationen mit einer ungeraden Zahl von Vertauschungen je zweier Indizes bzw. 
+    antizyklischen Permutationen von 123 führen auf die 
+    <img src="k9/gif/f96805.gif" alt="math formula" hspace="5" align="bottom" width="19" height="11" /> 
+    in den drei oben ebenfalls aufgeführten Vektorprodukten mit vertauschter Reihenfolge der Faktoren. 
+    Nur sechs der 27 Elemente des Symbols sind verschieden von 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />. 
+    Alle <em>21 übrigen Elemente sind Nullen</em>, so dass Sie Mühe haben, im folgenden Bild vor lauter 
+    Nullen die vom Ursprung aus gesehen bemerkenswert symmetrisch angeordneten wichtigen drei blauen 
+    Einsen und vor allem die noch wichtigeren grünen 
+    <img src="k9/gif/f96805.gif" alt="math formula" hspace="5" align="bottom" width="19" height="11" /> zu finden:</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k9/gif/b9681.gif" alt="math formula" width="618" height="490" /><br clear="all" />
+    <span class="bild">Bild 9.25: Veranschaulichung des Levi-Civita-Symbols:<br />
+    Offensichtlich gibt es keinen Grund zur Angst davor! Es besteht ja fast nur aus Nullen.</span></p>
+  </div>
+
+  <div class="c3">
+    <p>Wie Sie aus dem Bild sehen, ist das Levi-Civita-Symbol trotz der vielen Nullen und seiner schönen 
+    Symmetrie wegen seiner <em>drei</em> Indizes ein ziemlich unhandliches Objekt. 
+    Deshalb wollen wir seine entscheidende Botschaft, nämlich die sechs Indexkonfigurationen, 
+    bei denen es <em>nicht</em> verschwindet, allein mit den uns schon vertrauteren handlichen 
+    
+    <a href="#958d">Kronecker-Symbolen</a> formulieren, es ist nämlich<br />
+    <img src="k9/gif/f96804.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" /> bei 
+    <img src="k9/gif/f96806.gif" alt="math formula" hspace="5" align="bottom" width="73" height="13" />, 
+    <img src="k9/gif/f96805.gif" alt="math formula" hspace="5" align="bottom" width="19" height="11" /> bei 
+    <img src="k9/gif/f96806b.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" />; 
+    <img src="k9/gif/f96804.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" /> bei 
+    <img src="k9/gif/f96806c.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" />, 
+    <img src="k9/gif/f96805.gif" alt="math formula" hspace="5" align="bottom" width="19" height="11" /> bei 
+    <img src="k9/gif/f96806d.gif" alt="math formula" hspace="5" align="bottom" width="24" height="12" />; 
+    <img src="k9/gif/f96804.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" /> bei 
+    <img src="k9/gif/f96806e.gif" alt="math formula" hspace="5" align="bottom" width="24" height="12" /> und 
+    <img src="k9/gif/f96805.gif" alt="math formula" hspace="5" align="bottom" width="19" height="11" /> bei 
+    <img src="k9/gif/f96806f.gif" alt="math formula" hspace="5" align="bottom" width="23" height="12" />:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f96807.gif" alt="math formula" hspace="5" align="middle" width="544" height="24" />
+    </div><br />
+    <br />
+
+    <p>In dieser Form des Ergebnisses erkennen wir (nach unserer Schublade über das Rechnen mit 
+    <a href="#923b1d" >Matrizen</a>) die Entwicklung der 
+    <a href="#923b2d" >Determinante</a> einer 
+    <img src="eq/3x3.gif" alt="math formula" hspace="5" align="middle" width="46" height="24" />-Matrix 
+    nach der ersten Zeile oder der ersten Spalte:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f96808.gif" alt="math formula" hspace="5" align="middle" width="529" height="66" />
+    </div><br />
+    <br />
+
+    <p>Also:</p>
+
+    <div class="c2">
+      <img src="k9/gif/f96809.gif" alt="math formula" hspace="5" align="middle" width="587" height="68" />
+    </div><br />
+    <br />
+
+    <p>Beim Übergang von der ersten zur zweiten Version wurde berücksichtigt, dass die Determinante einer Matrix 
+    <img src="k9/gif/f96810.gif" alt="math formula" hspace="5" align="middle" width="14" height="24" /> 
+    sich bei der Spiegelung an der Hauptdiagonalen nicht ändert: 
+    <img src="k9/gif/f96811.gif" alt="math formula" hspace="5" align="middle" width="74" height="30" />. 
+    Beim Übergang zur dritten Version haben wir die Symmetrie des Kronecker-Symbols gegen Vertauschen der 
+    beiden Indizes ausgenützt: 
+    <img src="k9/gif/f96812.gif" alt="math formula" hspace="5" align="middle" width="66" height="24" />. 
+    Es gibt offensichtlich noch eine Fülle von weiteren Formen des Levi-Civita-Symbols als Determinante, 
+    wenn wir etwa berücksichtigen, dass jede Determinante beim Vertauschen zweier Zeilen oder Spalten ihr 
+    Vorzeichen ändert. Bei der Determinantendarstellung des Levi-Civita-Symbols sollten Sie sich immer 
+    daran erinnern, dass die Kronecker-Symbole in der Determinante nichts anderes sind als Platzhalter, 
+    die je nach dem Wert der Indizes lediglich sagen, ob da eine 
+    <img src="eq/1.gif" alt="math formula" hspace="5" align="bottom" width="6" height="11" /> oder eine 
+    <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" /> steht.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.36</b>: Normalenvektoren</p>
+
+            <p>Welche Einheitsvektoren stehen senkrecht auf:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k9/gif/f96814.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> und 
+                <img src="k9/gif/f96815.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> 
+                <a href="#968l3601d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k9/gif/f96815.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> und 
+                <img src="k9/gif/f96816.gif" alt="math formula" hspace="5" align="middle" width="59" height="24" /> 
+                <a href="#968l3602d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td><img src="k9/gif/f96817.gif" alt="math formula" hspace="5" align="middle" width="67" height="24" /> und 
+                <img src="k9/gif/f96818.gif" alt="math formula" hspace="5" align="middle" width="67" height="24" />? 
+                <a href="#968l3603d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 9.37</b>: Tetraederoberfläche:</p>
+
+            <p>Berechnen Sie die Oberfläche eines Tetraeders der Kantenlänge 
+            <img src="eq/gl.gif" alt="math formula" hspace="5" align="bottom" width="11" height="11" /> 
+            mit Hilfe der Vektorprodukte, indem Sie ihn in einen Würfel der Kantenlänge 
+            <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> einbetten. 
+            <a href="#968l3701d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

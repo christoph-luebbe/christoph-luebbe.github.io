@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  p.c4 {font-weight: bold}
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>7 Integration</h2>
+
+    <h3>7.6 Uneigentliche Integrale</h3>
+
+    <h4>7.6.2 Unbeschränkter Integrand</h4>
+  </div>
+
+  <div class="c3">
+    <p>Nun werfen wir einen kurzen Blick auf den zweiten Fall, wenn nämlich der Integrand an einer Stelle 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> des endlichen Integrationsintervalls 
+    <img src="eq/giab.gif" alt="math formula" hspace="5" align="middle" width="29" height="24" /> unbeschränkt ist, z.B. an der <em>unteren</em> Grenze: 
+    <img src="k7/gif/f76202.gif" alt="math formula" hspace="5" align="middle" width="45" height="17" />. Wir berechnen dazu das Integral von einem Wert 
+    <img src="k7/gif/f76203.gif" alt="math formula" hspace="5" align="middle" width="44" height="21" /> ab, der nur eine kleine Strecke 
+    <img src="k7/gif/f76204.gif" alt="math formula" hspace="5" align="middle" width="38" height="23" /> oberhalb der kritischen Stelle 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> liegt und lassen erst im Ergebnis der Integration diese kleine Strecke gegen Null gehen. Falls dieser Grenzwert dann existiert, nennen wir ihn ein <em>uneigentliches Integral der zweiten Art</em> und schreiben:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f76205.gif" alt="math formula" hspace="5" align="middle" width="376" height="53" />
+    </div><br />
+    <br />
+
+    <p>Als Beispiel berechnen wir für 
+    <img src="k7/gif/f76206.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" /> und ein kleines positives 
+    <img src="k7/gif/f76207.gif" alt="math formula" hspace="5" align="middle" width="37" height="23" />:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f76208.gif" alt="math formula" hspace="5" align="middle" width="323" height="52" /> 
+      <img src="k7/gif/f76238.gif" alt="math formula" hspace="5" align="middle" width="183" height="30" />
+    </div><br />
+    <br />
+
+    <p>Wir sehen daraus, dass das uneigentliche Integral existiert, wenn die Funktion für kleiner werdende 
+    <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> auch nur ein klein wenig schwächer ansteigt als 
+    <img src="k7/gif/f76209.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" />, also z.B. für 
+    <img src="k7/gif/f76210.gif" alt="math formula" hspace="5" align="middle" width="37" height="24" />, dass aber für 
+    <img src="k7/gif/f76211.gif" alt="math formula" hspace="5" align="bottom" width="40" height="12" /> die im folgenden Bild</p>
+  </div>
+
+  <div class="c1">
+    <p><img src="k7/gif/b7621.gif" alt="math formula" width="464" height="406" /><br clear="all" />
+    <span class="bild">Bild 7.13</span></p>
+  </div>
+
+  <div class="c3">
+    <p>farbige Fläche unter der Funktion 
+    <img src="k7/gif/f76209.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" />, genau das an der Winkelhalbierenden gespiegelte Bild der früher betrachteten Fläche, gerade <em>keinen</em> endlichen Flächeninhalt mehr besitzt und ebenso für alle stärker ansteigenden Funktionen wie etwa 
+    <img src="k7/gif/f76212.gif" alt="math formula" hspace="5" align="middle" width="30" height="28" />.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 7.18:</p>
+
+            <p>Berechnen Sie folgende uneigentlichen Integrale der zweiten Art:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f76213.gif" alt="math formula" hspace="5" align="middle" width="71" height="53" /> <a href="#762l1801d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f76214.gif" alt="math formula" hspace="5" align="middle" width="100" height="52" /> <a href="#762l1802d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f76215.gif" alt="math formula" hspace="5" align="middle" width="64" height="53" /> <a href="#762l1803d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Wieder verfahren wir ganz analog bei einer Funktion, die an der <em>oberen</em> Grenze unbeschränkt wird:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f76216.gif" alt="math formula" hspace="5" align="middle" width="421" height="44" />
+    </div><br />
+    <br />
+
+    <p>oder, falls die Funktion an einer Stelle 
+    <img src="eq/x_0.gif" alt="math formula" hspace="5" align="middle" width="16" height="16" /> mitten im Integrationsintervall unbeschränkt ist:</p>
+
+    <div class="c2">
+      <img src="k7/gif/f76217.gif" alt="math formula" hspace="5" align="middle" width="360" height="53" />
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <a href="#762b1d" >Einschub: Cauchy-Hauptwert</a>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 7.19:</p>
+
+            <p>Berechnen Sie:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f76222.gif" alt="math formula" hspace="5" align="middle" width="110" height="52" /> <a href="#762l1901d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f76223.gif" alt="math formula" hspace="5" align="middle" width="97" height="53" /> <a href="#762l1902d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 7.20:</p>
+
+            <p>Berechnen Sie:</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f76224.gif" alt="math formula" hspace="5" align="middle" width="78" height="52" /> <a href="#762l2001d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>
+                <img src="k7/gif/f76225.gif" alt="math formula" hspace="5" align="middle" width="100" height="47" /> <a href="#762l2002d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top"></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c4">Aufgabe 7.21:</p>
+
+            <p>Zeigen Sie, dass aus dem uneigentlichen Integral zweiter Art: 
+            <img src="k7/gif/f76226.gif" alt="math formula" hspace="5" align="middle" width="68" height="34" /> durch die Substitution 
+            <img src="k7/gif/f76227.gif" alt="math formula" hspace="5" align="middle" width="61" height="28" /> ein uneigentliches Integral erster Art entsteht. <a href="#762l2101d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Mit Integralen, die uneigentlich sowohl erster als auch zweiter Art sind wollen wir uns hier nicht befassen, obwohl auch diese durch säuberlich getrennte Grenzübergänge gemeistert werden können.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 7.22:</b> Beispiele physikalischer Integrale</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Wenn Sie die <b>Fallzeit des Mondes</b> ausrechnen wollen, die er für den senkrechten Fall auf die Erdoberfläche bräuchte, wenn er plötzlich auf seiner Bahn stehenbliebe, benötigen Sie folgendes Integral: 
+                <img src="k7/gif/f76228.gif" alt="math formula" hspace="5" align="middle" width="145" height="28" />. <a href="#762l2201d" >Lösung</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                <td>Um das <b>elektrische Potential</b> 
+                <img src="k7/gif/f76229.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" /> einer (zwischen dem Innenradius 
+                <img src="k7/gif/f76230.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> und dem Außenradius R) <b>homogen geladenen Kugelschale</b> im Abstand 
+                <img src="eq/x.gif" alt="math formula" hspace="5" align="bottom" width="8" height="8" /> vom Mittelpunkt zu berechnen, brauchen Sie außer dem Integral 
+                <img src="k7/gif/f76231.gif" alt="math formula" hspace="5" align="middle" width="108" height="34" /> im Zähler des Coulomb-Faktors 
+                <img src="k7/gif/f76232.gif" alt="math formula" hspace="5" align="middle" width="24" height="24" /> das folgende etwas kompliziertere Integral 
+                <img src="k7/gif/f76233.gif" alt="math formula" hspace="5" align="middle" width="231" height="35" /> , an dem Sie das Zusammensetzen von Integralen besonders gut üben können. <a href="#762l2202d" >Lösung</a></td>
+              </tr>
+            </table><br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div><br />
+    <br />
+
+    <p>Sie werden später insbesondere bei den Funktionen mehrerer Variabler noch eine Vielfalt von weiteren Integralen kennen lernen: Kurven- oder Linien-Integrale, Oberflächen- und Volumen-Integrale in Räumen verschiedener Dimension. Wenn es jedoch darum geht, Zahlen auszurechnen, um mit Meßwerten zu vergleichen, werden Sie nichts anderes tun, als Riemann-Integrale berechnen, wie wir das hier zusammen erarbeitet haben.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p><b>Aufgabe 7.23:</b> Ein Mehrfachintegral</p>
+
+            <p>Zum Schluß dieses Kapitels noch einen Ausblick auf Mehrfachintegrale, damit Sie an einem einfachen Beispiel sehen, dass Sie mit den erlernten Techniken auch viel kompliziertere Arten von Integralen ausrechen können, nämlich den <b>Flächeninhalt</b> einer im ersten Quadranten liegenden, die Achsen tangierenden <b>Kreisscheibe</b> mit Radius 
+            <img src="k7/gif/f76230.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> als Doppelintegral: Die Gleichung des Kreises lautet 
+            <img src="k7/gif/f76234.gif" alt="math formula" hspace="5" align="middle" width="179" height="28" />, also ist 
+            <img src="k7/gif/f76235.gif" alt="math formula" hspace="5" align="middle" width="74" height="22" /> mit 
+            <img src="k7/gif/f76236.gif" alt="math formula" hspace="5" align="middle" width="144" height="30" />.<br />
+            Sie werden später lernen, dass folgendes Doppelintegral dann den Flächeninhalt beschreibt: 
+            <img src="k7/gif/f76237.gif" alt="math formula" hspace="5" align="middle" width="151" height="35" />. <a href="#762l2301d" >Lösung</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>

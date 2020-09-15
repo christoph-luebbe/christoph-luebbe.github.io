@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Mathematischer Vorkurs zum Studium der Physik</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c3 {text-align: left}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>5 Differentiation</h2>
+
+    <h3>5.6 Numerische Differentiation</h3>
+  </div>
+
+  <div class="c3">
+    <p>In manchen Fällen kann oder will man die Ableitung einer Funktion nicht analytisch nach den Regeln des letzten Abschnitts berechnen, z.B. wenn man noch keine analytische Form für den Graph einer Funktion gefunden hat. Dann ist man auf die <em>numerische Differentiation</em> angewiesen.</p>
+
+    <p>Unsere Definitionsgleichung des Differentialquotienten aus <a href="#520d">Abschnitt 5.2:</a></p>
+
+    <div class="c2">
+      <img src="k5/gif/f56001.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>kann auch für die numerische Berechnung der Ableitung verwendet werden. Zum Punkt <img src="k5/gif/f56002.gif" alt="math formula" hspace="5" align="middle" /> sucht man dabei die Nachbarpunkte <img src="k5/gif/f56003.gif" alt="math formula" hspace="5" align="middle" /> , berechnet jeweils den Differenzenquotienten und läßt <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> gegen <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" /> gehen.</p>
+
+    <p>Da aber alle Computerzahlen nur mit einer bestimmten Genauigkeit (z.B. mit 8 Stellen) gespeichert werden, treten bei den Differenzen <img src="k5/gif/f56004.gif" alt="math formula" hspace="5" align="middle" /> Rundungsfehler auf, die zwar absolut immer gleich groß bleiben, aber relativ zum Wert der Differenz immer größer werden, so dass der Differenzenquotient mit kleiner werdendem <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> immer genauer <img src="k5/gif/f56005.gif" alt="math formula" hspace="5" align="middle" /> approximiert, aber dann wegen der numerischen Rundungsfehler mit noch kleiner werdendem <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> größer wird. Es muß also ein Kompromiß gefunden werden. Eine bessere Approximation findet man, wenn man eine symmetrische Form der Definition wählt:</p>
+
+    <div class="c2">
+      <img src="k5/gif/f56006.gif" alt="math formula" hspace="5" align="middle" />
+    </div><br />
+    <br />
+
+    <p>Mit Hilfe der Taylor-Entwicklung, die wir im nächsten Kapitel behandelten werden, kann man zeigen, dass der Fehler durch die Symmetrisierung von <img src="k5/gif/f56007.gif" alt="math formula" hspace="5" align="middle" /> auf die Größenordnung von <img src="k5/gif/f56008.gif" alt="math formula" hspace="5" align="middle" /> reduziert wird, also quadratisch mit <img src="eq/dx.gif" alt="math formula" hspace="5" align="bottom" /> kleiner wird.</p>
+  </div>
+</body>
+</html>

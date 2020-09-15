@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Подготовительный курс по математике для начинающих студентов-физиков</title>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <style type="text/css">
+  /*<![CDATA[*/
+  div.c4 {text-align: left}
+  p.c3 {font-weight: bold}
+  div.c2 {margin-left: 2em}
+  div.c1 {text-align: center}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <h2>3 Ряды и последовательности</h2>
+
+    <h3>3.4 Сходимость</h3>
+  </div>
+
+  <div class="c4">
+    <p>Понятие сходимости является центральным в теории рядов и последовательностей. Проекция членов 
+    последовательности на числовую ось демонстрирует тот факт, что в некоторых числовых последовательностях члены 
+    <img src="eq/a_n.gif" alt="math formula" hspace="5" align="middle" width="17" height="16" /> "собираются" 
+    вокруг числа 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> 
+    таким образом, что в 
+    <img src="eq/eps.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />- 
+    <a href="#222b4r" >окрестности</a> 
+    <img src="k3/gif/f31301.gif" alt="math formula" hspace="5" align="middle" width="36" height="24" /> этого числа 
+    находится бесконечное множество членов. Число а при этом не обязательно является членом
+    последовательности! Число  
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" /> в таком случае 
+    называется <em>предельной точкой</em> последовательности. Последовательность натуральных чисел (F1) 
+    <em>не имеет </em>предельной точки, а гармоническая последовательность (F3) - <em>одну</em> предельную точку - 
+    ноль. Чередующаяся последовательность (F2) имеет <em>две </em> предельных точки: одну при 
+    <img src="k3/gif/f31302.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" /> и вторую при 
+    <img src="k3/gif/f31303.gif" alt="math formula" hspace="5" align="middle" width="19" height="23" />.</p>
+
+    <p>Одна из формулировок<em> теоремы Больцано-Вейерштрасса</em> гласит: каждая ограниченная сверху и снизу
+    последовательность имеет <em> как минимум одну предельную точку</em>.</p>
+    
+    <p>Если последовательность имеет только одну предельную точку, то, возможно, все ее члены, начиная с какого-то
+    порядкового номера, лежат в окрестности этой точки. Тогда данная точка
+    называется <em>пределом последовательности</em>. У математиков есть несколько названий этого понятия: говорят, 
+    что последовательность имеет <em>предел,</em> равный
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />, или последовательность 
+    <em>сходится</em> к точке 
+    <img src="eq/a.gif" alt="math formula" hspace="5" align="bottom" width="8" height="9" />. Это можно записать: 
+    <img src="k3/gif/f31304.gif" alt="math formula" hspace="5" align="middle" width="82" height="23" /> или: 
+    <img src="k3/gif/f31305.gif" alt="math formula" hspace="5" align="middle" width="67" height="31" /></p>
+    
+
+    <div class="c2">
+      <img src="k3/gif/f31307.gif" alt="math formula" hspace="5" align="middle" width="53" height="24" /> 
+      <em>сходится:</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <img src="k3/gif/f31308.gif" alt="math formula" hspace="5" align="middle" width="113" height="23" /> &nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; 
+      <img src="k3/gif/f31309.gif" alt="math formula" hspace="5" align="middle" width="331" height="24" />
+    </div>
+    
+
+    <p>Каждому малому положительному числу 
+    <img src="eq/eps.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" /> может быть 
+    присвоен такой порядковый номер
+    <img src="k3/gif/f31310.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" />, при котором 
+    для всех последующих членов с порядковым номером большим, чем 
+    <img src="k3/gif/f31310.gif" alt="math formula" hspace="5" align="middle" width="33" height="24" /> расстояние до 
+    предельной точки а меньше, чем 
+    <img src="eq/eps.gif" alt="math formula" hspace="5" align="bottom" width="7" height="9" />.</p>
+
+    <p>Иногда сходимость последовательности и ее предел можно определить сразу. А иногда сходимость 
+    последовательности не столь очевидна. В таком случае можно воспользоваться теоремой Больцано-Вейерштрасса.  </p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p class="c3">Теорема Больцано-Вейерштрасса:</p>
+
+            <p><em>Каждая монотонно возрастающая ограниченная сверху последовательность является сходящейся;
+            </<br> <em>каждая монотонно убывающая ограниченная снизу последовательность является сходящейся.</em></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Когда предел последовательности неизвестен или его сложно установить, математики пользуются понятиями 
+    необходимого 
+    <img src="k3/gif/f31311.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> и достаточного 
+    <img src="k3/gif/f31312.gif" alt="math formula" hspace="5" align="middle" width="26" height="24" /> условия.</p>
+
+    <div class="c2">
+      <table border="2" class="satzrand" cellpadding="10">
+        <tr>
+          <td class="satz">
+            <p><b>Критерий Коши:</b>&nbsp;&nbsp;&nbsp;&nbsp; 
+            <img src="k3/gif/f31313.gif" alt="math formula" hspace="5" align="middle" width="27" height="24" /> 
+            является сходящейся 
+            <img src="k3/gif/f31314.gif" alt="math formula" hspace="5" align="middle" width="364" height="24" /></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <p>Последовательность является сходящейся, если расстояние между ее членами, начиная с определенного порядкового 
+    номера, непрерывно уменьшается, т. е. точки на числовой оси лежат все ближе друг к другу. В противном случае 
+    последовательность расходится.</p>
+
+    <p>Подпоследовательность сходящейся последовательности, а также сумма, разность, произведение и частное 
+    (если знаменатель не равен 0) двух сходящихся последовательностей также является сходящейся последовательностью, 
+    т.е. предел такой последовательности может быть вычислен с помощью вышеназванных операций.</p>
+
+    <p>Предельной точкой многих сходящихся последовательностей является ноль, такие последовательности называются 
+    <em>нулевыми</em>.</p>
+
+    <p>Например, гармоническая последовательность (F3) с 
+    <img src="k3/gif/f31315.gif" alt="math formula" hspace="5" align="middle" width="48" height="29" /> является 
+    нулевой последовательностью.</p>
+
+    <div class="c2">
+      <a href="#340b1r" >Дополнение: Доказательство сходимости</a>
+    </div>
+    <br />
+
+    <p>Последовательности (F1) и (F2) не являются сходящимися.</p>
+
+    <div class="c2">
+      <table border="1" class="aufgabenrand" cellpadding="10">
+        <tr>
+          <td class="aufgaben">
+            <p class="c3">Задание 3.4: Сходящиеся последовательности</p>
+
+            <table border="0">
+              <tr>
+                <td valign="top">a)</td>
+
+                <td>Определите, сходятся ли последовательности (F4), (F5) и (F6). 
+                <a href="#340l0401r" >Решение для (F4)</a> , 
+                <a href="#340l0402r" >(F5)</a>, 
+                <a href="#340l0403r" >(F6)</a>.</td>
+              </tr>
+
+              <tr>
+                <td valign="top">b)</td>
+
+                <td>Напишите первые десять членов последовательности 
+                <img src="k3/gif/f31336.gif" alt="math formula" hspace="5" align="middle" width="90" height="23" />, 
+                произведения (F1) и (F6) для 
+                <img src="k3/gif/f31337.gif" alt="math formula" hspace="5" align="middle" width="52" height="23" />, 
+                и сравните их с 
+                <img src="k3/gif/f31338.gif" alt="math formula" hspace="5" align="middle" width="21" height="17" />, 
+                а также 
+                <img src="k3/gif/f31339.gif" alt="math formula" hspace="5" align="middle" width="61" height="30" />, 
+                частное (F6) для 
+                <img src="k3/gif/f31340.gif" alt="math formula" hspace="5" align="middle" width="44" height="29" /> 
+                и (F4), и сравните с <img src="k3/gif/f31343.gif" alt="math formula" hspace="5" align="middle" />. 
+                <a href="#340l0404r" >Решение (1)</a> 
+                <a href="#340l0405r" >(2)</a></td>
+              </tr>
+
+              <tr>
+                <td valign="top">c)</td>
+
+                <td>Последовательность, состоящая из членов (F1) и (F3) поочередно: 
+                <img src="k3/gif/f31341.gif" alt="math formula" hspace="5" align="middle" width="109" height="30" /> 
+                имеет только одну предельную точку 
+                <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />. 
+                Сходится ли она к 
+                <img src="eq/0.gif" alt="math formula" hspace="5" align="bottom" width="8" height="12" />? 
+                <a href="#340l0406r" >Ответ</a></td>
+              </tr>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div><br />
+</body>
+</html>
